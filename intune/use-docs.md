@@ -1,5 +1,5 @@
 ---
-title: Using the Microsoft Intune docs
+title: Using the Intune docs
 titleSuffix: Microsoft Intune
 description: Learn how to search the Intune docs, provide doc feedback, and contribute to the docs.
 ms.date: 06/20/2019
@@ -12,7 +12,7 @@ manager: dougeby
 ms.collection: M365-identity-device-management
 ---
 
-# Using the Microsoft Intune docs
+# Using the Intune docs
 
 This article provides information to help you search the Microsoft Intune docs for information, provide feedback for the Intune docs, and shows how you can quickly and easily contribute to the docs.
 
