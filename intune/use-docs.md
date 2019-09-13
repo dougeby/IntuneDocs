@@ -66,12 +66,11 @@ If issues are raised for non-doc-related topics, such as [product feedback](http
 
 To share feedback on the docs.microsoft.com platform, see [Docs feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
 
-
 ## Contribute to docs
 
-The Intune documentation, like most content on docs.microsoft.com, is open-sourced on GitHub. This library accepts and encourages community contributions. For more information on how to get started, see the [Contributor Guide](https://docs.microsoft.com/contribute). Creating a [GitHub account](https://github.com/join) is the only prerequisite.
+The Intune docs, like most content on docs.microsoft.com, is open-sourced on GitHub. This library accepts and encourages community contributions. For more information on how to get started, see the [Contributor Guide](https://docs.microsoft.com/contribute). Creating a [GitHub account](https://github.com/join) is the only prerequisite.
 
-### Basic steps to contribute to intunedocs
+### Basic steps to contribute to docs
 
 1. From the target article, click **Edit**. This action opens the source file in GitHub.  
 
