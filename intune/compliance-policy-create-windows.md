@@ -115,10 +115,11 @@ Applies only to co-managed devices running Windows 10 and later. Intune-only dev
     - **Require digits, lowercase letters, and uppercase letters**
     - **Require digits, lowercase letters, uppercase letters, and special characters**
 
-  We recommend you use **Alphanumeric** and **Require digits and lowercase letters**.
-
-  [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)  
-  [DeviceLock/MinDevicePasswordComplexCharacters CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
+    > [!TIP]
+    > The Alphanumeric password policies can be complex. We encourage administrators to read the CSPs for more information:
+    >
+    > - [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired)
+    > - [DeviceLock/MinDevicePasswordComplexCharacters CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-mindevicepasswordcomplexcharacters)
 
 - **Minimum password length**: Enter the minimum number of digits or characters that the password must have.
 - **Maximum minutes of inactivity before password is required**: Enter the idle time before the user must reenter their password.
