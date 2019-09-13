@@ -42,7 +42,7 @@ For general help and support for Intune, see [Get support for Intune](get-suppor
 
 ## Provide doc feedback
 
-Go to the Feedback section at the bottom of an article by clicking the **Feedback** link in the upper right of any article. This section is integrated with GitHub Issues. For more information about integration with GitHub Issues, see the [docs platform blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+Go to the Feedback section at the bottom of an article by clicking the **Feedback** link in the upper right of any article. This section is integrated with GitHub Issues. For more information about integration with GitHub Issues, see this [docs platform blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 To share feedback about the Intune service (not docs), click **Product feedback**.
 
@@ -62,7 +62,7 @@ Use GitHub Issues to submit the following types of feedback:
 - Localization: Feedback about content translation.
 - Search engine optimization (SEO): Feedback about problems searching for content. Include the search engine, keywords, and target article in the comments.
 
-If issues are raised for non-doc-related topics, such as [product feedback](https://microsoftintune.uservoice.com/forums/291681-ideas)), [product questions](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod), or [support requests](https://docs.microsoft.com/intune/get-support), these issues will be closed and the user redirected to the proper feedback channel.
+If issues are raised for non-doc-related topics, such as [product feedback](https://microsoftintune.uservoice.com/forums/291681-ideas), [product questions](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod), or [support requests](https://docs.microsoft.com/intune/get-support), these issues will be closed and the user redirected to the proper feedback channel.
 
 To share feedback on the docs.microsoft.com platform, see [Docs feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
 
