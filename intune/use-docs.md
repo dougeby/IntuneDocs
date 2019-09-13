@@ -38,7 +38,7 @@ For general help and support for Intune, see [Get support for Intune](get-suppor
 
   - **Filter by title** above the left table of contents. To search the current table of contents, enter terms in this field. This field only matches terms that appear in the article titles for the current node. The last item in the search results gives you the option to search for the terms in all Intune documentation.
 
-- Having problems finding something? [File feedback!](#doc-feedback) When filing the issue, provide the search engine you're using, the keywords you tried, and the target article. This feedback helps Microsoft optimize the content for better search.  
+- Having problems finding something? [File feedback!](#provide-doc-feedback) When filing the issue, provide the search engine you're using, the keywords you tried, and the target article. This feedback helps Microsoft optimize the content for better search.  
 
 ## Provide doc feedback
 
@@ -101,7 +101,7 @@ If you're interested in contributing, but don't know where to start, see the fol
 
 Follow these general guidelines when contributing to Intune docs:
 
-- Don't surprise us with large pull requests. Instead, [file an issue](#doc-feedback) and start a discussion. Then we can agree on a direction before you invest a large amount of time.  
+- Don't surprise us with large pull requests. Instead, [file an issue](#provide-doc-feedback) and start a discussion. Then we can agree on a direction before you invest a large amount of time.  
 
 - Read the [Microsoft style guide](https://aka.ms/MicrosoftStyle). Know the [Top 10 tips for Microsoft style and voice](https://docs.microsoft.com/style-guide/top-10-tips-style-voice).  
 
