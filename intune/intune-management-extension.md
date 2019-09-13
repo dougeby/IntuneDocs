@@ -198,7 +198,29 @@ To see if the device is auto-enrolled, you can:
 
   - To test script execution without Intune, run the scripts in the System account using the [psexec tool](https://docs.microsoft.com/sysinternals/downloads/psexec) locally:
 
-    `psexec -i -s`
+    `psexec -i -s`  
+    
+  - If script execution reports a success but the outcome isn't happening (for instance, the script above doesn't create a file), the antivirus might be sandboxing AgentExecutor. The following script should always report a failure in Intune - if it reports a success, look at AgentExecutor.log to confirm the error output - the length should be >2 if the script is executing at all:
+
+    ```powershell
+    Write-Error -Message "Forced Fail" -Category OperationStopped
+    mkdir "c:\temp" 
+    echo "Forced Fail" | out-file c:\temp\Fail.txt
+    ```
+    
+  - If you need to capture the .error and .output, the following snippet will execute the script through AgentExecutor to PSx86 and leave the logs behind for collection (since Intune Management Extension cleans up the logs after execution):
+  
+    ```powershell
+    $scriptPath = read-host "Enter the path to the script file to execute"
+    $logFolder = read-host "Enter the path to a folder to output the logs to"
+    $outputPath = $logFolder+"\output.output"
+    $errorPath =  $logFolder+"\error.error"
+    $timeoutPath =  $logFolder+"\timeout.timeout"
+    $timeoutVal = 60000 
+    $PSFolder = "C:\Windows\SysWOW64\WindowsPowerShell\v1.0"
+    $AgentExec = "C:\Program Files (x86)\Microsoft Intune Management Extension\agentexecutor.exe"
+    &$AgentExec -powershell  $scriptPath $outputPath $errorPath $timeoutPath $timeoutVal $PSFolder 0 0
+    ```
 
 ## Next steps
 
