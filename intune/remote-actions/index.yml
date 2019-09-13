@@ -1,12 +1,12 @@
 ### YamlMime:Landing
 
-title: Remotely manage devices with Intune
-summary: Intune gives admins the ability to remotely manage devices. By using these remote actions from the Intune portal, you can restart devices, reset passcodes, locate lost or stolen devices, and more.
+title: Remotely run device actions with Intune
+summary: Intune gives admins the ability to remotely run device actions. By using these remote actions from the Intune portal, you can restart devices, reset passcodes, locate lost or stolen devices, and more.
 
 
 metadata:
-  title: Remotely manage devices with Intune
-  description: Intune lets you remotely manage devices.
+  title: Remotely run device actions with Intune
+  description: Intune lets you run actions remotely.
   services: service
   ms.service: microsoft-intune
   ms.subservice: subservice
@@ -22,7 +22,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Remotely manage devices
+  - title: Remotely run device actions
     linkLists:
       - linkListType: overview
         links:
@@ -93,5 +93,5 @@ landingContent:
             url: ../device-lost-mode.md
           - text: Erase data from macOS device
             url: ../device-erase.md
-          - text: Bypasss activation lock
-            url: ../device-activation-lock-bypass.md 
+          - text: Bypass activation lock
+            url: ../device-activation-lock-bypass.md
