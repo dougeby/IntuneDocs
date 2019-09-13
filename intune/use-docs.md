@@ -1,7 +1,7 @@
 ---
-title: How to provide doc feedback
+title: Using the Microsoft Intune docs
 titleSuffix: Microsoft Intune
-description: Learn how to provide feedback and contribute to the Microsoft Intune docs.
+description: Learn how to search the Intune docs, provide doc feedback, and contribute to the docs.
 ms.date: 06/20/2019
 ms.service: microsoft-intune 
 ms.topic: conceptual
@@ -12,13 +12,14 @@ manager: dougeby
 ms.collection: M365-identity-device-management
 ---
 
-# How to use the Configuration Manager docs
+# Using the Microsoft Intune docs
 
-This article helps you search the Intune docs for information, provide feedback for the Intune docs and service, and shows how you can quickly and easily contribute to the docs.
+This article provides information to help you search the Microsoft Intune docs for information, provide feedback for the Intune docs, and shows how you can quickly and easily contribute to the docs.
 
 For general help and support for Intune, see [Get support for Intune](get-support.md).
 
-##  Search tips
+## Search the docs
+
  Use the following search tips to help you find the information that you need:  
 
 - When using your preferred search engine to locate content for Microsoft Intune, include `Intune` along with your search keywords.  
@@ -39,7 +40,7 @@ For general help and support for Intune, see [Get support for Intune](get-suppor
 
 - Having problems finding something? [File feedback!](#doc-feedback) When filing the issue, provide the search engine you're using, the keywords you tried, and the target article. This feedback helps Microsoft optimize the content for better search.  
 
-## Doc feedback
+## Provide doc feedback
 
 Go to the Feedback section at the bottom of an article by clicking the **Feedback** link in the upper right of any article. This section is integrated with GitHub Issues. For more information about integration with GitHub Issues, see the [docs platform blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
@@ -65,25 +66,12 @@ If issues are raised for non-doc-related topics, such as [product feedback](http
 
 To share feedback on the docs.microsoft.com platform, see [Docs feedback](https://aka.ms/sitefeedback). The platform includes all of the wrapper components such as the header, table of contents, and right menu. Also how the articles render in the browser, such as the font, alert boxes, and page anchors.
 
-## <a name="bkmk_notifications"></a> Notifications
-
-To receive notifications when content changes in the documentation library, use the following steps:
-
-1. Use the [docs search](https://docs.microsoft.com/search/index?scope=ConfigMgr) to find an article or set of articles. For example:
-    - Search for a single article by title: ["Set up enrollment for Windows devices"](https://docs.microsoft.com/search/index?search=%22set+up+enrollment+for+Windows+devices%22&scope=intune)
-    - Search for any article regarding [enrollment](https://docs.microsoft.com/search/index?search=enrollment&scope=Intune)
-2. In the upper right corner, click the **RSS** link.
-3. Use this feed in any RSS application to receive notifications when there is a change to any of the search results.
-
-
-> [!Tip]  
-> You can also **Watch** the [SCCMdocs repository](https://github.com/MicrosoftDocs/SCCMdocs) on GitHub. This method generates a lot of notifications. It also doesn't include changes from a private repository used by Microsoft.  
 
 ## Contribute to docs
 
-The Configuration Manager documentation library, like most content on docs.microsoft.com, is open-sourced on GitHub. This library accepts and encourages community contributions. For more information on how to get started, see the [Contributor Guide](https://docs.microsoft.com/contribute). Creating a [GitHub account](https://github.com/join) is the only prerequisite.
+The Intune documentation, like most content on docs.microsoft.com, is open-sourced on GitHub. This library accepts and encourages community contributions. For more information on how to get started, see the [Contributor Guide](https://docs.microsoft.com/contribute). Creating a [GitHub account](https://github.com/join) is the only prerequisite.
 
-#### Basic steps to contribute to intunedocs
+### Basic steps to contribute to intunedocs
 
 1. From the target article, click **Edit**. This action opens the source file in GitHub.  
 
