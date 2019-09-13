@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/06/2019
+ms.date: 09/04/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -61,7 +61,7 @@ Wi-Fi profiles support the following device platforms:
 
       - **Android**
       - **Android Enterprise**
-      - **iOS**
+      - **iOS/iPadOS**
       - **macOS**
       - **Windows 8.1 and later**
       - **Windows 10 and later**
@@ -77,7 +77,7 @@ Wi-Fi profiles support the following device platforms:
 
     - [Android](wi-fi-settings-android.md)
     - [Android Enterprise](wi-fi-settings-android-enterprise.md), including dedicated devices
-    - [iOS](wi-fi-settings-ios.md)
+    - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 and later](wi-fi-settings-windows.md)
     - [Windows 8.1 and later](wi-fi-settings-import-windows-8-1.md), including Windows Holographic for Business

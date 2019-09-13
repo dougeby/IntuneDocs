@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 07/18/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -302,7 +302,6 @@ The following settings are each listed in this article a single time, but all ap
   - **Allow** - Apply connection security rules from the local store, regardless of schema or connection security rule versions.  
 
 ### Firewall rules  
-***Custom firewall rules are in Public Preview.***  
 
 You can **Add** one or more custom Firewall rules. For more information, see [Add custom firewall rules for Windows 10 devices](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices).  
 

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -48,6 +48,23 @@ As an Intune administrator, use these compliance settings to help protect your o
 
 ## Device owner
 
+### Device Health
+
+- **Require the device to be at or under the Device Threat Level**: Select the maximum allowed device threat level evaluated by your [mobile threat defense service](mobile-threat-defense.md). Devices that exceed this threat level are marked noncompliant. To use this setting, choose the allowed threat level:
+
+  - **Not configured** (default): This setting isn't evaluated for compliance or non-compliance.
+  - **Secured**: This option is the most secure, and means that the device can't have any threats. If the device is detected with any level of threats, it's evaluated as noncompliant.
+  - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
+  - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
+  - **High**: This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+
+#### Google Play Protect
+
+- **SafetyNet device attestation**: Enter the level of [SafetyNet attestation](https://developer.android.com/training/safetynet/attestation.html) that must be met. Your options:
+  - **Not configured** (default): Setting isn't evaluated for compliance or non-compliance.
+  - **Check basic integrity**
+  - **Check basic integrity & certified devices**
+
 ### Device properties
 
 - **Minimum OS version**: When a device doesn't meet the minimum OS version requirement, it's reported as non-compliant. A link with information on how to upgrade is shown. The end user can upgrade their device, and then access organization resources.
@@ -85,14 +102,14 @@ As an Intune administrator, use these compliance settings to help protect your o
 
   You don't have to configure this setting because Android Enterprise devices enforce encryption.
 
-Select **OK** > **Create** to save your changes.
-
 ## Work profile
 
 ### Device health
 
 - **Rooted devices**: Choose **Block** to mark rooted (jailbroken) devices as not compliant. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance.
-- **Require the device to be at or under the Device Threat Level**: Use this setting to take the risk assessment from the Lookout Mobile Endpoint Security solution as a condition for compliance. When you choose **Not configured** (default), this setting isn't evaluated for compliance or non-compliance. To use this setting, choose the allowed threat level:
+- **Require the device to be at or under the Device Threat Level**: Select the maximum allowed device threat level evaluated by your [mobile threat defense service](mobile-threat-defense.md). Devices that exceed this threat level are marked noncompliant. To use this setting, choose the allowed threat level:
+
+  - **Not configured** (default): This setting isn't evaluated for compliance or non-compliance.
   - **Secured**: This option is the most secure, and means that the device can't have any threats. If the device is detected with any level of threats, it's evaluated as noncompliant.
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
@@ -162,8 +179,6 @@ Select **OK** > **Create** to save your changes.
   You don't have to configure this setting because USB debugging is already disabled on Android Enterprise devices.
 
 - **Minimum security patch level**: Select the oldest security patch level a device can have. Devices that aren't at least at this patch level are noncompliant. The date must be entered in the *YYYY-MM-DD* format.
-
-Select **OK** > **Create** to save your changes.
 
 ## Next steps
 

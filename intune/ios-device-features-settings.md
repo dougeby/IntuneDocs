@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -26,28 +26,36 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# iOS device settings to use common iOS features in Intune
+# iOS and iPadOS device settings to use common iOS features in Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Intune includes some built-in settings to allow iOS users to use different Apple features on their devices. For example, administrators can control how iOS users use AirPrint printers, add apps and folders to the dock and pages on the home screen, show app notifications, show asset tag details on the lock screen, use single sign-on authentication, and authenticate users with certificates.
 
 Use these features to control iOS devices as part of your mobile device management (MDM) solution.
 
-This article lists these settings, and describes what each setting does.
+This article lists these settings, and describes what each setting does. For more information on these features, go to [Add iOS or macOS device feature settings](device-features-configure.md).
 
 ## Before you begin
 
-[Create an iOS device configuration profile](device-features-configure.md#create-a-device-profile).
+[Create an iOS device configuration profile](device-features-configure.md).
+
+> [!NOTE]
+> These settings apply to different enrollment types, with some settings applying to all enrollment options. For more information on the different enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## AirPrint
+
+### Settings apply to: All enrollment types
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use hostnames to identify printers, you can get the IP address by pinging the printer in the terminal. Get the IP address and path (in this article) provides more details.
 - **Path**: The path is typically `ipp/print` for printers on your network. Get the IP address and path (in this article) provides more details.
 - **Port**: Enter the listening port of the AirPrint destination. If you leave this property blank, AirPrint uses the default port. Available on iOS 11.0 and later.
 - **TLS**: Choose **Enable** to secure AirPrint connections with Transport Layer Security (TLS). Available on iOS 11.0 and later.
 
-**Add** adds the AirPrint server to the list. Many AirPrint servers can be added. You can also **Import** a comma-separated file (.csv) with this information. **Export** creates a list of the AirPrint servers you added.
+To add AirPrint servers, you can:
 
-Select **OK** to save your list.
+- **Add** adds the AirPrint server to the list. Many AirPrint servers can be added.
+- **Import** a comma-separated file (.csv) with this information. Or, **Export** to create a list of the AirPrint servers you added.
 
 ### Get server IP address, resource path, and port
 
@@ -66,7 +74,11 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Home screen layout settings
 
-These settings configure the app layout and folders on the dock and home screens of iOS devices. To use this feature, iOS devices must be in supervised mode and run iOS 9.3 or later.
+This feature applies to:
+
+- iOS 9.3 or newer
+
+### Settings apply to: Automated device enrollment (supervised)
 
 ### Dock
 
@@ -82,8 +94,6 @@ You can add up to **six** items (apps and folders combined) for the device dock.
     - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
     - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
-    Select **OK** to save your changes.
-
   - **Folder**: Choose this option to add a folder to the dock on the screen.
 
     Apps that you add to a page in a folder are arranged from left to right, and in the same order as the list. If you add more apps than can fit on a page, the apps are moved to another page.
@@ -96,8 +106,6 @@ You can add up to **six** items (apps and folders combined) for the device dock.
       - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
       You can add up to **20** pages for the device dock.
-
-    Select **OK** to save your changes.
 
 > [!NOTE]
 > When you add icons using the Dock settings, the icons on the Home Screen and pages are locked, and can’t be moved. This may be by design with iOS and Apple’s MDM policies.
@@ -136,8 +144,6 @@ You can add up to **40** pages on a device.
         - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
         - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
 
-      Select **OK** to save your changes.
-
       - **Folder**: Choose this option to add a folder to the dock on the screen.
 
         Apps that you add to a page in a folder are arranged from left to right, and in the same order as the list. If you add more apps than can fit on a page, the apps are moved to another page.
@@ -148,8 +154,6 @@ You can add up to **40** pages on a device.
           - **Page name**: Enter a name for the page. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
           - **App Name**: Enter a name for the app. This name is used for your reference in the Azure portal. It *isn't* shown on the iOS device.
           - **App Bundle ID**: Enter the bundle ID of the app. See [Bundle IDs for built-in iOS apps](bundle-ids-built-in-ios-apps.md) for some examples.
-
-      Select **OK** to save your changes.
 
 #### Example
 
@@ -163,7 +167,7 @@ When you assign the policy to an iPhone, the page looks similar to the following
 
 ## App notifications settings
 
-Choose how installed apps on iOS devices send notifications. These settings support supervised devices running iOS 9.3 and later.
+### Settings apply to: Automated device enrollment (supervised)
 
 - **Add**: Add notifications for apps:
 
@@ -182,13 +186,13 @@ Choose how installed apps on iOS devices send notifications. These settings supp
     - **Badge on app icon**: Select **Enable** to add a badge to the app icon. The badge means the app sent a notification.
     - **Sounds**: Select **Enable** to play a sound when a notification is delivered.
 
-Select **OK** to save your changes.
-
 ## Lock screen message settings
 
-Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message and asset tag information. 
+This feature applies to:
 
-This feature supports supervised devices running iOS 9.3 and later.
+- iOS 9.3 and later
+
+### Settings apply to: Automated device enrollment (supervised)
 
 - **Asset tag information**: Enter information about the asset tag of the device. For example, enter `Owned by Contoso Corp` or `Serial Number: {{serialnumber}}`.
 
@@ -201,18 +205,9 @@ This feature supports supervised devices running iOS 9.3 and later.
   > [!NOTE]
   > Variables aren't validated in the UI, and are case sensitive. As a result, you may see profiles saved with incorrect input. For example, if you enter `{{DeviceID}}` instead of `{{deviceid}}`, then the literal string is shown instead of the device’s unique ID. Be sure to enter the correct information.
 
-Select **OK** to save your changes.
-
 ## Single sign-on settings
 
-Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeatedly, which is frustrating for users. To improve the user experience, developers can create apps that use single sign-on (SSO). Using single sign-on reduces the number of times a user must enter credentials.
-
-To use single sign-on, be sure you have:
-
-- An app that's coded to look for the user credential store in single sign-on on the device.
-- Intune configured for iOS device single sign-on.
-
-![Single Sign On pane](./media/sso-blade.png)
+### Settings apply to: Device enrollment, Automated device enrollment (supervised)
 
 - **Username attribute from AAD**: Intune looks for this attribute for each user in Azure AD. Intune then populates the respective field (such as UPN) before generating the XML that gets installed on the device. Your options:
 
@@ -253,11 +248,9 @@ To use single sign-on, be sure you have:
 
 - **Credential renewal certificate**: If using certificates for authentication (not passwords), select the existing SCEP or PFX certificate as the authentication certificate. Typically, this certificate is the same certificate that's deployed to the user for other profiles, such as VPN, Wi-Fi, or email.
 
-Select **OK** to save your changes.
-
 ## Web content filter settings
 
-These settings control browser URL access on supervised iOS devices.
+### Settings apply to: Automated device enrollment (supervised)
 
 - **Filter Type**: Choose to allow specific web sites. Your options:
 
@@ -265,14 +258,10 @@ These settings control browser URL access on supervised iOS devices.
 
     - **Permitted URLs**: **Add** the URLs you want to allow. These URLs bypass Apple's web filter.
 
-      > [!NOTE]
+        > [!NOTE]
         > The URLs you enter are the URLs you don't want evauluated by the Apple web filter. These URLs aren't a list of allowed web sites. To create a list of allowed websites, set the **Filter Type** to **Specific websites only**.
 
-      Select **OK** to save your changes.
-
     - **Blocked URLs**: **Add** the URLs you want to stop from opening, regardless of the Apple web filter settings.
-
-      Select **OK** to save your changes.
 
   - **Specific websites only** (for the Safari web browser only): These URLs are added to the Safari browser’s bookmarks. The user is **only** allowed to visit these sites; no other sites can be opened. Use this option only if you know the exact list of URLs that users can access.
 
@@ -282,13 +271,66 @@ These settings control browser URL access on supervised iOS devices.
 
     If you don't enter any URLs, then end users can't access any websites except for `microsoft.com`, `microsoft.net`, and `apple.com`. These URLs are automatically allowed by Intune.
 
-    Select **OK** to save your changes.
+## Single sign-on app extension
+
+This feature applies to:
+
+- iOS 13.0 and later
+- iPadOS
+
+### Settings apply to: All enrollment types
+
+- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
+
+  - **Not configured**: App extensions aren't used.
+  - **Credential**: Use a generic, customizable credential app extension to perform SSO. Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.
+  - **Kerberos**: Use Apple’s built-in Kerberos extension, which is included on iOS 13.0 and newer and iPadOS. This option is a Kerberos-specific version of the **Credential** app extension.
+
+  > [!TIP]
+  > With the **Credential** type, you add your own configuration values to pass through the extension. Instead, consider using built-in configuration settings provided by Apple in the the **Kerberos** type.
+
+- **Extension ID** (Credential only): Enter the bundle identifier that identifies your SSO app extension, such as `com.apple.extensiblesso`.
+- **Team ID** (Credential only): Enter the team identifier of your SSO app extension. A team identifier is a 10-character alphanumerical (numbers and letters) string generated by Apple, such as `ABCDE12345`.
+
+  [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple’s website) has more information.
+
+- **Realm**: Enter the name of your Kerberos realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
+
+- **Domains**: Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
+
+  - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
+  - These domains aren't case-sensitive.
+
+- **Additional Configuration** (Credential only): Enter additional extension-specific data to pass to the SSO app extension:
+  - **Configuration key**: Enter the name of the item you want to add, such as `user name`.
+  - **Value type**: Enter the type of data. Your options:
+
+    - String
+    - Boolean: In **Configuration value**, enter `True` or `False`.
+    - Integer: In **Configuration value**, enter a number.
+
+  - **Add**: Select to add your configuration keys.
+
+- **Keychain usage** (Kerberos only): Choose **Block** to prevent passwords from being saved and stored in the keychain. **Not configured** (default) allows passwords to be saved and stored in the keychain.
+- **Face ID, Touch ID, or passcode** (Kerberos only): **Require** forces users to enter their Face ID, Touch ID, or Apple passcode to sign in to the domains you added. **Not configured** (default) doesn't require users to use biometrics or passcode to sign in.
+- **Default Realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
+
+  > [!TIP]
+  > - **Enable** this setting if you're configuring multiple Kerberos SSO app extensions in your organization.
+  > - **Enable** this setting if you're using multiple realms. It set the **Realm** value you entered as the default realm.
+  > - If you only have on realm, leave it **Not configured** (default).
+
+- **Principal name** (Kerberos only): Enter the username of the Kerberos principal. You don't need to include the realm name. For example, in `user@contoso.com`, `user` is the principal name, and `contoso.com` is the realm name.
+- **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension may automatically find the Active Directory site code.
+- **Cache name** (Kerberos only): Enter the Generic Security Services (GSS) name of the Kerberos cache. You most likely don't need to set this value.
+- **App bundle IDs** (Kerberos only): **Add** the app bundle identifiers that should use single sign-on on your devices. These apps are granted access to the Kerberos Ticket Granting Ticket, the authentication ticket, and authenticate users to services they’re authorized to access.
+- **Domain realm mapping** (Kerberos only): **Add** the domain DNS suffixes that should map to your realm. Use this setting when the DNS names of the hosts don’t match the realm name. You most likely don't need to create this custom domain-to-realm mapping.
 
 ## Wallpaper settings
 
-Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For example, use a company logo on the lock screen.
-
 You may experience unexpected behavior when a profile with no image is assigned to devices with an existing image. For example, you create a profile without an image. This profile is assigned to devices that already have an image. In this scenario, the image may change to the device default, or the original image may stay on the device. This behavior is controlled and limited by Apple's MDM platform.
+
+### Settings apply to: Automated device enrollment (supervised)
 
 - **Wallpaper Display Location**: Choose a location on the device to show the image. Your options:
   - **Not configured**: A custom image isn't added to the device. The device uses the operating system default.

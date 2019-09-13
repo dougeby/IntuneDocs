@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/27/2019
+ms.date: 09/10/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -38,9 +38,14 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Before you begin
 
-[Create a device kernel extensions configuration profile](kernel-extensions-overview-macos.md#create-the-profile).
+[Create a device kernel extensions configuration profile](kernel-extensions-overview-macos.md).
+
+> [!NOTE]
+> These settings apply to different enrollment types. For more information on the different enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## Kernel extensions
+
+### Settings apply to: User approved, Automated device enrollment
 
 - **Allow User Overrides**: **Allow** lets users approve kernel extensions not included in the configuration profile. **Not configured** (default) prevents users from allowing extensions not included in the configuration profile. Meaning, only extensions included in the configuration profile are allowed.
 
