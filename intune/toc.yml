@@ -14,9 +14,7 @@
     - name: What's new in the app UI
       href: whats-new-app-ui.md
     - name: Features in development
-      href: in-development.md
-  - name: Using the Microsoft Intune docs
-    href: use-docs.md    
+      href: in-development.md   
 - name: Quickstarts
   items:
   - name: Try Intune for free
@@ -746,8 +744,10 @@
         href: troubleshoot-certificate-connector-events.md
       - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
+    - name: Using the Microsoft Intune docs
+      href: use-docs.md 
     - name: Get support
-      href: get-support.md      
+      href: get-support.md  
 - name: Reference
   items:
   - name: Settings lists
