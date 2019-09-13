@@ -142,17 +142,28 @@ For more information, see [Policy CSP - Bitlocker](https://docs.microsoft.com/wi
 
   - **Require encryption for write access**  
     **Default**: Yes  
+
 ::: zone-end
 ::: zone pivot="mdm-preview"
-    - **Encryption method**  
-      **Default**: AES 256bit CBC  
+
+- **Bit locker removable drive policy**  
+  This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you'll be able to configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
+  [Learn more](https://go.microsoft.com/fwlink/?linkid=2067140) 
+
+  For Bit locker removable drive policy, configure the following setting:
+
+  - **Require encryption for write access**  
+    **Default**: Yes  
+
+  - **Encryption method**  
+    **Default**: AES 256bit CBC  
 
 - **Bit locker fixed drive policy**  
   This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
  
-   For Bit locker fixed drive policy, configure the following settings: 
-   - **Encryption method**
-     **Default**: AES 256bit XTS  
+  For Bit locker fixed drive policy, configure the following settings: 
+  - **Encryption method**
+    **Default**: AES 256bit XTS  
 
 - **Bit locker system drive policy**  
   This policy setting is used to control the encryption method and cipher strength. The values of this policy determine the strength of the cipher that BitLocker uses for encryption. Enterprises may want to control the encryption level for increased security (AES-256 is stronger than AES-128). If you enable this setting, you can configure an encryption algorithm and key cipher strength for fixed data drives, operating system drives, and removable data drives individually. For fixed and operating system drives, we recommend that you use the XTS-AES algorithm. For removable drives, you should use AES-CBC 128-bit or AES-CBC 256-bit if the drive is used in other devices that aren't running Windows 10, version 1511 or later. Changing the encryption method has no effect if the drive is already encrypted or if encryption is in progress. In these cases, this policy setting is ignored.  
@@ -1478,7 +1489,9 @@ For more information, see [Policy CSP - Power](https://docs.microsoft.com/window
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 
-## Remote Assistance
+## Remote Assistance   
+For more information, see [Policy CSP - RemoteAssistance](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-remoteassistance#remoteassistance-solicitedremoteassistance) in the Windows documentation.  
+
 - **Remote Assistance solicited**  
   This policy setting allows you to turn on or turn off Solicited (Ask for) Remote Assistance on this computer. 
   - *If you enable this policy setting*, users on this computer can use email or file transfer to ask someone for help. Also, users can use instant messaging programs to allow connections to this computer, and you can configure additional Remote Assistance settings. 
@@ -1813,7 +1826,7 @@ For more information, see [Policy CSP - Defender](https://docs.microsoft.com/win
 ::: zone-end
 ::: zone pivot="mdm-may-2019"
 ## Windows Defender Firewall  
-For more information, see [2.2.2 FW_PROFILE_TYPOE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in the Windows Protocols documentation.  
+For more information, see [2.2.2 FW_PROFILE_TYPE]( https://docs.microsoft.com/openspecs/windows_protocols/ms-fasp/7704e238-174d-4a5e-b809-5f3787dd8acc) in the Windows Protocols documentation.  
 
 - **Firewall profile domain**  
   Specifies the profiles to which the rule belongs: Domain, Private, Public. This value represents the profile for networks that are connected to domains.  
