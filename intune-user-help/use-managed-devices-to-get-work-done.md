@@ -111,10 +111,10 @@ If you're ready to get access to your work or school acount, follow your organiz
 * [Enroll your Windows 10 device](enroll-windows-10-device.md)
 * [Enroll your Android device](enroll-device-android-company-portal.md)
 * [Enroll with Android work profile](enroll-device-android-work-profile.md)
-* [Enroll with Microsoft Intune app](enroll-device-android-microsoft-intune-app)
-* [Enroll your iOS device](enroll-your-device-in-intune-ios)
+* [Enroll with Microsoft Intune app](enroll-device-android-microsoft-intune-app.md)
+* [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
 * [Enroll your organization-provided iOS device](enroll-your-device-dep-ios.md)
 * [Enroll your macOS device](enroll-your-device-in-intune-macos-cp.md)
-* [Enroll your organization-provided macOS device](enroll-company-device-macos)
+* [Enroll your organization-provided macOS device](enroll-company-device-macos.md)
 
 
