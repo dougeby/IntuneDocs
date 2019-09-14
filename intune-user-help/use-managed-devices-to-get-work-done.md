@@ -37,18 +37,19 @@ During device enrollment:
 
 Once you update your device settings to meet your org's requirements, enrollment is complete. You can securely sign in to your work or school account from virtually anywhere.  
 
-Company Portal and the Microsoft Intune app alert you to policy or setting changes, so you can take action without losing access to work or school. 
+This article describes other aspects of enrollment, such as how to get the apps, your data privacy, and removing or resetting your device.  
+
+## Company Portal and Microsoft Intune app
+
+The Company Portal and the Microsoft Intune apps alert you to policy or setting changes, so you can take action without losing access to work or school. 
 
 The Company Portal app keeps your personal and work information separate, so you can remain productive and focused. It also makes work and school apps available to you, so you can find and install ones that are relevant to your line of work.  
 
-## Get the Company Portal or Microsoft Intune app
-These apps walk you through the enrollment process.  
-
-### Intune Company Portal app
+### Get Company Portal
 
 In some cases, your organization will install the Company Portal app on your device for you. The app is also available to install from app stores such as the Microsoft Store, App Store, and Google Play store. To access the app from a web browser, sign in to the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980) with your work or school account.  
 
-### Microsoft Intune app
+### Get Microsoft Intune app
 
 If you're required to use the Microsoft Intune app, your organization will install it on your device for you.  
 
