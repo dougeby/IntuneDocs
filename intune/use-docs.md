@@ -42,7 +42,7 @@ For general help and support for Intune, see [Get support for Intune](get-suppor
 
 ## Provide doc feedback
 
-Go to the Feedback section at the bottom of an article by clicking the **Feedback** link in the upper right of any article. This section is integrated with GitHub Issues. For more information about integration with GitHub Issues, see this [docs platform blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
+The Feedback section is at the bottom of each article. Click the **Feedback** link in the upper right of any article to go to this section. Feedback is integrated with GitHub Issues. For more information about the integration with GitHub Issues, see this [docs platform blog post](https://docs.microsoft.com/teamblog/a-new-feedback-system-is-coming-to-docs).
 
 To share feedback about the Intune service (not docs), click **Product feedback**.
 
