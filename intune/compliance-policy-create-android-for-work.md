@@ -57,6 +57,15 @@ As an Intune administrator, use these compliance settings to help protect your o
   - **Low**: The device is evaluated as compliant if only low-level threats are present. Anything higher puts the device in a noncompliant status.
   - **Medium**: The device is evaluated as compliant if the threats that are present on the device are low or medium level. If the device is detected to have high-level threats, it's determined to be noncompliant.
   - **High**: This option is the least secure, as it allows all threat levels. It may be useful if you're using this solution only for reporting purposes.
+  
+> [!NOTE] 
+> The following Mobile Threat Defence (MTD) providers will support Android Enterprise device owner deployments using app configuration:
+> - Better Mobile 
+> - Pradeo
+> - Sophos Mobile
+> - Zimperium 
+>  
+>  Check with your MTD provider for the exact configuraiton needed to be enable support for Android Enterprise Device Owner platforms on Intune. This list will be updated as MTD parters continue to release support for Android Enterprise Device Owner sceanrios in the future. 
 
 #### Google Play Protect
 
