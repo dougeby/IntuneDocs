@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 09/16/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -134,7 +134,7 @@ This feature applies to:
 
 - **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
 
-  - **Not configured**: App extensions aren't used. To disable an SSO app extension, switch the SSO app extension type from Kerberos or credential to Not configured.
+  - **Not configured**: App extensions aren't used. To disable an SSO app extension, switch the SSO app extension type from **Kerberos** or **Credential** to **Not configured**.
   - **Credential**: Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.  
   - **Kerberos**: Use Apple’s built-in Kerberos extension, which is included on macOS Catalina 10.15 and newer. This option is a Kerberos-specific version of the **Credential** app extension.
 
@@ -160,7 +160,7 @@ This feature applies to:
     - Boolean: In **Configuration value**, enter `True` or `False`.
     - Integer: In **Configuration value**, enter a number.
     
-  - **Value type**: Enter the data.
+  - **Configuration value**: Enter the data.
   
   - **Add**: Select to add your configuration keys.
 
@@ -183,7 +183,7 @@ This feature applies to:
 - **Password expiration notification** (Kerberos only): Enter the number of days before a password expires that users get notified that their password will expire. **Not configured** (default) uses `15` days.
 - **Password expiration** (Kerberos only): Enter the number of days before the device password must be changed. **Not configured** (default) means user passwords never expire.
 - **Principal name** (Kerberos only): Enter the username of the Kerberos principal. You don't need to include the realm name. For example, in `user@contoso.com`, `user` is the principal name, and `contoso.com` is the realm name.
-- **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension usually automatically finds the Active Directory site code.
+- **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension may automatically find the Active Directory site code.
 - **Cache name** (Kerberos only): Enter the Generic Security Services (GSS) name of the Kerberos cache. You most likely don't need to set this value.  
 - **Password requirements message** (Kerberos only): Enter a text version of your organization's password requirements that's shown to users. The message is shown if you don’t require Active Directory’s password complexity requirements, or don’t enter a minimum password length.  
 - **App bundle IDs** (Kerberos only): **Add** the app bundle identifiers that should use single sign-on on your devices. These apps are granted access to the Kerberos Ticket Granting Ticket, the authentication ticket, and authenticate users to services they’re authorized to access.
