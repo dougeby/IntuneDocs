@@ -64,7 +64,7 @@ You have two options to use app configuration policies with Intune:
 ## Apps that support app configuration
 
 ### Managed devices
-You can use app configuration policies for apps that support it. To support app configuration in Intune, apps must be written to support the use of app configurations as defined by the [AppConfig Community](https://www.appconfig.org/members). Consult your app vendor for details.
+You can use app configuration policies for apps that support it. To support app configuration in Intune, apps must be written to support the use of app configurations as defined by the OS. Consult your app vendor for details for which app config keys they support.
 
 ### Managed apps
 You can prepare your line-of-business apps by either incorporating the [Intune App SDK](app-sdk.md) into the app, or wrapping the app after it is developed using the [Intune App Wrapping Tool](apps-prepare-mobile-application-management.md). The Intune App SDK strives to minimize the amount of code changes required from the app developer. For more information, see the [Intune App SDK overview](app-sdk.md). For a comparison between the Intune App SDK and the Intune App Wrapping Tool, see [Prepare line-of-business apps for app protection policies](apps-prepare-mobile-application-management.md#feature-comparison).
