@@ -29,7 +29,7 @@ ms.reviewer: karthig
 
 # Windows 10 (and later) settings to protect devices using Intune  
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)  
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]  
 
 Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.  
 
@@ -1131,6 +1131,14 @@ Block end-user access to the various areas of the Windows Defender Security Cent
 
   - **Not configured**  
   - **Hide**  
+
+- **Tamper Protection**  
+  **Default**: Not configured
+
+  Turn Tamper Protection on or off on devices. To use Tamper Protection, you must [integrate Microsoft Defender Advanced Threat Protection with Intune](advanced-threat-protection.md), and have [Enterprise Mobility + Security E5 Licenses](licenses.md).  
+  - **Not configured** - No change is made to device settings.
+  - **Enabled** - Tamper Protection is turned on and restrictions are enforced on devices.
+  - **Disabled** - Tamper Protection is turned off and restrictions are not enforced.
 
 ### IT contact Information  
 
