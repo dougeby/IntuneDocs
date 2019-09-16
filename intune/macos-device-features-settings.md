@@ -128,13 +128,13 @@ After users sign in to the devices, the following settings impact what they can 
 
 This feature applies to:
 
-- macOS Catalina 10.15 and newer
+- macOS 10.15 and newer
 
 ### Settings apply to: All enrollment types 
 
 - **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
 
-  - **Not configured**: App extensions aren't used.
+  - **Not configured**: App extensions aren't used. To disable an SSO app extension, switch the SSO app extension type from Kerberos or credential to Not configured.
   - **Credential**: Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.  
   - **Kerberos**: Use Apple’s built-in Kerberos extension, which is included on macOS Catalina 10.15 and newer. This option is a Kerberos-specific version of the **Credential** app extension.
 
@@ -152,14 +152,16 @@ This feature applies to:
   - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
   - These domains aren't case-sensitive.
 
-- **Additional Configuration** (Credential only): Enter additional extension-specific data to pass to the SSO app extension:
+- **Additional configuration** (Credential only): Enter additional extension-specific data to pass to the SSO app extension:
   - **Configuration key**: Enter the name of the item you want to add, such as `user name`.
   - **Value type**: Enter the type of data. Your options:
 
     - String
     - Boolean: In **Configuration value**, enter `True` or `False`.
     - Integer: In **Configuration value**, enter a number.
-
+    
+  - **Value type**: Enter the data.
+  
   - **Add**: Select to add your configuration keys.
 
 - **Keychain usage** (Kerberos only): Choose **Block** to prevent passwords from being saved and stored in the keychain. **Not configured** (default) allows passwords to be saved and stored in the keychain.  
@@ -168,8 +170,8 @@ This feature applies to:
 
   > [!TIP]
   > - **Enable** this setting if you're configuring multiple Kerberos SSO app extensions in your organization.
-  > - **Enable** this setting if you're using multiple realms. It set the **Realm** value you entered as the default realm.
-  > - If you only have on realm, leave it **Not configured** (default).
+  > - **Enable** this setting if you're using multiple realms. It sets the **Realm** value you entered as the default realm.
+  > - If you only have one realm, leave it **Not configured** (default).
 
 - **Autodiscover** (Kerberos only): When set to **Block**, the Kerberos extension doesn't automatically use LDAP and DNS to determine its Active Directory site name. **Not configured** (default) allows the extension to automatically find the Active Directory site name.
 - **Password changes** (Kerberos only): **Block** prevents users from changing the passwords they use to sign in to the domains you entered. **Not configured** (default) allows password changes.  
@@ -181,9 +183,9 @@ This feature applies to:
 - **Password expiration notification** (Kerberos only): Enter the number of days before a password expires that users get notified that their password will expire. **Not configured** (default) uses `15` days.
 - **Password expiration** (Kerberos only): Enter the number of days before the device password must be changed. **Not configured** (default) means user passwords never expire.
 - **Principal name** (Kerberos only): Enter the username of the Kerberos principal. You don't need to include the realm name. For example, in `user@contoso.com`, `user` is the principal name, and `contoso.com` is the realm name.
-- **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension may automatically find the Active Directory site code.
+- **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension usually automatically finds the Active Directory site code.
 - **Cache name** (Kerberos only): Enter the Generic Security Services (GSS) name of the Kerberos cache. You most likely don't need to set this value.  
-- **Password requirements message** (Kerberos only): Enter a text version of your organizations password requirements that's shown to users. The message is shown if you don’t require Active Directory’s password complexity requirements, or don’t enter a minimum password length.  
+- **Password requirements message** (Kerberos only): Enter a text version of your organization's password requirements that's shown to users. The message is shown if you don’t require Active Directory’s password complexity requirements, or don’t enter a minimum password length.  
 - **App bundle IDs** (Kerberos only): **Add** the app bundle identifiers that should use single sign-on on your devices. These apps are granted access to the Kerberos Ticket Granting Ticket, the authentication ticket, and authenticate users to services they’re authorized to access.
 - **Domain realm mapping** (Kerberos only): **Add** the domain DNS suffixes that should map to your realm. Use this setting when the DNS names of the hosts don’t match the realm name. You most likely don't need to create this custom domain-to-realm mapping.
 
