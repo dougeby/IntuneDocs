@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Add VPN settings to iOS devices in Microsoft Intune - Azure | Microsoft Docs
+title: Configure VPN settings to iOS devices in Microsoft Intune - Azure | Microsoft Docs
 description: Add or create a VPN configuration profile using virtual private network (VPN) configuration settings, including the connection details, authentication methods, and split tunneling in the base settings; the custom VPN settings with the identifier, and the key and value pairs; the per-app VPN settings that include Safari URLs, and on-demand VPNs with SSIDs or DNS search domains; and the proxy settings to include a configuration script, IP or FQDN address, and TCP port in Microsoft Intune on devices running iOS.
 keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 04/25/2019
+ms.date: 09/05/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -25,9 +25,18 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Configure VPN settings on iOS devices in Microsoft Intune
+# Add VPN settings on iOS devices in Microsoft Intune
+
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 Microsoft Intune includes many VPN settings that can be deployed to your iOS devices. These settings are used to create and configure VPN connections to your organization's network. This article describes these settings. Some settings are only available for some VPN clients, such as Citrix, Zscaler, and more.
+
+## Before you begin
+
+[Create a device configuration profile](vpn-settings-configure.md).
+
+> [!NOTE]
+> These settings are available for all enrollment types. For more information on the enrollment types, see [iOS enrollment](ios-enroll.md).
 
 ## Connection type
 
@@ -46,6 +55,7 @@ Select the VPN connection type from the following list of vendors:
 - **Citrix VPN**
 - **Citrix SSO**
 - **Zscaler**: To use Conditional Access, or allow users to bypass the Zscaler sign in screen, then you must integrate Zscaler Private Access (ZPA) with your Azure AD account. For detailed steps, see the [Zscaler documentation](https://help.zscaler.com/zpa/configuration-example-microsoft-azure-ad). 
+- **IKEv2**: [IKEv2 settings](#ikev2-settings) (in this article) describes the properties.
 - **Custom VPN**
 
 > [!NOTE]
@@ -97,6 +107,79 @@ The settings shown in the following list are determined by the VPN connection ty
 
   - To remove this setting, recreate the profile, and don't select **I agree**. Then, reassign the profile.
 
+## IKEv2 settings
+
+These settings apply when you choose **Connection type** > **IKEv2**.
+
+- **Remote identifier**: Enter the network IP address, FQDN, UserFQDN, or ASN1DN of the IKEv2 server. For example, enter `10.0.0.3` or `vpn.contoso.com`. Typically, you enter the same value as the [**Connection name**](#base-vpn-settings) (in this article). But, it does depend on your IKEv2 server settings.
+
+- **Client Authentication type**: Choose how the VPN client authenticates to the VPN. Your options:
+  - **User authentication** (default): User credentials authenticate to the VPN.
+  - **Machine authentication**: Device credentials authenticate to the VPN.
+
+- **Authentication method**: Choose the type of client credentials to send to the server. Your options:
+  - **Certificates**: Uses an existing certificate profile to authenticate to the VPN. Be sure this certificate profile is already assigned to the user or device. Otherwise, the VPN connection fails.
+    - **Certificate type**: Select the type of encryption used by the certificate. Be sure the VPN server is configured to accept this type of certificate. Your options:
+      - **RSA** (default)
+      - **ECDSA256**
+      - **ECDSA384**
+      - **ECDSA521**
+
+  - **Username and password** (User authentication only): When users connect to the VPN, they are prompted for their username and password.
+  - **Shared secret** (Machine authentication only): Allows you to enter a shared secret to send to the VPN server.
+    - **Shared secret**: Enter the shared secret, also known as the pre-shared key (PSK). Be sure the value matches the shared secret configured on the VPN server.
+
+- **Server certificate issuer common name**: Allows the VPN server to authenticate to the VPN client. Enter the certificate issuer common name (CN) of the VPN server certificate that's sent to the VPN client on the device. Be sure the CN value matches the configuration on the VPN server. Otherwise, the VPN connection fails.
+- **Server certificate common name**: Enter the CN for the certificate itself. If left blank, the remote identifier value is used.
+
+- **Dead peer detection rate**: Choose how often the VPN client checks if the VPN tunnel is active. Your options:
+  - **Not configured**: Uses the iOS system default, which may be the same as choosing **Medium**.
+  - **None**: Disables dead peer detection.
+  - **Low**: Sends a keepalive message every 30 minutes.
+  - **Medium** (default): Sends a keepalive message every 10 minutes.
+  - **High**: Sends a keepalive message every 60 seconds.
+
+- **TLS version range minimum**: Enter the minimum TLS version to use. Enter `1.0`, `1.1`, or `1.2`. If left blank, the default value of `1.0` is used.
+- **TLS version range maximum**: Enter the maximum TLS version to use. Enter `1.0`, `1.1`, or `1.2`. If left blank, the default value of `1.2` is used.
+- **Perfect forward secrecy**: Select **Enable** to turn on perfect forward secrecy (PFS). PFS is an IP security feature that reduces the impact if a session key is compromised. **Disable** (default) doesn't use PFS.
+- **Certificate revocation check**: Select **Enable** to make sure the certificates aren't revoked before allowing the VPN connection to succeed. This check is best-effort. If the VPN server times out before determining if the certificate is revoked, access is granted. **Disable** (default) doesn't check for revoked certificates.
+
+- **Configure security association parameters**: **Not configured** (default) uses the iOS system default. Select **Enable** to enter the parameters used when creating security associations with the VPN server:
+  - **Encryption algorithm**: Select the algorithm you want:
+    - DES
+    - 3DES
+    - AES-128
+    - AES-256 (default)
+    - AES-128-GCM
+    - AES-256-GCM
+  - **Integrity algorithm**:  Select the algorithm you want:
+    - SHA1-96
+    - SHA1-160
+    - SHA2-256 (default)
+    - SHA2-384
+    - SHA2-512
+  - **Diffie-Hellman group**: Select the group you want. Default is group `2`.
+  - **Lifetime** (minutes): Choose how long the security association stays active until the keys are rotated. Enter a whole value between `10` and `1440` (1440 minutes is 24 hours). Default is `1440`.
+
+- **Configure a separate set of parameters for child security associations**: iOS allows you to configure separate parameters for the IKE connection, and any child connections. 
+
+  **Not configured** (default) uses the values you enter in the previous **Configure security association parameters** setting. Select **Enable** to enter the parameters used when creating *child* security associations with the VPN server:
+  - **Encryption algorithm**: Select the algorithm you want:
+    - DES
+    - 3DES
+    - AES-128
+    - AES-256 (default)
+    - AES-128-GCM
+    - AES-256-GCM
+  - **Integrity algorithm**:  Select the algorithm you want:
+    - SHA1-96
+    - SHA1-160
+    - SHA2-256 (default)
+    - SHA2-384
+    - SHA2-512
+  - **Diffie-Hellman group**: Select the group you want. Default is group `2`.
+  - **Lifetime** (minutes): Choose how long the security association stays active until the keys are rotated. Enter a whole value between `10` and `1440` (1440 minutes is 24 hours). Default is `1440`.
+
 ## Automatic VPN settings
 
 - **Per-app VPN**: Enables per-app VPN. Allows the VPN connection to trigger automatically when certain apps are opened. Also associate the apps with this VPN profile. For more information, see [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md).
@@ -125,5 +208,8 @@ If you're using a proxy, configure the following settings. Proxy settings aren't
 - **Address**: Enter the IP address of fully qualified host name of the proxy server.
 - **Port number**: Enter the port number associated with the proxy server.
 
-## Next step
-[Create VPN profiles in Intune](vpn-settings-configure.md)  
+## Next steps
+
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
+
+Configure VPN settings on [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [macOS](vpn-settings-macos.md), and [Windows 10](vpn-settings-windows-10.md) devices.

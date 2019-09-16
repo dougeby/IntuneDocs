@@ -321,30 +321,33 @@
       href: device-profiles.md    
     - name: Create a profile
       href: device-profile-create.md
-    - name: Administrative templates
+    - name: Administrative templates on Windows
       href: administrative-templates-windows.md
-    - name: Device features
+      displayName: group policy, gpo, admx
+    - name: Device features on iOS and macOS
       href: device-features-configure.md
     - name: Restrict device settings and features
       href: device-restrictions-configure.md
       displayName: Device restrictions
-    - name: Deliver updates
+    - name: Updates
       href: delivery-optimization-windows.md
-      displayName: delivery optimization; updates
+      displayName: delivery optimization; Windows update
     - name: Upgrade editions and S mode
       href: edition-upgrade-configure-windows-10.md
-    - name: Configure email
+    - name: Email
       href: email-settings-configure.md
-    - name: Enable kiosk mode
+    - name: Kiosks and dedicated devices
       href: kiosk-settings.md
-    - name: Add a VPN
+    - name: Shared multi-user devices
+      href: shared-user-device-settings.md  
+    - name: VPN
       href: vpn-settings-configure.md
       items:
       - name: Per-app VPN for Android
         href: android-pulse-secure-per-app-vpn.md
       - name: Per-App VPN for iOS
         href: vpn-setting-configure-per-app.md
-    - name: Add a wireless Wi-Fi network
+    - name: Wi-Fi network
       href: wi-fi-settings-configure.md
       displayName: wifi
       items:
@@ -354,8 +357,6 @@
       href: kernel-extensions-overview-macos.md
     - name: Education Take a Test app
       href: education-settings-configure.md
-    - name: Shared multi-user devices
-      href: shared-user-device-settings.md  
     - name: Mobility Extensions on Zebra devices
       href: android-zebra-mx-overview.md
       displayName: mx

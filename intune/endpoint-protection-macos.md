@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 08/02/2019
+ms.date: 09/19/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -109,13 +109,6 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
     - **Disable** - Disable the prompt at sign-out.
 
     **Default**: Not configured  
-
-     > [!IMPORTANT]  
-     > There is a known issue when the setting **Disable prompt at sign out** is set to *Disable*. When set to *Disable*, the setting for **Number of times allowed to bypass** must be set to a value and must not be set as *Not configured*. If set to *Not configured*, the profile fails on the device. In this scenario the device reports its a **Profile State Summary** as **Error** without further details.
-     > 
-     > When **Disable prompt at sign out** is set to *Not configured*, **Number of times allowed to bypass** can be *Not configured* or have a value.  
-     > 
-     > This issue will be resolved in a future update. 
 
   - **Number of times allowed to bypass**  
   Set the number of times a user can ignore prompts to enable FileVault before FileVault is required for the user to sign in.  
