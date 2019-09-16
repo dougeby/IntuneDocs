@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/12/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -30,33 +30,22 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Intune includes some built-in settings to customize features on your macOS devices. This article lists these settings, and describes what each setting does. It also lists the steps to get the IP address, path, and port of AirPrint printers using the Terminal app (emulator).
+Intune includes some built-in settings to customize features on your macOS devices. For example, administrators can add AirPrint printers, choose how users sign in, configure the power controls, use single sign-on authentication, and more.
 
-This feature applies to:
+Use these features to control macOS devices as part of your mobile device management (MDM) solution.
 
-- macOS
-
-As part of your mobile device management (MDM) solution, use these settings to create a banner, choose how users sign in, add an AirPrint server, and more.
-
-These settings are added to a device configuration profile in Intune, and then assigned or deployed to your macOS devices.
+This article lists these settings, and describes what each setting does. It also lists the steps to get the IP address, path, and port of AirPrint printers using the Terminal app (emulator). For more information on device features, go to [Add iOS or macOS device feature settings](device-features-configure.md).
 
 ## Before you begin
 
 [Create a macOS device configuration profile](device-features-configure.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - User approved enrollment
-> - Device enrollment
-> - Automated device enrollment
-> - All enrollment types, which includes user approved enrollment, device enrollment, and automated device enrollment (formerly DEP).
->
-> For more information on these enrollment types, see [macOS enrollment](macos-enroll.md).
+> These settings apply to different enrollment types, with some settings applying to all enrollment options. For more information on the different enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## AirPrint
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 - **IP address**: Enter the IPv4 or IPv6 address of the printer. If you use host names to identify printers, you can get the IP address by pinging the printer in the Terminal app. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
 - **Path**: Enter the path of the printer. The path is typically `ipp/print` for printers on your network. [Get the IP address and path](#get-the-ip-address-and-path) (in this article) provides more details.
@@ -84,7 +73,7 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login items
 
-### All enrollment types
+### Settings apply to: All enrollment types
 
 - **Files, folders, and custom apps**: **Add** the path of a file, folder, custom app, or system app you want to open when a user signs in to the device. System apps, or apps built or customized for your organization are typically in the `Applications` folder, with a path similar to `/Applications/AppName.app`. 
 
@@ -99,7 +88,7 @@ To add AirPrinter servers, you need the IP address of the printer, the resource 
 
 ## Login window
 
-### Device enrollment
+### Settings apply to: Device enrollment
 
 #### Window Layout
 
@@ -134,6 +123,103 @@ After users sign in to the devices, the following settings impact what they can 
 - **Disable Power Off**: **Disable** prevents users from selecting the **Power off** option after the user signs in. **Not configured** (default) allows users to select the **Power off** menu item on the device.
 - **Disable Log Out** (macOS 10.13 and later): **Disable** prevents users from selecting the **Log out** option after the user signs in. **Not configured** (default) allows users to select the **Log out** menu item on the device.
 - **Disable Lock Screen** (macOS 10.13 and later): **Disable** prevents users from selecting the **Lock screen** option after the user signs in. **Not configured** (default) allows users to select the **Lock screen** menu item on the device.
+
+## Single sign-on app extension
+
+This feature applies to:
+
+- macOS Catalina 10.15 and newer
+
+### Settings apply to: All enrollment types 
+
+- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
+
+  - **Not configured**: App extensions aren't used.
+  - **Credential**: Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.  
+  - **Kerberos**: Use Apple’s built-in Kerberos extension, which is included on macOS Catalina 10.15 and newer. This option is a Kerberos-specific version of the **Credential** app extension.
+
+  > [!TIP]
+  > With the **Credential** type, you add your own configuration values to pass through the extension. Instead, consider using built-in configuration settings provided by Apple in the the **Kerberos** type.
+
+- **Extension ID** (Credential only): Enter the bundle identifier that identifies your SSO app extension, such as `com.apple.ssoexample`.
+- **Team ID** (Credential only): Enter the team identifier of your SSO app extension. A team identifier is a 10-character alphanumerical (numbers and letters) string generated by Apple, such as `ABCDE12345`. 
+
+  [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple’s website) has more information.
+
+- **Realm**: Enter the name of your Kerberos realm. The realm name should be capitalized, such as `CONTOSO.COM`. Typically, your realm name is the same as your DNS domain name, but in all uppercase.
+- **Domains**: Enter the domain or host names of the sites that can authenticate through SSO. For example, if your website is `mysite.contoso.com`, then `mysite` is the host name, and `contoso.com` is the domain name. When users connect to any of these sites, the app extension handles the authentication challenge. This authentication allows users to use Face ID, Touch ID, or Apple pincode/passcode to sign in.
+
+  - All the domains in your single sign-on app extension Intune profiles must be unique. You can't repeat a domain in any sign-on app extension profile, even if you're using different types of SSO app extensions.
+  - These domains aren't case-sensitive.
+
+- **Additional Configuration** (Credential only): Enter additional extension-specific data to pass to the SSO app extension:
+  - **Configuration key**: Enter the name of the item you want to add, such as `user name`.
+  - **Value type**: Enter the type of data. Your options:
+
+    - String
+    - Boolean: In **Configuration value**, enter `True` or `False`.
+    - Integer: In **Configuration value**, enter a number.
+
+  - **Add**: Select to add your configuration keys.
+
+- **Keychain usage** (Kerberos only): Choose **Block** to prevent passwords from being saved and stored in the keychain. **Not configured** (default) allows passwords to be saved and stored in the keychain.  
+- **Face ID, Touch ID, or passcode** (Kerberos only): **Require** forces users to enter their Face ID, Touch ID, or Apple passcode to sign in to the domains you added. **Not configured** (default) doesn't require users to use biometrics or passcode to sign in.
+- **Default Realm** (Kerberos only): Choose **Enable** to set the **Realm** value you entered as the default realm. **Not configured** (default) doesn't set a default realm.
+
+  > [!TIP]
+  > - **Enable** this setting if you're configuring multiple Kerberos SSO app extensions in your organization.
+  > - **Enable** this setting if you're using multiple realms. It set the **Realm** value you entered as the default realm.
+  > - If you only have on realm, leave it **Not configured** (default).
+
+- **Autodiscover** (Kerberos only): When set to **Block**, the Kerberos extension doesn't automatically use LDAP and DNS to determine its Active Directory site name. **Not configured** (default) allows the extension to automatically find the Active Directory site name.
+- **Password changes** (Kerberos only): **Block** prevents users from changing the passwords they use to sign in to the domains you entered. **Not configured** (default) allows password changes.  
+- **Password sync** (Kerberos only): Choose **Enable** to sync your users’ local passwords to Azure AD. **Not configured** (default) disables password sync to Azure AD. Use this setting as an alternative or backup to SSO. This setting doesn't work if users are signed in with an Apple mobile account.
+- **Windows Server Active Directory password complexity** (Kerberos only): Choose **Require** to force user passwords to meet Active Directory’s password complexity requirements. See [Password must meet complexity requirements](https://docs.microsoft.com/windows/security/threat-protection/security-policy-settings/password-must-meet-complexity-requirements) for more information. **Not configured** (default) doesn't require users to meet Active Directory’s password requirement.
+- **Minimum password length** (Kerberos only): Enter the minimum number of characters that can make up a user’s password. **Not configured** (default) doesn't enforce a minimum password length on the users.
+- **Password reuse limit** (Kerberos only): Enter the number of new passwords, from 1-24, that must be used until a previous password can be reused on the domain. **Not configured** (default) doesn't enforce a password reuse limit.
+- **Minimum password age** (Kerberos only): Enter the number of days that a password must be used on the domain before a user can change it. **Not configured** (default) doesn't enforce a minimum age of passwords before they can be changed.
+- **Password expiration notification** (Kerberos only): Enter the number of days before a password expires that users get notified that their password will expire. **Not configured** (default) uses `15` days.
+- **Password expiration** (Kerberos only): Enter the number of days before the device password must be changed. **Not configured** (default) means user passwords never expire.
+- **Principal name** (Kerberos only): Enter the username of the Kerberos principal. You don't need to include the realm name. For example, in `user@contoso.com`, `user` is the principal name, and `contoso.com` is the realm name.
+- **Active Directory site code** (Kerberos only): Enter the name of the Active Directory site that the Kerberos extension should use. You may not need to change this value, as the Kerberos extension may automatically find the Active Directory site code.
+- **Cache name** (Kerberos only): Enter the Generic Security Services (GSS) name of the Kerberos cache. You most likely don't need to set this value.  
+- **Password requirements message** (Kerberos only): Enter a text version of your organizations password requirements that's shown to users. The message is shown if you don’t require Active Directory’s password complexity requirements, or don’t enter a minimum password length.  
+- **App bundle IDs** (Kerberos only): **Add** the app bundle identifiers that should use single sign-on on your devices. These apps are granted access to the Kerberos Ticket Granting Ticket, the authentication ticket, and authenticate users to services they’re authorized to access.
+- **Domain realm mapping** (Kerberos only): **Add** the domain DNS suffixes that should map to your realm. Use this setting when the DNS names of the hosts don’t match the realm name. You most likely don't need to create this custom domain-to-realm mapping.
+
+## Associated domains
+
+In Intune, you can:
+
+- Add many app-to-domain associations.
+- Associate many domains with the same app.
+
+This feature applies to:
+
+- macOS 10.15 and newer
+
+### Settings apply to: All enrollment types
+
+- **App ID**: Enter the app identifier of the app to associate with a website. The app identifier includes the team ID and a bundle ID: `TeamID.BundleID`.
+
+  The team ID is a 10-character alphanumerical (letters and numbers) string generated by Apple for your app developers, such as `ABCDE12345`. [Locate your Team ID](https://help.apple.com/developer-account/#/dev55c3c710c) (opens Apple's web site) has more information.
+
+  The bundle ID uniquely identifies the app, and typically is formatted in reverse domain name notation. For example, the bundle ID of Finder is `com.apple.finder`. To find the bundle ID, use the AppleScript in Terminal:
+
+  `osascript -e 'id of app "ExampleApp"'`
+
+- **Domain**: Enter the website domain to associate with an app. The domain includes a service type and fully qualified hostname, such as `webcredentials:www.contoso.com`.
+
+  The service type can be:
+
+  - **authsrv**: Single sign-on app extension
+  - **applink**: Universal link
+  - **webcredentials**: Password autofill
+
+- **Add**: Select to add your apps and associated domains.
+
+> [!TIP]
+> To troubleshoot, on your macOS device, open **System Preferences** > **Profiles**. Confirm the profile you created is in the device profiles list. If it's listed, be sure the **Associated Domains Configuration** is in the profile, and it includes the correct app ID and domains.
 
 ## Next steps
 

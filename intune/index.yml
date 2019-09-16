@@ -137,9 +137,20 @@ conceptualContent:
         - url: app-configuration-policies-overview.md
           itemType: overview
           text: App configuration policies
+    - title: App protection policies
+      links:
         - url: app-protection-policy.md
           itemType: concept
-          text: App protection policies
+          text: App protection policies overview
+        - url: app-protection-policies.md
+          itemType: overview
+          text: Create app protection policies
+        - url: app-protection-policies-validate.md
+          itemType: how-to-guide
+          text: Validate app protection policies
+        - url: app-protection-policies-monitor.md
+          itemType: how-to-guide
+          text: Monitor app protection policies
     - title: Help and support
       links:
         - url: get-support.md

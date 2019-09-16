@@ -29,20 +29,19 @@ ms.collection: M365-identity-device-management
 
 # Send custom notifications in Intune  
 
-Use Microsoft Intune to send custom notifications to the users of managed iOS and Android devices. These messages appear as standard push notifications from the Company Portal app on a user’s device, just as notifications from other applications on the device appear. Intune custom notifications aren’t supported by Windows devices.   
+Use Microsoft Intune to send custom notifications to the users of managed iOS and Android devices. These messages appear as standard push notifications from the Company Portal app and from the Microsoft Intune app on a user’s device, just as notifications from other applications on the device appear. Intune custom notifications aren’t supported by Windows devices.   
 
 Custom notification messages include a short title and a message body of 500 characters or less. These messages can be customized for any general communication purpose.
 
 ## Common scenarios for sending custom notifications  
 
-- Use custom notifications to alert specific users about a new app that’s available in the Company Portal.  
 - Notify all employees of a change in schedule, such as building closures because of inclement weather.
 - Send a notification to the user of a single device to communicate an urgent request, such as restarting the device to complete installation of an update.  
 
-## Considerations for using custom notifications  
-
-**Device configuration**:  
 - Devices must have the Company Portal app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app to send push notifications. The Company Portal will prompt users to permit notifications anytime it's installed or updated.  
+=======
+- Devices must have the Company Portal app or the Microsoft Intune app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app or the Microsoft Intune app to send push notifications. If needed, the Company Portal app and the Microsoft Intune app may prompt users to permit notifications.  
+>>>>>>> 9d5e752c71c0b30a5d0cafefbd3410a21de7b1e2
 - On Android, Google Play Services is a required dependency.  
 - The device must be MDM enrolled.
 
@@ -57,8 +56,8 @@ Custom notification messages include a short title and a message body of 500 cha
 - You can send notifications to a single device. Instead of using groups, you select a device and then use a remote [device action](device-management.md#available-device-actions) to send the custom notification.  
 
 **Delivery**:  
-- Intune sends messages to the Company Portal app that's installed on a device. The Company Portal app creates the push notification on the device. Users don't need to be signed-in to the app for the notification to be pushed on the device. 
-- Intune and the Company Portal app can’t guarantee delivery of a custom notification. Custom notifications might show up after several hours of delay, if at all, so they shouldn't be used for urgent messages.  
+- Intune sends messages to the users' Company Portal app or the Microsoft Intune app, which then creates the push notification. Users don't need to be signed into the app for the notification to be pushed on the device.  
+- Intune, as well as the Company Portal app and the Microsoft Intune app, can’t guarantee delivery of a custom notification. Custom notifications might show up after several hours of delay, if at all, so they shouldn't be used for urgent messages.  
 - Custom notification messages from Intune appear on devices as standard push notifications. If the Company Portal app is open on an iOS device when it receives the notification, the notification displays in the app instead of being a push notification.  
 - Custom notifications can be visible on lock screens on both iOS and Android devices depending on device settings.  
 - On Android devices, other apps might have access to the data in your custom notifications. Don't use them for sensitive communications.  
@@ -103,7 +102,7 @@ Intune processes the message immediately. The only confirmation that the message
 
 ## Receive a custom notification  
 
-On a device, users see custom notification messages that are sent by Intune as a standard push notification from the Company Portal app. These notifications are similar to the push notifications users receive from other apps on the device.  
+On a device, users see custom notification messages that are sent by Intune as a standard push notification from the Company Portal app or the Microsoft Intune app. These notifications are similar to the push notifications users receive from other apps on the device.  
 
 On iOS devices, if the Company Portal app is open when the notification is received, the notification displays in the app instead of being a push notification.  
 
