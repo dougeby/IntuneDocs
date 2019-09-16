@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -53,29 +53,29 @@ For more information on AirPrint, see [About AirPrint](https://support.apple.com
 
 Applies to:
 
-- iOS
-- iPadOS
-- macOS
+- iOS 7.0 and newer
+- iPadOS 13.0 and newer
+- macOS 10.10 and newer
 
-## App Notifications
+## App notifications
 
-Choose how apps on your iOS and iPad devices receive notifications. For example, from Intune, send app notifications so they show in the notification center, on the lock screen, or play a sound.
+Choose how apps on your iOS and iPad devices receive notifications. For example, from Intune, send app notifications so they show in the notification center, show on the lock screen, or play a sound.
 
-For a list of the settings you can configure in Intune, see [App notifications on iOS](ios-device-features-settings.md#app-notifications-settings).
+For a list of the settings you can configure in Intune, see [App notifications on iOS](ios-device-features-settings.md#app-notifications).
 
 For more information on this feature, see [Notifications](https://developer.apple.com/notifications/) on Apple's web site.
 
 Applies to:
 
 - iOS 9.3 and newer
-- iPadOS
+- iPadOS 13.0 and newer
 
 ## Associated domains
 
-Associated domains allow you to create a relationship between your domain, such as `contoso.com`, and your apps. This feature allows you to:
+Associated domains allow you to create a relationship between your domains, such as `contoso.com`, and your apps. This feature allows you to:
 
 - Share data and sign in credentials between apps and websites in your organization.
-- Use app features that are based on your website, such as a password. Use this feature with single sign-on app extension, universal links, and password autofill.
+- Use app features that are based on your website, such as single sign-on app extension, universal links, and password autofill.
 
   For example, create an associated domain to allow password autofill to recommend credentials, such as a password, for websites associated with your app.
 
@@ -87,34 +87,34 @@ Applies to:
 
 - macOS 10.15 and newer
 
-## Home Screen Layout
+## Home screen layout
 
 These settings configure the app layout and folders on the dock and home screens on iOS and iPadOS devices. You can:
 
 - Use the **Dock** settings to add apps or folders to the screen. For example, show Safari and the Mail app on the device dock.
 - Add **Pages** you want shown on the home screen, and the apps you want shown on each page. For example, add a **Contoso** page, and add the Settings app on this page.
 
-For a list of the settings you can configure in Intune, see [Home screen layout on iOS](ios-device-features-settings.md#home-screen-layout-settings).
+For a list of the settings you can configure in Intune, see [Home screen layout on iOS](ios-device-features-settings.md#home-screen-layout).
 
 Applies to:
 
-- iOS 9.3 or newer
-- iPadOS
+- iOS 9.3 and newer
+- iPadOS 13.0 and newer
 
-## Lock Screen Message
+## Lock screen message
 
 Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message, and show asset tag information.
 
-For a list of the settings you can configure in Intune, see [Lock screen message settings on iOS](ios-device-features-settings.md#lock-screen-message-settings).
+For a list of the settings you can configure in Intune, see [Lock screen message settings on iOS](ios-device-features-settings.md#lock-screen-message).
 
 For more information on Lock Screen Message, see [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) on Apple's web site.
 
 Applies to:
 
 - iOS 9.3 and newer
-- iPadOS
+- iPadOS 13.0 and newer
 
-## Login Items
+## Login items
 
 Use this feature to choose the apps, custom apps, files, and folders that open when users sign in to the devices. 
 
@@ -122,9 +122,9 @@ For a list of the settings you can configure in Intune, see [Login items on macO
 
 Applies to:
 
-- macOS
+- macOS 10.13 and newer
 
-## Login Window
+## Login window
 
 Control the appearance of the login screen and functions available to users before they sign in. For example, add a banner with a custom message, choose if the sleep button is shown, and more.
 
@@ -132,9 +132,9 @@ For a list of the settings you can configure in Intune, see [Login window on mac
 
 Applies to:
 
-- macOS
+- macOS 10.7 and newer
 
-## Single Sign On
+## Single sign-on
 
 Most Line of Business (LOB) apps require some level of user authentication to support security. In many cases, the authentication requires the user to enter the same credentials repeatedly. To improve the user experience, developers can create apps that use single sign-on (SSO). Using single sign-on reduces the number of times a user must enter credentials.
 
@@ -145,61 +145,61 @@ To use single sign-on, be sure you have:
 
 ![Single Sign On pane](./media/sso-blade.png)
 
-For a list of the settings you can configure in Intune, see [Single sign-on on iOS](ios-device-features-settings.md#single-sign-on-settings).
+For a list of the settings you can configure in Intune, see [Single sign-on on iOS](ios-device-features-settings.md#single-sign-on).
 
 Applies to:
 
 - iOS 7.0 and newer
-- iPadOS
+- iPadOS 13.0 and newer
 
 ## Single sign-on app extension
 
-These settings configure an app extension that enables single sign-on (SSO) for your iOS, iPadOS, and macOS devices. Most Line of Business (LOB) apps and organization websites require some level of secure user authentication. In many cases, authentication requires users to enter the same credentials repeatedly. SSO gives users access to apps and websites after entering their credentials once. After they sign-in, users can access apps and websites automatically, or use Face ID, Touch ID, or Apple passcode.
+These settings configure an app extension that enables single sign-on (SSO) for your iOS, iPadOS, and macOS devices. Most Line of Business (LOB) apps and organization websites require some level of secure user authentication. In many cases, authentication requires users to enter the same credentials repeatedly. SSO gives users access to apps and websites after entering their credentials once. After they sign-in, users can access apps and websites automatically, or use Face ID, Touch ID, or Apple passcode to gain access.
 
-In Intune, use these settings to configure Apple’s built-in Kerberos extension, or configure an SSO app extension created by your organization. The SSO app extension handles authentication for your users. These settings configure credential-type SSO app extensions, which are ideal for challenge-and-response authentication flows. You can choose between a Kerberos-specific credential extension provided by Apple, or use a generic credential extension.
+In Intune, use these settings to configure Apple’s built-in Kerberos extension, or to configure an SSO app extension created by your organization. The SSO app extension handles authentication for your users. These settings configure credential-type SSO app extensions, which are designed for challenge-and-response authentication flows. You can choose between a Kerberos-specific credential extension provided by Apple and a generic credential extension.
 
 For a list of the settings you can configure in Intune, see [iOS SSO app extension](ios-device-features-settings.md#single-sign-on-app-extension) and [macOS SSO app extension](macos-device-features-settings.md#single-sign-on-app-extension).
 
 For more information on developing an SSO app extension, watch [Extensible Enterprise SSO](https://developer.apple.com/videos/play/tech-talks/301) on Apple’s web site.
 
 > [!NOTE]
-> The **Single sign-on app extension** feature is different than the **Single Sign On** feature:
+> The **Single sign-on app extension** feature is different than the **Single sign-on** feature:
 >
-> 1. The **Single sign-on app extension** settings apply to iPadOS and iOS 13.0 (and newer). **Single Sign On** settings apply to iOS 7.0 and newer.
-> 2. A **Single sign-on app extension** handles the authentication in the app. In **Single Sign On**, a specific app handles the authentication.
-> 3. When using the **Single sign-on app extension**, users sign in to apps and websites with Face ID, Touch ID, or Apple’s pincode or passcode. When using **Single Sign On**, users sign in to apps and websites using another app.
+> - The **Single sign-on app extension** settings apply to iPadOS 13.0 (and newer) and iOS 13.0 (and newer). **Single sign-on** settings apply to iPadOS 13.0 (and newer) and iOS 7.0 and newer.
+> - A **Single sign-on app extension** handles the authentication with the operating system. In **Single sign-on**, a specific app handles the authentication.
+> - When using the **Single sign-on app extension**, users sign in to apps and websites silently, or with Face ID, Touch ID, or Apple’s pincode or passcode. When using **Single sign-on**, users sign in to apps and websites using another app.
 >
 >    The **Single sign-on app extension** uses the Apple operating system to authenticate. So, it may provide a better end user experience.
 >
-> 4. From a development perspective, the **Single sign-on app extension** can use any type of credential authentication. With **Single Sign On**, you can only use Kerberos authentication.  
+> - From a development perspective, the **Single sign-on app extension** can use any type of credential SSO authentication. With **Single sign-on**, you can only use Kerberos SSO authentication.  
 
 Applies to:
 
 - iOS 13.0 and newer
-- iPadOS
-- macOS Catalina 10.15 and later
+- iPadOS 13.0 and newer
+- macOS 10.15 and newer
 
 ## Wallpaper
 
 Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For example, use Intune to add a company logo to the lock screen on your devices.
 
-For a list of the settings you can configure in Intune, see [Wallpaper on iOS](ios-device-features-settings.md#wallpaper-settings).
+For a list of the settings you can configure in Intune, see [Wallpaper on iOS](ios-device-features-settings.md#wallpaper).
 
 Applies to:
 
 - iOS
-- iPadOS
+- iPadOS 13.0 and newer
 
-## Web Content Filter
+## Web content filter
 
 These settings can use Apple’s built-in AutoFilter algorithm to evaluate web pages, and block adult content and adult language. You can also create a list of allowed web links and restricted web links. For example, you can allow only `contoso` web sites to open.
 
-For a list of the settings you can configure in Intune, see [Web content filter on iOS](ios-device-features-settings.md#web-content-filter-settings).
+For a list of the settings you can configure in Intune, see [Web content filter on iOS](ios-device-features-settings.md#web-content-filter).
 
 Applies to:
 
-- iOS
-- iPadOS
+- iOS 7.0 and newer
+- iPadOS 13.0 and newer
 
 ## Create a device profile
 
