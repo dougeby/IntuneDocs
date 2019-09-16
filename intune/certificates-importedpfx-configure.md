@@ -5,7 +5,7 @@ keywords:
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -71,7 +71,7 @@ When you use Intune to deploy an **imported PFX certificate** to a user, there a
 
    ![PFX Certificate Connector for Microsoft Intune download](media/certificates-importedpfx-configure/download-imported-pfxconnector.png)
 
-2. Follow the *Steps to  install connector for Imported PFX certificates* to download the PFX Certificate connector for Microsoft Intune to a location that's accessible from the server where you're going to install the connector.
+2. Follow the guidance to download the *PFX Certificate Connector for Microsoft Intune* to a location that's accessible from the server where you're going to install the connector.
 3. After the download completes, sign in to the server and run the installer (PfxCertificateConnectorBootstrapper.exe).  
    - When you accept the default installation location, the connector installs to `Program Files\Microsoft Intune\PFXCertificateConnector`.
    - The connector service runs under the local system account. If a proxy is required for internet access, confirm that the local service account can access the proxy settings on the server.
@@ -131,7 +131,7 @@ The PowerShell module provides methods to create a key using Windows cryptograph
 
 #### To use a hardware security module (HSM)  
 
-You can use a hardware security module (HSM) to generate and store the public/private key pair. See the HSM provider's documentation for more information.
+You can use a hardware security module (HSM) to generate and store the public/private key pair. For more information, see the HSM provider's documentation.
 
 ### Import PFX Certificates 
 
