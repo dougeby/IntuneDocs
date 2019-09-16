@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/07/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority:
@@ -41,7 +41,7 @@ This article describes OEMConfig, lists the prerequisites, shows how to create a
 
 ## Overview
 
-OEMConfig policies are a special type of device configuration policy similar to [app configuration policy](app-configuration-policies-overview.md). OEMConfig, provided by Android Enterprise, allows OEMs (original equipment manufacturers) and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way. [Learn more about OEMConfig](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
+OEMConfig policies are a special type of device configuration policy similar to [app configuration policy](app-configuration-policies-overview.md). OEMConfig is a standard defined by the AppConfig community. This standard allows OEMs (original equipment manufacturers) and EMMs (enterprise mobility management) to build and support OEM-specific features in a standardized way. [Learn more about OEMConfig](https://blog.google/products/android-enterprise/oemconfig-supports-enterprise-device-features/).
 
 Historically, EMMs, such as Intune, manually build support for OEM-specific features after they're introduced by the OEM. This approach leads to duplicated efforts and slow adoption.
 
