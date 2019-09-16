@@ -520,7 +520,7 @@
         href: certficates-pfx-configure.md
         displayName: ksp
       - name: Imported PKCS
-        href: certificates-importedpfx-configure.md
+        href: certificates-imported-pfx-configure.md
       - name: Use S/MIME to encrypt email
         href: certificates-s-mime-encryption-sign.md
       - name: Use third-party certificate authority with SCEP

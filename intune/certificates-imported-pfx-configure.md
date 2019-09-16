@@ -67,9 +67,9 @@ When you use Intune to deploy an **imported PFX certificate** to a user, there a
 
 ## Download, install, and configure the PFX Certificate Connector for Microsoft Intune
 
-1. In the [[Intune](https://go.microsoft.com/fwlink/?linkid=2090973) portal, select **Device configuration** > **Certification Connectors** > **Add**
+1. In the [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) portal, select **Device configuration** > **Certification Connectors** > **Add**
 
-   ![PFX Certificate Connector for Microsoft Intune download](media/certificates-importedpfx-configure/download-imported-pfxconnector.png)
+   ![PFX Certificate Connector for Microsoft Intune download](media/certificates-imported-pfx-configure/download-imported-pfxconnector.png)
 
 2. Follow the guidance to download the *PFX Certificate Connector for Microsoft Intune* to a location that's accessible from the server where you're going to install the connector.
 3. After the download completes, sign in to the server and run the installer (PfxCertificateConnectorBootstrapper.exe).  
@@ -96,13 +96,13 @@ To make use of the PowerShell cmdlets, you build the project yourself using Visu
 
 1. Go to the root of the [Intune-Resource-Access](https://github.com/microsoft/Intune-Resource-Access) repository on GitHub, and then either download or clone the repository with Git to your machine.
 
-   ![GitHub download button](media/certificates-importedpfx-configure/github-download.png)
+   ![GitHub download button](media/certificates-imported-pfx-configure/github-download.png)
 
 2. Go to `.\Intune-Resource-Access-develop\src\PFXImportPowershell\` and open the project with Visual Studio using the file **PFXImportPS.sln**.
 3. On the top, change from **Debug** to **Release**.
 4. Go to **Build** and select **Build PFXImportPS**. After a few moments you'll see the **Build succeeded** confirmation appear at the bottom left of Visual Studio.
 
-   ![Visual Studio Build option](media/certificates-importedpfx-configure/vs-build-release.png)
+   ![Visual Studio Build option](media/certificates-imported-pfx-configure/vs-build-release.png)
 
 5. The build process creates a new folder with the PowerShell Module at `.\Intune-Resource-Access-develop\src\PFXImportPowershell\PFXImportPS\bin\Release`.
 
@@ -139,19 +139,17 @@ The following process uses the PowerShell cmdlets as an example of how to import
 
 Options include:  
 - Intended Purpose (groups certificates together based on a tag):  
-
-  0. unassigned
-  1. smimeEncryption
-  2. smimeSigning
+  - unassigned
+  - smimeEncryption
+  - smimeSigning
 
 
 - Padding Scheme:  
-
-  1. pkcs1
-  2. oaepSha1
-  3. oaepSha256
-  4. oaepSha384
-  5. oaepSha512
+  - pkcs1
+  - oaepSha1
+  - oaepSha256
+  - oaepSha384
+  - oaepSha512
 
 Select the Key Storage Provider that matches the provider you used to create the key.
 
