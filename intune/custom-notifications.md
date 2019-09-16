@@ -29,27 +29,33 @@ ms.collection: M365-identity-device-management
 
 # Send custom notifications in Intune  
 
-Use Microsoft Intune to send custom notifications to the users of managed iOS and Android devices. These messages appear as standard push notifications from the Company Portal app and from the Microsoft Intune app on a user’s device, just as notifications from other applications on the device appear. Intune custom notifications aren’t supported by Windows devices.   
+Use Microsoft Intune to send custom notifications to the users of managed iOS and Android devices. These messages appear as standard push notifications from the Company Portal app and from the Microsoft Intune app on a user’s device, just as notifications from other applications on the device appear. Intune custom notifications aren’t supported by macOS and Windows devices.   
 
 Custom notification messages include a short title and a message body of 500 characters or less. These messages can be customized for any general communication purpose.
 
 ## Common scenarios for sending custom notifications  
 
 - Notify all employees of a change in schedule, such as building closures because of inclement weather.
-- Send a notification to the user of a single device to communicate an urgent request, such as restarting the device to complete installation of an update.  
+- Send a notification to the user of a single device to communicate an urgent request, such as restarting the device to complete installation of an update. 
 
-- Devices must have the Company Portal app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app to send push notifications. The Company Portal will prompt users to permit notifications anytime it's installed or updated.  
-=======
+## Considerations for using custom notifications
+
+**Device configuration** 
+
 - Devices must have the Company Portal app or the Microsoft Intune app installed before users can receive custom notifications. They must also have configured permissions to allow the Company Portal app or the Microsoft Intune app to send push notifications. If needed, the Company Portal app and the Microsoft Intune app may prompt users to permit notifications.  
->>>>>>> 9d5e752c71c0b30a5d0cafefbd3410a21de7b1e2
 - On Android, Google Play Services is a required dependency.  
 - The device must be MDM enrolled.
+
+**Permissions**:
+- To send notifications to groups, your account must have the following RBAC permission in Intune: *Organization* > **Update**.
+- To send notifications to a device, your account must have the following RBAC permission in Intune: *Remote tasks* > **Send custom notifications**.
 
 **Creating notifications**:  
 - To create a message, use an account that is assigned an Intune role that includes the **Update** permission for **Organization**. To assign permissions to a user, see [Role assignments](role-based-access-control.md#role-assignments)  
 - Custom notifications are limited to 50-character titles and 500-character messages.  
 - Intune doesn’t save sent messages. To resend a message, you must recreate that message.  
-- You can only send up to 25 messages per hour. This restriction is at the tenant level.  
+- You can only send up to 25 messages to groups per hour. This restriction is at the tenant level. This limitation doesn't apply when sending notifications to individuals.
+- When sending messages to individual devices, you can only send up to 10 messages per hour to the same device. 
 - You can send notifications to multiple users or devices by assigning the notification to groups. When using groups, each notification can directly target up to 25 groups. Nested groups don't count against this total.  
 
   Groups can include users or devices, but messages are sent only to users, and to each iOS or Android device that the user has registered.  
