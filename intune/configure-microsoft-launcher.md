@@ -48,13 +48,13 @@ There are two methods that you can use to define configuration settings for Mana
 
 If you add properties with **Configuration Designer**, you can automatically convert these properties to JSON by selecting **Enter JSON data** from the **Configuration settings format** dropdown list as shown below.
 
-    ![Configuration settings format - Use configuration designer](./media/configure-microsoft-launcher/configure-microsoft-launcher-01.png)
+   ![Configuration settings format - Use configuration designer](./media/configure-microsoft-launcher/configure-microsoft-launcher-01.png)
 
 ## Using Configuration Designer
 
 Configuration designer allows you to select pre-populated settings and their associated values.
 
-    ![Configuration settings format - Enter JSON data](./media/configure-microsoft-launcher/configure-microsoft-launcher-02.png)
+   ![Configuration settings format - Enter JSON data](./media/configure-microsoft-launcher/configure-microsoft-launcher-02.png)
 
 The following table lists the Microsoft Launcher available configuration keys, value types, default values, and descriptions. The description provides the expected device behavior based on the selected values. Configuration keys that are disabled in Configuration Designer are not listed in the table.
 
@@ -72,7 +72,7 @@ The following table lists the Microsoft Launcher available configuration keys, v
 
 Enter JSON data to configure all available settings for Microsoft Launcher, as well as the settings disabled in **Configuration Designer**, as shown below.
 
-    ![Configuration Designer - JSON data](./media/configure-microsoft-launcher/configure-microsoft-launcher-03.png)
+   ![Configuration Designer - JSON data](./media/configure-microsoft-launcher/configure-microsoft-launcher-03.png)
 
 In addition to the list of configurable settings listed in the Configuration Designer table (above), the following table provides the configuration keys you can only configure via JSON data.
 

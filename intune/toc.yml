@@ -624,12 +624,24 @@
         href: app-configuration-policies-use-ios.md
       - name: Android managed devices
         href: app-configuration-policies-use-android.md
-      - name: Configure the Managed Home Screen
-        href: app-configuration-managed-home-screen-app.md        
-      - name: Managed apps
+      - name: Configure managed apps without enrollment
         href: app-configuration-policies-managed-app.md
       - name: Use iOS app provisioning profiles
         href: app-provisioning-profile-ios.md
+      - name: Configure specific apps
+        items:
+        - name: Configure the Managed Home Screen
+          href: app-configuration-managed-home-screen-app.md 
+        - name: Configure the Company Portal
+          href: company-portal-app.md
+        - name: Configure the Managed Browser
+          href: app-configuration-managed-browser.md
+        - name: Configure Microsoft Launcher
+          href: configure-microsoft-launcher.md
+        - name: Configure Microsoft Edge
+          href: manage-microsoft-edge.md        
+        - name: Configure Outlook
+          href: app-configuration-policies-outlook.md     
       - name: Volume-purchased apps and books
         items:
         - name: Manage VPP apps and books
@@ -641,14 +653,6 @@
           href: windows-store-for-business.md
         - name: iOS eBooks
           href: vpp-ebooks-ios.md
-      - name: Configure the Company Portal
-        href: company-portal-app.md
-      - name: Configure the Managed Browser
-        href: app-configuration-managed-browser.md
-      - name: Configure Microsoft Edge
-        href: manage-microsoft-edge.md        
-      - name: Configure Outlook
-        href: app-configuration-policies-outlook.md
     - name: Protect apps
       items:
       - name: Selectively wipe apps
