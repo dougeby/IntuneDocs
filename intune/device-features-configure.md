@@ -165,13 +165,13 @@ For more information on developing an SSO app extension, watch [Extensible Enter
 > [!NOTE]
 > The **Single sign-on app extension** feature is different than the **Single sign-on** feature:
 >
-> 1. The **Single sign-on app extension** settings apply to iPadOS 13.0 (and newer) and iOS 13.0 (and newer). **Single sign-on** settings apply to iPadOS 13.0 (and newer) and iOS 7.0 and newer.
-> 2. A **Single sign-on app extension** handles the authentication with the operating system. In **Single sign-on**, a specific app handles the authentication.
-> 3. When using the **Single sign-on app extension**, users sign in to apps and websites silently, or with Face ID, Touch ID, or Apple’s pincode or passcode. When using **Single sign-on**, users sign in to apps and websites using another app.
+> - The **Single sign-on app extension** settings apply to iPadOS 13.0 (and newer) and iOS 13.0 (and newer). **Single sign-on** settings apply to iPadOS 13.0 (and newer) and iOS 7.0 and newer.
+> - A **Single sign-on app extension** handles the authentication with the operating system. In **Single sign-on**, a specific app handles the authentication.
+> - When using the **Single sign-on app extension**, users sign in to apps and websites silently, or with Face ID, Touch ID, or Apple’s pincode or passcode. When using **Single sign-on**, users sign in to apps and websites using another app.
 >
 >    The **Single sign-on app extension** uses the Apple operating system to authenticate. So, it may provide a better end user experience.
 >
-> 4. From a development perspective, the **Single sign-on app extension** can use any type of credential SSO authentication. With **Single sign-on**, you can only use Kerberos SSO authentication.  
+> - From a development perspective, the **Single sign-on app extension** can use any type of credential SSO authentication. With **Single sign-on**, you can only use Kerberos SSO authentication.  
 
 Applies to:
 
