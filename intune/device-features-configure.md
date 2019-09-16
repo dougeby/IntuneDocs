@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/12/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -61,7 +61,7 @@ Applies to:
 
 Choose how apps on your iOS and iPad devices receive notifications. For example, from Intune, send app notifications so they show in the notification center, on the lock screen, or play a sound.
 
-For a list of the settings you can configure in Intune, see [App notifications on iOS](ios-device-features-settings.md#app-notifications-settings).
+For a list of the settings you can configure in Intune, see [App notifications on iOS](ios-device-features-settings.md#app-notifications).
 
 For more information on this feature, see [Notifications](https://developer.apple.com/notifications/) on Apple's web site.
 
@@ -94,7 +94,7 @@ These settings configure the app layout and folders on the dock and home screens
 - Use the **Dock** settings to add apps or folders to the screen. For example, show Safari and the Mail app on the device dock.
 - Add **Pages** you want shown on the home screen, and the apps you want shown on each page. For example, add a **Contoso** page, and add the Settings app on this page.
 
-For a list of the settings you can configure in Intune, see [Home screen layout on iOS](ios-device-features-settings.md#home-screen-layout-settings).
+For a list of the settings you can configure in Intune, see [Home screen layout on iOS](ios-device-features-settings.md#home-screen-layout).
 
 Applies to:
 
@@ -105,7 +105,7 @@ Applies to:
 
 Use these settings to show a custom message or text on the sign in window and lock screen. For example, you can enter an "If lost, return to ..." message, and show asset tag information.
 
-For a list of the settings you can configure in Intune, see [Lock screen message settings on iOS](ios-device-features-settings.md#lock-screen-message-settings).
+For a list of the settings you can configure in Intune, see [Lock screen message settings on iOS](ios-device-features-settings.md#lock-screen-message).
 
 For more information on Lock Screen Message, see [LockScreenMessage](https://developer.apple.com/documentation/devicemanagement/lockscreenmessage) on Apple's web site.
 
@@ -145,7 +145,7 @@ To use single sign-on, be sure you have:
 
 ![Single Sign On pane](./media/sso-blade.png)
 
-For a list of the settings you can configure in Intune, see [Single sign-on on iOS](ios-device-features-settings.md#single-sign-on-settings).
+For a list of the settings you can configure in Intune, see [Single sign-on on iOS](ios-device-features-settings.md#single-sign-on).
 
 Applies to:
 
@@ -183,7 +183,7 @@ Applies to:
 
 Add a custom .png, .jpg, or .jpeg image to your supervised iOS devices. For example, use Intune to add a company logo to the lock screen on your devices.
 
-For a list of the settings you can configure in Intune, see [Wallpaper on iOS](ios-device-features-settings.md#wallpaper-settings).
+For a list of the settings you can configure in Intune, see [Wallpaper on iOS](ios-device-features-settings.md#wallpaper).
 
 Applies to:
 
@@ -194,7 +194,7 @@ Applies to:
 
 These settings can use Apple’s built-in AutoFilter algorithm to evaluate web pages, and block adult content and adult language. You can also create a list of allowed web links and restricted web links. For example, you can allow only `contoso` web sites to open.
 
-For a list of the settings you can configure in Intune, see [Web content filter on iOS](ios-device-features-settings.md#web-content-filter-settings).
+For a list of the settings you can configure in Intune, see [Web content filter on iOS](ios-device-features-settings.md#web-content-filter).
 
 Applies to:
 
