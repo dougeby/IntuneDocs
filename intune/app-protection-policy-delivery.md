@@ -1,7 +1,7 @@
 ---
 # required metadata
 
-title: Undertastand app protection policy delivery and timing
+title: Understand app protection policy delivery and timing
 titleSuffix: Microsoft Intune
 description: Learn the different deployment windows for app protection policies to understand when changes should appear on your end user devices.
 keywords:
