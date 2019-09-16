@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/25/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority:
@@ -45,6 +45,11 @@ Your company may use Zebra devices for retail, on the factory floor, and more. F
 
 Using Intune, you can enroll Zebra devices to deploy your line-of-business apps to the devices. "Device configuration" profiles let you create MX profiles to manage your Zebra-specific settings.
 
+> [!NOTE]
+> By default, the Zebra MX APIs aren't locked down on devices. Before a device enrolls in Intune, it's possible the device can be compromised in a malicious manner. When the device is in a clean state, we suggest you lock down MX APIs using Access Manager (AccessMgr). For example, you can choose that only the Company Portal app and apps you trust are allowed to call MX APIs.
+>
+> For more information, see [Locking down your device](https://developer.zebra.com/community/home/blog/2017/04/11/locking-down-your-device) on Zebra's web site.
+
 ## Before you begin
 
 - Be sure you have the latest version of the StageNow desktop app from Zebra Technologies.
@@ -53,7 +58,7 @@ Using Intune, you can enroll Zebra devices to deploy your line-of-business apps 
 
 ## Step 1: Install the latest Company Portal app
 
-On the device, go to the Google Play store, and download and install the Intune Company Portal app from Microsoft. When installed from Google Play, the Company Portal app gets updates and fixes automatically.
+On the device, open the Google Play store. Download and install the Intune Company Portal app from Microsoft. When installed from Google Play, the Company Portal app gets updates and fixes automatically.
 
 If Google Play isn't available, download the [Microsoft Intune Company Portal for Android](https://www.microsoft.com/download/details.aspx?id=49140) (opens another Microsoft website), and [sideload it](#sideload-the-company-portal-app) (in this article). When installed this way, the app doesn't receive updates or fixes automatically. Be sure to regularly update and patch the app manually.
 
