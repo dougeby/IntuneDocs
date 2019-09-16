@@ -8,7 +8,7 @@ keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 08/12/2019
+ms.date: 09/09/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -51,7 +51,7 @@ The Microsoft Intune app for Android has been updated with the following improve
     <img src="./media/intune-app-android-device-profile.png" alt="Screenshot of Microsoft Intune app for Android - User Profile" width="300">   
 
     Notifications and bottom navigation example:<br>
-    <img src="./media/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notfication" width="300">   
+    <img src="./media/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notification" width="300">   
 
 
 ## Week of June 24, 2019  
