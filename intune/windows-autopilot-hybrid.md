@@ -111,14 +111,14 @@ The organizational unit that's granted the rights to create computers must match
 
 The Intune Connector for Active Directory must be installed on a computer that's running Windows Server 2016 or later. The computer must also have access to the internet and your Active Directory. To increase scale and availability or to support multiple Active Directory domains, you can install multiple connectors in your environment. We recommend installing the Connector on a server that's not running any other Intune connectors.
 
-1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)** > **Add connector**. 
+1. In [Intune](https://aka.ms/intuneportal), select **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory** > **Add**. 
 2. Follow the instructions to download the Connector.
 3. Open the downloaded Connector setup file, *ODJConnectorBootstrapper.exe*, to install the Connector.
 4. At the end of the setup, select **Configure**.
 5. Select **Sign In**.
 6. Enter the user Global Administrator or Intune Administrator role credentials.  
    The user account must have an assigned Intune license.
-7. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory (Preview)**, and then confirm that the connection status is **Active**.
+7. Go to **Device enrollment** > **Windows enrollment** > **Intune Connector for Active Directory**, and then confirm that the connection status is **Active**.
 
 > [!NOTE]
 > After you sign in to the Connector, it might take a couple of minutes to appear in [Intune](https://aka.ms/intuneportal). It appears only if it can successfully communicate with the Intune service.
