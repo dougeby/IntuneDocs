@@ -29,7 +29,7 @@ ms.reviewer: karthig
 
 # Windows 10 (and later) settings to protect devices using Intune  
 
-[!INCLUDE [azure_portal](./includes/azure_portal.md)  
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]  
 
 Microsoft Intune includes many settings to help protect your devices. This article describes all the settings you can enable and configure in Windows 10 and newer devices. These settings are created in an endpoint protection configuration profile in Intune to control security, including BitLocker and Windows Defender.  
 
