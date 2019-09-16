@@ -16,7 +16,7 @@ ms.assetid:
 
 # optional metadata
 
-#ROBOTS:
+ROBOTS: NOINDEX 
 
 #audience:
 #ms.devlang:

@@ -68,6 +68,10 @@ The Microsoft Intune app for Android has been updated with the following improve
 - Added the display of actionable notifications in the app for the user, such as the need to update their device settings.
 - Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
 
+#### For iOS devices, customize the enrollment process privacy screen of the Company Portal <!-- 4394993 -->
+Using Markdown, you can customize the Company Portal's privacy screen that end users see during iOS enrollment. Specifically, you'll be able to customize the list of things that your organization can't see or do on the device. For more information, see [How to configure the Intune Company Portal app](company-portal-app.md#privacy-statement-customization).
+
+
 ## Week of September 2, 2019
 
 ### Monitor and troubleshoot
@@ -231,8 +235,7 @@ You can set Device Enrollment Program profiles to skip the following Setup Assis
 For more information about Setup Assistant customization, see [Create an Apple enrollment profile for iOS ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) and [Create an Apple enrollment profile for macOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### Add a user column to the Autopilot device CSV upload process <!-- 3823054 -->
-You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. The new format for the rows in the CSV looks like this:
-serial-number, windows-product-id, hardware-hash, optional-group-tag, optional-assigned-user. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot.md).
+You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot.md).
 
 
 ### Device management
