@@ -259,18 +259,7 @@
     - name: Troubleshoot device enrollment
       href: troubleshoot-device-enrollment-in-intune.md
       displayName: sso
-  - name: Set device compliance
-    items:
-    - name: Compliance overview
-      href: device-compliance-get-started.md    
-    - name: Create a policy
-      href: create-compliance-policy.md
-    - name: Location-based compliance
-      href: use-network-locations.md
-    - name: Actions for noncompliance
-      href: actions-for-noncompliance.md
-    - name: Monitor device compliance
-      href: compliance-policy-monitor.md
+
   - name: Configure device settings
     items:
     - name: Device configuration overview
