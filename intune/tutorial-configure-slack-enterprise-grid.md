@@ -81,7 +81,6 @@ Add an app configuration policy for the Slack for EMM iOS. App configuration pol
 5. Select **Associated app**.
 6. In the search bar, enter "Slack for EMM" and select the app.
 7. Click **OK**, and then select **Configuration settings**. 
-    - For information on configuration keys and their values, consult the documentation on the “Technical” tab of [Slack’s AppConfig web page](https://www.appconfig.org/company/slack/).
 8. Select **OK**, and then select **Add**.
 9. In the search bar, enter "Slack app configuration policy test" and select the policy you just added.
 10. From Manage, select **Assignments**.
