@@ -10,6 +10,8 @@
   items:
   - name: Create a device compliance policy
     href: quickstart-set-password-length-android.md
+  - name: Send notifications to noncompliant devices
+    href: quickstart-send-notification.md        
 - name: Tutorials
   items:
   - name: Protect email on managed devices
@@ -194,168 +196,44 @@
       href: windows-update-compliance-reports.md         
     - name: iOS update policies
       href: software-updates-ios.md 
+  - name: Troubleshoot
+    items:
+    - name: Help users troubleshoot problems
+      href: help-desk-operators.md  
+    - name: Audit logs for Intune activities
+      href: monitor-audit-logs.md
+    - name: Review logs with Azure Monitor
+      href: review-logs-using-azure-monitor.md
+
+    - name: Troubleshoot policies and profiles
+      href: troubleshoot-policies-in-microsoft-intune.md        
+
+    - name: Troubleshoot Conditional Access
+      href: troubleshoot-conditional-access.md
+    - name: Troubleshoot certificate connector
+      href: troubleshoot-certificate-connector-events.md
+    - name: Troubleshoot Exchange connectors
+      href: troubleshoot-exchange-connector.md
 
 - name: Reference
   items:
-  - name: Settings lists
+  - name: Compliance policy settings
     items:
-    - name: Android
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-android.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-android.md
-        - name: Email
-          href: email-settings-android.md
-        - name: VPN
-          href: vpn-settings-android.md
-        - name: Wi-Fi
-          href: wi-fi-settings-android.md
-        - name: Custom
-          href: custom-settings-android.md
-          items:
-          - name: Allow/block apps for Samsung Knox Standard
-            href: samsung-knox-apps-allow-block.md
-    - name: Android Enterprise
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-android-for-work.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-android-for-work.md
-        - name: Email
-          href: email-settings-android-enterprise.md
-        - name: VPN
-          href: vpn-settings-android-enterprise.md
-        - name: Wi-Fi
-          href: wi-fi-settings-android-enterprise.md
-        - name: Custom
-          href: custom-settings-android-for-work.md
-    - name: iOS
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-ios.md
-      - name: Configuration profile settings
-        items:
-        - name: Device features
-          href: ios-device-features-settings.md
-        - name: Device restrictions
-          href: device-restrictions-ios.md
-        - name: Email
-          href: email-settings-ios.md
-        - name: VPN
-          href: vpn-settings-ios.md
-        - name: Wi-Fi
-          href: wi-fi-settings-ios.md
-        - name: Custom
-          href: custom-settings-ios.md
-        - name: Bundle IDs for built-in apps
-          href: bundle-ids-built-in-ios-apps.md
-    - name: macOS
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-mac-os.md
-      - name: Configuration profile settings
-        items:
-        - name: Device features
-          href: macos-device-features-settings.md
-        - name: Device restrictions
-          href: device-restrictions-macos.md
-        - name: Endpoint protection
-          href: endpoint-protection-macos.md
-        - name: VPN
-          href: vpn-settings-macos.md
-        - name: Wi-Fi
-          href: wi-fi-settings-macos.md
-        - name: Extensions
-          href: kernel-extensions-settings-macos.md
-        - name: Custom
-          href: custom-settings-macos.md
-    - name: Windows 10 and later
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows.md
-      - name: Configuration profile settings
-        items:
-        - name: Delivery optimization settings
-          href: delivery-optimization-settings.md
-        - name: Device restrictions
-          href: device-restrictions-windows-10.md
-        - name: Device restrictions (Windows 10 Team)
-          href: device-restrictions-windows-10-teams.md
-        - name: Edition upgrade and mode switch
-          href: edition-upgrade-windows-settings.md
-        - name: Email
-          href: email-settings-windows-10.md
-        - name: Endpoint protection
-          href: endpoint-protection-windows-10.md
-        - name: Identity protection
-          href: identity-protection-windows-settings.md
-        - name: Kiosk
-          href: kiosk-settings-windows.md
-        - name: VPN
-          href: vpn-settings-windows-10.md
-        - name: Wi-Fi
-          href: wi-fi-settings-windows.md
-        - name: Secure assessment
-          href: education-settings-windows.md
-        - name: Shared multi-user device
-          href: shared-user-device-settings-windows.md
-        - name: Custom
-          href: custom-settings-windows-10.md
-      - name: Security baselines
-        items: 
-        - name: Windows 10 MDM baseline settings
-          href: security-baseline-settings-mdm-all.md
-        - name: Microsoft Defender ATP baseline settings 
-          href: security-baseline-settings-defender-atp.md
-      - name: Windows update settings
-        href: windows-update-settings.md
-    - name: Windows Holographic for Business
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows.md#windows-holographic-for-business
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-windows-holographic.md
-        - name: Shared multi-user device
-          href: shared-user-device-settings-windows-holographic.md 
-        - name: Edition upgrade and mode switch
-          href: holographic-upgrade.md
-        - name: Kiosk
-          href: kiosk-settings-holographic.md
-        - name: Custom
-          href: custom-settings-windows-holographic.md
-    - name: Windows 8.1
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows-8-1.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-windows-8-1.md
-        - name: VPN
-          href: vpn-settings-windows-8-1.md
-        - name: Wi-Fi import
-          href: wi-fi-settings-import-windows-8-1.md
-    - name: Windows Phone 8.1
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows-8-1.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-windows-phone-8-1.md
-        - name: Email
-          href: email-settings-windows-phone-8-1.md
-        - name: VPN
-          href: vpn-settings-windows-phone-8-1.md
-        - name: Custom
-          href: custom-settings-windows-phone-8-1.md
+    - name: Compliance policy settings - Android
+      href: compliance-policy-create-android.md
+    - name: Compliance policy settings - Android Enterprise
+      href: compliance-policy-create-android-for-work.md
+    - name: Compliance policy settings - iOS
+      href: compliance-policy-create-ios.md
+    - name: Compliance policy settings - macOS
+      href: compliance-policy-create-mac-os.md
+    - name: Compliance policy settings - Windows 10
+      href: compliance-policy-create-windows.md
+    - name: Compliance policy settings - Windows 8.1
+      href: compliance-policy-create-windows-8-1.md
+    - name: Compliance policy settings - Windows Phone 8.1
+      href: compliance-policy-create-windows-8-1.md
+
   - name: Error codes and descriptions
     items:
     - name: Software update errors

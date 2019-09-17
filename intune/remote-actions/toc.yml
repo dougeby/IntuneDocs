@@ -58,3 +58,14 @@
       href: device-sync.md
     - name: Examine device inventory
       href: device-inventory.md
+  - name: Troubleshooting
+    items:
+    - name: Troubleshoot device actions
+      href: troubleshoot-device-actions.md    
+
+- name: Resources
+  items:
+  - name: Scenario implementation guides 
+    items:
+    - name: Reduce help desk costs
+      href: password-reset.md
