@@ -44,7 +44,7 @@ Before you can enable iOS devices, complete the following steps:
 
 ## User-owned iOS devices (BYOD)
 
-You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the App Store, and follow enrollment instructions in the app.
+You can let users enroll their personal devices for Intune management, know as "bring your own device" or BYOD. Once you've completed the prerequisites and assigned users licenses, they can download the Intune Company Portal app from the App Store, and follow enrollment instructions in the app. You can customize the Company Portal privacy statement on iOS devices as explained in [privacy statement customization](company-portal-app.md#privacy-statement-customization).
 
 ## Company-owned iOS devices
 For organizations that buy devices for their users, Intune supports the following iOS company-owned device enrollment methods:
