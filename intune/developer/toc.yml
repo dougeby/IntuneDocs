@@ -161,26 +161,3 @@
         href: help-desk-operators.md
       - name: Review app protection logs
         href: app-protection-policy-settings-log.md
-- name: Reference
-  items:
-    - name: Protect apps with Intune App SDK
-      href: app-sdk.md
-      items:
-      - name: Get started with Intune App SDK
-        href: app-sdk-get-started.md
-      - name: Prepare LOB apps for app protection
-        href: apps-prepare-mobile-application-management.md
-      - name: App Wrapping Tool for iOS
-        href: app-wrapper-prepare-ios.md
-      - name: Intune App SDK for iOS
-        href: app-sdk-ios.md
-      - name: App Wrapping Tool for Android
-        href: app-wrapper-prepare-android.md
-        displayName: dex
-      - name: Intune App SDK for Android
-        href: app-sdk-android.md
-        items:
-        - name: Intune App SDK for Android testing guide
-          href: app-sdk-android-testing-guide.md        
-      - name: Intune App SDK Xamarin Bindings
-        href: app-sdk-xamarin.md
