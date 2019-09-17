@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 08/19/2019
+ms.date: 09/17/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -53,7 +53,7 @@ There are three categories of policy settings: *Data relocation*, *Access requir
 ### Encryption
 | Setting | How to use | Default value |
 |------|----------|-------|
-| **Encrypt Org data** | Choose Require to enable encryption of work or school data in this app.  Intune enforces iOS device encryption to protect app data  while the device is locked.  Applications may optionally encrypt app data using Intune APP SDK encryption.  Intune APP SDK uses iOS cryptography methods to apply 128-bit AES encryption to app data. <br><br> When you enable this setting, the user may be required to set up and use a PIN to access their device. If there's no device PIN and encryption is required, the user is prompted to set a PIN with the message "Your organization has required you to first enable a device PIN to access this app." <br><br> Go to the [official Apple documentation](https://support.apple.com/en-us/HT202739) to see which iOS encryption modules are FIPS 140-2 certified or pending FIPS 140-2 certification. | **Require**  |
+| **Encrypt Org data** | Choose Require to enable encryption of work or school data in this app.  Intune enforces iOS device encryption to protect app data  while the device is locked.  Applications may optionally encrypt app data using Intune APP SDK encryption.  Intune APP SDK uses iOS cryptography methods to apply 256-bit AES encryption to app data. <br><br> When you enable this setting, the user may be required to set up and use a PIN to access their device. If there's no device PIN and encryption is required, the user is prompted to set a PIN with the message "Your organization has required you to first enable a device PIN to access this app." <br><br> Go to the [official Apple documentation](https://support.apple.com/en-us/HT202739) to see which iOS encryption modules are FIPS 140-2 certified or pending FIPS 140-2 certification. | **Require**  |
 
 
 ### Functionality
