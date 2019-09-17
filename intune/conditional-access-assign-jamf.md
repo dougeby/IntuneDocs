@@ -32,50 +32,84 @@ ms.collection: M365-identity-device-management
 
 Applies to: Intune in the Azure portal
 
-You can use Azure Active Directory and Microsoft Intune's Conditional Access policies ensure that your end users are compliant with organizational requirements. You can apply these policies to Macs that are [managed with Jamf Pro](conditional-access-integrate-jamf.md). This requires access to both the Intune and Jamf Pro consoles.
+Create and deploy Conditional Access policies that enforce compliance on your Mac devices with your organizational requirements. Before you can create policies for macOS, you must [integrate Jamf Pro with Intune](conditional-access-integrate-jamf.md). 
+
+The procedures in this article require access to both the Intune and Jamf Pro consoles.
 
 ## Set up device compliance policies in Intune
 
-1. Open Microsoft Azure, then navigate to **Intune** > **Device Compliance** > **Policies**. You can create policies for macOS, including choosing a series of actions (for example, sending warning emails) to noncompliant users and groups.
-2. Select the policy > Assignments. You can include or exclude Azure Active Directory (AD) security groups.
-3. Choose Selected groups to see your Azure AD security groups. Select the user groups you want this policy to apply > Choose Save to deploy the policy to users.
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to**Device Compliance** > **Policies**. 
+2. If you're using a previously created policy, select that policy in the console and then go to the next step of this procedure.  
+   
+   Select **Create Policy** and then specify details for a policy with a *Platform* of **macOS**. Configure *Settings* and *Actions for noncompliance* to meet your organizational requirements, and then select **Create** to save the policy.
 
-You applied the policy to users. The devices used by the users targeted by the policy are evaluated for compliance and marked as compliantfor the setting "Require device to be marked as compliant" in Azure Active Directory.
+3. On the policies *Overview* pane, select **Assignments**. Use the available options to configure which Azure Active Directory (Azure AD) security groups receive this policy.
 
-> [!Note]
+4. When you select **Save**, the policy deploys to the users.  
+
+Policies you deploy target the devices that are used by the assigned users. Those devices are evaluated for compliance. Compliant devices are marked as compliant for the setting "*Require device to be marked as compliant*" in Azure AD.  
+
+> [!NOTE]
 > Intune requires full disk encryption to be compliant.
 
 ## Deploy the Company Portal app for macOS in Jamf Pro
 
-You should deploy the Company Portal app for macOS in Jamf Pro as a background installation following the procedure below:
+Create a policy in Jamf Pro to deploy the Intune Company Portal. This policy deploys the company portal app so that it's available in Jamf Self Service. Create this policy before you create policy in Jamf Pro for users to register devices with Azure AD.  
 
-1. On a macOS device, download the current version of the [Company Portal app for macOS](https://go.microsoft.com/fwlink/?linkid=862280). Do not install it; you need a copy of the app to upload to Jamf Pro.
-2. Open Jamf Pro, then navigate to **Computer management** > **Packages**.
-3. Create a new package with the Company Portal app for macOS, then click **Save**.
+To complete the following procedure, you need access to a macOS device and the Jamf Pro portal. 
+
+### To deploy the company portal app  
+
+1. On a macOS device, download but don't install the current version of the [Company Portal app for macOS](https://go.microsoft.com/fwlink/?linkid=862280). You only need a copy of the app so you can upload the app to Jamf Pro.  
+
+2. Open Jamf Pro and go to **Computer management** > **Packages**.
+
+3. Create a new package with the Company Portal app for macOS, then select **Save**.
+
 4. Open **Computers** > **Policies**, then select **New**.
+
 5. Use the **General** payload to configure settings for the policy. These settings should be:
    - Trigger: select **Enrollment Complete** and **Recurring Check-in**
    - Execution Frequency: select **Once per computer**
+
 6. Select the **Packages** payload and click **Configure**.
+
 7. Click **Add** to select the package with the Company Portal app.
-8. Choose **Install** from the **Action** pop-up menu.
+
+8. Select **Install** from the **Action** pop-up menu.
 9. Configure the settings for the package.
-10. Click the **Scope** tab to specify on which computers the Company Portal app should be installed. Click **Save**. The policy will run scoped devices the next time the selected trigger occurs on the computer and meets the criteria in the **General** payload.
 
-## Create a policy in Jamf Pro to have users register their devices with Azure Active Directory
+10. Select the **Scope** tab to specify on which computers the Company Portal app should install. Select **Save**. The policy runs on scoped devices the next time the selected trigger occurs on the computer and the criteria in the **General** payload is met.
 
-> [!NOTE]
-> You need to [deploy the Company Portal](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) for macOS before going through the next steps.  
+## Create a policy in Jamf Pro to have users register their devices with Azure Active Directory  
 
-End users need to launch the Company Portal app through Jamf Self Service to register the device with Azure AD as a device managed by Jamf Pro. This will require your end users to take action. We recommend that you [contact your end user](end-user-educate.md) through email, Jamf Pro notifications, or any other methods of notifying your end users to click the button in Jamf Self Service.
+After you [deploy the Company Portal](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) for macOS through Jamf Pro Self Service, you can create the Jamf Pro policy that registers a user's device with Azure AD. 
+
+Device registration requires a device user to manually select the Intune Company Portal app from within Jamf Self Service. We recommend you [contact your end users](end-user-educate.md) through email, Jamf Pro notifications, or any other method your organization uses to inform them that they must complete this action to get their devices registered. 
 
 > [!WARNING]
-> The Company Portal app must be launched from Jamf Self Service to begin device registration. <br><br>Launching the Company Portal app manually (e.g., from the Applications or Downloads folders) will not register the device. If an end user launches the Company Portal manually, they will see a warning, 'AccountNotOnboarded'.
+> Launching the Company Portal app manually (such as from the Applications or Downloads folders) won't register the device. If device user launches the Company Portal manually, they'll see a warning, **'AccountNotOnboarded'**.
 
-1. In Jamf Pro, navigate to **Computers** > **Policies**, and create a new policy for device registration.
+### To create the registration policy  
+
+1. In Jamf Pro, go to **Computers** > **Policies**, and then create a new policy for device registration.
+
 2. Configure the **Microsoft Intune Integration** payload, including the trigger and execution frequency.
-3. Click the **Scope** tab, and scope the policy to all targeted devices.
-4. Click the **Self Service** tab to make the policy available in Jamf Self Service. Include the policy in the **Device Compliance** category. Click **Save**.
+
+3. Select the **Scope** tab, and then scope the policy to all targeted devices.
+
+4. Select the **Self Service** tab to make the policy available in Jamf Self Service. Include the policy in the **Device Compliance** category. Click **Save**.
+
+## Validate Intune and Jamf integration  
+
+Use the Jamf Pro console to confirm that communication between Jamf Pro and Microsoft Intune is successful. 
+
+- In Jamf Pro, go to **Settings** > **Global Management** > **Microsoft Intune Integration**, and then select **Test**. 
+
+    The console displays a message with the success or failure of the connection.  
+
+Should the connection test from the Jamf Pro console fail, review the Jamf configuration. 
+
 
 ## Removing a Jamf-managed device from Intune
 
