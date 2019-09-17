@@ -24,12 +24,6 @@
     href: quickstart-create-user.md
   - name: Create a group
     href: quickstart-create-group.md
-  - name: Set up automatic enrollment
-    href: quickstart-setup-auto-enrollment.md
-  - name: Enroll your Windows 10 device
-    href: quickstart-enroll-windows-device.md
-  - name: Create a device compliance policy
-    href: quickstart-set-password-length-android.md
   - name: Send notifications to noncompliant devices
     href: quickstart-send-notification.md  
   - name: Add and assign an app
@@ -38,8 +32,7 @@
     href: quickstart-create-assign-app-policy.md         
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
-  - name: Create an email device profile
-    href: quickstart-email-profile.md
+
 - name: Tutorials
   items:
   - name: Walkthrough Intune in the Azure portal
@@ -169,65 +162,6 @@
       - name: Use scope tags
         href: scope-tags.md
 
-  - name: Configure device settings
-    items:
-    - name: Device configuration overview
-      href: device-profiles.md    
-    - name: Create a profile
-      href: device-profile-create.md
-    - name: Administrative templates
-      href: administrative-templates-windows.md
-    - name: Device features
-      href: device-features-configure.md
-    - name: Restrict device settings and features
-      href: device-restrictions-configure.md
-      displayName: Device restrictions
-    - name: Deliver updates
-      href: delivery-optimization-windows.md
-      displayName: delivery optimization; updates
-    - name: Upgrade editions and S mode
-      href: edition-upgrade-configure-windows-10.md
-    - name: Configure email
-      href: email-settings-configure.md
-    - name: Enable kiosk mode
-      href: kiosk-settings.md
-    - name: Add a VPN
-      href: vpn-settings-configure.md
-      items:
-      - name: Per-app VPN for Android
-        href: android-pulse-secure-per-app-vpn.md
-      - name: Per-App VPN for iOS
-        href: vpn-setting-configure-per-app.md
-    - name: Add a wireless Wi-Fi network
-      href: wi-fi-settings-configure.md
-      displayName: wifi
-      items:
-      - name: Wi-Fi with a pre-shared key
-        href: wi-fi-profile-shared-key.md
-    - name: Extensions on macOS
-      href: kernel-extensions-overview-macos.md
-    - name: Education Take a Test app
-      href: education-settings-configure.md
-    - name: Shared multi-user devices
-      href: shared-user-device-settings.md  
-    - name: Mobility Extensions on Zebra devices
-      href: android-zebra-mx-overview.md
-      displayName: mx
-      items:
-      - name: StageNow logs and common issues
-        href: android-zebra-mx-logs-troubleshoot.md
-    - name: OEMConfig on Android Enterprise
-      href: android-oem-configuration-overview.md
-    - name: Monitor telecom expenses
-      href: telecom-expenses-monitor.md
-    - name: Custom device settings
-      href: custom-settings-configure.md
-    - name: Assign profiles
-      href: device-profile-assign.md
-    - name: Monitor profiles
-      href: device-profile-monitor.md
-    - name: Common questions and answers
-      href: device-profile-troubleshoot.md
 
   - name: Manage apps
     items:

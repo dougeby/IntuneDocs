@@ -6,6 +6,10 @@
     - name: Device protection overview
       href: device-protect.md
       displayName: compliant; noncompliant; mfa 
+- name: Quickstarts
+  items:
+  - name: Create a device compliance policy
+    href: quickstart-set-password-length-android.md
 - name: Tutorials
   items:
   - name: Protect email on managed devices
