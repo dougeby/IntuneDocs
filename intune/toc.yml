@@ -37,10 +37,6 @@
   items:
   - name: Walkthrough Intune in the Azure portal
     href: tutorial-walkthrough-intune-portal.md
-  - name: Protect email on managed devices
-    href: tutorial-protect-email-on-enrolled-devices.md
-  - name: Protect email on unmanaged devices
-    href: tutorial-protect-email-on-unmanaged-devices.md
   - name: Configure Slack to use Intune 
     href: tutorial-configure-slack-enterprise-grid.md    
 - name: Concepts
@@ -531,10 +527,7 @@
           href: vpn-settings-windows-phone-8-1.md
         - name: Custom
           href: custom-settings-windows-phone-8-1.md
-  - name: Error codes and descriptions
-    items:
-    - name: Software update errors
-      href: software-update-agent-error-codes.md
+
   - name: Developer guidance
     items:
     - name: API to add third-party certificate authority
@@ -675,13 +668,7 @@
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
   - name: Scenario implementation guides 
     items:
-    - name: Protect Exchange Online
-      href: exchange-online-protect.md
     - name: Reduce help desk costs
       href: password-reset.md
-    - name: Prevent unauthorized access
-      href: data-outside-protect.md
-    - name: Prevent data leaks on non-managed devices
-      href: data-leak-prevention.md  
   - name: Intune end user documentation  
     href: /intune-user-help/use-managed-devices-to-get-work-done  

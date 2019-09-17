@@ -58,6 +58,8 @@
       href: android-zebra-mx-logs-troubleshoot.md
   - name: OEMConfig on Android Enterprise
     href: android-oem-configuration-overview.md
+  - name: eSIM cellular profiles
+    href: esim-device-configuration.md  
   - name: Monitor telecom expenses
     href: telecom-expenses-monitor.md
   - name: Custom device settings
