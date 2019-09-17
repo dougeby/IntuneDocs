@@ -155,13 +155,9 @@
           href: windows-information-protection-policy-create.md
         - name: Manage data transfer between iOS apps
           href: data-transfer-between-apps-manage-ios.md
-    - name: Get help and support
+    - name: Troubleshoot
       items:
-      - name: Tenant status
-        href: tenant-status.md
-      - name: Troubleshoot
-        items:
-        - name: Help users troubleshoot problems
-          href: help-desk-operators.md
-        - name: Review app protection logs
-          href: app-protection-policy-settings-log.md
+      - name: Help users troubleshoot problems
+        href: help-desk-operators.md
+      - name: Review app protection logs
+        href: app-protection-policy-settings-log.md
