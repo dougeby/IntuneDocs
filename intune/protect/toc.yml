@@ -168,9 +168,11 @@
   - name: Certificates
     href: certificates-configure.md
     items:
-    - name: SCEP
+    - name: SCEP infrastructure
       href: certificates-scep-configure.md
       displayName: ksp        
+    - name: SCEP certificate profiles
+      href: certificates-profile-scep.md
     - name: PKCS
       href: certficates-pfx-configure.md
       displayName: ksp
@@ -183,7 +185,7 @@
       href: certificates-digicert-configure.md
       displayName: ca; pkcs; pki; ra; registration authority
     - name: Remove SCEP or PKCS certificates
-      href: remove-certificates.md                      
+      href: remove-certificates.md                           
   - name: Software updates
     items:
     - name: Windows Update for Business settings
