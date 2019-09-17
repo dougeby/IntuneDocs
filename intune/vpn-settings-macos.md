@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -38,13 +38,7 @@ Depending on the settings you choose, not all values in the following list are c
 [Create a device configuration profile](vpn-settings-configure.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - User approved enrollment: Only in per-app mode
-> - Device enrollment
-> - Automated device enrollment
->
-> For more information on these enrollment types, see [nacOS enrollment](macos-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## Base VPN settings
 

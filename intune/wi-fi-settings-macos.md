@@ -8,7 +8,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/05/2019
+ms.date: 09/09/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -41,13 +41,7 @@ This article describes these settings.
 [Create a device profile](device-profile-create.md).
 
 > [!NOTE]
-> These settings can apply to the following enrollment types:
->
-> - User approved enrollment
-> - Device enrollment
-> - Automated device enrollment
->
-> For more information on these enrollment types, see [nacOS enrollment](macos-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [macOS enrollment](macos-enroll.md).
 
 ## Basic profiles
 

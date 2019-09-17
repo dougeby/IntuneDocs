@@ -53,7 +53,6 @@ Complete these steps to create terms and conditions. The display name and descri
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. On the **Intune** pane, choose **Device enrollment** > **Terms and Conditions**.
 3. Choose **Create**.
-![Screenshot of the Azure portal showing Create button for terms and conditions](media/terms-create-terms.png)
 4. On the **Basics** page, specify the following information:
 
    - **Name**: The name for the terms in the Azure portal. Users don't see this name.
@@ -67,11 +66,15 @@ Complete these steps to create terms and conditions. The display name and descri
    - **Terms and Conditions**: The terms and conditions that users see and must either accept or reject.
    - **Summary of Terms**: Text that explains what it means when users accept the terms. For example, "By enrolling your device, you're agreeing to the terms of use set out by Contoso. Read the terms carefully before proceeding."
 
-6. Choose **Next** to go to the **Assignments** page and choose one of the following options for **Assign to**:
+6. Choose **Next** to go to the **Scope tags** page.
+
+7. Choose **Select scope tags**, select the scope tags that you want to assign to these terms and conditions, and then choose **Select**. 
+
+8. Choose **Next** to go to the **Assignments** page and choose one of the following options for **Assign to**:
     - **All users**: Choose this option to assign these terms and conditions to all users.
     - **Select groups**: Choose this option to assign these terms and conditions to everyone in the groups that you identify by choosing **Select groups to include**.
 
-6. Choose **Next** > **Create**.
+9. Choose **Next** > **Create**.
 
 ## See how terms are displayed to your users
 The following example shows the **Title** and **Summary of Terms** in the admin console and Company Portal.
@@ -81,16 +84,6 @@ The following example shows the **Title** and **Summary of Terms** in the admin 
 The following example shows the terms and conditions in the admin console and the Company Portal.
 
 ![Screenshot of terms and conditions in the admin console and Company Portal.](./media/terms-properties-terms.png)
-
-## Assign terms and conditions
-
-You can assign terms and conditions to groups of user who must accept them before using the Company Portal.
-
-1. In the Azure portal, choose **Device enrollment**, and then choose **Terms and Conditions**.
-2. In the list of terms and conditions, choose the terms you want to assign > **Manage** > **Assignments**.
-![Screenshot of the Azure portal's Assign Group pane showing Select Group button and Select button for terms and conditions assignment](media/terms-assign-groups.png)
-3. Choose **Select groups to include** > choose the groups you want to assign the terms > **Select**. 
-4. In the **Assigned Groups** pane, choose **Save**.  The terms and conditions are now assigned to users in the selected groups. Users will be prompted to accept terms the next time they access the company portal. The terms and conditions only have to be accepted once. Users with multiple devices don't have to accept on each device.
 
 
 ## Monitor terms and conditions
