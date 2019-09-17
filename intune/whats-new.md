@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 09/09/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -56,6 +56,21 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 -->  
 
 <!-- ########################## -->
+
+## Week of September 16, 2019
+
+### App management
+
+#### macOS support for web apps <!-- 3174427 -->
+Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md) and [Add web apps to Microsoft Intune](web-app.md).
+
+#### macOS support for VPP apps <!-- 3173501  -->
+macOS apps, purchased using Apple Business Manager, are displayed in the console when Apple VPP tokens are synced in Intune. You can assign, revoke and reassign device and user-based licenses for groups using the Intune console. Microsoft Intune helps you manage VPP apps purchased for use at your company by:
+- Reporting license information from the app store.
+- Tracking how many of the licenses you have used.
+- Helping you not install more copies of the app than you own.
+
+For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
 
 ## Week of September 9, 2019
 

@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 06/27/2019
+ms.date: 09/16/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -185,7 +185,7 @@ To see if the device is auto-enrolled, you can:
 - Review the logs for any errors. See [Intune management extension logs](#intune-management-extension-logs) (in this article).
 - For possible permission issues, be sure the properties of the PowerShell script are set to `Run this script using the logged on credentials`. Also check that the signed in user has the appropriate permissions to run the script.
 
-- To isolate scripting problems, do the following steps:
+- To isolate scripting problems, you can:
 
   - Review the PowerShell execution configuration on your devices. See the [PowerShell execution policy](https://docs.microsoft.com/powershell/module/microsoft.powershell.security/set-executionpolicy?view=powershell-6) for guidance.
   - Run a sample script using the Intune management extension. For example, create the `C:\Scripts` directory, and give everyone full control. Run the following script:
@@ -200,15 +200,17 @@ To see if the device is auto-enrolled, you can:
 
     `psexec -i -s`  
     
-  - If script execution reports a success but the outcome isn't happening (for instance, the script above doesn't create a file), the antivirus might be sandboxing AgentExecutor. The following script should always report a failure in Intune - if it reports a success, look at AgentExecutor.log to confirm the error output - the length should be >2 if the script is executing at all:
-
+  - If the script reports that it succeeded, but it didn't actually succeed, then it's possible your antivirus service may be sandboxing AgentExecutor. The following script always reports a failure in Intune. As a test, you can use this script:
+  
     ```powershell
     Write-Error -Message "Forced Fail" -Category OperationStopped
     mkdir "c:\temp" 
     echo "Forced Fail" | out-file c:\temp\Fail.txt
     ```
-    
-  - If you need to capture the .error and .output, the following snippet will execute the script through AgentExecutor to PSx86 and leave the logs behind for collection (since Intune Management Extension cleans up the logs after execution):
+
+    If the script reports a success, look at the `AgentExecutor.log` to confirm the error output. If the script executes, the length should be >2.
+
+  - To capture the .error and .output files, the following snippet executes the script through AgentExecutor to PSx86 (`C:\Windows\SysWOW64\WindowsPowerShell\v1.0`). It keeps the logs for your review. Remember, the Intune Management Extension cleans up the logs after the script executes:
   
     ```powershell
     $scriptPath = read-host "Enter the path to the script file to execute"
