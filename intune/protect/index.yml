@@ -67,26 +67,6 @@ landingContent:
           - text: View and correct personal data
             url: ../privacy-data-view-correct.md
 
-  # Card (optional)
-  - title: Use secure authentication methods
-    linkLists:
-      - linkListType: overview
-        links:
-          - text: Certificates and Intune
-            url: ../certificates-configure.md
-      - linkListType: how-to-guide
-        links:
-#     - text: Certificate profiles (restructures pending breakout via SCEP work This would then replace the following SCEP and PKCS)
-      #     url: pending.md
-          - text: SCEP certificate profiles
-            url: ../certificates-scep-configure.md
-          - text: PKCS certificate profiles
-            url: ../certficates-pfx-configure.md
-#         - text: Derived Credentials (Pending 1909)
-#         - url: not-yet-supported.md
-          - text: Windows Hello for Business
-            url: ../windows-hello.md
-
   # Card
   - title: Protect devices and networks
     linkLists:
@@ -110,6 +90,26 @@ landingContent:
             url: ../network-access-control-integrate.md
           - text: Encrypt devices
             url: ../encrypt-devices.md
+
+  # Card (optional)
+  - title: Use secure authentication methods
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Certificates and Intune
+            url: ../certificates-configure.md
+      - linkListType: how-to-guide
+        links:
+#     - text: Certificate profiles (restructures pending breakout via SCEP work This would then replace the following SCEP and PKCS)
+      #     url: pending.md
+          - text: SCEP certificate profiles
+            url: ../certificates-scep-configure.md
+          - text: PKCS certificate profiles
+            url: ../certficates-pfx-configure.md
+#         - text: Derived Credentials (Pending 1909)
+#         - url: not-yet-supported.md
+          - text: Windows Hello for Business
+            url: ../windows-hello.md
 
   # Card
   - title: Manage software updates
