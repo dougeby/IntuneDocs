@@ -11,6 +11,11 @@
   - name: Create an email device profile
     href: quickstart-email-profile.md
 
+- name: Concepts
+  items: 
+  - name: Windows Information Protection settings
+    href: windows-information-protection-configure.md  
+
 - name: How-to guides
   items:
   - name: Create a profile

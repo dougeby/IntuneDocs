@@ -48,15 +48,12 @@
     href: common-scenarios.md
   - name: Technology decisions for BYOD with EMS
     href: byod-technology-decisions.md    
-  - name: App protection policies and work profiles (Android)
-    href: android-deployment-scenarios-app-protection-work-profiles.md
-    displayName: app-we; without; without enrollment
+
   - name: Manage operating system versions
     href: manage-os-versions.md
   - name: Manage Windows Holographic
     href: windows-holographic-for-business.md
-  - name: Windows Information Protection settings
-    href: windows-information-protection-configure.md  
+
 
 
 - name: How-to guides
