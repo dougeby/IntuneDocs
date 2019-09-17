@@ -58,6 +58,7 @@
   - name: Windows Information Protection settings
     href: windows-information-protection-configure.md  
 
+
 - name: How-to guides
   items:
   - name: Plan deployment
@@ -110,6 +111,30 @@
           href: migration-guide-cycle.md
     - name: Plan communications
       href: migration-guide-communication-plan.md
+    - name: Educate users
+      items:
+      - name: How to educate your end users
+        href: end-user-educate.md    
+      - name: Company Portal messages
+        href: end-user-company-portal-messages.md
+      - name: App protection on Android
+        href: end-user-mam-apps-android.md
+      - name: App protection on iOS
+        href: end-user-mam-apps-ios.md
+      - name: How to get Android apps
+        href: end-user-apps-android.md
+      - name: How to get iOS apps
+        href: end-user-apps-ios.md
+      - name: How to get Windows apps
+        href: end-user-apps-windows.md
+      - name: Data Intune sends to Apple
+        href: data-intune-sends-to-apple.md
+      - name: Data Intune sends to Google
+        href: data-intune-sends-to-google.md
+      - name: Data Apple sends to Intune
+        href: data-apple-sends-to-intune.md
+      - name: Data Google sends to Intune
+        href: data-google-sends-to-intune.md      
   - name: Set up Intune
     items:
     - name: Steps to set up Intune
@@ -149,57 +174,26 @@
       - name: Use scope tags
         href: scope-tags.md
 
-  - name: Educate users
-    items:
-    - name: How to educate your end users
-      href: end-user-educate.md    
-    - name: Company Portal messages
-      href: end-user-company-portal-messages.md
-    - name: App protection on Android
-      href: end-user-mam-apps-android.md
-    - name: App protection on iOS
-      href: end-user-mam-apps-ios.md
-    - name: How to get Android apps
-      href: end-user-apps-android.md
-    - name: How to get iOS apps
-      href: end-user-apps-ios.md
-    - name: How to get Windows apps
-      href: end-user-apps-windows.md
-    - name: Data Intune sends to Apple
-      href: data-intune-sends-to-apple.md
-    - name: Data Intune sends to Google
-      href: data-intune-sends-to-google.md
-    - name: Data Apple sends to Intune
-      href: data-apple-sends-to-intune.md
-    - name: Data Google sends to Intune
-      href: data-google-sends-to-intune.md
   - name: Get help and support
     items:
     - name: Tenant status
       href: tenant-status.md
-    - name: Troubleshoot
-      items:
-      - name: Help users troubleshoot problems
-        href: help-desk-operators.md
-
-      - name: Troubleshoot company resource access problems
-        href: troubleshoot-company-resource-access-problems.md      
-        
-      - name: Audit logs for Intune activities
-        href: monitor-audit-logs.md
-      - name: Review logs with Azure Monitor
-        href: review-logs-using-azure-monitor.md
-
-      - name: Troubleshoot policies and profiles
-        href: troubleshoot-policies-in-microsoft-intune.md        
-      - name: Email profile issues and resolutions 
-        href: troubleshoot-email-profiles-in-microsoft-intune.md
-
+    - name: Help users troubleshoot problems
+      href: help-desk-operators.md
+    - name: Audit logs for Intune activities
+      href: monitor-audit-logs.md
+    - name: Review logs with Azure Monitor
+      href: review-logs-using-azure-monitor.md
     - name: Using the Intune docs
       href: use-docs.md 
     - name: Get support
-      href: get-support.md  
-
+      href: get-support.md
+- name: Reference
+  items: 
+  - name: Error codes and descriptions
+    items: 
+    - name: Troubleshoot company resource access problems
+      href: troubleshoot-company-resource-access-problems.md     
 - name: Resources
   items:
   - name: Archive
