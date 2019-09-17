@@ -20,7 +20,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Set device compliance
+  - title: Set rules on devices to allow access to resources
     linkLists:
       - linkListType: overview
         links:
@@ -28,11 +28,11 @@ landingContent:
             url: ../device-compliance-get-started.md
       - linkListType: quickstart
         links:
-          - text: "Quickstart: Create a device compliance policy"
+          - text: Create a device compliance policy
             url: ../quickstart-set-password-length-android.md
       - linkListType: tutorial
         links:
-          - text: "Tutorial: Protect Exchange Online email on managed devices"
+          - text: Protect Exchange Online email on managed devices
             url: ../tutorial-protect-email-on-enrolled-devices.md
       - linkListType: how-to-guide
         links:
@@ -42,11 +42,7 @@ landingContent:
             url: ../use-network-locations.md
           - text: Actions for noncompliance
             url: ../actions-for-noncompliance.md
-          - text: Monitor device compliance
-            url: ../compliance-policy-monitor.md
-          - text: Troubleshoot policies and profiles
-            url: ../troubleshoot-policies-in-microsoft-intune.md
-                  
+
   # Card
   - title: Manage privacy and personal data
     linkLists:
