@@ -20,7 +20,7 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Manage apps 1
+  - title: Developer guidance 1
     linkLists:
       - linkListType: overview
         links:
@@ -39,7 +39,7 @@ landingContent:
           - text: Create a policy
             url: ../create-compliance-policy.md
   # Card (optional)
-  - title: Manage apps 2
+  - title: Developer guidance 2
     linkLists:
       - linkListType: overview
         links:

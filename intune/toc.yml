@@ -23,18 +23,14 @@
   - name: Create a user
     href: quickstart-create-user.md
   - name: Create a group
-    href: quickstart-create-group.md
-  - name: Send notifications to noncompliant devices
-    href: quickstart-send-notification.md       
+    href: quickstart-create-group.md   
   - name: Create and assign a custom role
     href: quickstart-create-custom-role.md
 
 - name: Tutorials
   items:
   - name: Walkthrough Intune in the Azure portal
-    href: tutorial-walkthrough-intune-portal.md
-  - name: Configure Slack to use Intune 
-    href: tutorial-configure-slack-enterprise-grid.md    
+    href: tutorial-walkthrough-intune-portal.md 
 - name: Concepts
   items:
   - name: What is device management?
@@ -61,8 +57,7 @@
     href: windows-holographic-for-business.md
   - name: Windows Information Protection settings
     href: windows-information-protection-configure.md  
-  - name: MAM FAQ
-    href: mam-faq.md
+
 - name: How-to guides
   items:
   - name: Plan deployment
@@ -186,20 +181,10 @@
       items:
       - name: Help users troubleshoot problems
         href: help-desk-operators.md
-      - name: Troubleshoot enrollment
-        items:
-          - name: Troubleshoot iOS device enrollment
-            href: troubleshoot-ios-enrollment-errors.md
-          - name: Troubleshoot Windows device enrollment
-            href: troubleshoot-windows-enrollment-errors.md
+
       - name: Troubleshoot company resource access problems
         href: troubleshoot-company-resource-access-problems.md      
-      - name: Troubleshoot app installation problems
-        href: troubleshoot-app-install.md 
-      - name: Troubleshoot device actions
-        href: troubleshoot-device-actions.md                  
-      - name: Troubleshoot mobile application management
-        href: troubleshoot-mam.md                  
+        
       - name: Audit logs for Intune activities
         href: monitor-audit-logs.md
       - name: Review logs with Azure Monitor
@@ -209,255 +194,12 @@
         href: troubleshoot-policies-in-microsoft-intune.md        
       - name: Email profile issues and resolutions 
         href: troubleshoot-email-profiles-in-microsoft-intune.md
-      - name: Troubleshoot Conditional Access
-        href: troubleshoot-conditional-access.md
-      - name: Troubleshoot certificate connector
-        href: troubleshoot-certificate-connector-events.md
-      - name: Troubleshoot Exchange connectors
-        href: troubleshoot-exchange-connector.md
+
     - name: Using the Intune docs
       href: use-docs.md 
     - name: Get support
       href: get-support.md  
-- name: Reference
-  items:
-  - name: Settings lists
-    items:
-    - name: Android
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-android.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-android.md
-        - name: Email
-          href: email-settings-android.md
-        - name: VPN
-          href: vpn-settings-android.md
-        - name: Wi-Fi
-          href: wi-fi-settings-android.md
-        - name: Custom
-          href: custom-settings-android.md
-          items:
-          - name: Allow/block apps for Samsung Knox Standard
-            href: samsung-knox-apps-allow-block.md
-    - name: Android Enterprise
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-android-for-work.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-android-for-work.md
-        - name: Email
-          href: email-settings-android-enterprise.md
-        - name: VPN
-          href: vpn-settings-android-enterprise.md
-        - name: Wi-Fi
-          href: wi-fi-settings-android-enterprise.md
-        - name: Custom
-          href: custom-settings-android-for-work.md
-    - name: iOS
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-ios.md
-      - name: Configuration profile settings
-        items:
-        - name: Device features
-          href: ios-device-features-settings.md
-        - name: Device restrictions
-          href: device-restrictions-ios.md
-        - name: Email
-          href: email-settings-ios.md
-        - name: VPN
-          href: vpn-settings-ios.md
-        - name: Wi-Fi
-          href: wi-fi-settings-ios.md
-        - name: Custom
-          href: custom-settings-ios.md
-        - name: Bundle IDs for built-in apps
-          href: bundle-ids-built-in-ios-apps.md
-    - name: macOS
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-mac-os.md
-      - name: Configuration profile settings
-        items:
-        - name: Device features
-          href: macos-device-features-settings.md
-        - name: Device restrictions
-          href: device-restrictions-macos.md
-        - name: Endpoint protection
-          href: endpoint-protection-macos.md
-        - name: VPN
-          href: vpn-settings-macos.md
-        - name: Wi-Fi
-          href: wi-fi-settings-macos.md
-        - name: Extensions
-          href: kernel-extensions-settings-macos.md
-        - name: Custom
-          href: custom-settings-macos.md
-    - name: Windows 10 and later
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows.md
-      - name: Configuration profile settings
-        items:
-        - name: Delivery optimization settings
-          href: delivery-optimization-settings.md
-        - name: Device restrictions
-          href: device-restrictions-windows-10.md
-        - name: Device restrictions (Windows 10 Team)
-          href: device-restrictions-windows-10-teams.md
-        - name: Edition upgrade and mode switch
-          href: edition-upgrade-windows-settings.md
-        - name: Email
-          href: email-settings-windows-10.md
-        - name: Endpoint protection
-          href: endpoint-protection-windows-10.md
-        - name: Identity protection
-          href: identity-protection-windows-settings.md
-        - name: Kiosk
-          href: kiosk-settings-windows.md
-        - name: VPN
-          href: vpn-settings-windows-10.md
-        - name: Wi-Fi
-          href: wi-fi-settings-windows.md
-        - name: Secure assessment
-          href: education-settings-windows.md
-        - name: Shared multi-user device
-          href: shared-user-device-settings-windows.md
-        - name: Custom
-          href: custom-settings-windows-10.md
-      - name: Security baselines
-        items: 
-        - name: Windows 10 MDM baseline settings
-          href: security-baseline-settings-mdm-all.md
-        - name: Microsoft Defender ATP baseline settings 
-          href: security-baseline-settings-defender-atp.md
-      - name: Windows update settings
-        href: windows-update-settings.md
-    - name: Windows Holographic for Business
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows.md#windows-holographic-for-business
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-windows-holographic.md
-        - name: Shared multi-user device
-          href: shared-user-device-settings-windows-holographic.md 
-        - name: Edition upgrade and mode switch
-          href: holographic-upgrade.md
-        - name: Kiosk
-          href: kiosk-settings-holographic.md
-        - name: Custom
-          href: custom-settings-windows-holographic.md
-    - name: Windows 8.1
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows-8-1.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-windows-8-1.md
-        - name: VPN
-          href: vpn-settings-windows-8-1.md
-        - name: Wi-Fi import
-          href: wi-fi-settings-import-windows-8-1.md
-    - name: Windows Phone 8.1
-      items:
-      - name: Compliance policy settings
-        href: compliance-policy-create-windows-8-1.md
-      - name: Configuration profile settings
-        items:
-        - name: Device restrictions
-          href: device-restrictions-windows-phone-8-1.md
-        - name: Email
-          href: email-settings-windows-phone-8-1.md
-        - name: VPN
-          href: vpn-settings-windows-phone-8-1.md
-        - name: Custom
-          href: custom-settings-windows-phone-8-1.md
 
-  - name: Developer guidance
-    items:
-    - name: API to add third-party certificate authority
-      href: scep-libraries-apis.md
-    - name: Protect apps with Intune App SDK
-      href: app-sdk.md
-      items:
-      - name: Get started with Intune App SDK
-        href: app-sdk-get-started.md
-      - name: Prepare LOB apps for app protection
-        href: apps-prepare-mobile-application-management.md
-      - name: App Wrapping Tool for iOS
-        href: app-wrapper-prepare-ios.md
-      - name: Intune App SDK for iOS
-        href: app-sdk-ios.md
-      - name: App Wrapping Tool for Android
-        href: app-wrapper-prepare-android.md
-        displayName: dex
-      - name: Intune App SDK for Android
-        href: app-sdk-android.md
-        items:
-        - name: Intune App SDK for Android testing guide
-          href: app-sdk-android-testing-guide.md        
-      - name: Intune App SDK Xamarin Bindings
-        href: app-sdk-xamarin.md
-    - name: Use the Intune Data Warehouse
-      href: reports-nav-create-intune-reports.md
-      items:
-      - name: Change log for the Data Warehouse
-        href: reports-changelog.md
-      - name: Connect to the Data Warehouse with Power BI
-        href: reports-proc-get-a-link-powerbi.md
-      - name: Create a report from the OData feed with Power BI
-        href: reports-proc-create-with-odata.md
-    - name: Report using Intune Data Warehouse API
-      href: reports-nav-intune-data-warehouse.md
-      items:
-      - name: Get data from the Data Warehouse API with a REST client
-        href: reports-proc-data-rest.md
-      - name: Data Warehouse API endpoint
-        href: reports-api-url.md
-      - name: Data Warehouse application-only authentication
-        href: data-warehouse-app-only-auth.md      
-      - name: Data Warehouse data model
-        href: reports-ref-data-model.md
-        items:
-        - name: Data Warehouse collections
-          href: intune-data-warehouse-collections.md 
-        - name: Data Warehouse collections (beta)
-          items:  
-          - name: User lifetime representation in the Intune Data Warehouse
-            href: reports-ref-user-timeline.md
-          - name: Reference for application entities
-            href: reports-ref-application.md
-          - name: Reference for date entity
-            href: reports-ref-date.md
-          - name: Reference for devices entities
-            href: reports-ref-devices.md
-          - name: Reference for Intune management extension entity
-            href: reports-ref-intunemanagementextension.md
-          - name: Reference for mobile app management (MAM) entities
-            href: reports-ref-mobile-app-management.md
-          - name: Reference for policy entities
-            href: reports-ref-policy.md
-          - name: Reference for user device association entity
-            href: reports-ref-user-device.md
-          - name: Reference for user entity
-            href: reports-ref-user.md
-      - name: Move your Intune Data Warehouse account data
-        href: data-warehouse-account-move.md
-    - name: Use Azure AD to access Intune APIs in Microsoft Graph
-      href: intune-graph-apis.md
-      items:
-      - name: Intune API reference
-        href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
-    - name: Graph APIs used to configure devices
-      href: graph-apis-used-by-intune-device-configuration-windows.md
 - name: Resources
   items:
   - name: Archive
@@ -519,9 +261,6 @@
         href: troubleshoot-software-updates-in-microsoft-intune.md
       - name: Endpoint protection common errors 
         href: troubleshoot-endpoint-protection-in-microsoft-intune.md
-  - name: Scenario implementation guides 
-    items:
-    - name: Reduce help desk costs
-      href: password-reset.md
+
   - name: Intune end user documentation  
     href: /intune-user-help/use-managed-devices-to-get-work-done  

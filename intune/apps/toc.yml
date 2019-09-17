@@ -13,12 +13,20 @@
   - name: Create and assign an app protection policy
     href: quickstart-create-assign-app-policy.md    
 
+- name: Tutorials
+  items:
+  - name: Protect email on unmanaged devices
+    href: tutorial-protect-email-on-unmanaged-devices.md
+  - name: Configure Slack to use Intune 
+    href: tutorial-configure-slack-enterprise-grid.md
 - name: Concepts
   items:
   - name: App lifecycle
     href: app-lifecycle.md
   - name: App protection policies and work profiles (Android)
     href: android-deployment-scenarios-app-protection-work-profiles.md
+  - name: MAM FAQ
+    href: mam-faq.md    
 
 - name: How-to guides
   items:
@@ -159,6 +167,10 @@
       items:
       - name: Help users troubleshoot problems
         href: help-desk-operators.md
+      - name: Troubleshoot app installation problems
+        href: troubleshoot-app-install.md         
+      - name: Troubleshoot mobile application management
+        href: troubleshoot-mam.md            
       - name: Review app protection logs
         href: app-protection-policy-settings-log.md
 - name: Reference
