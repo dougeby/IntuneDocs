@@ -42,7 +42,7 @@ You can add an Android Enterprise system app to Intune from the Azure portal by 
 2. In the **Intune** pane, select **Client apps** > **Apps** > **Add**.
 3. In the **Add App** pane, under the available **Other** types, select **Android Enterprise system app**.
 4. To configure the app information, select **Configure**, and then provide the following information:
-    - **App Name**: Enter the name of the app as it will be displayed on the user's device.
+    - **App Name**: Enter the name of the app.
     - **Publisher**: Enter the name of the publisher of the app.  
     - **Package Name**: Enter a package name. Intune will validate that the package name is valid.
 5. Select **OK**.
