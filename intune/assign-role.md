@@ -35,8 +35,6 @@ To create, edit, or assign roles, your account must have one of the following pe
 - **Global Administrator**
 - **Intune Service Administrator**
 
-For a full list of the permissions for each built-in role, see the [Intune RBAC Table](https://gallery.technet.microsoft.com/Intune-RBAC-table-2e3c9a1a).
-
 1. Sign into the [Azure portal](https://portal.azure.com).
 
 2. Choose **All services** > **Intune**. Intune is located in the **Monitoring + Management** section.
