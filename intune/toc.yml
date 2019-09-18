@@ -594,7 +594,9 @@
         - name: Sideload Windows LOB apps
           href: app-sideload-windows.md          
         - name: macOS LOB apps
-          href: lob-apps-macos.md          
+          href: lob-apps-macos.md  
+      - name: Android Enterprise system apps
+        href: apps-ae-system.md                  
       - name: Win32 app management
         href: apps-win32-app-management.md
       - name: PowerShell scripts
