@@ -1,13 +1,17 @@
-- name: Microsoft Intune documentation
+- name: Protect Data and Devices with Intune
   href: index.yml
 - name: Overview
   expanded: true
   items:
-  - name: Protect device data
-    items:
     - name: Device protection overview
       href: device-protect.md
       displayName: compliant; noncompliant; mfa 
+- name: Quickstarts
+  items:
+  - name: Create a device compliance policy
+    href: quickstart-set-password-length-android.md
+  - name: Send notifications to noncompliant devices
+    href: quickstart-send-notification.md        
 - name: Tutorials
   items:
   - name: Protect email on managed devices
@@ -40,6 +44,20 @@
       href: privacy-data-view-correct.md
     - name: Audit, export, delete
       href: privacy-data-audit-export-delete.md
+- name: How-to guides
+  items:
+  - name: Set rules on devices to allow access to resources
+    items:
+    - name: Compliance overview
+      href: device-compliance-get-started.md    
+    - name: Create a policy
+      href: create-compliance-policy.md
+    - name: Location-based compliance
+      href: use-network-locations.md
+    - name: Actions for noncompliance
+      href: actions-for-noncompliance.md
+    - name: Monitor device compliance
+      href: compliance-policy-monitor.md
   - name: Encrypt devices
     items:
     - name: Encrypt Devices
@@ -169,7 +187,7 @@
       href: certificates-digicert-configure.md
       displayName: ca; pkcs; pki; ra; registration authority
     - name: Remove SCEP or PKCS certificates
-      href: remove-certificates.md                      
+      href: remove-certificates.md                           
   - name: Software updates
     items:
     - name: Windows Update for Business settings
@@ -178,9 +196,28 @@
       href: windows-update-compliance-reports.md         
     - name: iOS update policies
       href: software-updates-ios.md 
+  - name: Troubleshoot
+    items:
+    - name: Help users troubleshoot problems
+      href: help-desk-operators.md  
+    - name: Audit logs for Intune activities
+      href: monitor-audit-logs.md
+    - name: Review logs with Azure Monitor
+      href: review-logs-using-azure-monitor.md
+
+    - name: Troubleshoot policies and profiles
+      href: troubleshoot-policies-in-microsoft-intune.md        
+
+    - name: Troubleshoot Conditional Access
+      href: troubleshoot-conditional-access.md
+    - name: Troubleshoot certificate connector
+      href: troubleshoot-certificate-connector-events.md
+    - name: Troubleshoot Exchange connectors
+      href: troubleshoot-exchange-connector.md
+
 - name: Reference
   items:
-  - name: Settings lists
+  - name: Compliance policy settings
     items:
     - name: Security baselines
       items: 
@@ -190,18 +227,24 @@
         href: security-baseline-settings-defender-atp.md
     - name: Windows update settings
       href: windows-update-settings.md
+    - name: Compliance policy settings - Android
+      href: compliance-policy-create-android.md
+    - name: Compliance policy settings - Android Enterprise
+      href: compliance-policy-create-android-for-work.md
+    - name: Compliance policy settings - iOS
+      href: compliance-policy-create-ios.md
+    - name: Compliance policy settings - macOS
+      href: compliance-policy-create-mac-os.md
+    - name: Compliance policy settings - Windows 10
+      href: compliance-policy-create-windows.md
+    - name: Compliance policy settings - Windows 8.1
+      href: compliance-policy-create-windows-8-1.md
+    - name: Compliance policy settings - Windows Phone 8.1
+      href: compliance-policy-create-windows-8-1.md
   - name: Error codes and descriptions
     items:
     - name: Software update errors
       href: software-update-agent-error-codes.md
-- name: Resources
-  items:
-  - name: Archive
-    items:
-    - name: Security baselines archive
-      items:  
-      - name: Archived MDM security baselines  
-        href: security-baseline-settings-mdm-archive.md
 - name: Scenario implementation guides 
   items:
   - name: Protect Exchange Online
