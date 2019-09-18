@@ -67,7 +67,7 @@ A key task of any device management solution is to provide security and protecti
   - Enable [Windows Defender SmartScreen](endpoint-protection-windows-10.md) to look for suspicious activity in files and apps on mobile devices. 
   - Use [Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md) to help prevent security breaches on mobile devices. And, help limit the impact of a security breach by blocking a user from corporate resources.
 
-- **Conditional Access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [Conditional Access](onditional-access.md), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
+- **Conditional Access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [Conditional Access](conditional-access.md), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
 
 ## Choose the device management solution that's right for you
 

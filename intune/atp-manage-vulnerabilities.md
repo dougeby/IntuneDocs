@@ -41,13 +41,15 @@ In the Microsoft Defender Security Center console, ATP security admins review da
 When a task is accepted, the Intune admin then acts to remediate the vulnerability though Intune, using the guidance provided as part of the security task.  
 
 Common actions for remediation include:  
+
 - **Block** an application from being run  
 - **Deploy** an operating system update to mitigate the vulnerability.  
 - **Modify** a registry value.  
 - **Disable** or **Enable** a configuration to affect the vulnerability.  
 - **Require Attention** alerts the admin to the threat when there's no suitable recommendation to provide.  
 
-An example workflow:  
+An example workflow:
+
 - Within Microsoft Defender ATP, a vulnerability for an app named Contoso Media Player v4 is discovered and an admin creates a security task to update that app. The Contoso Media player is an unmanaged app that was deployed with Intune.  
 
   This security task appears in the Intune console with a status of Pending:  
@@ -65,13 +67,15 @@ An example workflow:
 ## Prerequisites  
 
 **Subscriptions**:  
+
 - Microsoft Intune  
 - Microsoft Defender Advanced Threat Protection ([Sign up for a free trial](https://www.microsoft.com/WindowsForBusiness/windows-atp?ocid=docs-wdatp-main-abovefoldlink).)  
 
 **Intune configurations for ATP**:  
+
 - Configure a service to service connection with Microsoft Defender ATP.  
 - Deploy a device compliance policy with a profile type of **Microsoft Defender ATP (Windows 10 Desktop)** to devices that will have risk assessed by ATP.
-  For information about how to set up Intune to work with ATP, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](advanced-threat-protection.md#enable-windows-defender-atp-in-intune).  
+  For information about how to set up Intune to work with ATP, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune.md).  
 
 ## Work with security tasks  
 
@@ -94,5 +98,5 @@ After remediation is successful, the risk exposure score in ATP can drop, based 
 
 ## Next Steps
 Learn more about Intune and [Microsoft Defender ATP](advanced-threat-protection.md)  
-Review Intune [Mobile Threat Defense](mobile-threat-defense.d)  
+Review Intune [Mobile Threat Defense](mobile-threat-defense.md)  
 Review the [Threat & Vulnerability Management dashboard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) in Microsoft Defender ATP

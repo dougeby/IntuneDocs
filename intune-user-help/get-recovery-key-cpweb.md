@@ -29,10 +29,11 @@ ms.custom: intune-enduser
 ms.collection: M365-identity-device-management
 ---
 
-# Get a recovery key for a macOS device 
+# Get a recovery key for a macOS device
+
 Use the Company Portal website to get a recovery key for your locked macOS device. If you forget your device password, you can sign in to the Company Portal from another device to retrieve your key.  
 
-This option is only available for devices that were encrypted by your organization using FileVault. It's not available for devices that you've personally encrypted. 
+This option is only available for devices that were encrypted by your organization using FileVault. It's not available for devices that you've personally encrypted.
 
 1. On any device, sign in to the [Company Portal website](https://portal.manage.microsoft.com) and select the **Menu** button > **Devices**.  
 2. Select the encrypted macOS device.  
@@ -50,7 +51,7 @@ If a key isn't found but your device is properly encrypted, contact your organiz
 
 ## IT pro support
 
-If you're an IT support person and want to configure and manage FileVault encryption for macOS devices, see [Use device encryption with Intune](encrypt-devices.md).
+If you're an IT support person and want to configure and manage FileVault encryption for macOS devices, see [Use device encryption with Intune](https://docs.microsoft.com/intune/encrypt-devices.md).
 
 ## Next steps
 
