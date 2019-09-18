@@ -58,9 +58,6 @@
   - name: Mobility Extensions on Zebra devices
     href: android-zebra-mx-overview.md
     displayName: mx
-    items:
-    - name: StageNow logs and common issues
-      href: android-zebra-mx-logs-troubleshoot.md
   - name: OEMConfig on Android Enterprise
     href: android-oem-configuration-overview.md
   - name: eSIM cellular profiles
@@ -79,6 +76,8 @@
         href: troubleshoot-policies-in-microsoft-intune.md        
       - name: Email profile issues and resolutions 
         href: troubleshoot-email-profiles-in-microsoft-intune.md
+      - name: StageNow logs and common issues
+        href: android-zebra-mx-logs-troubleshoot.md        
       - name: Common questions and answers
         href: device-profile-troubleshoot.md
 

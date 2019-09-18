@@ -106,7 +106,7 @@ conceptualContent:
           text: Actions for non-compliant devices
       footerLink:
         text: See more
-        url: ./compliance/index.yml            
+        url: ./protect/index.yml            
     - title: Control device features and settings
       links:
         - url: device-profiles.md
