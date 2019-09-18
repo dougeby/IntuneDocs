@@ -178,6 +178,8 @@
     - name: PKCS
       href: certficates-pfx-configure.md
       displayName: ksp
+    - name: Imported PKCS
+      href: certificates-imported-pfx-configure.md
     - name: Use S/MIME to encrypt email
       href: certificates-s-mime-encryption-sign.md
     - name: Use third-party certificate authority with SCEP
@@ -219,6 +221,14 @@
   items:
   - name: Compliance policy settings
     items:
+    - name: Security baselines
+      items: 
+      - name: Windows 10 MDM baseline settings
+        href: security-baseline-settings-mdm-all.md
+      - name: Microsoft Defender ATP baseline settings 
+        href: security-baseline-settings-defender-atp.md
+    - name: Windows update settings
+      href: windows-update-settings.md
     - name: Compliance policy settings - Android
       href: compliance-policy-create-android.md
     - name: Compliance policy settings - Android Enterprise
@@ -233,19 +243,10 @@
       href: compliance-policy-create-windows-8-1.md
     - name: Compliance policy settings - Windows Phone 8.1
       href: compliance-policy-create-windows-8-1.md
-
   - name: Error codes and descriptions
     items:
     - name: Software update errors
       href: software-update-agent-error-codes.md
-- name: Resources
-  items:
-  - name: Archive
-    items:
-    - name: Security baselines archive
-      items:  
-      - name: Archived MDM security baselines  
-        href: security-baseline-settings-mdm-archive.md
 - name: Scenario implementation guides 
   items:
   - name: Protect Exchange Online

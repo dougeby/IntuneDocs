@@ -100,14 +100,14 @@ landingContent:
             url: ../certificates-configure.md
       - linkListType: how-to-guide
         links:
-#     - text: Certificate profiles (restructures pending breakout via SCEP work This would then replace the following SCEP and PKCS)
-      #     url: pending.md
           - text: SCEP certificate profiles
             url: ../certificates-scep-configure.md
           - text: PKCS certificate profiles
             url: ../certficates-pfx-configure.md
-#         - text: Derived Credentials (Pending 1909)
-#         - url: not-yet-supported.md
+          - text: Imported PFX Certificates
+            url: ../certificates-imported-pfx-configure.md
+#         - text: Derived Credentials (TBD or 1910)
+#         - url:  tbd
           - text: Windows Hello for Business
             url: ../windows-hello.md
 
