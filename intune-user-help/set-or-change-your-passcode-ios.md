@@ -8,7 +8,7 @@ author: lenewsad
 
 ms.author: lanewsad
 manager: dougeby
-ms.date: 11/14/2017
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune

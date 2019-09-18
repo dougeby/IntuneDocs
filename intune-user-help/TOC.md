@@ -60,7 +60,7 @@
 ##### [Using Zimperium zIPS](you-need-to-resolve-a-threat-found-by-zips-android.md)
 
 ## [Using your iOS device](using-your-iOS-device-with-intune.md)
-### [What happens when you enroll an iOS device?](what-happens-if-you-install-the-company-portal-app-and-enroll-your-device-in-intune-ios.md)
+### [Effects of iOS device reset](effects-of-device-reset-cp-ios.md)
 ### [Install and sign in to the Company Portal](install-and-sign-in-to-the-intune-company-portal-app-ios.md)
 ### [Enroll your iOS device](enroll-your-device-in-intune-ios.md)
 ### [Enroll your organization-provided iOS device](enroll-your-device-dep-ios.md)

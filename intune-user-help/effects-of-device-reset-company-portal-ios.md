@@ -1,13 +1,13 @@
 ---
 # required metadata
 
-title: Effects of iOS device reset  | Microsoft Docs
+title: Effects of iOS device reset in Intune Company Portal  | Microsoft Docs
 description: Describes what happens to the data on your iOS device after you reset it in the Intune Company Portal. 
 keywords:
 author: lenewsad
 ms.author: lanewsad
 manager: dougeby
-ms.date: 09/14/2019
+ms.date: 09/18/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
@@ -31,7 +31,7 @@ ms.collection: M365-identity-device-management
 
 # Effects of Company Portal iOS device reset 
 
-Resetting your iPhone or iPad through Compnay Portal might delete some apps and settings, including personal data. This behavior depends on how your device was enrolled or set up in your organization. The following information describes what happens after a device reset.  
+Resetting your iPhone or iPad through Company Portal might delete some apps and settings, including personal data. This behavior depends on how your device was enrolled or set up in your organization. The following information describes what happens after a device reset.  
 
 If your organization manages your device, and you can access work and school emails, apps, and Wi-Fi:
 
