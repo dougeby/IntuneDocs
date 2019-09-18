@@ -37,7 +37,7 @@ If your PC isn't compliant because code integrity is disabled, you should contac
 If you identify yourself as an advanced device user and want to try the steps on your own, see [Re-enable Secure Boot](https://docs.microsoft.com/windows-hardware/manufacture/desktop/disabling-secure-boot#re-enable-secure-boot).
 
 ## Additional resources for IT administrators  
-If you're an Intune administrator and want to learn more about Intune's device health compliance settings, see [Add a device compliance policy for Windows 10 devices in Intune](https://docs.microsoft.com/intune/compliance-policy-create-windows). For a detailed look at the compliance actions you can take in Intune, see the [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
+If you're an Intune administrator and want to learn more about Intune's device health compliance settings, see [Add a device compliance policy for Windows 10 devices in Intune](compliance-policy-create-windows.md). For a detailed look at the compliance actions you can take in Intune, see the [HealthAttestation CSP](https://docs.microsoft.com/windows/client-management/mdm/healthattestation-csp#step-8-take-appropriate-policy-action-based-on-evaluation-results).  
 
 ## Next steps  
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

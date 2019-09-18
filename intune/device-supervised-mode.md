@@ -41,7 +41,7 @@ For a list of Apple controls that require supervision, see Apple’s [Payload se
 
 ## Turn on supervised mode during enrollment
 
-In Intune, you can turn on supervised mode for devices when you [create an Apple enrollment profile in DEP](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios#create-an-apple-enrollment-profile). Under **Device Management Settings**, check the **Supervised** box.
+In Intune, you can turn on supervised mode for devices when you [create an Apple enrollment profile in DEP](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile). Under **Device Management Settings**, check the **Supervised** box.
 
 ## Turn on supervised mode after enrollment
 

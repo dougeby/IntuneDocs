@@ -71,7 +71,7 @@ An example workflow:
 **Intune configurations for ATP**:  
 - Configure a service to service connection with Microsoft Defender ATP.  
 - Deploy a device compliance policy with a profile type of **Microsoft Defender ATP (Windows 10 Desktop)** to devices that will have risk assessed by ATP.
-  For information about how to set up Intune to work with ATP, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](https://docs.microsoft.com/intune/advanced-threat-protection#enable-windows-defender-atp-in-intune).  
+  For information about how to set up Intune to work with ATP, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](advanced-threat-protection.md#enable-windows-defender-atp-in-intune).  
 
 ## Work with security tasks  
 
@@ -93,6 +93,6 @@ An example workflow:
 After remediation is successful, the risk exposure score in ATP can drop, based on new information from the remediated devices. 
 
 ## Next Steps
-Learn more about Intune and [Microsoft Defender ATP](https://docs.microsoft.com/intune/advanced-threat-protection)  
-Review Intune [Mobile Threat Defense](https://docs.microsoft.com/intune/mobile-threat-defense)  
+Learn more about Intune and [Microsoft Defender ATP](advanced-threat-protection.md)  
+Review Intune [Mobile Threat Defense](mobile-threat-defense.d)  
 Review the [Threat & Vulnerability Management dashboard](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-atp/tvm-dashboard-insights) in Microsoft Defender ATP

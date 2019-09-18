@@ -197,7 +197,7 @@ If you want to completely remove an Apple DEP device from management by Intune, 
 
 ## Fresh Start
 
-Applicable for Windows 10 devices. Read more about [Fresh Start](https://docs.microsoft.com/intune/device-fresh-start).
+Applicable for Windows 10 devices. Read more about [Fresh Start](device-fresh-start.md).
 
 ## Next steps
 

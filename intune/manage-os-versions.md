@@ -39,30 +39,34 @@ Intune can help you address these common scenarios:
   
 ## Operating system version control using Intune mobile device management (MDM) enrollment restrictions
 Intune MDM enrollment restrictions let you define the client device requirements before you allow enrollment of the device. The goal is to require that your end users enroll only compliant devices before gaining access organizational resources. Device requirements include both minimum and maximum allowed operating system versions for supported platforms.
- 
-![Platform configuration restrictions blade](./media/os-version-platform-configurations.png) 
- 
+
+![Platform configuration restrictions blade](./media/os-version-platform-configurations.png)
+
 ### In practice
-Organizations are using device type restrictions to control access to organizational resources by using the following settings: 
-1. Use minimum operating system version to keep end users on current and supported platforms in your organization. 
+
+Organizations are using device type restrictions to control access to organizational resources by using the following settings:
+
+1. Use minimum operating system version to keep end users on current and supported platforms in your organization.
 2. Leave maximum operating system unspecified (no limit) or set it to the last validated version in your organization to allow time for internal testing of new operating system releases.
 
-For details, see [Set device type restrictions](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction).
- 
+For details, see [Set device type restrictions](enrollment-restrictions-set.md#create-a-device-type-restriction).
+
 ## Operating system version reporting and compliance with Intune MDM device compliance policies
-Intune MDM device compliance policies provide you the following tools: 
+
+Intune MDM device compliance policies provide you the following tools:
+
 - Specify compliance rules
 - View compliance status via reporting
 - Act on noncompliance via device quarantine and Conditional Access
 
 Like enrollment restrictions, device compliance policies include both minimum and maximum operating system versions. Policies also have a compliance timeline to provide your users a grace period to get compliant. Device compliance policies keep your enrolled end-user devices compliant with organizational policy.
 
-![Device compliance - actions for noncompliant devices](./media/os-version-actions-noncompliance.png) 
+![Device compliance - actions for noncompliant devices](./media/os-version-actions-noncompliance.png)
 
 ### In practice
 Organizations are using device compliance policies for the same scenarios as enrollment restrictions. These policies keep users on current, validated operating system versions in your organization. When end-user devices fall out of compliance, access to organizational resources can be blocked via Conditional Access until end users are within the supported operating system range for your organization. End users are notified that they are out of compliance and they are provided the steps to regain access.   
 
-For details, see [Get started with device compliance](https://docs.microsoft.com/intune/device-compliance-get-started).
+For details, see [Get started with device compliance](device-compliance-get-started.md).
  
 ## Operating system version controls using Intune app protection policies    
 Intune app protection policies and mobile application management (MAM) access settings let you to specify the minimum operating system version at the app layer. This lets you inform and encourage, or require, your end users to update their operating system to a specified minimum version.
@@ -77,7 +81,7 @@ You have two different options:
 ### In practice
 Organizations are using app protection policy settings today when apps are opened or resumed as a way to educate end users about the need to keep their apps current. An example configuration is that end users are warned on current version minus one and blocked on current version minus two.
  
-For details, see [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies).
+For details, see [How to create and assign app protection policies](app-protection-policies.md).
 
 ## Managing a new operating system version rollout
 You can use the Intune capabilities described in this article to help you move your organization to a new operating system version within the timeline you define. The following steps provide a sample deployment model to move your users from operating system v1 to operating system v2 in seven days.
@@ -91,8 +95,9 @@ You can use the Intune capabilities described in this article to help you move y
   - These policies require devices to be updated for them to continue to access organizational data. Protected services are blocked when used with device Conditional Access. Apps enabled with an app protection policy are blocked when opened or when they access organizational data.
 
 ## Next steps
-Use the following resources to manage operating system versions in your organization: 
 
-- [Set device type restrictions](https://docs.microsoft.com/intune/enrollment-restrictions-set#create-a-device-type-restriction)
-- [Get started with device compliance](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [How to create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies)
+Use the following resources to manage operating system versions in your organization:
+
+- [Set device type restrictions](enrollment-restrictions-set.md#create-a-device-type-restriction)
+- [Get started with device compliance](device-compliance-get-started.md)
+- [How to create and assign app protection policies](app-protection-policies.md)
