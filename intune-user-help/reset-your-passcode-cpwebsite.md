@@ -34,9 +34,7 @@ If you lose your device PIN or password, you can use the [Company Portal website
 
 The reset passcode option might not appear for a corporate-enrolled device. In this case, contact your company support to have it reset for you.  
 
-Passcode reset isn't available for all iOS devices. If you're an IT support person and want to find out what's supported, see [Supported platforms for device level passcode reset](https://docs.microsoft.com/intune/reset-erase-your-device-cpwebsite). 
-
-Passcode reset also isn't available for devices running Android 7.0 and later. If you forget your passcode on one of these devices, you must reset it to factory settings.  
+Passcode reset isn't available for devices running Android 7.0 and later. If you forget your passcode on one of these devices, you must reset it to factory settings.  
 
 ## Reset your passcode
 
