@@ -25,6 +25,7 @@
     href: app-lifecycle.md
   - name: App protection policies and work profiles (Android)
     href: android-deployment-scenarios-app-protection-work-profiles.md
+    displayName: app-we; without; without enrollment    
   - name: MAM FAQ
     href: mam-faq.md    
 

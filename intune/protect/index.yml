@@ -134,15 +134,6 @@ landingContent:
             url: ../conditional-access.md
           - text: Protect Exchange Online 
             url: ../exchange-online-protect.md
-
-      - linkListType: how-to-guide
-        links:
-          - text: Create and assign Conditional Access policy
-            url: ../conditional-access-exchange-create.md
-          - text: Common ways to use Conditional Access
-            url: ../conditional-access-intune-common-ways-use.md
-          - text: Jamf Pro for macOS 
-            url: ../conditional-access-integrate-jamf.md
       - linkListType: tutorial
         links:
           - text: Protect email on managed devices
@@ -153,3 +144,11 @@ landingContent:
         links:
           - text: ADAL and Intune
             url: ../app-modern-authentication-block.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create and assign Conditional Access policy
+            url: ../conditional-access-exchange-create.md
+          - text: Common ways to use Conditional Access
+            url: ../conditional-access-intune-common-ways-use.md
+          - text: Jamf Pro for macOS 
+            url: ../conditional-access-integrate-jamf.md

@@ -9,7 +9,7 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: mtillman
-  ms.date: 09/04/2019
+  ms.date: 09/16/2019
 
 highlightedContent:
   items:
@@ -106,7 +106,7 @@ conceptualContent:
           text: Actions for non-compliant devices
       footerLink:
         text: See more
-        url: ./compliance/index.yml            
+        url: ./protect/index.yml            
     - title: Control device features and settings
       links:
         - url: device-profiles.md

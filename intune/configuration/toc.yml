@@ -11,6 +11,11 @@
   - name: Create an email device profile
     href: quickstart-email-profile.md
 
+- name: Concepts
+  items: 
+  - name: Windows Information Protection settings
+    href: windows-information-protection-configure.md  
+
 - name: How-to guides
   items:
   - name: Create a profile
@@ -53,9 +58,6 @@
   - name: Mobility Extensions on Zebra devices
     href: android-zebra-mx-overview.md
     displayName: mx
-    items:
-    - name: StageNow logs and common issues
-      href: android-zebra-mx-logs-troubleshoot.md
   - name: OEMConfig on Android Enterprise
     href: android-oem-configuration-overview.md
   - name: eSIM cellular profiles
@@ -74,6 +76,8 @@
         href: troubleshoot-policies-in-microsoft-intune.md        
       - name: Email profile issues and resolutions 
         href: troubleshoot-email-profiles-in-microsoft-intune.md
+      - name: StageNow logs and common issues
+        href: android-zebra-mx-logs-troubleshoot.md        
       - name: Common questions and answers
         href: device-profile-troubleshoot.md
 
