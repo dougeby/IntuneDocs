@@ -65,7 +65,7 @@ Starting with version 6.1806.x.x, the Intune Connector Service logs events in th
 | -------------   | -------------   | -------------      |
 | 0x00000000 | Success  | Success |
 | 0x00000400 | PKCS_Issue_CA_Unavailable  | Certification authority is not valid or is unreachable. Verify that the certification authority is available, and that your server can communicate with it. |
-| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec Client Auth certificate was not found in the local cert store. See the article [Install the Symantec registration authorization certificate](certificates-symantec-configure.md#install-the-symantec-registration-authorization-certificate) for more information.  |
+| 0x00000401 | Symantec_ClientAuthCertNotFound  | Symantec Client Auth certificate was not found in the local cert store. See the article [Install the Symantec registration authorization certificate](certificates-digicert-configure.md#install-the-symantec-registration-authorization-certificate) for more information.  |
 | 0x00000402 | RevokeCert_AccessDenied  | The specified account does not have permissions to revoke a certificate from CA. See CA Name field in the event message details to determine the issuing CA.  |
 | 0x00000403 | CertThumbprint_NotFound  | Could not find a certificate that matched your input. Enroll the certificate connector and try again. |
 | 0x00000404 | Certificate_NotFound  | Could not find a certificate that matched the input supplied. Re-enroll the certificate connector and try again. |
