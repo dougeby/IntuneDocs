@@ -1,5 +1,8 @@
 - name: Developer guidance
   href: index.yml 
+  
+- name: How-to guides
+  expanded: true
   items:
   - name: API to add third-party certificate authority
     href: scep-libraries-apis.md

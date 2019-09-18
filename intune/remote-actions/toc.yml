@@ -1,6 +1,7 @@
 - name: Remote actions
   href: index.yml
 - name: Overview
+  expanded: true
   items:
   - name: Device management overview
     href: device-management.md
