@@ -168,19 +168,19 @@
       - name: Use scope tags
         href: scope-tags.md
   - name: Enroll devices
-    href: /enrollment/index.yml
+    href: enrollment/index.yml
   - name: Remotely manage devices
-    href: /remote-actions/index.yml  
+    href: remote-actions/index.yml  
   - name: Create compliance rules
-    href: /protect/index.yml  
-  - name: Device features and settings
-    href: /configuration/index.yml  
+    href: protect/index.yml  
+  - name: Control device features and settings
+    href: configuration/index.yml  
   - name: Protect devices and data
-    href: /protect/index.yml   
-  - name: Manage apps
-    href: /apps/index.yml  
+    href: protect/index.yml   
+  - name: Manage and protect apps
+    href: pps/index.yml  
   - name: Developer guidance
-    href: /developer/index.yml     
+    href: developer/index.yml     
   - name: Get help and support
     items:
     - name: Tenant status
