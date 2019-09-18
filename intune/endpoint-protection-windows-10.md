@@ -645,6 +645,17 @@ These settings apply specifically to operating system data drives.
     - **Backup recovery passwords and key packages**  
     - **Backup recovery passwords only**  
 
+  - **Client-driven recovery password rotation**  
+    **Default**: Key rotation enabled for Azure AD-joined devices  
+    BitLocker CSP: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation)  
+    
+    This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE).  
+
+    - Not configured  
+    - Key rotation disabled  
+    - Key rotation enabled for Azure AD-joined deices  
+    - Key rotation enabled for Azure AD and Hybrid-joined devices  
+
   - **Store recovery information in Azure Active Directory before enabling BitLocker**  
     **Default**: Not configured  
  
@@ -730,6 +741,17 @@ These settings apply specifically to fixed data drives.
     Configure what parts of BitLocker recovery information are stored in Azure AD. Choose from:  
     - **Backup recovery passwords and key packages**  
     - **Backup recovery passwords only**  
+
+  - **Client-driven recovery password rotation**  
+    **Default**: Key rotation enabled for Azure AD-joined devices  
+    BitLocker CSP: [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation)  
+    
+    This setting initiates a client-driven recovery password rotation after an OS drive recovery (either by using bootmgr or WinRE).  
+
+    - Not configured  
+    - Key rotation disabled  
+    - Key rotation enabled for Azure AD-joined deices  
+    - Key rotation enabled for Azure AD and Hybrid-joined devices  
 
   - **Store recovery information in Azure Active Directory before enabling BitLocker**  
     **Default**: Not configured  

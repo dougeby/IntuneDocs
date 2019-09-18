@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS
 ms.author: erikje
 manager: dougeby
-ms.date: 04/02/2018
+ms.date: 09/19/2018
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -45,7 +45,7 @@ The **Devices** workload gives you insights into the devices you manage, and let
 
      Use the **Export** feature to create a .csv list of all the devices, in increments of 10,000 (Internet Explorer) or 30,000 (Microsoft Edge, Chrome).
 
-     Select any device to [view aditional details about that device](device-inventory.md), including hardware details, installed apps, its compliance policy status, and more.
+     Select any device to [view additional details about that device](device-inventory.md), including hardware details, installed apps, its compliance policy status, and more.
 
    - **Azure AD devices** shows a list of the devices registered or joined with Azure Active Directory (Azure AD). Learn more about [Azure AD device management](https://docs.microsoft.com/azure/active-directory/device-management-introduction).
    - **Device actions** includes a history of the remote actions ran on different devices, including the action, its status, who initiated the action, and the time.
@@ -73,6 +73,7 @@ The actions available depend on the device platform, and the configuration of th
   - [Windows 10 PIN reset](device-windows-pin-reset.md)
   - [Remote control for Android](teamviewer-support.md)
   - [Synchronize device](device-sync.md)
+  - [Send custom notification](custom-notifications.md#send-a-custom-notification-to-a-single-device) (Android, iOS)
 
 ## Next steps
 
