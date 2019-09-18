@@ -60,6 +60,7 @@ The following table lists the specific app types and how you can add them in the
 | Built-in iOS app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Built-in Android app  | Built-in app | Select **Built-In app** as the **app type**, and then select the built-in app in the list of provided apps.  |
 | Web apps  | Web app  | Select **Web link** as the **app type**, and then enter a valid URL pointing to the web app.  |
+| Android Enterprise system apps  | Store app  | Select **Android Enterprise system app** as the **app type**, and then enter the app name, publisher, and package file.  |
 | Windows app (Win32)  | LOB app  | Select **Windows app (Win32)** as the **app type**, select the **App package file**, and then select an installation file with the extension **.intunewin**.  |
 | macOS LOB apps | LOB app  | Select **Line-of-business** as the **app type**, select the **App package file**, and then select an installation file with the extension **.intunemac**.  |
 
@@ -201,4 +202,5 @@ To learn how to add apps for each platform to Intune, see:
 - [Office 365 apps for Windows 10](apps-add-office365.md)
 - [Office 365 apps for macOS](apps-add-office365-macos.md)
 - [Built-in apps](apps-add-built-in.md)
+- [Android Enterprise system app](apps-ae-system.md)
 - [Win32 apps](apps-win32-app-management.md) 
