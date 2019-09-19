@@ -216,7 +216,7 @@ We'll be adding the following support for Android Fully Managed devices:
     - create SCEP profile under DO section of Android Enterprise
     - link SCEP certificates to DO Wi-Fi profile for authentication
     - link SCEP certificates to DO VPN profiles for authentication
-    - link SCEP certificates to DO Email profiles for authentication (via AppConfig)
+    - link SCEP certificates to DO Email profiles for authentication (via app configuration)
 - System apps will be supported on Android Enterprise devices. In Intune, you will add an Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information about adding apps to Intune, see [Add apps to Microsoft Intune](apps-add.md). <!-- 4062195 -->
 - In **Device compliance** > **Android Enterprise** > **Device Owner**, you'll be able to create a compliance policy that sets the Google SafetyNet attestation level.   <!-- 4631425 -->
 - On Android Enterprise fully managed devices, the mobile threat defense providers will be supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](compliance-policy-create-android-for-work.md#device-owner) lists the current settings.

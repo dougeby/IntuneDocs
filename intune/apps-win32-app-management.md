@@ -191,6 +191,8 @@ The following steps provide guidance to help you add a Windows app to Intune.
 
     > [!NOTE]
     > In the **Detection rules** pane, you can choose to add multiple rules. The conditions for **all** rules must be met to detect the app.
+    >
+    > If Intune detects that the app is not present on the device, Intune will offer the app again after 24 hours. This will only occur for apps targeted with required intent.
 
     - **Manually configure detection rules** - You can select one of the following rule types:
         1. **MSI** – Verify based on MSI version check. This option can only be added once. When you choose this rule type, you have two settings:
