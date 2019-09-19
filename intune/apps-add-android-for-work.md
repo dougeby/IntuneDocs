@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
-Managed Google Play is Google's enterprise app store and sole source of applications for Android Enterprise. You can use Intune to orchestrate app deployment through Managed Google Play for any Android Enterprise scenario (including work profile, dedicated, and fully managed enrollments). How you add Managed Google Play apps to Intune differs from how Android apps are added for non-Android Enterprise. Store apps, line-of-business (LOB) apps, and web apps are approved in or added to Managed Google Play, and then sychronized into Intune so that they appear in the Client Apps list. Once they appear in the Client Apps list list, you can manage assignment of any Managed Google Play app as you would any other app.
+Managed Google Play is Google's enterprise app store and sole source of applications for Android Enterprise. You can use Intune to orchestrate app deployment through Managed Google Play for any Android Enterprise scenario (including work profile, dedicated, and fully managed enrollments). How you add Managed Google Play apps to Intune differs from how Android apps are added for non-Android Enterprise. Store apps, line-of-business (LOB) apps, and web apps are approved in or added to Managed Google Play, and then synchronized into Intune so that they appear in the Client Apps list. Once they appear in the Client Apps list list, you can manage assignment of any Managed Google Play app as you would any other app.
 
 To make it easier for you to configure and use Android Enterprise management, upon connecting your Intune tenant to Managed Google Play, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four apps are the following:
 
@@ -111,7 +111,7 @@ There are two ways to add LOB apps to Managed Google Play:
 1. Directly in the Intune console - This allows you to add LOB apps by submitting just the app APK and a title, directly within Intune. This method does not require you to have a Google developer account and does not require you to pay the fee to register with Google as a developer.  This method is simpler and has a significantly reduced number of steps, and makes LOB apps available for management in as little as ten minutes.
 1. In the Google Play Developer Console - If you have a Google developer account or want to configure advanced distribution features that are only available in the Google Play Developer Console (like adding additional app screenshots), you can use the [Google Play Developer Console](https://play.google.com/apps/publish). 
 
-### Managed Google Play private (LOB) app publishing direcly in the Intune console
+### Managed Google Play private (LOB) app publishing directly in the Intune console
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 3. In the **Intune** pane, select **Client apps** > **Apps**.
@@ -151,7 +151,7 @@ For more information about Managed Google Play private apps including a FAQ, see
 
 Managed Google Play web links are installable and manageable just like other Android apps. When installed on a device, they will appear in the user's app list alongside the other apps they have installed. When tapped, they will launch in the device's browser.
 
-Web links will open with Edge or any other browser app you choose to deploy. Be sure to deploy at least one browser app to devices in order for web links to be able to open properly. However, all of the **Display** options available for web links (full screen, standalone, and minimal UI) will only work with the Chrome browser. 
+Web links will open with Microsoft Edge or any other browser app you choose to deploy. Be sure to deploy at least one browser app to devices in order for web links to be able to open properly. However, all of the **Display** options available for web links (full screen, standalone, and minimal UI) will only work with the Chrome browser. 
 
 > [!IMPORTANT]
 > As of publication of this doc, there is a known Google bug that prevents web links from opening on devices with browsers other than Chrome. Google has committed to fixing this bug.  This notice will be removed when Microsoft has confirmation that Google has published their fix.
