@@ -30,20 +30,18 @@ ms.collection: M365-identity-device-management
 
 # Enforce compliance on Macs managed with Jamf Pro
 
-Applies to: Intune in the Azure portal
-
-Create and deploy Conditional Access policies that enforce compliance on your Mac devices with your organizational requirements. Before you can create policies for macOS, you must [integrate Jamf Pro with Intune](conditional-access-integrate-jamf.md). 
+Create and deploy Conditional Access policies that enforce compliance on your Mac devices with your organizational requirements. Before you can create policies for macOS, you must [integrate Jamf Pro with Intune](conditional-access-integrate-jamf.md).  
 
 The procedures in this article require access to both the Intune and Jamf Pro consoles.
 
 ## Set up device compliance policies in Intune
 
-1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to**Device Compliance** > **Policies**. 
+1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) and go to **Device compliance** > **Policies**. 
 2. If you're using a previously created policy, select that policy in the console and then go to the next step of this procedure.  
    
    Select **Create Policy** and then specify details for a policy with a *Platform* of **macOS**. Configure *Settings* and *Actions for noncompliance* to meet your organizational requirements, and then select **Create** to save the policy.
 
-3. On the policies *Overview* pane, select **Assignments**. Use the available options to configure which Azure Active Directory (Azure AD) security groups receive this policy.
+3. On the policies *Overview* pane, select **Assignments**. Use the available options to configure which Azure Active Directory (Azure AD) users and security groups receive this policy. Jamf integration with Intune doesn’t support compliance policy that targets device groups. 
 
 4. When you select **Save**, the policy deploys to the users.  
 
