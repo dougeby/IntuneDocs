@@ -61,6 +61,9 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### App management
 
+### Protected data sharing and encryption for Intune App SDK for iOS <!-- 3586942  -->
+The Intune App SDK for iOS will use 256-bit encryption keys when encryption is enabled by App Protection Policies. All apps will need to have a SDK version 8.1.1 to allow protected data sharing.
+
 #### Company Portal experience <!-- 1473353, 3598357 -->
 The Company Portal is being updated. You will be able to use multiple filters on the Apps page within the Company Portal. The Device Details page is also being updated with an improved user experience. We are in the process of rolling out these updates to all customers and expect to be completed by the end of next week.
 
