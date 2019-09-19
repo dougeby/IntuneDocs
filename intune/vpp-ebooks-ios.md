@@ -56,7 +56,7 @@ Before you start, get a VPP token from Apple and upload it to your Intune accoun
 * You cannot currently assign books to end-user categories in the same way as you do apps.
 * You cannot reclaim a license once the book is assigned.
 * When a user with an eligible device first tries to install a VPP book, they must join the Apple Volume Purchase program before they can install a book. You can also assign licenses to security groups with managed Apple IDs. If you do this, then users are not prompted for their Apple ID when a book is installed.
-* Devices must be enrolled with user affinity as eBooks can only be assigned to user groups.   
+* Devices must be enrolled with user affinity as e-books can only be assigned to user groups.   
 
 
 ## To get and upload an Apple VPP token
