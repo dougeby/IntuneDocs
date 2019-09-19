@@ -107,14 +107,14 @@ Configuring the user UPN setting is **required** for devices that are managed by
 1. The user opens a work document attachment from native Mail to Microsoft Word.
 
 1. When the Word app launches, one of two experiences occur:
-   1. The data is protected by Intune APP when:
-      - The user is signed-in to their work account that matches the account UPN you specified in the app configuration settings for the Microsoft Word app. 
-      - Your Adminstrator configured APP settings apply to the user account in Microsoft Word.  This includes configuring the **Receive data from other apps** setting to the **All apps with incoming Org data** value.
-      - The data transfer succeeds and the document is tagged with the work identity in the app.  Intune APP protects the user actions for the document.
-   1. The data is **not** protected by Intune APP when:
-      - The user is **not** signed-in to their work account.
-      - Your Administrator configured settings are **not** applied to Microsoft Word because the user is not signed in.
-      - The data transfer succeeds and the document is **not** tagged with the work identity in the app.  Intune APP does **not** protects the user actions for the document because it is not active.
+  1. The data is protected by Intune APP when:
+    - The user is signed-in to their work account that matches the account UPN you specified in the app configuration settings for the Microsoft Word app. 
+    - Your Adminstrator configured APP settings apply to the user account in Microsoft Word.  This includes configuring the **Receive data from other apps** setting to the **All apps with incoming Org data** value.
+    - The data transfer succeeds and the document is tagged with the work identity in the app.  Intune APP protects the user actions for the document.
+  1. The data is **not** protected by Intune APP when:
+    - The user is **not** signed-in to their work account.
+    - Your Administrator configured settings are **not** applied to Microsoft Word because the user is not signed in.
+    - The data transfer succeeds and the document is **not** tagged with the work identity in the app.  Intune APP does **not** protects the user actions for the document because it is not active.
 
     > [!NOTE]
     > The user can add and use their personal accounts with Word. App protection policies don't apply when the user uses Word outside of a work-context. 
