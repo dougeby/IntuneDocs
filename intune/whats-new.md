@@ -62,7 +62,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### App management
 
 #### Company Portal experience <!-- 1473353, 3598357 -->
-The Company Portal app has been updated. You can now use multiple filters on the Apps page within the Company Portal. The Device Details page has been updated with an improved user experience. We will roll out this update to all customers over the next week. 
+The Company Portal is being updated. You will be able to use multiple filters on the Apps page within the Company Portal. The Device Details page is also being updated with an improved user experience. 
 
 #### macOS support for web apps <!-- 3174427 -->
 Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md) and [Add web apps to Microsoft Intune](web-app.md).
