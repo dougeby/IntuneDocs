@@ -64,7 +64,7 @@ The retention period for app protection data is 90 days. Any app instances that 
     > If you have multiple policies per platform, a user is considered managed by policy when they have at least one policy is assigned to them.
 
 ## Detailed view
-You can get to the detailed view of the summary by choosing the **User status** tile (based on device OS platform), and the **Flagged users** tile.
+You can get to the detailed view of the summary by choosing the **User status** tile (based on device OS platform), the **Users with potentially harmful apps** and the **Flagged users** tile.
 
 ### User status
 You can search for a single user and check the compliance status for that user. The **App reporting** pane shows the following information for a selected user:
@@ -94,7 +94,10 @@ To see the reporting for a user, follow these steps:
 3. Select the user from the list. You can see the details of the compliance status for that user.
 
 ### Flagged users
-The detailed view shows the error message, the app that was accessed when the error happened, the device OS platform affected, and a time stamp. Users with devices that are flagged by the Google SafetyNet device attestation check are reported here with the reason as reported by Google.
+The detailed view shows the error message, the app that was accessed when the error happened, the device OS platform affected, and a time stamp. Users with devices that are flagged by the 'SafetyNet device attestation' conditional launch check are reported here with the reason as reported by Google.
+
+### Users with potentially harmful apps
+The detailed view shows the user, the app package ID, if the app is MAM enabled, threat category, email, device name, and a time stamp. Users with devices that are flagged by 'Require threat scan on apps' conditonal launch check are reported here with the threat category as reported by Google. If there are apps listed in this report that are being deployed through Intune, contact the app developer for the app, and/or remove the app from being assigned to your end users. 
 
 ## Reporting view
 
