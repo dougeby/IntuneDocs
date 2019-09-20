@@ -2,7 +2,7 @@
 # required metadata
 
 title: Use custom device settings in Microsoft Intune - Azure | Microsoft Docs
-description: Add or create a profile to use custom settings for Windows Phone, Windows 8.1, Windows 10 and later, Android, Anndroid Enterprise, macOS, and iOS devices using Microsoft Intune
+description: Add or create a profile to use custom settings for Windows Phone, Windows 8.1, Windows 10 and later, Android, Android Enterprise, macOS, and iOS devices using Microsoft Intune
 keywords:
 author: MandiOhlinger
 ms.author: mandia
@@ -43,7 +43,7 @@ Custom profiles are created similar to built-in profiles, and are available on t
 
 - [Android](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
@@ -55,7 +55,7 @@ Choose your platform, and get started:
 
 - [Android](custom-settings-android.md)
 - [Android Enterprise](custom-settings-android-for-work.md)
-- [iOS](custom-settings-ios.md)
+- [iOS/iPadOS](custom-settings-ios.md)
 - [macOS](custom-settings-macos.md)
 - [Windows 10](custom-settings-windows-10.md)
 - [Windows Holographic for Business](custom-settings-windows-holographic.md)
