@@ -8,7 +8,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 01/02/2019
+ms.date: 09/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -30,8 +30,12 @@ ms.collection: M365-identity-device-management
 
 # Enforce compliance on Macs managed with Jamf Pro
 
-Create and deploy Conditional Access policies that enforce compliance on your Mac devices with your organizational requirements. Before you can create policies for macOS, you must [integrate Jamf Pro with Intune](conditional-access-integrate-jamf.md).  
+When you [integrate Jamf Pro with Intune](conditional-access-integrate-jamf.md), you can use Conditional Access policies to enforce compliance on your Mac devices with your organizational requirements.  This article will help you with the following tasks:  
 
+- Create Conditional Access policies.
+- Configure Jamf Pro to deploy the Intune Company Portal app to devices you manage with Jamf.
+- Configure devices to register with Azure AD when the device user signs in to the Company Portal app they start from within the Jamf Self Service app. Device registration establishes an identity in Azure AD that allows the device to be evaluated by Conditional Access policies for access to company resources.  
+ 
 The procedures in this article require access to both the Intune and Jamf Pro consoles.
 
 ## Set up device compliance policies in Intune
@@ -83,7 +87,7 @@ To complete the following procedure, you need access to a macOS device and the J
 
 After you [deploy the Company Portal](conditional-access-assign-jamf.md#deploy-the-company-portal-app-for-macos-in-jamf-pro) for macOS through Jamf Pro Self Service, you can create the Jamf Pro policy that registers a user's device with Azure AD. 
 
-Device registration requires a device user to manually select the Intune Company Portal app from within Jamf Self Service. We recommend you [contact your end users](end-user-educate.md) through email, Jamf Pro notifications, or any other method your organization uses to inform them that they must complete this action to get their devices registered. 
+Device registration requires a device user to manually select the Intune Company Portal app from within Jamf Self Service. We recommend you [contact your end users](end-user-educate.md) through email, Jamf Pro notifications, or any other method your organization uses to direct them to complete this action to get their devices registered. 
 
 > [!WARNING]
 > Launching the Company Portal app manually (such as from the Applications or Downloads folders) won't register the device. If device user launches the Company Portal manually, they'll see a warning, **'AccountNotOnboarded'**.
