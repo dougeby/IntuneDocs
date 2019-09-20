@@ -38,15 +38,16 @@ The iOS devices that are provided to you by work or school are often preconfigur
 To begin setup, power on your device and sign in with your work or school credentials. The rest of this article describes the steps and screens you'll see as you walk through Setup Assistant. 
 
 ## What is Apple DEP?
-Your organization might have purchased their devices through something called the *Apple Device Enrollment Program* (DEP). Apple DEP lets organizations buy large amounts of iOS or macOS devices. Organizations can then configure and manage those devices within their preferred mobile device management provider, such as Intune. If you're an administrator and want more information about Apple DEP, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios).  
 
-## Set up your iOS device  
+Your organization might have purchased their devices through something called the *Apple Device Enrollment Program* (DEP). Apple DEP lets organizations buy large amounts of iOS or macOS devices. Organizations can then configure and manage those devices within their preferred mobile device management provider, such as Intune. If you're an administrator and want more information about Apple DEP, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios.md).  
+
+## Set up your iOS device
+
 If you're using your own iOS device, rather than an org-provided one, follow the steps for [personal and bring-your-own devices](enroll-your-device-in-intune-ios.md).  
 
-1. Turn on your iOS device. 
+1. Turn on your iOS device.
 2. After you select your **Language**, connect your device to Wi-Fi.
-3. On the **Set up iOS device** screen, choose whether you want to: 
- 
+3. On the **Set up iOS device** screen, choose whether you want to:
    - **Set up as new device**
    - **Restore from iCloud backup**
    - **Restore from iTunes backup**
@@ -59,7 +60,7 @@ If you're using your own iOS device, rather than an org-provided one, follow the
    [Your Company's] iOS Team
    [Address]**
 
-5. Log in with your Apple ID. Logging in lets you install the Company Portal app and install the management profile that will let your company give you access to their resources, like email and apps. 
+5. Log in with your Apple ID. Logging in lets you install the Company Portal app and install the management profile that will let your company give you access to their resources, like email and apps.
 6. Agree to the **Terms and Conditions** and decide whether you want to send diagnostic information to Apple.
 7. Once you complete your enrollment, your device may prompt you to take more actions. Some of these steps might be entering your password for email access or setting up a passcode.
 

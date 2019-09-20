@@ -63,4 +63,4 @@ The steps to add and verify a custom domain can also be [performed in Azure Acti
 
 You can learn more [about your initial onmicrosoft.com domain in Office 365](https://support.office.com/article/About-your-initial-onmicrosoft-com-domain-in-Office-365-B9FC3018-8844-43F3-8DB1-1B3A8E9CFD5A)
 
-You can learn more about how to [simplify Windows enrollment without Azure AD Premium](https://docs.microsoft.com/intune/windows-enroll#simplify-windows-enrollment-without-azure-ad-premium) by creating a DNS CNAME that redirects enrollment to Intune servers.
+You can learn more about how to [simplify Windows enrollment without Azure AD Premium](windows-enroll.md#simplify-windows-enrollment-without-azure-ad-premium) by creating a DNS CNAME that redirects enrollment to Intune servers.

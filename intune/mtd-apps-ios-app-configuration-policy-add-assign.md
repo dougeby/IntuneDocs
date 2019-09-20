@@ -39,8 +39,8 @@ You can use Intune to add and deploy Mobile Threat Defense (MTD) apps so that en
 The below steps need to be completed in the [Azure portal](https://portal.azure.com/). Make sure you’re familiar with the process of:
 
 - [Adding an app into Intune](apps-add.md).
-- [Adding an iOS app configuration policy into Intune](https://docs.microsoft.com/intune/deploy-use/configure-ios-apps-with-mobile-app-configuration-policies-in-microsoft-intune).
-- [Assigning an app with Intune](https://docs.microsoft.com/intune/deploy-use/deploy-apps-in-microsoft-intune).
+- [Adding an iOS app configuration policy into Intune](app-configuration-policies-use-ios.md).
+- [Assigning an app with Intune](apps-deploy.md).
 
 > [!TIP]
 > The Intune Company Portal works as the broker on Android devices so users can have their identities checked by Azure AD.
@@ -140,7 +140,7 @@ Choose the section that corresponds to your MTD provider:
   - See the instructions for [adding Android store apps to Microsoft Intune](store-apps-android.md). Use this [Wandera Mobile app store URL](https://play.google.com/store/apps/details?id=com.wandera.android) on **step 7**. For **Minimum operating system**, select **Android 5.0**.
 
 - **iOS**
-  - See the instructions for [adding iOS store apps to Microsoft Intune](https://docs.microsoft.com/intune/store-apps-ios). Use this [Wandera Mobile app store URL](https://itunes.apple.com/app/wandera/id605469330) on **step 11** for the **Appstore URL**.
+  - See the instructions for [adding iOS store apps to Microsoft Intune](store-apps-ios.md). Use this [Wandera Mobile app store URL](https://itunes.apple.com/app/wandera/id605469330) on **step 11** for the **Appstore URL**.
 
 ## Configure your MTD apps with an iOS app configuration policy  
 

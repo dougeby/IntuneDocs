@@ -55,7 +55,7 @@ After you sign up for a new subscription, you receive an email message that cont
 After completing the sign-up process you are directed to the Microsoft 365 admin center, used to add users and assign them licenses. If you only have cloud-based accounts using your default onmicrosoft.com domain name, then you can go ahead and add users and assign licenses at this point. However, if you plan to use your organization's [custom domain name](custom-domain-name-configure.md) or [synchronize user account information](users-add.md#sync-active-directory-and-add-users-to-intune) from on-premises Active Directory, then you can close that browser window.
 
 ## Sign in to Microsoft Intune
-Once you have signed up for Intune, you can use any device with a [supported browser](https://docs.microsoft.com/intune/supported-devices-browsers#intune-supported-web-browsers) to sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) to administer the service.
+Once you have signed up for Intune, you can use any device with a [supported browser](supported-devices-browsers.md#intune-supported-web-browsers) to sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973) to administer the service.
 
 By default, your account must have one of the following permissions in Azure AD:
 - Global Administrator
