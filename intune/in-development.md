@@ -93,7 +93,7 @@ Applications will be able to call the Intune Graph API with both read and write 
 Intune app protection policies (APP) on Android and iOS devices will allow you to control app notification content for Org accounts. This feature will require support from applications and may not be available for all APP enabled applications. For more about APP, see [What are app protection policies?](app-protection-policy.md).
 
 ### Available Google Play app reporting for Android work profiles <!-- 3041956  -->
-For available app installs on Android work profile devices, you can view app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-type).
+For available app installs on Android work profile devices, you can view app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-types).
 
 <!-- ***********************************************-->
 ## Device configuration
@@ -135,7 +135,7 @@ In a future update, there will be new settings you can control:
 - **Voice control**: Enables Voice Control on the device while in kiosk mode.
 - **Modification of voice control**: Allow users to change the Voice Control setting on the device while in kiosk mode.
 
-To see the current settings, go to [iOS Kiosk (supervised only) settings](device-restrictions-ios.md#kiosk-supervised-only).
+To see the current settings, go to [iOS Kiosk (supervised only) settings](device-restrictions-ios.md#kiosk).
 
 Applies to:
 
@@ -170,7 +170,7 @@ You can enter the iTunes App store URL, such as `https://itunes.apple.com/us/app
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8​`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8​`
 ​
-For more information on these settings, see [Show or hide apps (supervised only)](device-restrictions-ios.md#show-or-hide-apps-supervised-only).
+For more information on these settings, see [Show or hide apps](device-restrictions-ios.md#show-or-hide-apps).
 
 Applies to:
 
@@ -216,7 +216,7 @@ We'll be adding the following support for Android Fully Managed devices:
     - create SCEP profile under DO section of Android Enterprise
     - link SCEP certificates to DO Wi-Fi profile for authentication
     - link SCEP certificates to DO VPN profiles for authentication
-    - link SCEP certificates to DO Email profiles for authentication (via AppConfig)
+    - link SCEP certificates to DO Email profiles for authentication (via app configuration)
 - System apps will be supported on Android Enterprise devices. In Intune, you will add an Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information about adding apps to Intune, see [Add apps to Microsoft Intune](apps-add.md). <!-- 4062195 -->
 - In **Device compliance** > **Android Enterprise** > **Device Owner**, you'll be able to create a compliance policy that sets the Google SafetyNet attestation level.   <!-- 4631425 -->
 - On Android Enterprise fully managed devices, the mobile threat defense providers will be supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](compliance-policy-create-android-for-work.md#device-owner) lists the current settings.

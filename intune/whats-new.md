@@ -61,6 +61,12 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ### App management
 
+#### Protected data sharing and encryption for Intune App SDK for iOS <!-- 3586942  -->
+The Intune App SDK for iOS will use 256-bit encryption keys when encryption is enabled by App Protection Policies. All apps will need to have a SDK version 8.1.1 to allow protected data sharing.
+
+#### Company Portal experience <!-- 1473353, 3598357 -->
+The Company Portal is being updated. You will be able to use multiple filters on the Apps page within the Company Portal. The Device Details page is also being updated with an improved user experience. We are in the process of rolling out these updates to all customers and expect to be completed by the end of next week.
+
 #### macOS support for web apps <!-- 3174427 -->
 Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md) and [Add web apps to Microsoft Intune](web-app.md).
 
@@ -471,7 +477,7 @@ Applies to: Android
 #### Some kiosk settings on iOS devices are set using "Block", replacing "Allow" <!-- 4404075  -->
 When you create a device restrictions profile on iOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Kiosk**), you set the **Auto lock**, **Ringer switch**, **Screen rotation**, **Screen sleep button**, and **Volume buttons**. 
 
-In this update, the values are **Block** (blocks the feature) and **Not configured** (allows the feature). To see the settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md#kiosk-supervised-only). 
+In this update, the values are **Block** (blocks the feature) and **Not configured** (allows the feature). To see the settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md#kiosk). 
 
 Applies to: iOS
 

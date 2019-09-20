@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 08/14/2019
+ms.date: 09/18/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -205,6 +205,9 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 - **User removal**: Choose **Block** to prevent users from removing users. **Not configured** allows users to remove other users from the device.
 - **Account changes**: Choose **Block** to prevent users from modifying accounts. **Not configured** allows users to update user accounts on the device.
 
+  > [!NOTE]
+  > This setting isn't honored on device owner (fully managed) devices. If you configure this setting, then the setting is ignored, and has no impact.
+
 ### Applications
 
 - **Allow installation from unknown sources**: Choose **Allow** so users can turn on **Unknown sources**. This setting allows apps to install from unknown sources, including sources other than the Google Play Store. **Not configured** prevents users from turning on **Unknown sources**.
@@ -274,6 +277,10 @@ Use these settings to configure a kiosk-style experience on your dedicated devic
 - **Search work contacts from personal profile**: Choose **Block** to prevent users from searching for work contacts in apps in the personal profile. **Not required** allows searching for work contacts in the personal profile.
 
 - **Camera**: Choose **Block** to prevent access to the camera on the device in the work profile. The camera on the personal side is not affected by the setting. **Not required** allows access to the camera in the work profile.
+
+- **Allow widgets from work profile apps**: **Enable** allows end users to put widgets exposed by apps on the home screen. **Not configured** (default) disables this feature.
+
+  For example, Outlook is installed on your users' work profiles. When set to **Enable**, users can put the agenda widget on the device home screen.
 
 #### Work Profile Password
 
