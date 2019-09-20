@@ -93,7 +93,7 @@ Applications will be able to call the Intune Graph API with both read and write 
 Intune app protection policies (APP) on Android and iOS devices will allow you to control app notification content for Org accounts. This feature will require support from applications and may not be available for all APP enabled applications. For more about APP, see [What are app protection policies?](app-protection-policy.md).
 
 ### Available Google Play app reporting for Android work profiles <!-- 3041956  -->
-For available app installs on Android work profile devices, you can view app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-type).
+For available app installs on Android work profile devices, you can view app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-types).
 
 <!-- ***********************************************-->
 ## Device configuration
@@ -135,7 +135,7 @@ In a future update, there will be new settings you can control:
 - **Voice control**: Enables Voice Control on the device while in kiosk mode.
 - **Modification of voice control**: Allow users to change the Voice Control setting on the device while in kiosk mode.
 
-To see the current settings, go to [iOS Kiosk (supervised only) settings](device-restrictions-ios.md#kiosk-supervised-only).
+To see the current settings, go to [iOS Kiosk (supervised only) settings](device-restrictions-ios.md#kiosk).
 
 Applies to:
 
@@ -170,7 +170,7 @@ You can enter the iTunes App store URL, such as `https://itunes.apple.com/us/app
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8​`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8​`
 ​
-For more information on these settings, see [Show or hide apps (supervised only)](device-restrictions-ios.md#show-or-hide-apps-supervised-only).
+For more information on these settings, see [Show or hide apps](device-restrictions-ios.md#show-or-hide-apps).
 
 Applies to:
 
@@ -194,7 +194,7 @@ Android's device administrator capabilities have been superseded by Android Ente
 
 Existing tenants will experience no change in their environments. 
 
-For more information about Android device administrator in Intune, see [Android device administrator enrollment](https://docs.microsoft.com/intune/android-enroll-device-administrator).
+For more information about Android device administrator in Intune, see [Android device administrator enrollment](android-enroll-device-administrator.md).
 
 ### For iOS devices, customize the enrollment process privacy screen of the Company Portal <!-- 4394993  -->
 Using markdown, you'll be able to customize the Company Portal's privacy screen that end users see during iOS enrollment. Specifically, you'll be able to customize the list of things that your organization can't see or do on the device.

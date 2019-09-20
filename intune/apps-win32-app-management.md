@@ -277,7 +277,7 @@ The following steps provide guidance to help you add a Windows app to Intune.
 7. In the **Add group** pane, select **OK**.
 8. In the app **Assignments** pane, select **Save**.
 
-At this point, you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](https://docs.microsoft.com/intune/apps-deploy) and [Monitor app information and assignments with Microsoft Intune](https://docs.microsoft.com/intune/apps-monitor).
+At this point, you have completed steps to add a Win32 app to Intune. For information about app assignment and monitoring, see [Assign apps to groups with Microsoft Intune](apps-deploy.md) and [Monitor app information and assignments with Microsoft Intune](apps-monitor.md).
 
 ## App dependencies
 

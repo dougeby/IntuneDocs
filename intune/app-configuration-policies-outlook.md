@@ -34,7 +34,7 @@ For enrolled devices:
 - To create an app configuration policy for managed iOS devices, see [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md). 
 - To create an app configuration policy for managed Android devices, see [Add app configuration policies for managed Android devices](app-configuration-policies-use-android.md). 
 
-For unenrolled devices, see [Add app configuration policies for managed apps without device enrollment](https://docs.microsoft.com/intune/app-configuration-policies-managed-app) to create an app configuration policy for Outlook for iOS and Android.
+For unenrolled devices, see [Add app configuration policies for managed apps without device enrollment](app-configuration-policies-managed-app.md) to create an app configuration policy for Outlook for iOS and Android.
 
 ## Configuration settings
 

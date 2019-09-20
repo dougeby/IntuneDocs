@@ -123,7 +123,7 @@ A new screen called **App categories** has been added to improve the app browsin
 ## Week of November 12, 2018
 
 ### Windows Company Portal keyboard shortcuts <!-- 2771518 -->
-End users will now be able to trigger app and device actions in the Windows Company Portal [using keyboard shortcuts (accelerators)](https://docs.microsoft.com/intune/company-portal-app#windows-company-portal-keyboard-shortcuts).
+End users will now be able to trigger app and device actions in the Windows Company Portal [using keyboard shortcuts (accelerators)](company-portal-app.md#windows-company-portal-keyboard-shortcuts).
 
 ## Week of October 22, 2018
 
@@ -577,4 +577,4 @@ These are the plans for ways we will be improving the user experience by updatin
 ## See also
 * [Microsoft Intune Blog](http://go.microsoft.com/fwlink/?LinkID=273882)
 * [Cloud Platform roadmap](https://www.microsoft.com/cloud-platform/roadmap)
-* [What's new in Intune](https://docs.microsoft.com/intune/whats-new)
+* [What's new in Intune](whats-new.md)

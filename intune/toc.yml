@@ -321,30 +321,33 @@
       href: device-profiles.md    
     - name: Create a profile
       href: device-profile-create.md
-    - name: Administrative templates
+    - name: Administrative templates on Windows
       href: administrative-templates-windows.md
-    - name: Device features
+      displayName: group policy, gpo, admx
+    - name: Device features on iOS and macOS
       href: device-features-configure.md
     - name: Restrict device settings and features
       href: device-restrictions-configure.md
       displayName: Device restrictions
-    - name: Deliver updates
+    - name: Updates
       href: delivery-optimization-windows.md
-      displayName: delivery optimization; updates
+      displayName: delivery optimization; Windows update
     - name: Upgrade editions and S mode
       href: edition-upgrade-configure-windows-10.md
-    - name: Configure email
+    - name: Email
       href: email-settings-configure.md
-    - name: Enable kiosk mode
+    - name: Kiosks and dedicated devices
       href: kiosk-settings.md
-    - name: Add a VPN
+    - name: Shared multi-user devices
+      href: shared-user-device-settings.md  
+    - name: VPN
       href: vpn-settings-configure.md
       items:
       - name: Per-app VPN for Android
         href: android-pulse-secure-per-app-vpn.md
       - name: Per-App VPN for iOS
         href: vpn-setting-configure-per-app.md
-    - name: Add a wireless Wi-Fi network
+    - name: Wi-Fi network
       href: wi-fi-settings-configure.md
       displayName: wifi
       items:
@@ -354,8 +357,6 @@
       href: kernel-extensions-overview-macos.md
     - name: Education Take a Test app
       href: education-settings-configure.md
-    - name: Shared multi-user devices
-      href: shared-user-device-settings.md  
     - name: Mobility Extensions on Zebra devices
       href: android-zebra-mx-overview.md
       displayName: mx
@@ -593,7 +594,9 @@
         - name: Sideload Windows LOB apps
           href: app-sideload-windows.md          
         - name: macOS LOB apps
-          href: lob-apps-macos.md          
+          href: lob-apps-macos.md  
+      - name: Android Enterprise system apps
+        href: apps-ae-system.md                  
       - name: Win32 app management
         href: apps-win32-app-management.md
       - name: PowerShell scripts
@@ -623,12 +626,24 @@
         href: app-configuration-policies-use-ios.md
       - name: Android managed devices
         href: app-configuration-policies-use-android.md
-      - name: Configure the Managed Home Screen
-        href: app-configuration-managed-home-screen-app.md        
-      - name: Managed apps
+      - name: Configure managed apps without enrollment
         href: app-configuration-policies-managed-app.md
       - name: Use iOS app provisioning profiles
         href: app-provisioning-profile-ios.md
+      - name: Configure specific apps
+        items:
+        - name: Configure the Managed Home Screen
+          href: app-configuration-managed-home-screen-app.md 
+        - name: Configure the Company Portal
+          href: company-portal-app.md
+        - name: Configure the Managed Browser
+          href: app-configuration-managed-browser.md
+        - name: Configure Microsoft Launcher
+          href: configure-microsoft-launcher.md
+        - name: Configure Microsoft Edge
+          href: manage-microsoft-edge.md        
+        - name: Configure Outlook
+          href: app-configuration-policies-outlook.md     
       - name: Volume-purchased apps and books
         items:
         - name: Manage VPP apps and books
@@ -640,14 +655,6 @@
           href: windows-store-for-business.md
         - name: iOS eBooks
           href: vpp-ebooks-ios.md
-      - name: Configure the Company Portal
-        href: company-portal-app.md
-      - name: Configure the Managed Browser
-        href: app-configuration-managed-browser.md
-      - name: Configure Microsoft Edge
-        href: manage-microsoft-edge.md        
-      - name: Configure Outlook
-        href: app-configuration-policies-outlook.md
     - name: Protect apps
       items:
       - name: Selectively wipe apps

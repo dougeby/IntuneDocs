@@ -37,7 +37,7 @@ Intune is a cloud-based enterprise mobility management (EMM) service that helps 
 
 Intune integrates closely with Azure Active Directory (Azure AD) for identity and access control, and Azure Information Protection for data protection. You can also integrate it with System Center Configuration Manager to extend your management capabilities.
 
-To learn more about how you can manage devices, apps, and protect corporate data with Intune, see the [Intune documentation](https://docs.microsoft.com/intune/).
+To learn more about how you can manage devices, apps, and protect corporate data with Intune, see the [Intune documentation](index.yml).
 
 ## 30-day free trial
 You can start to use Intune with a 30-day free trial that includes 100 user licenses. To start your free trial, [go to the Intune Sign up page](https://admin.microsoft.com/Signup/Signup.aspx?OfferId=40BE278A-DFD1-470a-9EF7-9F2596EA7FF9&dl=INTUNE_A&ali=1#0%20). If your organization has an Enterprise Agreement or equivalent volume licensing agreement, contact your Microsoft representative to set up your free trial.
