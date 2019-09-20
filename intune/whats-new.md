@@ -7,7 +7,7 @@ keywords:
 author: ErikjeMS  
 ms.author: erikje
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 09/20/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -59,10 +59,11 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ## Week of September 16, 2019
 
-### App management
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### App management 
 
-#### Protected data sharing and encryption for Intune App SDK for iOS <!-- 3586942  -->
-The Intune App SDK for iOS will use 256-bit encryption keys when encryption is enabled by App Protection Policies. All apps will need to have a SDK version 8.1.1 to allow protected data sharing.
+#### Managed Google Play private LOB apps <!-- 1464182  -->
+Intune now allows IT admins to publish private Android LOB apps to Managed Google Play via an iframe embedded in the Intune console.  Previously, IT admins needed to publish LOB apps directly to Google's Play publishing console, which requireed several steps and was time consuming. This new features allows for easy publishing of LOB apps with a minimal set of steps, without needing to leave the Intune console.  Admins will no longer need to manually register as a developer with Google, and will no longer need to pay the Google $25 registration fee.  Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
 
 #### Company Portal experience <!-- 1473353, 3598357 -->
 The Company Portal is being updated. You will be able to use multiple filters on the Apps page within the Company Portal. The Device Details page is also being updated with an improved user experience. We are in the process of rolling out these updates to all customers and expect to be completed by the end of next week.
@@ -77,6 +78,185 @@ macOS apps, purchased using Apple Business Manager, are displayed in the console
 - Helping you not install more copies of the app than you own.
 
 For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
+
+#### Managed Google Play iframe support <!-- 2871756  -->
+Intune now provides support for adding and managing web links directly in the  Intune console via the Managed Google Play iframe.  This lets IT admins submit a URL and icon graphic, and then deploy those links to devices just like regular Android apps. Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
+
+#### Silently install Android LOB apps on Zebra devices <!-- 4252734  -->
+When installing Android line-of-business (LOB) apps on [Zebra devices](android-zebra-mx-overview.md), rather than being prompted to both download and install the LOB app, you will be able to install the app silently. In Intune, select **Client apps** > **Apps** > **Add**. In the **Add app** pane, select **Line-of-business app**. For more information, see [Add an Android line-of-business app to Microsoft Intune](lob-apps-android.md).
+
+Currently, after the LOB app is downloaded, a **download success** notification will appear on the user's device. The notification can only be dismissed by tapping **Clear All** in the notification shade. This notification issue will be fixed in an upcoming release, and the installation will be completely silent with no visual indicators.
+
+#### Read and write Graph API operations for Intune apps <!-- 5031704  -->
+Applications can call the Intune Graph API with both read and write operations using app identity without user credentials. For more information about accessing the Microsoft Graph API for Intune, see [Working with Intune in Microsoft Graph](https://docs.microsoft.com/graph/api/resources/intune-graph-overview?view=graph-rest-1.0).
+
+#### Protected data sharing and encryption for Intune App SDK for iOS <!-- 3586942  -->
+The Intune App SDK for iOS will use 256-bit encryption keys when encryption is enabled by App Protection Policies. All apps will need to have a SDK version 8.1.1 to allow protected data sharing.
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device configuration
+
+#### Allow or restrict adding app widgets to the home screen on Android Enterprise work profile devices <!-- 1109650  wnstaged--> 
+
+On Android Enterprise devices, you can configure features in the work profile (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Work profile only > Device restrictions** for profile type). In this update, you can allow users to add widgets exposed by work profile apps to the device home screen.
+
+To see the settings you can configure, go to [Android Enterprise device settings to allow or restrict features using Intune](device-restrictions-android-for-work.md).
+
+Applies to:
+- Android Enterprise work profile
+
+#### Support for IKEv2 VPN profiles for iOS <!-- 1943438   -->
+In this update, you can create VPN profiles for the iOS native VPN client using the IKEv2 protocol. IKEv2 is a new connection type in **Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **VPN** for profile type > **Connection Type**.
+
+These VPN profiles configure the native VPN client, So, no VPN client apps are installed or pushed to managed devices. This feature requires devices be enrolled in Intune (MDM enrollment).
+
+To see the current VPN settings you can configure, go to [Configure VPN settings on iOS devices](vpn-settings-ios.md).
+
+Applies to:
+- iOS
+
+#### Device features, device restrictions, and extension profiles for iOS and macOS settings are shown by enrollment type <!-- 4886161   -->
+
+In Intune, you create profiles for iOS and macOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** or **macOS** for platform > **Device features**, **Device restrictions**, or **Extensions** for profile type). 
+
+In this update, the available settings in the Intune portal are categorized by the enrollment type they apply to:
+
+- iOS
+  - User enrollment
+  - Device enrollment
+  - Automated device enrollment (supervised)
+  - All enrollment types
+
+- macOS
+  - User approved
+  - Device enrollment
+  - Automated device enrollment
+  - All enrollment types
+
+Applies to:
+- iOS
+
+#### New voice control settings for supervised iOS devices running in kiosk mode <!-- 4892835   -->
+In Intune, you can create policies to run supervised iOS devices as a kiosk, or dedicated device (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Kiosk**). 
+
+In this update, there are new settings you can control:
+- **Voice control**: Enables Voice Control on the device while in kiosk mode.
+- **Modification of voice control**: Allow users to change the Voice Control setting on the device while in kiosk mode.
+
+To see the current settings, go to [iOS Kiosk settings](device-restrictions-ios.md#kiosk).
+
+Applies to:
+- iOS 13.0 and later
+
+#### Use single sign-on for apps and websites on your iOS and macOS devices <!-- 4893175   -->
+In this update, there are some new single sign-on settings for iOS and macOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** or **macOS** for platform > **Device features** for profile type).
+
+Use these settings to configure a single sign-on experience, especially for apps and websites that use Kerberos authentication. You can choose between a generic credential single sign-on app extension, and Apple's built-in Kerberos extension.
+
+To see the current device features you can configure, go to [iOS device features](ios-device-features-settings.md) and [macOS device features](macos-device-features-settings.md).
+
+Applies to:
+- iOS 13.0 and newer
+- macOS 10.15 and newer
+
+#### Associate domains to apps on macOS 10.15+ devices <!-- 4898079   -->
+On macOS devices, you can configure different features, and push these features to your devices using a policy (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device features** for profile type). In this update, you can associate domains to your apps. This feature helps share credentials with websites related to your app, and can be used with Apple’s single sign-on extension, universal links, and password autofill. 
+
+To see the current features you can configure, go to [macOS device feature settings in Intune](macos-device-features-settings.md).
+
+Applies to:
+- macOS 10.15 and newer
+
+#### Use "itunes" and "apps" in the iTunes App store URL when showing or hiding apps on iOS supervised devices <!-- 4928474   --> 
+In Intune, you can create policies to show or hide apps on your supervised iOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Show or hide apps**). 
+
+You can enter the iTunes App store URL, such as `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`. In this update, both `apps` and `itunes` can be used in the URL, such as:
+- `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
+- `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
+
+For more information on these settings, see [Show or hide apps](device-restrictions-ios.md#show-or-hide-apps).
+
+Applies to:
+- iOS
+
+#### Windows 10 compliance policy password type values are more clear, and match CSP<!-- 5138985 -->
+On Windows 10 devices, you can create a compliance policy that requires specific password features (**Device compliance** > **Policies** > **Create policy** > **Windows 10 and later** for platform > **System Security**). In this update:
+- The **Password type** values are more clear, and updated to match the [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired).
+- The **Password expiration (days)** setting is updated to allow values from 1-730 days. 
+
+For more information on Windows 10 compliance settings, see [Windows 10 and later settings to mark devices as compliant or not compliant](compliance-policy-create-windows.md). 
+
+Applies to:
+- Windows 10 and later
+
+ #### Updated UI for configuring Microsoft Exchange on-premises access    <!-- 4092920 -->  
+We've updated the console where you [configure access Microsoft Exchange on-premises access](conditional-access-exchange-create.md). All of the configurations for Exchange on-premises access are now available on the same pane of the console where you *Enable Exchange on-premises access control*.  
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device enrollment
+
+#### New tenants will default away from Android device administrator management <!-- 4869790   -->
+Android's device administrator capabilities have been superseded by Android Enterprise. Therefore, we recommend using Android Enterprise for new enrollments instead. In a future update, new tenants will need to complete the following prerequisite steps in Android enrollment to use device administrator management: Go to **Intune** > **Device enrollment** > **Android enrollment** > **Personal and corporate-owned devices with device administration privileges** > **Use device administrator to manage devices**.
+
+Existing tenants will experience no change in their environments. 
+
+For more information about Android device administrator in Intune, see [Android device administrator enrollment](https://docs.microsoft.com/en-us/intune/android-enroll-device-administrator).
+
+#### List of DEP devices associated with a profile <!-- 5012045 idmiss -->
+You can now see a paged list of Apple Automated Device Enrollment Program (DEP) devices that are associated with a profile. You can search the list from any page in the list. To see the list, go to **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > choose a token > **Profiles** > choose a profile > **Assigned devices** (under **Monitor**). 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device management
+
+#### More Android Fully Managed support <!-- 3464667, 4631425, 4631440, 5227935, 4062195   -->
+We've added the following support for Android Fully Managed devices:
+
+- SCEP certificates for fully managed Android are available for cert authentication on devices managed as Device Owner. SCEP certificates are already supported on Work Profile devices.  With SCEP certificates for Device Owner, you will be able to: <!-- 5227935 -->
+    - create SCEP profile under DO section of Android Enterprise
+    - link SCEP certificates to DO Wi-Fi profile for authentication
+    - link SCEP certificates to DO VPN profiles for authentication
+    - link SCEP certificates to DO Email profiles for authentication (via AppConfig)
+- System apps are supported on Android Enterprise devices. In Intune, add a Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information, see [Add Android Enterprise system apps to Microsoft Intune](apps-ae-system.md). <!-- 4062195 -->
+- In **Device compliance** > **Android Enterprise** > **Device Owner**, you can create a compliance policy that sets the Google SafetyNet attestation level.   <!-- 4631425 -->
+- On Android Enterprise fully managed devices, the mobile threat defense providers is supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](compliance-policy-create-android-for-work.md#device-owner) lists the current settings.
+- On Android Enterprise fully managed devices, the Microsoft Launcher app can now be configured via app protection policies to allow a standardized end user experience on the fully managed device. The Microsoft Launcher app can be used to personalize your Android device. Using the app along with a Microsoft account or work/school account, you can access your calendar, documents, and recent activities in your personalized feed. You can also open photos, docs and web pages on your Windows PC, to be productive across your devices. <!-- 5334044 -->
+
+With this update we are happy to announce that Intune  support for Android Enterprise Fully Managed is now generally available. 
+
+Applies to: 
+- Android Enterprise fully managed devices
+
+#### Send custom notifications to a single device  <!-- 4928910 -->
+You can now select a single device, and then use a remote device action to [send a custom notification to only that device](custom-notifications.md#send-a-custom-notification-to-a-single-device).
+
+#### Wipe and Passcode Reset actions aren't available for iOS devices that are enrolled by using User Enrollment <!-- 4950491 -->
+User Enrollment is a new type of Apple device enrollment. When you enroll devices using User Enrollment, the Wipe and Passcode Reset remote actions won't be available for such devices.
+
+#### Intune support for iOS 13 and macOS Catalina devices <!-- 4665317 -->
+Intune now supports managing both iOS 13 and macOS Catalina devices. 
+For more information see the [Microsoft Intune Support for iOS 13 and iPadOS blog post](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-and-iPadOS/ba-p/861998).
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Device security
+
+#### BitLocker support for client-driven recovery password rotation   <!--  3444125 -->
+Use Intune Endpoint Protection settings to configure [Client-driven recovery password rotation](endpoint-protection-windows-10.md#windows-encryption) for BitLocker on devices that run Windows version 1909 or later.
+
+This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting refreshes the specific recovery password that was used, and other unused passwords on the volume remain unchanged. For more information see the BitLocker CSP documentation for [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation).
+
+#### Tamper Protection for Windows Defender Antivirus  <!-- 4705448        -->
+Use Intune to manage *Tamper Protection* for Windows Defender Antivirus. You’ll find the [setting for Tamper Protection](endpoint-protection-windows-10.md#windows-defender-security-center) in the Microsoft Defender Security Center group when you use device configuration profiles for Windows 10 endpoint protection. You can set Tamper Protection to *Enabled* to turn on Temper Protection restrictions, set *Disabled* to turn them off, or set*Not configured* to leave a devices current configuration in place.  
+
+For more information about Tamper Protection, see [Prevent security settings changes with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) in the Windows documentation. 
+
+#### Advanced settings for Windows Defender Firewall are now generally available <!--  5317392       -->  
+The [Windows Defender custom firewall rules for endpoint protection](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices), which you configure as part of a device configuration profile, are out of public preview and are generally available (GA).  You can use these rules to specify inbound and outbound behavior to applications, network addresses, and ports. These rules were released in July as a public preview. 
+
+<!-- vvvvvvvvvvvvvvvvvvvvvv -->
+### Role-based access control
+
+#### Scope tags now support Terms of Use policies <!-- 2358863 idmiss -->
+You can now assign [scope tags](scope-tags.md) to Terms of Use policies. To do so, go to **Intune** > **Device enrollment** > **Terms and conditions** > choose an item in the list > **Properties** > **Scope tags** > choose a scope tag.
 
 ## Week of September 9, 2019
 
