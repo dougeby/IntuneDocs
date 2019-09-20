@@ -13,7 +13,7 @@ These notices provide important information that can help you prepare for future
 
 
 ### Decreasing support for Android device administrator 
-Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
+Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise](../connect-intune-android-enterprise.md) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
 
 #### How does this affect me?
 Because of these changes by Google, Intune users will be impacted in the following ways: 
@@ -91,7 +91,7 @@ Check your Microsoft, third-party, and line-of-business (LOB) apps. Make sure al
 You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
 
 #### Additional information
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
+[Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md)
 
 ### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
 Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings”, which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 

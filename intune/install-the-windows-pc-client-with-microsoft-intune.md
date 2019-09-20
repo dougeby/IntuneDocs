@@ -52,7 +52,7 @@ All methods, except those in which users install the Intune client software them
 
 1. In the [Microsoft Intune administration console](https://manage.microsoft.com/), click **Admin** &gt; **Client Software Download**.
 
-   ![Download the Intune PC client](./media/https://docs.microsoft.com/intune/media/install-the-windows-pc-client/pc-sa-client-download.png)
+   ![Download the Intune PC client](./media/install-the-windows-pc-client/pc-sa-client-download.png)
 
 2. On the **Client Software Download** page, click **Download Client Software**. Then save the **Microsoft_Intune_Setup.zip** package that contains the software to a secure location on your network.
 

@@ -34,7 +34,7 @@ A key task of any Administrator is to protect and secure an organization's resou
 
 Using a device management provider, organization can make sure that only authorized people and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their phone, because they know their device meet their organization's security requirements. As an organization, you might ask - **What should we use to protect our resources?**
 
-The answer is [Microsoft Intune](https://docs.microsoft.com/intune/introduction-intune). Intune offers mobile device management (MDM) and mobile application management (MAM). Some key tasks of any MDM or MAM solution are to:
+The answer is [Microsoft Intune](introduction-intune.md). Intune offers mobile device management (MDM) and mobile application management (MAM). Some key tasks of any MDM or MAM solution are to:
 
 - Support a diverse mobile environment and manage iOS, Android, Windows, and macOS devices securely.
 - Make sure devices and apps are compliant with your organization's security requirements.
@@ -50,7 +50,7 @@ It's common for people to have multiple devices that use different platforms. Fo
 
 With Intune, you can manage multiple devices per person, and the different platforms that run on each device, including iOS, macOS, Android, and Windows. Intune separates policies and settings by device platform. So it's easy to manage and view devices of a specific platform.
 
-**[Common scenarios](https://docs.microsoft.com/intune/common-scenarios)** is a great resource to see how Intune answers common questions when working with mobile devices. You'll find scenarios about:  
+**[Common scenarios](common-scenarios.md)** is a great resource to see how Intune answers common questions when working with mobile devices. You'll find scenarios about:  
 - Protecting email with on-premises Exchange
 - Accessing Office 365 safely and securely
 - Using personal devices to access organizational resources
@@ -58,16 +58,16 @@ With Intune, you can manage multiple devices per person, and the different platf
 ## Integration with secure-and-protect services
 A key task of any device management solution is to provide security and protection. Intune does a great job of integrating with other services to achieve this task. For example:
 
-- **Microsoft 365** is a key component to simplifying common IT tasks. In the Microsoft 365 admin center, you create users, and manage groups. You also get access to other services, such as Intune, Azure AD, and more. 
+- **Microsoft 365** is a key component to simplifying common IT tasks. In the Microsoft 365 admin center, you create users, and manage groups. You also get access to other services, such as Intune, Azure AD, and more.
 
   For example, create an iOS devices group in Microsoft 365. Then, use Intune to push policies to the iOS devices group that focus on iOS features, such as access to the app store, using AirDrop, backing up to iCloud, using Apple’s web filter, and more.
 
 - **Windows Defender** includes many security features to help protect Windows 10 devices. For example, using Intune and Windows Defender together, you can: 
 
-  - Enable [Windows Defender SmartScreen](https://docs.microsoft.com/intune/endpoint-protection-windows-10) to look for suspicious activity in files and apps on mobile devices. 
-  - Use [Microsoft Defender Advanced Threat Protection (ATP)](https://docs.microsoft.com/intune/advanced-threat-protection) to help prevent security breaches on mobile devices. And, help limit the impact of a security breach by blocking a user from corporate resources.
+  - Enable [Windows Defender SmartScreen](endpoint-protection-windows-10.md) to look for suspicious activity in files and apps on mobile devices. 
+  - Use [Microsoft Defender Advanced Threat Protection (ATP)](advanced-threat-protection.md) to help prevent security breaches on mobile devices. And, help limit the impact of a security breach by blocking a user from corporate resources.
 
-- **Conditional Access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [Conditional Access](https://docs.microsoft.com/intune/conditional-access), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
+- **Conditional Access** is a feature of Azure Active Directory, and integrates nicely with Intune. Using [Conditional Access](conditional-access.md), make sure only compliant devices are allowed access to email, SharePoint, and other apps. 
 
 ## Choose the device management solution that's right for you
 
@@ -75,7 +75,7 @@ There are a couple of ways to approach device management. First, you can manage 
 
 In the second approach, you manage apps on devices. This approach is called **Mobile application management (MAM)**. Users can use their personal devices to access organizational resources. When opening an app, such as email or SharePoint, users are prompted for additional authentication. If a device is ever lost or stolen, you can remove all organization data from the device. 
 
-You can also use a combination of [MDM and MAM](https://docs.microsoft.com/intune/byod-technology-decisions) together.
+You can also use a combination of [MDM and MAM](byod-technology-decisions.md) together.
 
 When you set up Intune, you also choose to work solely in the Azure portal to manage devices, or use Intune and Microsoft 365 together to manage devices. [Migrating mobile device management to Intune in the Azure portal](https://www.microsoft.com/itshowcase/Article/Content/1042/Migrating-mobile-device-management-to-Intune-in-the-Azure-portal) is a Microsoft IT case study. In this case study, see how Microsoft IT chose a modern device management approach, and read the lessons learned.
 
@@ -85,20 +85,20 @@ The [Device Management admin center](https://devicemanagement.microsoft.com/) is
 
 On the Device Management admin center, you can:
 
-- [Enroll devices](https://docs.microsoft.com/intune/device-enrollment)
-- [Set device compliance](https://docs.microsoft.com/intune/device-compliance-get-started)
-- [Manage devices](https://docs.microsoft.com/intune/device-management)
-- [Manage apps](https://docs.microsoft.com/intune/app-management)  
-- [iOS eBooks](https://docs.microsoft.com/intune/vpp-ebooks-ios)  
-- [Install Exchange on-premises connector](https://docs.microsoft.com/intune/exchange-connector-install)  
-- [Manage roles](https://docs.microsoft.com/intune/role-based-access-control)  
+- [Enroll devices](device-enrollment.md)
+- [Set device compliance](device-compliance-get-started.md)
+- [Manage devices](device-management.md)
+- [Manage apps](app-management.md)  
+- [iOS eBooks](vpp-ebooks-ios.md)  
+- [Install Exchange on-premises connector](exchange-connector-install.md)  
+- [Manage roles](role-based-access-control.md)  
 - Manage software updates
-  - [Manage Windows 10 updates](https://docs.microsoft.com/intune/windows-update-for-business-configure)  
-  - [Manage iOS updates](https://docs.microsoft.com/intune/software-updates-ios)  
+  - [Manage Windows 10 updates](windows-update-for-business-configure.md)  
+  - [Manage iOS updates](software-updates-ios.md)  
 - [Azure active directory](https://docs.microsoft.com/azure/active-directory)  
 - [Manage users](https://docs.microsoft.com/azure/active-directory/fundamentals/add-users-azure-active-directory)
 - [Manage groups and members](https://docs.microsoft.com/azure/active-directory/fundamentals/active-directory-manage-groups)
-- [Troubleshoot](https://docs.microsoft.com/intune/help-desk-operators)
+- [Troubleshoot](help-desk-operators.md)
 
 ## Next step
 When you're ready to get started with an MDM or MAM solution, walk through the different steps to set up Intune, enroll devices, and start creating policies. [Mobile device management for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) is also a great resource.

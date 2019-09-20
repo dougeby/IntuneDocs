@@ -210,4 +210,4 @@ You can group Windows devices by a correlator ID when enrolling using [Autopilot
 > - Never name Autopilot or Apple DEP profiles beginning with "OfflineAutopilotprofile-".
 
 ## Next steps
-After you configure Windows Autopilot for registered Windows 10 devices, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](https://docs.microsoft.com/intune/device-management)
+After you configure Windows Autopilot for registered Windows 10 devices, learn how to manage those devices. For more information, see [What is Microsoft Intune device management?](device-management.md)

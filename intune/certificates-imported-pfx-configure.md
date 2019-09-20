@@ -45,7 +45,7 @@ To use imported PKCS certificates with Intune, you'll need the following infrast
 
   This connector can automatically update itself when new versions become available. To use the update capability, you must ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.  
 
-  For more information about all the network endpoints that the connector accesses, see [Intune network configuration requirements and bandwidth](https://docs.microsoft.com/intune/network-bandwidth-use).
+  For more information about all the network endpoints that the connector accesses, see [Intune network configuration requirements and bandwidth](network-bandwidth-use.md).
 
 
 - **Windows Server**:  
