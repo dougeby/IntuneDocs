@@ -63,19 +63,19 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### App management 
 
 #### Managed Google Play private LOB apps <!-- 1464182  -->
-Intune now allows IT admins to publish private Android LOB apps to Managed Google Play via an iframe embedded in the Intune console.  Previously, IT admins needed to publish LOB apps directly to Google's Play publishing console, which required several steps and was time consuming. This new features allows for easy publishing of LOB apps with a minimal set of steps, without needing to leave the Intune console.  Admins will no longer need to manually register as a developer with Google, and will no longer need to pay the Google $25 registration fee.  Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
+Intune now allows IT admins to publish private Android LOB apps to Managed Google Play via an iframe embedded in the Intune console.  Previously, IT admins needed to publish LOB apps directly to Google's Play publishing console, which required several steps and was time consuming. This new feature allows for easy publishing of LOB apps with a minimal set of steps, without needing to leave the Intune console.  Admins will no longer need to manually register as a developer with Google, and will no longer need to pay the Google $25 registration fee.  Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
 
 #### Company Portal experience <!-- 1473353, 3598357 -->
 The Company Portal is being updated. You will be able to use multiple filters on the Apps page within the Company Portal. The Device Details page is also being updated with an improved user experience. We are in the process of rolling out these updates to all customers and expect to be completed by the end of next week.
 
 #### macOS support for web apps <!-- 3174427 -->
-Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md) and [Add web apps to Microsoft Intune](web-app.md).
+Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md) and [Add web apps to Microsoft Intune](web-app.md).
 
 #### macOS support for VPP apps <!-- 3173501  -->
 macOS apps, purchased using Apple Business Manager, are displayed in the console when Apple VPP tokens are synced in Intune. You can assign, revoke and reassign device and user-based licenses for groups using the Intune console. Microsoft Intune helps you manage VPP apps purchased for use at your company by:
 - Reporting license information from the app store.
 - Tracking how many of the licenses you have used.
-- Helping you not install more copies of the app than you own.
+- Helping you prevent installation of more copies of the app than you own.
 
 For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
 
@@ -108,7 +108,7 @@ Applies to:
 #### Support for IKEv2 VPN profiles for iOS <!-- 1943438   -->
 In this update, you can create VPN profiles for the iOS native VPN client using the IKEv2 protocol. IKEv2 is a new connection type in **Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **VPN** for profile type > **Connection Type**.
 
-These VPN profiles configure the native VPN client, So, no VPN client apps are installed or pushed to managed devices. This feature requires devices be enrolled in Intune (MDM enrollment).
+These VPN profiles configure the native VPN client, so no VPN client apps are installed or pushed to managed devices. This feature requires devices be enrolled in Intune (MDM enrollment).
 
 To see the current VPN settings you can configure, go to [Configure VPN settings on iOS devices](vpn-settings-ios.md).
 
@@ -179,9 +179,9 @@ For more information on these settings, see [Show or hide apps](device-restricti
 Applies to:
 - iOS
 
-#### Windows 10 compliance policy password type values are more clear, and match CSP<!-- 5138985 -->
+#### Windows 10 compliance policy password type values are clearer and match CSP<!-- 5138985 -->
 On Windows 10 devices, you can create a compliance policy that requires specific password features (**Device compliance** > **Policies** > **Create policy** > **Windows 10 and later** for platform > **System Security**). In this update:
-- The **Password type** values are more clear, and updated to match the [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired).
+- The **Password type** values are clearer, and updated to match the [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired).
 - The **Password expiration (days)** setting is updated to allow values from 1-730 days. 
 
 For more information on Windows 10 compliance settings, see [Windows 10 and later settings to mark devices as compliant or not compliant](compliance-policy-create-windows.md). 
@@ -216,10 +216,10 @@ We've added the following support for Android Fully Managed devices:
     - link SCEP certificates to DO Wi-Fi profile for authentication
     - link SCEP certificates to DO VPN profiles for authentication
     - link SCEP certificates to DO Email profiles for authentication (via AppConfig)
-- System apps are supported on Android Enterprise devices. In Intune, add a Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information, see [Add Android Enterprise system apps to Microsoft Intune](apps-ae-system.md). <!-- 4062195 -->
+- System apps are supported on Android Enterprise devices. In Intune, add an Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information, see [Add Android Enterprise system apps to Microsoft Intune](apps-ae-system.md). <!-- 4062195 -->
 - In **Device compliance** > **Android Enterprise** > **Device Owner**, you can create a compliance policy that sets the Google SafetyNet attestation level.   <!-- 4631425 -->
 - On Android Enterprise fully managed devices, the mobile threat defense providers is supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](compliance-policy-create-android-for-work.md#device-owner) lists the current settings.
-- On Android Enterprise fully managed devices, the Microsoft Launcher app can now be configured via app protection policies to allow a standardized end user experience on the fully managed device. The Microsoft Launcher app can be used to personalize your Android device. Using the app along with a Microsoft account or work/school account, you can access your calendar, documents, and recent activities in your personalized feed. You can also open photos, docs and web pages on your Windows PC, to be productive across your devices. <!-- 5334044 -->
+- On Android Enterprise fully managed devices, the Microsoft Launcher app can now be configured via app protection policies to allow a standardized end-user experience on the fully managed device. The Microsoft Launcher app can be used to personalize your Android device. Using the app along with a Microsoft account or work/school account, you can access your calendar, documents, and recent activities in your personalized feed. You can also open photos, docs and web pages on your Windows PC, to be productive across your devices. <!-- 5334044 -->
 
 With this update we are happy to announce that Intune  support for Android Enterprise Fully Managed is now generally available. 
 
@@ -301,7 +301,7 @@ Applies to:
 Admins can manage whether an app is removed or retained on a device when the device is unenrolled at a user or device group level. 
 
 #### Categorize Microsoft Store for Business apps <!-- 3926922 -->
-You can categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop down menu, assign a category.
+You can categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop-down menu, assign a category.
 
 #### Customized notifications for Microsoft Intune app users <!-- 4843354  -->
 The Microsoft Intune app for Android now supports the display of custom push notifications, aligning it with the support recently added in the Company Portal apps for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
@@ -417,7 +417,7 @@ For more information on the Windows Defender Antivirus settings, see [Windows 10
 ### Device enrollment
 
 #### Default scope tags <!-- 3702875  -->
-A new built-in default scope tag is now available. All un-tagged Intune objects that support scope tags are automatically assigned to the default scope tag. The **Default** scope tag is added to all existing role assignments to maintain parity with the admin experience today. If you don't want an admin to see Intune objects with the default scope tag, remove the default scope tag from the role assignment. This features is similar to the security scopes feature in System Center Configuration Manager. For more information, see [Use RBAC and scope tags to for distributed IT](scope-tags.md).
+A new built-in default scope tag is now available. All un-tagged Intune objects that support scope tags are automatically assigned to the default scope tag. The **Default** scope tag is added to all existing role assignments to maintain parity with the admin experience today. If you don't want an admin to see Intune objects with the default scope tag, remove the default scope tag from the role assignment. This feature is similar to the security scopes feature in System Center Configuration Manager. For more information, see [Use RBAC and scope tags to for distributed IT](scope-tags.md).
 
 #### Android enrollment device administrator support <!-- 4869749   -->
 The Android device administrator enrollment option has been added to the Android enrollment page (**Intune** > **Device enrollment** > **Android enrollment**). Android device administrator will still be enabled by default for all tenants.  For more information, see [Android device administrator enrollment](android-enroll-device-administrator.md).
@@ -1019,7 +1019,7 @@ Still in a public preview, we've expanded our support of Android Enterprise full
 
 - [Conditional Access](conditional-access.md) - Conditional Access policies that apply to Android also apply to Android Enterprise fully managed devices. Users can now register their fully managed device in Azure Active Directory using the **Microsoft Intune app**. Then, see and resolve any compliance issues to access organizational resources.
 
-- New end-user app (Microsoft Intune app) - There is a new end user app for Android fully managed devices called **Microsoft Intune**. This new app is light-weight and modern, and provides similar functionally as the Company Portal app, but for fully managed devices. For more information, see [Microsoft Intune app on Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune).
+- New end-user app (Microsoft Intune app) - There is a new end-user app for Android fully managed devices called **Microsoft Intune**. This new app is light-weight and modern, and provides similar functionally as the Company Portal app, but for fully managed devices. For more information, see [Microsoft Intune app on Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune).
 
 To set up Android fully managed devices, go to **Device enrollment** > **Android enrollment** > **Corporate-owned, fully managed user devices**. Support for fully managed Android devices remains in preview, and some Intune features might not be fully functional.  
 
@@ -1174,15 +1174,15 @@ The [Tenant Status page](tenant-status.md) now displays status information for a
 
 ### Role-based access control
 
-#### Granting Intune read only access to some Azure Active Directory roles <!-- 3637917  -->
-Intune read only access has been granted to the following Azure AD roles. Permissions granted with Azure AD roles supersede permissions granted with Intune role-based access control (RBAC).
+#### Granting Intune read-only access to some Azure Active Directory roles <!-- 3637917  -->
+Intune read-only access has been granted to the following Azure AD roles. Permissions granted with Azure AD roles supersede permissions granted with Intune role-based access control (RBAC).
 
-Read only access to Intune audit data:
+Read-only access to Intune audit data:
 
 - Compliance Administrator
 - Compliance Data Administrator
 
-Read only access to all Intune data:
+Read-only access to all Intune data:
 
 - Security Administrator
 - Security Operator
@@ -1218,7 +1218,7 @@ We've expanded the support in Intune for configuring delivery optimization. You 
 ### App management
 
 #### Intune will leverage Google Play Protect APIs on Android devices <!-- 2577355   -->
-Some IT admins are faced with a BYOD landscape where end users may end up rooting or jailbreaking their mobile phone. This behavior, while sometimes not ill-intentioned, results in a bypass of many Intune policies that are set in order to protect the organization's data on end user devices. Thus, Intune provides root and jailbreak detection for both enrolled and unenrolled devices. With this release, Intune will now leverage Google Play Protect APIs to add to our existing root detection checks for unenrolled devices. While Google does not share the entirety of the root detection checks that occur, we expect these APIs to detect users who have rooted their devices for any reason from device customization to being able to get newer OS updates on older devices. These users can then be blocked from accessing corporate data, or their corporate accounts can be wiped from their policy enabled apps. For additional value, the IT admin will now have several reporting updates within the Intune App Protection blade - the "Flagged Users" report will show which users are detected via Google Play Protect's SafetyNet API scan, the "Potentially Harmful Apps" report will show which apps are detected via Google's Verify Apps API scanning. This feature is available on Android.
+Some IT admins are faced with a BYOD landscape where end users may end up rooting or jailbreaking their mobile phone. This behavior, while sometimes not ill-intentioned, results in a bypass of many Intune policies that are set in order to protect the organization's data on end-user devices. Thus, Intune provides root and jailbreak detection for both enrolled and unenrolled devices. With this release, Intune will now leverage Google Play Protect APIs to add to our existing root detection checks for unenrolled devices. While Google does not share the entirety of the root detection checks that occur, we expect these APIs to detect users who have rooted their devices for any reason from device customization to being able to get newer OS updates on older devices. These users can then be blocked from accessing corporate data, or their corporate accounts can be wiped from their policy enabled apps. For additional value, the IT admin will now have several reporting updates within the Intune App Protection blade - the "Flagged Users" report will show which users are detected via Google Play Protect's SafetyNet API scan, the "Potentially Harmful Apps" report will show which apps are detected via Google's Verify Apps API scanning. This feature is available on Android.
 
 #### Win32 app information available in Troubleshooting blade <!-- 2617342   -->
 You can now collect failure log files for a Win32 app installation from the Intune app **Troubleshooting** blade. For more information about app installation troubleshooting, see [Troubleshoot app installation issues](troubleshoot-app-install.md) and [Troubleshoot Win32 app issues](apps-win32-app-management.md#troubleshoot-win32-app-issues).
@@ -1254,7 +1254,7 @@ Windows 10 and later
 #### macOS users are prompted to update their password <!-- 1873216 -->
 Intune is enforcing the **ChangeAtNextAuth** setting on macOS devices. This setting impacts end-users and devices that have compliance password policies or device restriction password profiles. End users are prompted once to update their password. This prompt happens whenever a user first runs a task that requires authentication, such as signing in to the device. Users can also be prompted to update their password when doing anything that requires administrative privileges, such as requesting keychain access. 
 
-Any new or existing password policy changes by the administrator prompts end users again to update their password.
+Any new or existing password policy changes by the administrator prompt end users again to update their password.
 
 Applies to:  
 macOS
@@ -1373,7 +1373,7 @@ The Intune macOS Company Portal now supports Dark Mode for macOS. When you enabl
 ### App management
 
 #### Toast notifications for Win32 apps <!-- 3136566   -->
-You can suppress showing end user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
+You can suppress showing end-user toast notifications per app assignment. From Intune, select **Client apps** > **Apps** > select the app > **Assignments** > **Include Groups**. 
 
 #### Intune app protection policies UI update <!-- 3251427  -->
 We’ve changed the labels for settings and buttons for Intune app protection to make each easier to understand. Some of the changes include:  
@@ -1515,7 +1515,7 @@ Applies to: Windows 10 and later
 #### Use S/MIME to encrypt and sign multiple devices for a user  <!-- 1333642 -->
 This update includes S/MIME email encryption using a new imported certificate profile (**Device configuration** > **Profiles** > **Create profile** > select the platform > **PKCS imported certificate** profile type). In Intune, you can import certificates in PFX format. Intune can then deliver those same certificates to multiple devices enrolled by a single user. This also includes:
 - The native iOS email profile supports enabling S/MIME encryption using imported certificates in PFX format.
-- The native mail app on Windows Phone 10 devices automatically use the S/MIME certificate.
+- The native mail app on Windows Phone 10 devices automatically uses the S/MIME certificate.
 - The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
 - On other platforms, you may need to manually configure the mail app to enable S/MIME.  
 - Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
