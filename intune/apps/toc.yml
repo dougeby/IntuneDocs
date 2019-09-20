@@ -33,6 +33,8 @@
   items:
     - name: Add apps 
       items:
+      - name: Add apps overview
+        href: add-apps.md
       - name: Intune protected apps
         href: apps-supported-intune-apps.md      
       - name: Store apps
