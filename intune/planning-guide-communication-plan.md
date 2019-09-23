@@ -76,8 +76,8 @@ For example, the initial Intune project kickoff communications can target the en
 
   | **Communication plan** | **July** | **August** | **September** | **October** |
 |:---:|:---:|:---:|:---:|:---:|
-| Wave 1  | All |  |  |  |                                                         
-| Kickoff meeting | First week |  |  |  |                                                         
+| Wave 1  | All |  |  |  |
+| Kickoff meeting | First week |  |  |  |
 | Wave 2 | IT | Sales and Marketing | Retail | HR, Finance, and Executives |
 | Pre-rollout Email 1 | First week | First week | First week | First week |
 | Wave 3 | IT | Sales and Marketing | Retail | HR, Finance, and Executives |

@@ -9,7 +9,7 @@ metadata:
   author: dougeby
   ms.author: dougeby
   manager: mtillman
-  ms.date: 08/30/2019
+  ms.date: 09/16/2019
 
 highlightedContent:
   items:
@@ -73,6 +73,9 @@ conceptualContent:
         - url: android-enroll.md
           itemType: how-to-guide
           text: Set up enrollment for Android devices
+      footerLink:
+        text: See more
+        url: ./enrollment/index.yml
     - title: Remotely manage devices
       links:
         - url: device-management.md
@@ -86,7 +89,10 @@ conceptualContent:
           text: Send custom notifications
         - url: devices-wipe.md
           itemType: how-to-guide
-          text: Remove devices     
+          text: Remove devices
+      footerLink:
+        text: See more
+        url: ./remote-actions/index.yml           
     - title: Create compliance rules for users and devices
       links:
         - url: device-compliance-get-started.md
@@ -98,6 +104,9 @@ conceptualContent:
         - url: actions-for-noncompliance.md
           itemType: how-to-guide
           text: Actions for non-compliant devices
+      footerLink:
+        text: See more
+        url: ./protect/index.yml            
     - title: Control device features and settings
       links:
         - url: device-profiles.md
@@ -112,6 +121,9 @@ conceptualContent:
         - url: administrative-templates-windows.md
           itemType: how-to-guide
           text: Configure group policy ADMX settings
+      footerLink:
+        text: See more
+        url: ./configuration/index.yml            
     - title: Protect devices and data
       links:
         - url: device-protect.md
@@ -123,6 +135,9 @@ conceptualContent:
         - url: mobile-threat-defense.md
           itemType: concept
           text: Mobile Threat Defense integration with Intune
+      footerLink:
+        text: See more
+        url: ./protect/index.yml
     - title: Manage apps
       links:
         - url: app-management.md
@@ -137,6 +152,9 @@ conceptualContent:
         - url: app-configuration-policies-overview.md
           itemType: overview
           text: App configuration policies
+      footerLink:
+        text: See more
+        url: ./apps/index.yml          
     - title: App protection policies
       links:
         - url: app-protection-policy.md
@@ -151,6 +169,9 @@ conceptualContent:
         - url: app-protection-policies-monitor.md
           itemType: how-to-guide
           text: Monitor app protection policies
+      footerLink:
+        text: See more
+        url: ./apps/index.yml            
     - title: Help and support
       links:
         - url: get-support.md
@@ -185,6 +206,9 @@ conceptualContent:
         - url: reports-nav-create-intune-reports.md
           itemType: concept
           text: Use the Microsoft Intune Data Warehouse
+      footerLink:
+        text: See more
+        url: ./developer/index.yml          
 additionalContent:
   sections:
     - title: Additional resources to manage devices

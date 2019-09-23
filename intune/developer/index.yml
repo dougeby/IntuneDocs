@@ -1,0 +1,61 @@
+### YamlMime:Landing
+
+title: Developer guidance
+summary: Developer summary
+metadata:
+  title: Developer guidance
+  description: Developer guidance summary
+  services: service
+  ms.service: microsoft-intune
+  ms.topic: landing-page 
+  ms.collection: collection
+  author: erikre
+  ms.author: erikre
+  ms.manager: dougeby
+  ms.date: 09/17/2019  
+
+# linkListType: architecture | concept | deploy | download | get-started | how-to-guide | learn | overview | quickstart | reference | tutorial | whats-new
+
+landingContent:
+# Cards and links should be based on top customer tasks or top subjects
+# Start card title with a verb
+  # Card (optional)
+  - title: Protect apps with Intune App SDK
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Microsoft Intune App SDK overview
+            url: app-sdk.md
+      - linkListType: concept
+        links:
+          - text: Get started with the Microsoft Intune APP SDK
+            url: app-sdk-get-started.md
+          - text: Prepare line-of-business apps for app protection
+            url: apps-prepare-mobile-application-management.md
+      - linkListType: how-to-guide
+        links:
+          - text: Intune APP SDK for iOS
+            url: app-wrapper-prepare.md
+          - text: Prepare iOS apps for app protection policies
+            url: app-wrapper-prepare.md      
+          - text: Intune App SDK for Android
+            url: app-wrapper-prepare.md      
+  # Card (optional)
+  - title: Developer guidance 2
+    linkLists:
+      - linkListType: overview
+        links:
+          - text: Compliance overview
+            url: ../device-compliance-get-started.md
+      - linkListType: quickstart
+        links:
+          - text: Create a device compliance policy
+            url: ../quickstart-set-password-length-android.md
+      - linkListType: tutorial
+        links:
+          - text: Protect Exchange Online email on managed devices
+            url: ../tutorial-protect-email-on-enrolled-devices.md
+      - linkListType: how-to-guide
+        links:
+          - text: Create a policy
+            url: ../create-compliance-policy.md
