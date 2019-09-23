@@ -220,6 +220,8 @@
       href: troubleshoot-exchange-connector.md
 - name: Reference
   items:
+  - name: API to add third-party certificate authority
+    href: scep-libraries-apis.md
   - name: Compliance policy settings
     items:
     - name: Security baselines

@@ -4,8 +4,6 @@
 - name: How-to guides
   expanded: true
   items:
-  - name: API to add third-party certificate authority
-    href: scep-libraries-apis.md
   - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
