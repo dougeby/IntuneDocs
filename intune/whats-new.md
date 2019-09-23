@@ -96,15 +96,6 @@ The Intune App SDK for iOS will use 256-bit encryption keys when encryption is e
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device configuration
 
-#### Allow or restrict adding app widgets to the home screen on Android Enterprise work profile devices <!-- 1109650  wnstaged--> 
-
-On Android Enterprise devices, you can configure features in the work profile (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Work profile only > Device restrictions** for profile type). In this update, you can allow users to add widgets exposed by work profile apps to the device home screen.
-
-To see the settings you can configure, go to [Android Enterprise device settings to allow or restrict features using Intune](device-restrictions-android-for-work.md).
-
-Applies to:
-- Android Enterprise work profile
-
 #### Support for IKEv2 VPN profiles for iOS <!-- 1943438   -->
 In this update, you can create VPN profiles for the iOS native VPN client using the IKEv2 protocol. IKEv2 is a new connection type in **Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **VPN** for profile type > **Connection Type**.
 
@@ -191,6 +182,14 @@ Applies to:
 
  #### Updated UI for configuring Microsoft Exchange on-premises access    <!-- 4092920 -->  
 We've updated the console where you [configure access Microsoft Exchange on-premises access](conditional-access-exchange-create.md). All of the configurations for Exchange on-premises access are now available on the same pane of the console where you *Enable Exchange on-premises access control*.  
+
+#### Allow or restrict adding app widgets to the home screen on Android Enterprise work profile devices <!-- 1109650  --> 
+On Android Enterprise devices, you can configure features in the work profile (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Work profile only > Device restrictions** for profile type). In this update, you can allow users to add widgets exposed by work profile apps to the device home screen.
+
+To see the settings you can configure, go to [Android Enterprise device settings to allow or restrict features using Intune](device-restrictions-android-for-work.md).
+
+Applies to:
+- Android Enterprise work profile
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Device enrollment
