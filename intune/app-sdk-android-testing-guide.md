@@ -34,20 +34,20 @@ The Microsoft Intune App SDK for Android testing guide is designed to help you t
 ## Prerequisite test accounts
 New accounts can be created with and without pre-generated data. To create a new account:
 1. Navigate to the [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) site. 
-2. [Set up Intune](https://docs.microsoft.com/intune/setup-steps) to enable mobile device management (MDM).
-3. [Create users](https://docs.microsoft.com/intune/users-add).
-4. [Create groups](https://docs.microsoft.com/intune/groups-add).
-5. [Assign licenses](https://docs.microsoft.com/intune/licenses-assign) as appropriate for your testing.
+2. [Set up Intune](setup-steps.md) to enable mobile device management (MDM).
+3. [Create users](users-add.md).
+4. [Create groups](groups-add.md).
+5. [Assign licenses](licenses-assign.md) as appropriate for your testing.
 
 
 ## Azure portal policy configuration
-[Create and assign app protection policies](https://docs.microsoft.com/intune/app-protection-policies) in the [Azure portal's Intune blade](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Your [app configuration policy](https://docs.microsoft.com/intune/app-configuration-policies-overview) can also be created and assigned in the Intune blade.
+[Create and assign app protection policies](app-protection-policies.md) in the [Azure portal's Intune blade](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Your [app configuration policy](app-configuration-policies-overview.md) can also be created and assigned in the Intune blade.
 
 > [!NOTE]
 > If your app is not listed in the Azure portal, you can target it with a policy by selecting the **more apps** option and providing the package name in the text box.
 
 > [!IMPORTANT]
-> For an app configuration policy to apply, the enrolling user must be targeted by an [Intune app protection policy](https://docs.microsoft.com/intune/app-protection-policy).
+> For an app configuration policy to apply, the enrolling user must be targeted by an [Intune app protection policy](app-protection-policy.md).
 
 ## Test Cases
 
@@ -107,7 +107,7 @@ You can control app backup as follows:
 ### Unenrollment
 You can remotely wipe managed apps from containing corporate email and documents and personal data is decrypted when it is no longer administered as follows:
 
-1. From the Azure portal, [issue a wipe](https://docs.microsoft.com/intune/apps-selective-wipe).
+1. From the Azure portal, [issue a wipe](apps-selective-wipe.md).
 2. If your app does not register for any wipe handlers confirm the following conditions:
     - A full wipe of the app occurs.
 3. If your app has registered for `WIPE_USER_DATA` or `WIPE_USER_AUXILARY_DATA`, confirm the following conditions:
@@ -127,7 +127,7 @@ Minimally the following scenarios for multi-identity should be revalidated:
 ### App configuration (optional)
 You can configure behavior of managed apps as follows:
 
-1. If your app consumes any app configuration settings, you should test that your app correctly handles all values that you (as the admin) can set. [App configuration policies](https://docs.microsoft.com/intune/app-configuration-policies-overview) can be created and assigned in using Intune.
+1. If your app consumes any app configuration settings, you should test that your app correctly handles all values that you (as the admin) can set. [App configuration policies](app-configuration-policies-overview.md) can be created and assigned in using Intune.
 
 ## Next steps
 

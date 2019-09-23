@@ -20,24 +20,26 @@ landingContent:
 # Cards and links should be based on top customer tasks or top subjects
 # Start card title with a verb
   # Card (optional)
-  - title: Developer guidance 1
+  - title: Protect apps with Intune App SDK
     linkLists:
       - linkListType: overview
         links:
-          - text: Compliance overview
-            url: ../device-compliance-get-started.md
-      - linkListType: quickstart
+          - text: Microsoft Intune App SDK overview
+            url: app-sdk.md
+      - linkListType: concept
         links:
-          - text: Create a device compliance policy
-            url: ../quickstart-set-password-length-android.md
-      - linkListType: tutorial
-        links:
-          - text: Protect Exchange Online email on managed devices
-            url: ../tutorial-protect-email-on-enrolled-devices.md
+          - text: Get started with the Microsoft Intune APP SDK
+            url: app-sdk-get-started.md
+          - text: Prepare line-of-business apps for app protection
+            url: apps-prepare-mobile-application-management.md
       - linkListType: how-to-guide
         links:
-          - text: Create a policy
-            url: ../create-compliance-policy.md
+          - text: Intune APP SDK for iOS
+            url: app-wrapper-prepare.md
+          - text: Prepare iOS apps for app protection policies
+            url: app-wrapper-prepare.md      
+          - text: Intune App SDK for Android
+            url: app-wrapper-prepare.md      
   # Card (optional)
   - title: Developer guidance 2
     linkLists:

@@ -101,7 +101,7 @@ Apple Device Enrollment Program (DEP) management lets you create and deploy poli
 Learn more about iOS DEP enrollment:
 
 - [Choose how to enroll iOS devices](ios-enroll.md)
-- [Enroll iOS devices using Device Enrollment Program](https://docs.microsoft.com/intune/device-enrollment-program-enroll-ios)
+- [Enroll iOS devices using Device Enrollment Program](device-enrollment-program-enroll-ios.md)
 
 ### USB-SA
 IT admins use Apple Configurator, through USB, to prepare each corporate-owned device manually for enrollment using Setup Assistant. The IT admin creates an enrollment profile and exports it to Apple Configurator. When users receive their devices, they're then prompted to run Setup Assistant to enroll their device. This method supports **iOS supervised** mode, which in turn enables the following features:

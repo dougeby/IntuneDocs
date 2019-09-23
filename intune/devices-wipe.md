@@ -45,6 +45,10 @@ The **Wipe** action restores a device to its factory default settings. The user 
 |**Wipe**| Not checked | Yes | Wipes all user accounts, data, MDM policies, and settings. Resets the operating system to its default state and settings.|
 |**Wipe**| Checked | No | Wipes all MDM Policies. Keeps user accounts and data. Resets user settings back to default. Resets the operating system to its default state and settings.|
 
+
+> [!NOTE]
+> The Wipe action is not available for iOS devices enrolled with User Enrollment.
+
 The **Retain enrollment state and user account** option is only available for Windows 10 version 1709 or later.
 
 MDM policies will be reapplied the next time the device connects to Intune.
@@ -197,7 +201,7 @@ If you want to completely remove an Apple DEP device from management by Intune, 
 
 ## Fresh Start
 
-Applicable for Windows 10 devices. Read more about [Fresh Start](https://docs.microsoft.com/intune/device-fresh-start).
+Applicable for Windows 10 devices. Read more about [Fresh Start](device-fresh-start.md).
 
 ## Next steps
 

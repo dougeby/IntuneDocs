@@ -106,7 +106,6 @@ When working with scope tags, remember these details:
     - Device Categories
     - Enrollment Restrictions
     - Corp Device Identifiers
-    - Terms and Conditions
     - Autopilot Devices
     - Device compliance locations
     - Jamf devices

@@ -155,13 +155,13 @@ To create these policies, browse to **Client apps** > **App protection policies*
 > Android devices will prompt to install the Intune Company Portal app regardless of which App type is chosen. For example, if you select 'Apps on Intune managed devices' then users with unmanaged Android devices will still be prompted.
 
 For iOS, additional app configuration settings are required to target app protection policy (APP) settings to apps on Intune enrolled devices:
-- **IntuneMAMUPN** must be configured for all MDM managed applications. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](https://docs.microsoft.com/intune/data-transfer-between-apps-manage-ios#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
-- **IntuneMAMDeviceID** must be configured for all Third-party and LOB MDM managed applications. The **IntuneMAMDeviceID** should be configured to the device ID token. For example, `key=IntuneMAMDeviceID, value={{deviceID}}`. For more information, see [Add app configuration policies for managed iOS devices](https://docs.microsoft.com/intune/app-configuration-policies-use-ios).
-- If only the **IntuneMAMDeviceID** is configured, the Intune APP will consider the device as unmanaged. 
+
+- **IntuneMAMUPN** must be configured for all MDM managed applications. For more information, see [How to manage data transfer between iOS apps in Microsoft Intune](data-transfer-between-apps-manage-ios.md#configure-user-upn-setting-for-microsoft-intune-or-third-party-emm).
+- **IntuneMAMDeviceID** must be configured for all Third-party and LOB MDM managed applications. The **IntuneMAMDeviceID** should be configured to the device ID token. For example, `key=IntuneMAMDeviceID, value={{deviceID}}`. For more information, see [Add app configuration policies for managed iOS devices](app-configuration-policies-use-ios.md).
+- If only the **IntuneMAMDeviceID** is configured, the Intune APP will consider the device as unmanaged.
 
 > [!NOTE]
 > For specific iOS support information about app protection policies based on device management state, see [MAM protection policies targeted based on management state](whats-new-archive.md#mam-protection-policies-targeted-based-on-management-state-).
-
 
 ## Policy settings
 To see a full list of the policy settings for iOS and Android, select one of the following links:

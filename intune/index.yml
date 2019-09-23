@@ -200,7 +200,7 @@ conceptualContent:
         - url: reports-nav-create-intune-reports.md
           itemType: concept
           text: Use the Microsoft Intune Data Warehouse
-        - url: https://docs.microsoft.com/intune/app-sdk
+        - url: app-sdk.md
           itemType: overview
           text: Microsoft Intune App SDK overview
         - url: reports-nav-create-intune-reports.md
@@ -226,7 +226,7 @@ additionalContent:
         - text: Enterprise Mobility + Security for US Government service description
           url: https://docs.microsoft.com/enterprise-mobility-security/solutions/ems-govt-service-description
         - text: US government endpoints for Intune
-          url: https://docs.microsoft.com/intune/intune-us-government-endpoints
+          url: intune-us-government-endpoints.md
         - text: Azure Government site
           url: https://azure.microsoft.com/global-infrastructure/government/
       - title: Microsoft 365
@@ -270,4 +270,4 @@ additionalContent:
           summary: Get help on the Intune Customer Success site  
           url: https://techcommunity.microsoft.com/t5/Intune-Customer-Success/bg-p/IntuneCustomerSuccess
 
- # footer: "Found a problem on our site? [Let us know](https://docs.microsoft.com/intune/)!"
+  footer: "Have feedback or want to contribute to docs? [See this resource](use-docs.md)!"
