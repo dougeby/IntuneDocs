@@ -97,7 +97,7 @@ Below find a list of common devices enrolled in Intune that run Android version 
 Wrap your apps with the latest Intune App SDK. You may also set the “Require minimum OS  version (Warning only)” conditional launch setting to notify end-users on personal devices to upgrade.
 
 
-### Reminder: Intune Plan for Change: Nearing End of Support for Windows 7 <!-- 3042987 -->
+### Intune Plan for Change: Nearing End of Support for Windows 7 <!-- 3042987 -->
 As we messaged in MC148476 posted last September 2018, and again in MC176794 back in March 2019, Windows 7 reaches end of extended support on January 14, 2020. At that time, Intune will retire support for devices running Windows 7, so we can focus our investment on supporting newer technologies and providing great new end user experiences. After that date, technical assistance and automatic updates that help protect your Windows 7 PC will no longer be available through Intune. Microsoft strongly recommends that you move to Windows 10 before January 2020, to avoid a scenario where you need service or support that is no longer available. Read more about the Windows support lifecycle [here](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 #### How does this affect me?
