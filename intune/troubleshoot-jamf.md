@@ -31,18 +31,17 @@ ms.collection: M365-identity-device-management
 This article helps Intune administrators understand and troubleshoot problems with integration of Jamf Pro for macOS with Intune.
 
 > [!TIP]  
-> Much of the information in this article originally appeared in [Troubleshoot problems when you integrate Jamf with Microsoft Intune](https://support.microsoft.com/help/4519171/troubleshoot-problems-when-integrating-jamf-with-microsoft-intune)] on support.microsoft.com.
+> Much of the information in this article originally appeared in [Troubleshoot problems when you integrate Jamf with Microsoft Intune](https://support.microsoft.com/help/4519171/troubleshoot-problems-when-integrating-jamf-with-microsoft-intune) on support.microsoft.com.
 
 ## Prerequisites
 
-Before you start troubleshooting, collect some basic information to clarify the problem and reduce the time to find a resolution. For example, when you encounter a Jamf-Intune integration-related issue, always verify that the prerequisites have all been met. The following requirements must be met for Jamf-Intune integration to function correctly:
+Before you start troubleshooting, collect some basic information to clarify the problem and reduce the time to find a resolution. For example, when you encounter a Jamf-Intune integration-related issue, always verify that the prerequisites have all been met. Review the following considerations before you start troubleshooting:
 
-- Jamf Pro 10.1.0 or a later version.  
-- macOS devices must run OS X 10.11 Yosemite or a later version.
+- Review the prerequisites from [Integrate Jamf PIro with Intune](conditional-acess-integrate-jamf.md#prerequisites).
 - All users must have Microsoft Intune and Microsoft AAD Premium P1 licenses 
 - You must have a user account that has Microsoft Intune Integration permissions in the Jamf Pro console.
 - You must have a user account that has Global Admin permissions in Azure.
-- The latest version of the Microsoft [Company Portal app for macOS](https://aka.ms/macoscompanyportal) must be installed on client devices.
+
 
 Consider the following information when investigating Jamf Pro integration with Intune: 
 - What is the exact error message?
@@ -54,7 +53,18 @@ Consider the following information when investigating Jamf Pro integration with 
 
 ## Common problems 
 
-The following information can help you identify and resolve common problems for devices after you set up Intune and Jamf Pro integration. 
+The following information can help you identify and resolve common problems for devices after you set up Intune and Jamf Pro integration.  
+
+| Problem   | More information                  |
+|-----------------|--------------------------|
+| **Devices are marked as unresponsive in Jamf Pro**  | [Devices fail to check in with Jamf Pro or with Azure](AD#devices-are-marked-as-unresponsive-in-jamf-pro) |
+| **Mac devices prompt for keychain sign-in when you open an app Devices fail to register**  | [Users are prompted for for their password to allow apps to register with Azure AD](#mac-devices-prompt-for-keychain-sign-in-when-you-open-an-app). |
+| **Devices fail to register**  | Any of the following might apply: <br> - [The Jamf Pro app in Azure has incorrect permissions](#cause-1) <br> - [There is an issue for the *Jamf Native macOS Connector* in Azure AD](#cause-2) <br> - [The user doesn't have a valid Intune or Jamf license](#cause-3) <br> - [The user didn't use Jamf Self Service to start the Company Portal app](#cause-4) <br> - [Intune integration is turned off](#cause-5) <br> - [The device was previously enrolled in Intune, or the user has tried to register the device multiple times](#cause-6) <br> - [JamfAAD requests access to a "Microsoft Workplace Join Key" from the users' keychain](#cause-7) |
+|  **Mac device shows compliant in Intune but noncompliant in Azure** | [Device registration issues](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
+| **Duplicate entries appear in the Intune console for Mac devices enrolled by using Jamf** | [Multiple registrations fro the same device](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
+| **Compliance policy fails to evaluate the device** | [Policy targets device groups](#compliance-policy-fails-to-evaluate-the-device) |
+| **Could not retrieve the access token for Microsoft Graph API** | Any of the following might apply: <br> -[Permissions for the Jamf Pro app in Azure](#theres-a-permission-issue-with-the-jamf-pro-application-in-azure) <br> - [Expired licence for Jamf or Intune](#a-license-required-for-jamf-intune-integration-has-expired) <br> **-** [Ports are not open](#the-required-ports-arent-open-on-your-network)|
+ 
 
 ### Devices are marked as unresponsive in Jamf Pro  
 
@@ -278,11 +288,9 @@ You receive the following error:
    Could not retrieve the access token for Microsoft Graph API. Check the configuration for Microsoft Intune Integration.
 ```   
 
-The source of this error can be one of the following. 
+The source of this error can be one of the following causes: 
 
-#### Cause 1  
-
-**There's a permission issue with the Jamf Pro application in Azure.**
+#### There's a permission issue with the Jamf Pro application in Azure
 
 While registering the Jamf Pro app in Azure, one of the following conditions occurred:  
 - The app received more than one permission.
@@ -291,15 +299,11 @@ While registering the Jamf Pro app in Azure, one of the following conditions occ
 **Resolution**  
 See the resolution for Cause 1 for [Devices fail to register](#devices-fail-to-register), earlier in this article.
 
-#### Cause 2  
-
-**A license required for Jamf-Intune integration has expired.**
+#### A license required for Jamf-Intune integration has expired
 
 **Resolution**: See the resolution for Cause 3 for [Devices fail to register](#devices-fail-to-register). 
 
-#### Cause 3  
-
-**The required ports aren't open on your network.**  
+#### The required ports aren't open on your network
 
 **Resolution**: Review the information for network ports in [Prerequisites](conditional-access-integrate-jamf.md#prerequisites) for integrating Jamf Pro with Intune.
 
