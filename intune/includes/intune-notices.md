@@ -97,7 +97,7 @@ Below find a list of common devices enrolled in Intune that run Android version 
 Wrap your apps with the latest Intune App SDK. You may also set the “Require minimum OS  version (Warning only)” conditional launch setting to notify end-users on personal devices to upgrade.
 
 
-### Intune Plan for Change: Nearing End of Support for Windows 7 <!-- 3042987 -->
+### Intune plan for change: nearing end of support for Windows 7 <!-- 3042987 -->
 As we messaged in MC148476 posted last September 2018, and again in MC176794 back in March 2019, Windows 7 reaches end of extended support on January 14, 2020. At that time, Intune will retire support for devices running Windows 7, so we can focus our investment on supporting newer technologies and providing great new end user experiences. After that date, technical assistance and automatic updates that help protect your Windows 7 PC will no longer be available through Intune. Microsoft strongly recommends that you move to Windows 10 before January 2020, to avoid a scenario where you need service or support that is no longer available. Read more about the Windows support lifecycle [here](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
 
 #### How does this affect me?
@@ -110,5 +110,5 @@ We encourage your organization to immediately consider this action plan:
 - Plan and upgrade the Windows 7 fleet to Windows 10 before January 14, 2020.
 - Explore [Windows 10 deployment support](https://docs.microsoft.com/windows/deployment/) to learn more on how to upgrade your existing fleet of Windows 7 PC's to Windows 10.
 - Review the [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) offer through Fast Track who will assist with Microsoft’s application compatibility promise.
-- Transition existing legacy Intune Software Client managed devices to the Microsoft recommended solution to manage Windows 10 using MDM management. Enroll all new Windows 10 PC's using MDM management for Intune in the Azure Portal.
+- Transition existing legacy Intune Software Client managed devices to the Microsoft recommended solution to manage Windows 10 using MDM management. Enroll all new Windows 10 PC's using MDM management for Intune in the Azure portal.
 - See the [blog posted here](https://aka.ms/Windows7_Intune) for more information.
