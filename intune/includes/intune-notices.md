@@ -102,7 +102,7 @@ As we messaged in MC148476 posted last September 2018, and again in MC176794 bac
 
 #### How does this affect me?
 You are receiving this message because you are currently managing Windows 7 PC's using the legacy Intune PC software agent. With less than a year remaining before the end of Windows 7 extended support, we strongly encourage your organization to begin upgrading to Windows 10 as soon as possible. 
-PC management capabilities are built directly into the Windows 10 operating system, and you no longer need to install a client agent such as the Intune Software Client for Windows 7. Starting with Windows 8.1, Microsoft uses the Mobile Device Management (MDM) architecture to provision, configure, update, and manage Windows PCs. Once you have set up Intune, you can simplify Windows enrollment by [enrolling Windows 10 PCs into Intune](windows-enroll.md) through the MDM channel. We recommend that you use this “agentless” MDM management solution to manage your Windows 10 PC’s.
+PC management capabilities are built directly into the Windows 10 operating system, and you no longer need to install a client agent such as the Intune Software Client for Windows 7. Starting with Windows 8.1, Microsoft uses the Mobile Device Management (MDM) architecture to provision, configure, update, and manage Windows PCs. Once you have set up Intune, you can simplify Windows enrollment by [enrolling Windows 10 PCs into Intune](..\windows-enroll.md) through the MDM channel. We recommend that you use this “agentless” MDM management solution to manage your Windows 10 PC’s.
 
 #### What do I need to do to prepare for this change?
 We encourage your organization to immediately consider this action plan:
