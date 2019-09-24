@@ -142,7 +142,8 @@ These settings are added to a device configuration profile in Intune, and then a
     - **Numeric**
     - **Alphanumeric**
   - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
-  - **Minimum password length**: Enter the minimum length a user must enter (between 4 and 14 characters).
+  - **Minimum password length**: Enter the minimum length a user must enter (between 4 and 14 characters). 
+  Note for User Enrollment: Devices with a passcode policy greater than 6 digits that are user enrolled will receive a 6-digit requirement, if previously the passcode was set to greater than 6. Devices with a complex passcode requirement that are user enrolled will also receive a 6-digit requirement if previously set to greater than 6. All other passcode policy requirements will not be enforced on user enrolled devices. 
   - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 4-11).
   
     iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.
