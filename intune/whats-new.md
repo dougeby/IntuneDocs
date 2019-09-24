@@ -59,7 +59,7 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 
 ## Week of September 23, 2019
 
-#### iOS User Enrollment support in Preview <!-- 4817900 -->
+#### iOS User Enrollment in Preview <!-- 4817900 -->
 Apple's iOS 13.1 release includes User Enrollment, a new form of lightweight management for iOS devices. It can be used in place of Device Enrollment or Automated Device Enrollment (formerly Device Enrollment Program) for personally-owned devices. Intune's Preview is supporting this feature set by letting you:
 
 -Target User Enrollment to user groups.
