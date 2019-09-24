@@ -66,7 +66,7 @@ Complete the following steps to enroll your macOS device in management. If you'r
     * Agree to the Terms and conditions
     * Create a computer account
     * Walk through an express setup
-    * Set up your Mac  
+    * Set up your Mac
 
 ## Get the Company Portal app
 

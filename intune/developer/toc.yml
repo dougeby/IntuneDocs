@@ -4,8 +4,6 @@
 - name: How-to guides
   expanded: true
   items:
-  - name: API to add third-party certificate authority
-    href: scep-libraries-apis.md
   - name: Protect apps with Intune App SDK
     href: app-sdk.md
     items:
@@ -72,10 +70,11 @@
           href: reports-ref-user.md
     - name: Move your Intune Data Warehouse account data
       href: data-warehouse-account-move.md
-  - name: Use Azure AD to access Intune APIs in Microsoft Graph
-    href: intune-graph-apis.md
+  - name: Access Intune APIs in Microsoft Graph
     items:
+    - name: Use Azure AD to access Intune APIs in Microsoft Graph
+      href: intune-graph-apis.md
     - name: Intune API reference
       href: https://developer.microsoft.com/graph/docs/api-reference/beta/resources/intune_graph_overview
-  - name: Graph APIs used to configure devices
-    href: graph-apis-used-by-intune-device-configuration-windows.md
+    - name: Graph APIs used to configure devices
+      href: graph-apis-used-by-intune-device-configuration-windows.md
