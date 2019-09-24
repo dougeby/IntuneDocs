@@ -38,12 +38,14 @@ To enable DEP enrollment, you use both the Intune and Apple DEP portals. A list 
 By the way, DEP enrollment doesn't work with the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 ## DEP and the Company Portal
+
 DEP enrollments aren't compatible with the app store version of the Company Portal app. You can give users access to the Company Portal app on a DEP device. To give them access, push the app to the device using **Install Company Portal with VPP** (Volume Purchase Program) in the DEP profile. For more information, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile).
 
  You can install the Company Portal app on devices already enrolled with DEP. To do so,  deploy the Company Portal app through Intune with an [Application Configuration policy](../apps/app-configuration-policies-use-ios.md) applied.
 
 ## What is supervised mode?
-Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it's especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP). 
+
+Apple introduced supervised mode in iOS 5. An iOS device in supervised mode can be managed with more controls. As such, it's especially useful for corporate-owned devices. Intune supports configuring devices for supervised mode as part the Apple Device Enrollment Program (DEP).
 
 Support for unsupervised DEP devices was deprecated in iOS 11. In iOS 11 and later, DEP configured devices should always be supervised. The DEP is_supervised flag will be ignored in a future iOS release.
 
@@ -58,7 +60,7 @@ Support for unsupervised DEP devices was deprecated in iOS 11. In iOS 11 and lat
 ## Prerequisites
 - Devices purchased in [Apple's Device Enrollment Program](http://deploy.apple.com)
 - [Mobile Device Management (MDM) Authority](../mdm-authority-set.md)
-- [Apple MDM Push certificate](enrollment/apple-mdm-push-certificate-get.md)
+- [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
 ## Get an Apple DEP token
 

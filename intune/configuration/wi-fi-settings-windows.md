@@ -34,7 +34,7 @@ This article describes these settings.
 
 ## Before you begin
 
-[Create a device profile](../device-profile-create.md).
+[Create a device profile](device-profile-create.md).
 
 ## Basic profile
 
@@ -158,13 +158,13 @@ Select **OK** > **Create** to save your changes. The profile is created and is s
 
 ## Use an imported settings file
 
-For any settings not available in Intune, you can export Wi-Fi settings from another Windows device. This export creates an XML file with all the settings. Then, import this file in to Intune, and use it as the Wi-Fi profile. See [Export and import Wi-Fi settings for Windows devices](../wi-fi-settings-import-windows-8-1.md).
+For any settings not available in Intune, you can export Wi-Fi settings from another Windows device. This export creates an XML file with all the settings. Then, import this file in to Intune, and use it as the Wi-Fi profile. See [Export and import Wi-Fi settings for Windows devices](wi-fi-settings-import-windows-8-1.md).
 
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](../device-profile-assign.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
 
 ## More resources
 
-- See the settings available for [Windows 8.1](../wi-fi-settings-import-windows-8-1.md).
-- [Wi-Fi settings overview](../wi-fi-settings-configure.md), including other platforms
+- See the settings available for [Windows 8.1](wi-fi-settings-import-windows-8-1.md).
+- [Wi-Fi settings overview](wi-fi-settings-configure.md), including other platforms.

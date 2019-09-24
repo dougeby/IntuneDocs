@@ -59,9 +59,9 @@ When the profile is created in Intune, you deploy or assign the profile to devic
 
 5. Select **OK** > **Create** to save your changes.
 
-Your profile is created and shown in the list, but it's not doing anything yet. Be sure to [assign the profile](../device-profile-assign.md) to device groups in your organization.
+Your profile is created and shown in the list, but it's not doing anything yet. Be sure to [assign the profile](device-profile-assign.md) to device groups in your organization.
 
 ## Next steps
 
 - See all the settings for [Windows 10 and newer](shared-user-device-settings-windows.md) and [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md).
-- [Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+- [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).

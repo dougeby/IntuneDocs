@@ -33,11 +33,11 @@ Microsoft Intune includes many settings to help manage and protect your devices.
 
 As part of your mobile device management (MDM) solution, use these settings to control the edition and S mode options for your Windows 10 devices.
 
-For more information on this feature, see [Upgrade Windows 10 editions or enable S mode](../edition-upgrade-configure-windows-10.md).
+For more information on this feature, see [Upgrade Windows 10 editions or enable S mode](edition-upgrade-configure-windows-10.md).
 
 ## Before you begin
 
-[Create the profile](../edition-upgrade-configure-windows-10.md#create-the-profile).
+[Create the profile](edition-upgrade-configure-windows-10.md#create-the-profile).
 
 ## Edition upgrade
 
@@ -53,6 +53,6 @@ For more information on this feature, see [Upgrade Windows 10 editions or enable
 
 ## Next steps
 
-The profile is created, but it may not be doing anything yet. Be sure to [assign the profile](../device-profile-assign.md), and [monitor its status](../device-profile-monitor.md).
+The profile is created, but it may not be doing anything yet. Be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
 
 You can also create edition upgrade profiles for [Windows Holographic for Business](holographic-upgrade.md) devices.

@@ -39,7 +39,7 @@ An Apple MDM Push certificate is required for Intune to manage iOS and macOS dev
 
 - Apple's bulk enrollment methods like the Device Enrollment Program, Apple School Manager, or Apple Configurator.
 
-For more information about enrollment options, see [Choose how to enroll iOS devices](enrollment-method-choose-ios.md).
+For more information about enrollment options, see [Choose how to enroll iOS devices](ios-enroll.md).
 
 When a push certificate expires, you must renew it. When renewing, make sure to use the same Apple ID that you used when you first created the push certificate.
 

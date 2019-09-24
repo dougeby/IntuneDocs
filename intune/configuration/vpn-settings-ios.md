@@ -33,10 +33,10 @@ Microsoft Intune includes many VPN settings that can be deployed to your iOS dev
 
 ## Before you begin
 
-[Create a device configuration profile](../vpn-settings-configure.md).
+[Create a device configuration profile](vpn-settings-configure.md).
 
 > [!NOTE]
-> These settings are available for all enrollment types. For more information on the enrollment types, see [iOS enrollment](../ios-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [iOS enrollment](../enrollment/ios-enroll.md).
 
 ## Connection type
 
@@ -182,7 +182,7 @@ These settings apply when you choose **Connection type** > **IKEv2**.
 
 ## Automatic VPN settings
 
-- **Per-app VPN**: Enables per-app VPN. Allows the VPN connection to trigger automatically when certain apps are opened. Also associate the apps with this VPN profile. For more information, see [instructions for setting up per-app VPN for iOS](../vpn-setting-configure-per-app.md).
+- **Per-app VPN**: Enables per-app VPN. Allows the VPN connection to trigger automatically when certain apps are opened. Also associate the apps with this VPN profile. For more information, see [instructions for setting up per-app VPN for iOS](vpn-setting-configure-per-app.md).
   - **Provider Type**: Only available for Pulse Secure and Custom VPN.
   - When using iOS **per-app VPN** profiles with Pulse Secure or a Custom VPN, choose app-layer tunneling (app-proxy) or packet-level tunneling (packet-tunnel). Set the **ProviderType** value to **app-proxy** for app-layer tunneling, or **packet-tunnel** for packet-layer tunneling. If you're not sure which value to use, check your VPN provider's documentation.
   - **Safari URLs that will trigger this VPN**: Add one or more web site URLs. When these URLs are visited using the Safari browser on the device, the VPN connection is automatically established.
@@ -210,6 +210,6 @@ If you're using a proxy, configure the following settings. Proxy settings aren't
 
 ## Next steps
 
-The profile is created, but it's not doing anything yet. Next, [assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-Configure VPN settings on [Android](../vpn-settings-android.md), [Android Enterprise](../vpn-settings-android-enterprise.md), [macOS](vpn-settings-macos.md), and [Windows 10](vpn-settings-windows-10.md) devices.
+Configure VPN settings on [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [macOS](vpn-settings-macos.md), and [Windows 10](vpn-settings-windows-10.md) devices.

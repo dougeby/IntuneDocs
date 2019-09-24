@@ -42,7 +42,7 @@ This article describes these settings.
 [Create a device profile](../device-profile-create.md).
 
 > [!NOTE]
-> These settings are available for all enrollment types. For more information on the enrollment types, see [iOS enrollment](../ios-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [iOS enrollment](../enrollment/ios-enroll.md).
 
 ## Basic profiles
 
@@ -124,6 +124,6 @@ This article describes these settings.
 
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](../device-profile-assign.md), and [monitor its status](../device-profile-monitor.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
 
-Configure Wi-Fi settings on [Android](../wi-fi-settings-android.md), [Android Enterprise](../wi-fi-settings-android-enterprise.md), [macOS](wi-fi-settings-macos.md), and [Windows 10](wi-fi-settings-windows.md) devices.
+Configure Wi-Fi settings on [Android](wi-fi-settings-android.md), [Android Enterprise](wi-fi-settings-android-enterprise.md), [macOS](wi-fi-settings-macos.md), and [Windows 10](wi-fi-settings-windows.md) devices.

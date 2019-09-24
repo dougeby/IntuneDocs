@@ -84,6 +84,6 @@ To learn more about email profiles in Intune, see [configure email settings](ema
 
 ## Next steps
 
-[Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 You can also create email profiles for [Android Enterprise - work profile](email-settings-android-enterprise.md), [iOS](email-settings-ios.md), [Windows 10 and later](email-settings-windows-10.md), and [Windows Phone 8.1](email-settings-windows-phone-8-1.md).

@@ -34,7 +34,7 @@ This feature applies to devices running:
 - Windows 10 and later
 - Windows Holographic for Business
 
-Intune supports one kiosk profile per device. If you need multiple kiosk profiles on a single device, you can use a [Custom OMA-URI](../custom-settings-windows-10.md).
+Intune supports one kiosk profile per device. If you need multiple kiosk profiles on a single device, you can use a [Custom OMA-URI](custom-settings-windows-10.md).
 
 Intune uses "configuration profiles" to create and customize these settings for your organization's needs. After you add these features in a profile, push or deploy these settings to groups in your organization.
 
@@ -65,14 +65,14 @@ This article shows you how to create a device configuration profile. For a list 
 
 5. When you're done, select **OK** > **Create** to save your changes. 
 
-The profile is created, and shown in the profiles list. Next, [assign](../device-profile-assign.md) the profile.
+The profile is created, and shown in the profiles list. Next, [assign](device-profile-assign.md) the profile.
 
 ## Next steps
 
-[Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 You can create kiosk profiles for devices that run the following platforms:
-- [Android](../device-restrictions-android.md#kiosk)
-- [Android Enterprise](../device-restrictions-android-for-work.md#dedicated-device-settings)
+- [Android](device-restrictions-android.md#kiosk)
+- [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings)
 - [Windows 10 and later](kiosk-settings-windows.md)
 - [Windows Holographic for Business](kiosk-settings-holographic.md)

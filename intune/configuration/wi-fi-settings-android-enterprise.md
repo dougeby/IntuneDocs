@@ -161,6 +161,6 @@ Select this option if using an Android Enterprise dedicated device as a kiosk.
 
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](../device-profile-assign.md) and [monitor its status.](../device-profile-monitor.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md) and [monitor its status.](device-profile-monitor.md).
 
-You can also create Wi-Fi profiles for [Android](../wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md), [macOS](wi-fi-settings-macos.md), [Windows 10](wi-fi-settings-windows.md), and [Windows 8.1](wi-fi-settings-import-windows-8-1.md) devices.
+You can also create Wi-Fi profiles for [Android](wi-fi-settings-android.md), [iOS](wi-fi-settings-ios.md), [macOS](wi-fi-settings-macos.md), [Windows 10](wi-fi-settings-windows.md), and [Windows 8.1](wi-fi-settings-import-windows-8-1.md) devices.

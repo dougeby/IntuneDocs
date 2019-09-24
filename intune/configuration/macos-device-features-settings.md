@@ -34,14 +34,14 @@ Intune includes some built-in settings to customize features on your macOS devic
 
 Use these features to control macOS devices as part of your mobile device management (MDM) solution.
 
-This article lists these settings, and describes what each setting does. It also lists the steps to get the IP address, path, and port of AirPrint printers using the Terminal app (emulator). For more information on device features, go to [Add iOS or macOS device feature settings](../device-features-configure.md).
+This article lists these settings, and describes what each setting does. It also lists the steps to get the IP address, path, and port of AirPrint printers using the Terminal app (emulator). For more information on device features, go to [Add iOS or macOS device feature settings](device-features-configure.md).
 
 ## Before you begin
 
-[Create a macOS device configuration profile](../device-features-configure.md).
+[Create a macOS device configuration profile](device-features-configure.md).
 
 > [!NOTE]
-> These settings apply to different enrollment types, with some settings applying to all enrollment options. For more information on the different enrollment types, see [macOS enrollment](../macos-enroll.md).
+> These settings apply to different enrollment types, with some settings applying to all enrollment options. For more information on the different enrollment types, see [macOS enrollment](../enrollment/macos-enroll.md).
 
 ## AirPrint
 
@@ -225,6 +225,6 @@ This feature applies to:
 
 ## Next steps
 
-[Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-You can also configure device features on [iOS](../ios-device-features-settings.md).
+You can also configure device features on [iOS](ios-device-features-settings.md).

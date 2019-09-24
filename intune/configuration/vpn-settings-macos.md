@@ -35,10 +35,10 @@ Depending on the settings you choose, not all values in the following list are c
 
 ## Before you begin
 
-[Create a device configuration profile](../vpn-settings-configure.md).
+[Create a device configuration profile](vpn-settings-configure.md).
 
 > [!NOTE]
-> These settings are available for all enrollment types. For more information on the enrollment types, see [macOS enrollment](../macos-enroll.md).
+> These settings are available for all enrollment types. For more information on the enrollment types, see [macOS enrollment](../enrollment/macos-enroll.md).
 
 ## Base VPN settings
 
@@ -73,6 +73,6 @@ If you selected **Custom VPN**, configure these further settings:
 
 ## Next steps
 
-The profile is created, but it's not doing anything yet. Next, [assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-Configure VPN settings on [Android](../vpn-settings-android.md), [Android Enterprise](../vpn-settings-android-enterprise.md), [iOS](../vpn-settings-ios.md), and [Windows 10](vpn-settings-windows-10.md) devices.
+Configure VPN settings on [Android](vpn-settings-android.md), [Android Enterprise](vpn-settings-android-enterprise.md), [iOS](vpn-settings-ios.md), and [Windows 10](vpn-settings-windows-10.md) devices.

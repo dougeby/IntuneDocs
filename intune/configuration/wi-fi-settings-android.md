@@ -36,7 +36,7 @@ This article describes these settings.
 
 ## Before you begin
 
-[Create a device profile](../device-profile-create.md).
+[Create a device profile](device-profile-create.md).
 
 ## Basic
 
@@ -97,7 +97,7 @@ This article describes these settings.
 
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](../device-profile-assign.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md).
 
 ## More resources
 

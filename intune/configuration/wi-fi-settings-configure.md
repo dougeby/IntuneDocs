@@ -75,8 +75,8 @@ Wi-Fi profiles support the following device platforms:
 
 3. Some of the Wi-Fi settings are different for each platform. To see the settings for a specific platform, choose your platform:
 
-    - [Android](../wi-fi-settings-android.md)
-    - [Android Enterprise](../wi-fi-settings-android-enterprise.md), including dedicated devices
+    - [Android](wi-fi-settings-android.md)
+    - [Android Enterprise](wi-fi-settings-android-enterprise.md), including dedicated devices
     - [iOS/iPadOS](wi-fi-settings-ios.md)
     - [macOS](wi-fi-settings-macos.md)
     - [Windows 10 and later](wi-fi-settings-windows.md)
@@ -88,4 +88,4 @@ The profile is created, and shown in the profiles list (**Device configuration**
 
 ## Next steps
 
-The profile is created, but it's not doing anything. Next, [assign this profile](../device-profile-assign.md) and [monitor its status.](../device-profile-monitor.md).
+The profile is created, but it's not doing anything. Next, [assign this profile](device-profile-assign.md) and [monitor its status.](device-profile-monitor.md).

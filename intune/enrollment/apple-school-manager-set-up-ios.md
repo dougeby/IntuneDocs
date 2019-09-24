@@ -39,9 +39,9 @@ To enable Apple School Manager enrollment, you use both the Intune and Apple Sch
 Apple School Manager enrollment can't be used with [Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md) or the [device enrollment manager](device-enrollment-manager-enroll.md).
 
 **Prerequisites**
-- [Apple Mobile Device Management (MDM) Push certificate](enrollment/apple-mdm-push-certificate-get.md)
+- [Apple Mobile Device Management (MDM) Push certificate](apple-mdm-push-certificate-get.md)
 - [MDM Authority](../mdm-authority-set.md)
-- [Apple MDM Push certificate](enrollment/apple-mdm-push-certificate-get.md)
+- [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 - If using ADFS, user affinity requires [WS-Trust 1.3 Username/Mixed endpoint](https://technet.microsoft.com/library/adfs2-help-endpoints). [Learn more](https://technet.microsoft.com/itpro/powershell/windows/adfs/get-adfsendpoint).
 - Devices purchased from the [Apple School Management](http://school.apple.com) program
 

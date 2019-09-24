@@ -47,7 +47,7 @@ Learn more about [enrollment restrictions](enrollment-restrictions-set.md).
 
 ## Enable Apple device enrollment
 
-An MDM push certificate is required for iOS and macOS device enrollment. Learn more about [MDM push certificates](enrollment/apple-mdm-push-certificate-get.md).
+An MDM push certificate is required for iOS and macOS device enrollment. Learn more about [MDM push certificates](apple-mdm-push-certificate-get.md).
 
 ## Corporate identifiers
 

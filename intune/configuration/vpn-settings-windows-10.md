@@ -30,7 +30,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-You can add and configure VPN connections for devices using Microsoft Intune. This article lists and describes commonly used settings and features when creating virtual private networks (VPNs). These VPN settings and features are used in device configuration profiles in Intune that are pushed or deployed to devices. 
+You can add and configure VPN connections for devices using Microsoft Intune. This article lists and describes commonly used settings and features when creating virtual private networks (VPNs). These VPN settings and features are used in device configuration profiles in Intune that are pushed or deployed to devices.
 
 As part of your mobile device management (MDM) solution, use these settings to allow or disable features, including using a VPN vendor, enabling always on, using DNS, adding a proxy, and more.
 
@@ -43,7 +43,7 @@ Depending on the settings you choose, not all values may be configurable.
 
 ## Before you begin
 
-[Create a VPN device configuration profile](../vpn-settings-configure.md).
+[Create a VPN device configuration profile](vpn-settings-configure.md).
 
 ## Base VPN settings
 
@@ -186,6 +186,6 @@ For example, if the user is already connected to a trusted DNS suffix, then the 
 
 ## Next steps
 
-The profile is created, but it's not doing anything yet. Next, [assign the profile](../device-profile-assign.md), and [monitor its status](../device-profile-monitor.md).
+The profile is created, but it's not doing anything yet. Next, [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).
 
-Configure VPN settings on [Android](../vpn-settings-android.md), [iOS](../vpn-settings-ios.md), and [macOS](../vpn-settings-macos.md) devices.
+Configure VPN settings on [Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md), and [macOS](vpn-settings-macos.md) devices.

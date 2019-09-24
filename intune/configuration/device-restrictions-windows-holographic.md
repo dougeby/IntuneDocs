@@ -33,7 +33,7 @@ This article lists and describes the different settings you can control on Windo
 
 ## Before you begin
 
-[Create a device configuration profile](../device-restrictions-configure.md#create-the-profile).
+[Create a device configuration profile](device-restrictions-configure.md#create-the-profile).
 
 ## General
 
@@ -112,4 +112,4 @@ Enter the following settings:
 
 ## Next steps
 
-[Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).

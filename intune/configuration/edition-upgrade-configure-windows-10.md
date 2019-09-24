@@ -115,12 +115,12 @@ The following table lists the supported upgrade paths for the Windows 10 edition
         - [Windows 10 upgrade and S mode](edition-upgrade-windows-settings.md)
         - [Windows Holographic for Business](holographic-upgrade.md)
 
-4. Select **OK** > **Create** to save your changes. 
+4. Select **OK** > **Create** to save your changes.
 
-The profile is created and shown in the list. Be sure to [assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+The profile is created and shown in the list. Be sure to [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 ## Next steps
 
-After the profile is created, it's ready to be assigned. Next, [assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+After the profile is created, it's ready to be assigned. Next, [assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
 View the upgrade and S mode settings for [Windows 10](edition-upgrade-windows-settings.md) and [Windows Holographic for Business](holographic-upgrade.md) devices.

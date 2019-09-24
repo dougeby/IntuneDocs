@@ -56,10 +56,10 @@ This article lists the steps to create a device configuration profile  in Micros
 
 5. Select **OK** > **Create** to save your changes.
 
-After you enter your settings, and create the profile, your profile is shown in the profiles list. Next, [assign this profile to some groups](../device-profile-assign.md).
+After you enter your settings, and create the profile, your profile is shown in the profiles list. Next, [assign this profile to some groups](device-profile-assign.md).
 
 ## Next steps
 
 See a list of the [Windows 10 education settings](education-settings-windows.md) and their descriptions.
 
-[Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).

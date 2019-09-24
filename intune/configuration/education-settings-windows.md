@@ -33,11 +33,11 @@ The Take a Test app lets you securely administer online tests on your classroom'
 
 After you've configured the profile, assign and deploy it to your students. 
 
-[Take a Test app in Intune](../education-settings-configure.md) provides more information on this feature.
+[Take a Test app in Intune](education-settings-configure.md) provides more information on this feature.
 
 ## Before you begin
 
-[Create a device configuration profile](../education-settings-configure.md#create-a-device-profile).
+[Create a device configuration profile](education-settings-configure.md#create-a-device-profile).
 
 ## Take a test settings
 After you create a device configuration profile, go to **Profile type** and select **Secure assessment (Education)**. You'll find the following Take a Test app settings. 
@@ -61,4 +61,4 @@ After you create a device configuration profile, go to **Profile type** and sele
 
 ## Next steps
 
-Be sure to [assign the profile](../device-profile-assign.md), and [monitor its status](../device-profile-monitor.md).
+Be sure to [assign the profile](device-profile-assign.md), and [monitor its status](device-profile-monitor.md).

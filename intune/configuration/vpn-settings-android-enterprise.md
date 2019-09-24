@@ -75,6 +75,6 @@ To learn more about VPN profiles in Intune, see [VPN profiles](vpn-settings-conf
 
 ## Next steps
 
-[Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-You can also create VPN profiles for [Android](../vpn-settings-android.md), [iOS](vpn-settings-ios.md), [macOS](vpn-settings-macos.md), [Windows 10 and later](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md), and [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md) devices.
+You can also create VPN profiles for [Android](vpn-settings-android.md), [iOS](vpn-settings-ios.md), [macOS](vpn-settings-macos.md), [Windows 10 and later](vpn-settings-windows-10.md), [Windows 8.1](vpn-settings-windows-8-1.md), and [Windows Phone 8.1](vpn-settings-windows-phone-8-1.md) devices.

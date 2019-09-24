@@ -34,7 +34,7 @@ Virtual private networks (VPNs) give your users secure remote access to your org
 For example, you want to configure all iOS devices with the required settings to connect to a file share on the organization network. You create a VPN profile that includes these settings. Then, you assign this profile to all users who have iOS devices. The users see the VPN connection in the list of available networks, and can connect with minimal effort.
 
 > [!NOTE]
-> You can use [Intune custom configuration policies](../custom-settings-configure.md) to create VPN profiles for the following platforms:
+> You can use [Intune custom configuration policies](custom-settings-configure.md) to create VPN profiles for the following platforms:
 >
 > * Android 4 and later
 > * Enrolled devices that run Windows 8.1 and later
@@ -67,7 +67,7 @@ You can create VPN profiles using the following connection types:
 > [!IMPORTANT]
 > Before you can use VPN profiles assigned to a device, you must install the applicable VPN app for the profile. You can use the information in the [What is app management in Microsoft Intune?](../apps/app-management.md) article to help you assign the app by using Intune.  
 
-Learn how to  create custom VPN profiles by using URI settings in [Create a profile with custom settings](../custom-settings-configure.md).
+Learn how to  create custom VPN profiles by using URI settings in [Create a profile with custom settings](custom-settings-configure.md).
 
 ## Create a device profile
 
@@ -91,8 +91,8 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
 
 3. Depending on the platform you chose, the settings you can configure are different. See the following articles for detailed settings on each platform:
 
-    - [Android settings](../vpn-settings-android.md)
-    - [Android Enterprise settings](../vpn-settings-android-enterprise.md)
+    - [Android settings](vpn-settings-android.md)
+    - [Android Enterprise settings](vpn-settings-android-enterprise.md)
     - [iOS/iPadOS settings](vpn-settings-ios.md)
     - [macOS settings](vpn-settings-macos.md)
     - [Windows Phone 8.1 settings](vpn-settings-windows-phone-8-1.md)
@@ -101,7 +101,7 @@ Learn how to  create custom VPN profiles by using URI settings in [Create a prof
 
 4. When you're done, **Create** your profile.
 
-The profile is created and appears on the profiles list. To assign this profile to groups, see [assign device profiles](../device-profile-assign.md).
+The profile is created and appears on the profiles list. To assign this profile to groups, see [assign device profiles](device-profile-assign.md).
 
 ## Secure your VPN profiles
 
@@ -119,6 +119,6 @@ The user authenticates to the VPN server by providing a user name and password.
 
 ## Next steps
 
-Once the profile is created, it isn't doing anything yet. Next, [assign the profile](../device-profile-assign.md) to some devices.
+Once the profile is created, it isn't doing anything yet. Next, [assign the profile](device-profile-assign.md) to some devices.
 
-You can also create and use per-app VPNs on [Android](android-pulse-secure-per-app-vpn.md) and [iOS](../vpn-setting-configure-per-app.md) devices.
+You can also create and use per-app VPNs on [Android](android-pulse-secure-per-app-vpn.md) and [iOS](vpn-setting-configure-per-app.md) devices.

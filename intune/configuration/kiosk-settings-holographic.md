@@ -33,11 +33,11 @@ This article lists and describes the different settings you can control on Windo
 
 As an Intune administrator, you can create and assign these settings to your devices.
 
-To learn more about the Windows kiosk feature in Intune, see [configure kiosk settings](../kiosk-settings.md).
+To learn more about the Windows kiosk feature in Intune, see [configure kiosk settings](kiosk-settings.md).
 
 ## Before you begin
 
-[Create the profile](../kiosk-settings.md#create-the-profile).
+[Create the profile](kiosk-settings.md#create-the-profile).
 
 ## Single full-screen app kiosks
 
@@ -84,6 +84,6 @@ Apps in this mode are available on the start menu. These apps are the only apps 
 
 ## Next steps
 
-[Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+[Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 
-You can also create kiosk profiles for [Android](../device-restrictions-android.md#kiosk), [Android Enterprise](../device-restrictions-android-for-work.md#dedicated-device-settings), and [Windows 10 and later](kiosk-settings-windows.md) devices.
+You can also create kiosk profiles for [Android](device-restrictions-android.md#kiosk), [Android Enterprise](device-restrictions-android-for-work.md#dedicated-device-settings), and [Windows 10 and later](kiosk-settings-windows.md) devices.

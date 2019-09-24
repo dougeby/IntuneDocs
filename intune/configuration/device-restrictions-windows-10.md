@@ -36,7 +36,7 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Before you begin
 
-[Create a device configuration profile](../device-restrictions-configure.md#create-the-profile).
+[Create a device configuration profile](device-restrictions-configure.md#create-the-profile).
 
 ## App Store
 

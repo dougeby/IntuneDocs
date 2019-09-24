@@ -36,11 +36,11 @@ Using Microsoft Intune, end-users can sign in to these shared devices with a gue
 
 This article lists and describes the settings you use in a Windows 10 (and later) device configuration profile. When the profile is created in Intune, you deploy or assign the profile to device groups in your organization. You can also assign this profile to device groups with mixed device types and OS versions.
 
-For more information on this feature in Intune, see [Control access, accounts, and power features on shared PC or multi-user devices](../shared-user-device-settings.md). For more information on the Windows CSP, see [SharedPC CSP](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp).
+For more information on this feature in Intune, see [Control access, accounts, and power features on shared PC or multi-user devices](shared-user-device-settings.md). For more information on the Windows CSP, see [SharedPC CSP](https://docs.microsoft.com/windows/client-management/mdm/sharedpc-csp).
 
 ## Before your begin
 
-[Create the profile](../shared-user-device-settings.md).
+[Create the profile](shared-user-device-settings.md).
 
 ## Shared multi-user device settings
 
@@ -70,5 +70,5 @@ For more information on this feature in Intune, see [Control access, accounts, a
 
 ## Next steps
 
-- [Assign the profile](../device-profile-assign.md) and [monitor its status](../device-profile-monitor.md).
+- [Assign the profile](device-profile-assign.md) and [monitor its status](device-profile-monitor.md).
 - See the settings for [Windows Holographic for Business](shared-user-device-settings-windows-holographic.md).
