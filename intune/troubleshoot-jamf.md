@@ -6,7 +6,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/17/2019
+ms.date: 09/25/2019
 ms.topic: troubleshooting
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -125,7 +125,7 @@ There are several common causes for Mac devices that fail to register.
   **Resolution**  
   See the *Configuring macOS Intune Integration* section in [Integrating with Microsoft Intune](https://docs.jamf.com/10.13.0/jamf-pro/administrator-guide/Integrating_with_Microsoft_Intune.html) on docs.jamf.com. 
 
-#### Cause 3 **- 
+#### Cause 3
 
 **The user doesn't have a valid Intune or Jamf license**  
 
