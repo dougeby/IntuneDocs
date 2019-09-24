@@ -35,7 +35,7 @@ Microsoft created an API to integrate with Intune. Though the API you can valida
 
 The API is available on the [Intune SCEP API public GitHub repository](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation) for you to download, and use in your solutions. Use this API with third-party SCEP servers to run custom challenge validation against Intune before SCEP provisions a certificate to a device.
 
-[Integrate with Intune SCEP management solution](developer/scep-libraries-apis.md) provides more details on using the API, its methods, and testing the solution you build.
+[Integrate with Intune SCEP management solution](scep-libraries-apis.md) provides more details on using the API, its methods, and testing the solution you build.
 
 **Part 2 - Create the application and profile**  
 Using an Azure Active Directory (Azure AD) application, you can delegate rights to Intune to handle SCEP requests coming from devices. The Azure AD application includes application ID and authentication key values that are used within the API solution the developer creates. Administrators then create and deploy SCEP certificates profiles using Intune and can view reports on the deployment status on the devices.
@@ -131,10 +131,10 @@ The following third-party certification authorities support Intune:
 If you're a third-party CA interested in integrating your product with Intune, review the API guidance:
 
 - [Intune SCEP API GitHub repository](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
-- [Intune SCEP API guidance for third party CAs](developer/scep-libraries-apis.md)
+- [Intune SCEP API guidance for third party CAs](scep-libraries-apis.md)
 
 ## See also
 
 - [Configure certificate profiles](certificates-scep-configure.md)
 - [Intune SCEP API GitHub repository](http://github.com/Microsoft/Intune-Resource-Access/tree/develop/src/CsrValidation)
-- [Intune SCEP API guidance for third party CAs](developer/scep-libraries-apis.md)
+- [Intune SCEP API guidance for third party CAs](scep-libraries-apis.md)
