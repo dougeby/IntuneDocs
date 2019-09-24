@@ -31,7 +31,7 @@ The apps listed in this topic are supported partner and Microsoft apps that are 
 - Enable app protection on devices managed with 3rd party EMM tools
 
 > [!NOTE]
-> For your client line-of-business apps, you can incorporate mobile app management using the [Intune App Software Development Kit](app-sdk.md) (SDK), or the [App Wrapping Tool for iOS](app-wrapper-prepare-ios.md) and the [App Wrapping Tool for Android](app-wrapper-prepare-android.md). 
+> For your client line-of-business apps, you can incorporate mobile app management using the [Intune App Software Development Kit](developer/app-sdk.md) (SDK), or the [App Wrapping Tool for iOS](developer/app-wrapper-prepare-ios.md) and the [App Wrapping Tool for Android](app-wrapper-prepare-android.md). 
 
 The following tables provide details of supported partner and Microsoft apps that are commonly used with Microsoft Intune. 
 

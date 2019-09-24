@@ -164,4 +164,4 @@ To use the device compliance-related features in the Azure portal, you must crea
   - [Windows Holographic for Business](compliance-policy-create-windows.md#windows-holographic-for-business)
   - [Windows 8.1 and Windows Phone 8.1](compliance-policy-create-windows-8-1.md)
 
-- [Reference for policy entities](reports-ref-policy.md) has information about the Intune Data Warehouse policy entities.
+- [Reference for policy entities](developer/reports-ref-policy.md) has information about the Intune Data Warehouse policy entities.

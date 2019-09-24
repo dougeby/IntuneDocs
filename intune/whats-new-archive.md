@@ -1901,7 +1901,7 @@ The full version number has two components:
 - **Build Number**  
   The build number is an internal number that can be used in app detection and to programmatically manage the app. The build number refers to an iteration of the app that references changes in the code.
 
-Learn more about version numbers and developing line-of-business apps in [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md#line-of-business-app-version-numbers).
+Learn more about version numbers and developing line-of-business apps in [Get started with the Microsoft Intune App SDK](developer/app-sdk-get-started.md#line-of-business-app-version-numbers).
 
 ### Device and app management integration <!-- 677972 -->   
 Now that Intune’s mobile device management (MDM) and mobile application management (MAM) are both accessible from the Azure portal, Intune started integrating the IT admin experience around application and device management. These changes are geared to simplify your device and app management experience.
@@ -2250,7 +2250,7 @@ In addition, the **Devices** table now includes **Azure AD join type** and **Azu
 
 
 ### Intune Data Warehouse (Public Preview)
-The Intune Data Warehouse samples data daily to provide a historical view of your tenant. You can access the data using a Power BI file (PBIX), an OData link that is compatible with many analytics tools, or interacting with the REST API. For more information, see [Use the Intune Data Warehouse](reports-nav-create-intune-reports.md).
+The Intune Data Warehouse samples data daily to provide a historical view of your tenant. You can access the data using a Power BI file (PBIX), an OData link that is compatible with many analytics tools, or interacting with the REST API. For more information, see [Use the Intune Data Warehouse](developer/reports-nav-create-intune-reports.md).
 
 
 ### Light and dark modes available for the Company Portal app for Windows 10 <!---676547--->

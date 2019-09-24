@@ -285,15 +285,15 @@ We have updated our documentation for admins and app developers who want to enab
 
 The following articles have been updated:
 
-* [Decide how to prepare apps for mobile application management with Microsoft Intune](apps-prepare-mobile-application-management.md)
-* [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](app-wrapper-prepare-ios.md)
-* [Get started with the Microsoft Intune App SDK](app-sdk-get-started.md)
-* [Intune App SDK for iOS developer guide](app-sdk-ios.md)
+* [Decide how to prepare apps for mobile application management with Microsoft Intune](developer/apps-prepare-mobile-application-management.md)
+* [Prepare iOS apps for mobile application management with the Intune App Wrapping Tool](developer/app-wrapper-prepare-ios.md)
+* [Get started with the Microsoft Intune App SDK](developer/app-sdk-get-started.md)
+* [Intune App SDK for iOS developer guide](developer/app-sdk-ios.md)
 
 The following articles are new additions to the docs library:
 
 * [Intune App SDK Cordova Plugin](app-sdk-cordova.md)
-* [Intune App SDK Xamarin Component](app-sdk-xamarin.md)
+* [Intune App SDK Xamarin Component](developer/app-sdk-xamarin.md)
 
 #### Progress bar when launching the Company Portal on iOS <!--665978-->
 The Company Portal for iOS is introducing a progress bar on the launch screen to provide the user with information about the loading processes that occur. There will be a phased rollout of the progress bar to replace the spinner. This means that some of your users will see the new progress bar while others will continue to see the spinner.
