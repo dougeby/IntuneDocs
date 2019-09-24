@@ -46,11 +46,11 @@ In Windows 10, sideloading is different than in earlier versions of Windows:
 
 ### Code sign your app
 
-First step is to code sign your appx package, See [sign app package using signtool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)
+The first step is to code sign your appx package. For details, see [Sign app package using SignTool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool).
 
 ### Upload your app
 
-Next, you would upload the signed appx file as described at [upload LOB Windows app](lob-apps-windows.md)
+Next, you must upload the signed appx file. For details, see [Add a Windows line-of-business app to Microsoft Intune](lob-apps-windows.md).
 
 If you deploy the app as required to users or devices then you do not need the Inutne Company Portal app. However if you deploy the app as available to users, then they can either use the Company Portal app from the Public Microsoft Store, use the Company Portal app from the Private Microsoft Store for Business, or you will need to sign and manually deploy the Intune Company Portal app.
 
