@@ -66,6 +66,9 @@ This article describes these settings.
     
       > [!NOTE]
       > When you save the Wi-Fi profile, the PSK value you entered isn't shown for security reasons. The pre-shared key watermark still shows **Not configured** even though the PSK is saved in the profile. To change the PSK, enter a new key, and save the profile. If you save a PSK, edit the policy, and leave the PSK blank, then the existing PSK is still used.
+      
+      > [!IMPORTANT]
+      > The PSK is the same for all devices you target the profule to. If the key is compromised, it can be used by any device to connect to the Wi-Fi network. Keep your PSKs secure to avoid unauthorized access.
 
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
