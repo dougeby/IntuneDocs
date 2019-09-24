@@ -61,38 +61,6 @@ You do not need to take any action but can consider updating your IT pro guidanc
 #### Additional information 
 https://aka.ms/intune_fullscreen
 
-### Plan for Change: Intune moving to support iOS 11 and higher in September <!-- 4665324-->
-In September, we expect iOS 13 to be released by Apple. Intune enrollment, the Company Portal, and the Managed Browser will move to support iOS 11 and higher shortly after the iOS 13 release.
-
-#### How does this affect me?
-Provided that O365 mobile apps are supported on iOS 11.0 and higher, this may not affect you; you’ve likely already upgraded your OS or devices. However, if you have any of the devices listed below, or decide to enroll any of the devices listed below, know that the devices below do not support an OS greater than iOS 10. These devices will need to be upgraded to a device that supports iOS 11 or higher:
-
-- iPhone 5
-- iPhone 5c
-- iPad (4th Generation)
-
-If you use Application Protection Policies (APP), you can also set the “Require minimum iOS operating system (Warning only)” access setting.
-
-#### What do I need to do to prepare for this change?
-Check your Intune reporting to see what devices or users may be affected. Go to **Devices** > **All devices** and filter by OS. You can add in additional columns to help identify who in your organization has devices running iOS 10. Request that your end users upgrade their devices to a supported OS version before September.
-
-### Plan for Change: Support for version 8.1.1 and higher of Intune App SDK for iOS <!-- 3586942-->
-Starting in September 2019, Intune will move to support iOS apps with Intune App SDK 8.1.1 and higher. Apps built with SDK versions less than 8.1.1 will no longer be supported. This change will go into effect with Apple’s release of iOS 13, which is expected to come around September and also been announced in MC181399.
-
-#### How does this affect me?
-With Intune App SDK or App Wrapping integration, you can protect corporate data from unapproved applications and users via data encryption. The Intune App SDK for iOS will use 256-bit encryption keys by default when encryption is enabled by Intune App Protection Policies (APP). After this change, any iOS apps on SDK versions prior to 8.1.1, which use 128-bit encryption keys, will no longer be able to share data with applications integrated with SDK 8.1.1 or using the 256-bit keys. All iOS apps will need to have an SDK version 8.1.1 or higher to allow protected data sharing.
-
-#### What can I do to prepare for this change?
-Check your Microsoft, third-party, and line-of-business (LOB) apps. Make sure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
-
-- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For information on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
-- For Microsoft/Third Party apps: Ensure that you are deploying the latest version of these apps to your users.
-
-You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
-
-#### Additional information
-[Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md)
-
 ### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
 Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings”, which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 
 
@@ -127,3 +95,20 @@ Below find a list of common devices enrolled in Intune that run Android version 
 
 #### What do I need to do to prepare for this change?
 Wrap your apps with the latest Intune App SDK. You may also set the “Require minimum OS  version (Warning only)” conditional launch setting to notify end-users on personal devices to upgrade.
+
+
+### Reminder: Intune Plan for Change: Nearing End of Support for Windows 7 <!-- 3042987 -->
+As we messaged in MC148476 posted last September 2018, and again in MC176794 back in March 2019, Windows 7 reaches end of extended support on January 14, 2020. At that time, Intune will retire support for devices running Windows 7, so we can focus our investment on supporting newer technologies and providing great new end user experiences. After that date, technical assistance and automatic updates that help protect your Windows 7 PC will no longer be available through Intune. Microsoft strongly recommends that you move to Windows 10 before January 2020, to avoid a scenario where you need service or support that is no longer available. Read more about the Windows support lifecycle [here](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+
+#### How does this affect me?
+You are receiving this message because you are currently managing Windows 7 PC's using the legacy Intune PC software agent. With less than a year remaining before the end of Windows 7 extended support, we strongly encourage your organization to begin upgrading to Windows 10 as soon as possible. 
+PC management capabilities are built directly into the Windows 10 operating system, and you no longer need to install a client agent such as the Intune Software Client for Windows 7. Starting with Windows 8.1, Microsoft uses the Mobile Device Management (MDM) architecture to provision, configure, update, and manage Windows PCs. Once you have set up Intune, you can simplify Windows enrollment by [enrolling Windows 10 PCs into Intune](windows-enroll.md) through the MDM channel. We recommend that you use this “agentless” MDM management solution to manage your Windows 10 PC’s.
+
+#### What do I need to do to prepare for this change?
+We encourage your organization to immediately consider this action plan:
+
+- Plan and upgrade the Windows 7 fleet to Windows 10 before January 14, 2020.
+- Explore [Windows 10 deployment support](https://docs.microsoft.com/windows/deployment/) to learn more on how to upgrade your existing fleet of Windows 7 PC's to Windows 10.
+- Review the [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) offer through Fast Track who will assist with Microsoft’s application compatibility promise.
+- Transition existing legacy Intune Software Client managed devices to the Microsoft recommended solution to manage Windows 10 using MDM management. Enroll all new Windows 10 PC's using MDM management for Intune in the Azure Portal.
+- See the [blog posted here](https://aka.ms/Windows7_Intune) for more information.
