@@ -37,7 +37,7 @@ This article helps Intune administrators understand and troubleshoot problems wi
 
 Before you start troubleshooting, collect some basic information to clarify the problem and reduce the time to find a resolution. For example, when you encounter a Jamf-Intune integration-related issue, always verify that the prerequisites have all been met. Review the following considerations before you start troubleshooting:
 
-- Review the prerequisites from [Integrate Jamf PIro with Intune](conditional-access-integrate-jamf.md#prerequisites).
+- Review the prerequisites from [Integrate Jamf Pro with Intune](conditional-access-integrate-jamf.md#prerequisites).
 - All users must have Microsoft Intune and Microsoft AAD Premium P1 licenses 
 - You must have a user account that has Microsoft Intune Integration permissions in the Jamf Pro console.
 - You must have a user account that has Global Admin permissions in Azure.
@@ -59,7 +59,7 @@ The following information can help you identify and resolve common problems for 
 |-----------------|--------------------------|
 | **Devices are marked as unresponsive in Jamf Pro**  | [Devices fail to check in with Jamf Pro or with Azure AD](#devices-are-marked-as-unresponsive-in-jamf-pro) |
 | **Mac devices prompt for keychain sign-in when you open an app Devices fail to register**  | [Users are prompted for for their password to allow apps to register with Azure AD](#mac-devices-prompt-for-keychain-sign-in-when-you-open-an-app). |
-| **Devices fail to register**  | The following causes might apply: <br> - [The Jamf Pro app in Azure has incorrect permissions](#cause-1) <br> - [There is an issue for the *Jamf Native macOS Connector* in Azure AD](#cause-2) <br> - [The user doesn't have a valid Intune or Jamf license](#cause-3) <br> - [The user didn't use Jamf Self Service to start the Company Portal app](#cause-4) <br> - [Intune integration is turned off](#cause-5) <br> - [The device was previously enrolled in Intune, or the user has tried to register the device multiple times](#cause-6) <br> - [JamfAAD requests access to a "Microsoft Workplace Join Key" from the users' keychain](#cause-7) |
+| **Devices fail to register**  | The following causes might apply: <br> **-** [***Cause 1*** - The Jamf Pro app in Azure has incorrect permissions](#cause-1) <br> **-** [***Cause 2*** - There is an issue for the *Jamf Native macOS Connector* in Azure AD](#cause-2) <br> **-** [***Cause 3*** - The user doesn't have a valid Intune or Jamf license](#cause-3) <br> **-** [***Cause 4*** - The user didn't use Jamf Self Service to start the Company Portal app](#cause-4) <br> **-** [***Cause 5*** - Intune integration is turned off](#cause-5) <br> **-** [***Cause 6*** - The device was previously enrolled in Intune, or the user has tried to register the device multiple times](#cause-6) <br> **-** [***Cause 7*** - JamfAAD requests access to a "Microsoft Workplace Join Key" from the users' keychain](#cause-7) |
 |  **Mac device shows compliant in Intune but noncompliant in Azure** | [Device registration issues](#mac-device-shows-compliant-in-intune-but-noncompliant-in-azure) |
 | **Duplicate entries appear in the Intune console for Mac devices enrolled by using Jamf** | [Multiple registrations fro the same device](#duplicate-entries-appear-in-the-intune-console-for-mac-devices-enrolled-by-using-jamf) |
 | **Compliance policy fails to evaluate the device** | [Policy targets device groups](#compliance-policy-fails-to-evaluate-the-device) |
