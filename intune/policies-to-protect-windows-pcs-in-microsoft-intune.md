@@ -48,4 +48,4 @@ As an IT admin, one of your top priorities is to [keep the Windows PCs that you 
 
 ## See also
 
-[Common questions, issues and resolutions with device policies and profiles](device-profile-troubleshoot.md)
+[Common questions, issues and resolutions with device policies and profiles](configuration/device-profile-troubleshoot.md)

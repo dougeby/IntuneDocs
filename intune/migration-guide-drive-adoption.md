@@ -57,13 +57,13 @@ Here is a typical approach to enhancing a migration campaign with Conditional Ac
 
 This is one approach among many. You may choose a simpler process that defers all Conditional Access until after every phase has been instructed to enroll, or a stricter process that enforces Conditional Access from the very beginning and requires full compliance for all access.
 
-- Learn more about [Conditional Access](conditional-access.md).
+- Learn more about [Conditional Access](protect/conditional-access.md).
 
 ## Task list for Conditional Access
 
 ### Task 1: Decide how you are going to implement Conditional Access
 
-[Common ways to use Conditional Access](conditional-access-intune-common-ways-use.md).
+[Common ways to use Conditional Access](protect/conditional-access-intune-common-ways-use.md).
 
 ### Task 2: Set up Intune Conditional Access
 
@@ -71,13 +71,13 @@ Choose one of the following options:
 
 - [Configure Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal)
 
-- [Install on-premises Exchange connector with Intune](exchange-connector-install.md)
+- [Install on-premises Exchange connector with Intune](protect/exchange-connector-install.md)
 
-- [Set up app-based Conditional Access policies for Exchange Online](app-based-conditional-access-intune-create.md)
+- [Set up app-based Conditional Access policies for Exchange Online](protect/app-based-conditional-access-intune-create.md)
 
-- [Set up app-based Conditional Access policies for SharePoint Online](app-based-conditional-access-intune-create.md)
+- [Set up app-based Conditional Access policies for SharePoint Online](protect/app-based-conditional-access-intune-create.md)
 
-- [Block apps that do not use modern authentication (ADAL)](app-modern-authentication-block.md)
+- [Block apps that do not use modern authentication (ADAL)](protect/app-modern-authentication-block.md)
 
 ## Next steps
 

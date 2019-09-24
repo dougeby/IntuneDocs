@@ -41,13 +41,13 @@ New accounts can be created with and without pre-generated data. To create a new
 
 
 ## Azure portal policy configuration
-[Create and assign app protection policies](../app-protection-policies.md) in the [Azure portal's Intune blade](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Your [app configuration policy](../app-configuration-policies-overview.md) can also be created and assigned in the Intune blade.
+[Create and assign app protection policies](../apps/app-protection-policies.md) in the [Azure portal's Intune blade](https://portal.azure.com/?feature.customportal=false#blade/Microsoft_Intune_Apps/MainMenu/14/selectedMenuItem/Overview). Your [app configuration policy](../apps/app-configuration-policies-overview.md) can also be created and assigned in the Intune blade.
 
 > [!NOTE]
 > If your app is not listed in the Azure portal, you can target it with a policy by selecting the **more apps** option and providing the package name in the text box.
 
 > [!IMPORTANT]
-> For an app configuration policy to apply, the enrolling user must be targeted by an [Intune app protection policy](../app-protection-policy.md).
+> For an app configuration policy to apply, the enrolling user must be targeted by an [Intune app protection policy](../apps/app-protection-policy.md).
 
 ## Test Cases
 
@@ -57,7 +57,7 @@ The following test cases provide configuration and confirmation steps. Use this 
 
 You can require a pin to access corporate resources. Also, you can enforce corporate authentication before users can use managed apps. Use the following steps to set these requirements:
 
-1. Configure **Require PIN for access** and **Require corporate credentials for access** to **Yes**. For more information, see [Android app protection policy settings in Microsoft Intune](../app-protection-policy-settings-android.md#access-requirements).
+1. Configure **Require PIN for access** and **Require corporate credentials for access** to **Yes**. For more information, see [Android app protection policy settings in Microsoft Intune](../apps/app-protection-policy-settings-android.md#access-requirements).
 2. Confirm the following conditions:
     - App launch should present a prompt for PIN input/setup and/or the production user that was used during enrollment with the Company Portal.
     - Failure to present a valid sign-in prompt could be due to an incorrectly configured android manifest, specifically the values for ADAL integration (SkipBroker, ClientID, and Authority).
@@ -107,7 +107,7 @@ You can control app backup as follows:
 ### Unenrollment
 You can remotely wipe managed apps from containing corporate email and documents and personal data is decrypted when it is no longer administered as follows:
 
-1. From the Azure portal, [issue a wipe](../apps-selective-wipe.md).
+1. From the Azure portal, [issue a wipe](../apps/apps-selective-wipe.md).
 2. If your app does not register for any wipe handlers confirm the following conditions:
     - A full wipe of the app occurs.
 3. If your app has registered for `WIPE_USER_DATA` or `WIPE_USER_AUXILARY_DATA`, confirm the following conditions:
@@ -127,8 +127,8 @@ Minimally the following scenarios for multi-identity should be revalidated:
 ### App configuration (optional)
 You can configure behavior of managed apps as follows:
 
-1. If your app consumes any app configuration settings, you should test that your app correctly handles all values that you (as the admin) can set. [App configuration policies](../app-configuration-policies-overview.md) can be created and assigned in using Intune.
+1. If your app consumes any app configuration settings, you should test that your app correctly handles all values that you (as the admin) can set. [App configuration policies](../apps/app-configuration-policies-overview.md) can be created and assigned in using Intune.
 
 ## Next steps
 
-- [Add an Android line-of-business app to Microsoft Intune](../lob-apps-android.md).
+- [Add an Android line-of-business app to Microsoft Intune](../apps/lob-apps-android.md).

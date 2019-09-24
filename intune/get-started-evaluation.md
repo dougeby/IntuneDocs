@@ -56,14 +56,14 @@ You can follow the intended order of the **Quickstarts** using the table of cont
 - [Try Intune for free](free-trial-sign-up.md) - Create a free subscription to try Intune in a test environment.    
 - [Create a user](quickstart-create-user.md) - Add a user to Intune to allow them to access company resources on mobile devices.
 - [Create a group](quickstart-create-group.md) - Organize users into groups to make it easier to manage the policies and apps they can access.
-- [Set up automatic enrollment](quickstart-setup-auto-enrollment.md) - Set up Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
-- [Enroll your device](quickstart-enroll-windows-device.md) - Take the role of an Intune user and enroll your device into Intune. Then, return to Intune and confirm that the device enrolled successfully.
-- [Create a device compliance policy](quickstart-set-password-length-android.md) - Create a device compliance policy and assign a group to the policy.
-- [Send notifications to noncompliant devices](quickstart-send-notification.md) - Send an email notification to the members of your workforce who have noncompliant devices by creating and assigning a compliance policy.
-- [Add and assign an app](quickstart-add-assign-app.md) - Add and assign a client app to your company's workforce.
-- [Create and assign an app protection policy](quickstart-create-assign-app-policy.md) - Create and assign an app protection policy to a client app on an end user's device.
+- [Set up automatic enrollment](enrollment/quickstart-setup-auto-enrollment.md) - Set up Intune to automatically enroll devices when specific users sign in to Windows 10 devices.
+- [Enroll your device](enrollment/quickstart-enroll-windows-device.md) - Take the role of an Intune user and enroll your device into Intune. Then, return to Intune and confirm that the device enrolled successfully.
+- [Create a device compliance policy](protect/quickstart-set-password-length-android.md) - Create a device compliance policy and assign a group to the policy.
+- [Send notifications to noncompliant devices](protect/quickstart-send-notification.md) - Send an email notification to the members of your workforce who have noncompliant devices by creating and assigning a compliance policy.
+- [Add and assign an app](apps/quickstart-add-assign-app.md) - Add and assign a client app to your company's workforce.
+- [Create and assign an app protection policy](apps/quickstart-create-assign-app-policy.md) - Create and assign an app protection policy to a client app on an end user's device.
 - [Create and assign a custom role](quickstart-create-custom-role.md) - Create and assign a custom role with specific permissions for a security operations department. 
-- [Create an email device profile for iOS](quickstart-email-profile.md) - Create an email device profile for iOS devices.
+- [Create an email device profile for iOS](configuration/quickstart-email-profile.md) - Create an email device profile for iOS devices.
 
 ## Prerequisites
 

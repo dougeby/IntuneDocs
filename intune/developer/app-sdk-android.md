@@ -855,7 +855,7 @@ Authority and NonBrokerRedirectURI may be specified if necessary.
 ### Conditional Access
 
 Conditional Access (CA) is an Azure Active Directory [feature](https://docs.microsoft.com/azure/active-directory/develop/active-directory-conditional-access-developer) which can be used to control access to AAD resources. [Intune
-administrators can define CA rules](../conditional-access.md)
+administrators can define CA rules](../protect/conditional-access.md)
 which allow resource access only from devices or apps which are
 managed by Intune. In order to ensure that your app is able to access
 resources when appropriate, it is necessary to follow the steps
@@ -867,11 +867,11 @@ only resources which cannot be CA-protected, you may skip these steps.
 2. [Register your application with Azure Active Directory] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    The redirect URI can be found in the ADAL integration guidelines above.
 3. Set the manifest meta-data parameters per [Common ADAL configurations](#common-adal-configurations), item 2, above.
-4. Test that everything is configured properly by enabling [device-based CA](../conditional-access-intune-common-ways-use.md) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
+4. Test that everything is configured properly by enabling [device-based CA](../protect/conditional-access-intune-common-ways-use.md) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
     - That sign-in to your app prompts for installation and enrollment of the Intune Company Portal
     - That after enrollment, sign-in to your app completes successfully.
-5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based Conditional Access](../conditional-access-intune-common-ways-use.md#app-based-conditional-access)
-6. Once your app has been added to the approved list, validate by [Configuring app-based CA](../app-based-conditional-access-intune-create.md) and ensuring that sign-in to your app completes successfully.
+5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based Conditional Access](../protect/conditional-access-intune-common-ways-use.md#app-based-conditional-access)
+6. Once your app has been added to the approved list, validate by [Configuring app-based CA](../protect/app-based-conditional-access-intune-create.md) and ensuring that sign-in to your app completes successfully.
 
 ## App protection policy without device enrollment
 
@@ -1865,8 +1865,8 @@ app manually to prevent the user from accessing in-memory data after a wipe occu
 
 ## Enabling MAM targeted configuration for your Android applications (optional)
 Application-specific key-value pairs may be configured in the Intune
-console for [MAM-WE](../app-configuration-policies-managed-app.md)
-and [Android work profile apps](../app-configuration-policies-use-android.md).
+console for [MAM-WE](../apps/app-configuration-policies-managed-app.md)
+and [Android work profile apps](../apps/app-configuration-policies-use-android.md).
 These key-value pairs are not interpreted by Intune at all,
 but are passed on to the app. Applications that want to
 receive such configuration can use the `MAMAppConfigManager` and
@@ -1905,7 +1905,7 @@ App config adds a new notification type:
 ### Further Reading
 For more information about the capabilities of the Graph API, see the [Graph API Reference](https://developer.microsoft.com/graph/docs/concepts/overview). <br>
 
-For more information about how to create a MAM targeted app configuration policy in Android, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for Android](../app-configuration-policies-use-android.md).
+For more information about how to create a MAM targeted app configuration policy in Android, see the section on MAM targeted app config in [How to use Microsoft Intune app configuration policies for Android](../apps/app-configuration-policies-use-android.md).
 
 ## Style Customization (optional)
 
