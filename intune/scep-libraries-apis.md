@@ -38,7 +38,7 @@ Using this API, your third-party SCEP server integrates with the Intune SCEP man
 
 ## SCEP management solution
 
-![How third party certification authority SCEP integrates with Microsoft Intune](../media/scep-certificate-vendor-integration.png)
+![How third party certification authority SCEP integrates with Microsoft Intune](./media/scep-certificate-vendor-integration.png)
 
 Using Intune, administrators create SCEP profiles, and then assign these profiles to MDM devices. The SCEP profiles include parameters, such as:
 
