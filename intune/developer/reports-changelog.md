@@ -41,13 +41,13 @@ The following table lists the recent removed collections and the replacements co
 
 |    Collection                          |    Change     |    Additional information                                                                                                                                                                                                                                                                                                                                                                 |
 |----------------------------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|    mobileAppDeviceUserInstallStatus    |    Removed    |    Use   [mobileAppInstallStatusCounts](../intune-data-warehouse-collections.md#mobileappinstallstatuscounts)   instead.                                                                                                                                                                                                                                                                     |
-|    enrollmentTypes                     |    Removed    |    Use   [deviceEnrollmentTypes](../intune-data-warehouse-collections.md#deviceenrollmenttypes)   instead.                                                                                                                                                                                                                                                                                      |
-|    mdmStatuses                         |    Removed    |    Use [complianceStates](../intune-data-warehouse-collections.md#compliancestates)   instead.                                                                                                                                                                                                                                                                                               |
-|    workPlaceJoinStateTypes             |    Removed    |    Use the `azureAdRegistered`   property in the [devices](../intune-data-warehouse-collections.md#devices) and   [devicePropertyHistories](../intune-data-warehouse-collections.md#devicepropertyhistories)   collections instead.                                                                                                                                                                                                             |
-|    clientRegistrationStateTypes        |    Removed    |    Use   [deviceRegistrationStates](../intune-data-warehouse-collections.md#deviceregistrationstates)   instead.                                                                                                                                                                                                                                                                             |
-|    currentUser                         |    Removed    |    Use the   [users](../intune-data-warehouse-collections.md#users) collection instead.                                                                                                                                                                                                                                                                                                      |
-|    mdmDeviceInventoryHistories         |    Removed    |    Many of the properties were   redundant or can now be found in the   [devicePropertyHistories](../intune-data-warehouse-collections.md#devicepropertyhistories)   or [devices](../intune-data-warehouse-collections.md#devices) collections. Any **mdmDeviceInventoryHistories** properties not already listed with these two   collections are no longer available. See details below.    |
+|    mobileAppDeviceUserInstallStatus    |    Removed    |    Use   [mobileAppInstallStatusCounts](intune-data-warehouse-collections.md#mobileappinstallstatuscounts)   instead.                                                                                                                                                                                                                                                                     |
+|    enrollmentTypes                     |    Removed    |    Use   [deviceEnrollmentTypes](intune-data-warehouse-collections.md#deviceenrollmenttypes)   instead.                                                                                                                                                                                                                                                                                      |
+|    mdmStatuses                         |    Removed    |    Use [complianceStates](intune-data-warehouse-collections.md#compliancestates)   instead.                                                                                                                                                                                                                                                                                               |
+|    workPlaceJoinStateTypes             |    Removed    |    Use the `azureAdRegistered`   property in the [devices](intune-data-warehouse-collections.md#devices) and   [devicePropertyHistories](../intune-data-warehouse-collections.md#devicepropertyhistories)   collections instead.                                                                                                                                                                                                             |
+|    clientRegistrationStateTypes        |    Removed    |    Use   [deviceRegistrationStates](intune-data-warehouse-collections.md#deviceregistrationstates)   instead.                                                                                                                                                                                                                                                                             |
+|    currentUser                         |    Removed    |    Use the   [users](intune-data-warehouse-collections.md#users) collection instead.                                                                                                                                                                                                                                                                                                      |
+|    mdmDeviceInventoryHistories         |    Removed    |    Many of the properties were   redundant or can now be found in the   [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories)   or [devices](intune-data-warehouse-collections.md#devices) collections. Any **mdmDeviceInventoryHistories** properties not already listed with these two   collections are no longer available. See details below.    |
 
 The following table lists the old properties formerly found in the **mdmDeviceInventoryHistories** collection and the change/replacement. Any properties that were in **mdmDeviceInventoryHistories** but not listed below have been removed.
 
@@ -80,7 +80,7 @@ The following table lists the old properties formerly found in the **mdmDeviceIn
 |    subscriberCarrierNetwork    |    subscriberCarrier property in the devices collection                         |
 |    wifimac                     |    wiFiMacAddress in devices collection                                         |
 
-The following table lists changes to properties found in the [devicePropertyHistories](../intune-data-warehouse-collections.md#devicepropertyhistories) collection: 
+The following table lists changes to properties found in the [devicePropertyHistories](intune-data-warehouse-collections.md#devicepropertyhistories) collection: 
 
 |    Old property                  |    Change/replacement                                               |
 |----------------------------------|---------------------------------------------------------------------|
@@ -111,7 +111,7 @@ The following table lists changes to properties found in the [devicePropertyHist
 |    serialNumber                  |    serialNumber in devices collection                               |
 |    workplaceJoinStateKey         |    azureAdRegistered                                                |
 
-The following table lists changes to properties found in the [devices](../intune-data-warehouse-collections.md#devices) collection: 
+The following table lists changes to properties found in the [devices](intune-data-warehouse-collections.md#devices) collection: 
 
 |    Old property                  |    Change/replacement                                               |
 |----------------------------------|---------------------------------------------------------------------|
@@ -135,13 +135,13 @@ The following table lists changes to properties found in the [devices](../intune
 |    referenceId                   |    azureAdDeviceId                                                  |
 |    workplaceJoinStateKey         |    azureAdRegistered                                                |
 
-The following table lists changes to properties found in the [enrollmentActivities](../intune-data-warehouse-collections.md#enrollmentactivities) collection: 
+The following table lists changes to properties found in the [enrollmentActivities](intune-data-warehouse-collections.md#enrollmentactivities) collection: 
 
 |    Old property         |    Change/replacement         |
 |-------------------------|-------------------------------|
 |    enrollmentTypeKey    |    deviceEnrollmentTypeKey    |
 
-The following table lists changes to properties found in the [mamApplications](../intune-data-warehouse-collections.md#mamapplications) collection: 
+The following table lists changes to properties found in the [mamApplications](intune-data-warehouse-collections.md#mamapplications) collection: 
 
 |    Old property       |    Change/replacement    |
 |-----------------------|--------------------------|
@@ -149,7 +149,7 @@ The following table lists changes to properties found in the [mamApplications](.
 |    applicationName    |    mamApplicationName    |
 |    applicationId      |    mamApplicationId      |
 
-The following table lists changes to properties found in the [mamApplicationInstances](../intune-data-warehouse-collections.md#mamapplicationinstances) collection: 
+The following table lists changes to properties found in the [mamApplicationInstances](intune-data-warehouse-collections.md#mamapplicationinstances) collection: 
 
 |    Old property     |    Change/replacement    |
 |---------------------|--------------------------|
@@ -158,13 +158,13 @@ The following table lists changes to properties found in the [mamApplicationInst
 |    deviceType       |    mamDeviceType         |
 |    deviceName       |    mamDeviceName         |
 
-The following table lists changes to properties found in the [mamCheckins](../intune-data-warehouse-collections.md#mamcheckins) collection: 
+The following table lists changes to properties found in the [mamCheckins](intune-data-warehouse-collections.md#mamcheckins) collection: 
 
 |    Old property      |    Change/replacement    |
 |----------------------|--------------------------|
 |    applicationKey    |    mamApplicationKey     |
 
-The following table lists changes to properties found in the [users](../intune-data-warehouse-collections.md#users) collection: 
+The following table lists changes to properties found in the [users](intune-data-warehouse-collections.md#users) collection: 
 
 |    Old property             |    Change/replacement    |
 |-----------------------------|--------------------------|
@@ -198,7 +198,7 @@ _Released December 2018_
 
 ### Enrollment Activities Collection Released to v1.0 
 
-The Enrollment Activities collection is now available in v1.0. You can use this collection to understand enrollment failure volume and trends in your environment. For more information, see [enrollmentActivities](../intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](../intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](../intune-data-warehouse-collections.md#enrollmentfailurecategories), and [enrollmentFailureReasons](../intune-data-warehouse-collections.md#enrollmentfailurereasons).
+The Enrollment Activities collection is now available in v1.0. You can use this collection to understand enrollment failure volume and trends in your environment. For more information, see [enrollmentActivities](../intune-data-warehouse-collections.md#enrollmentactivities), [enrollmentEventStatuses](intune-data-warehouse-collections.md#enrollmenteventstatuses), [enrollmentFailureCategories](intune-data-warehouse-collections.md#enrollmentfailurecategories), and [enrollmentFailureReasons](intune-data-warehouse-collections.md#enrollmentfailurereasons).
 
 ## 1808
 _Released August 2018_
@@ -232,11 +232,11 @@ You can set up an application using Azure Active Directory (Azure AD) and authen
 - An Intune license is no longer required to be assigned to the user when accessing the Intune Data Warehouse (including the API).
 - The Intune role name has been changed from **Reports** to **Intune data warehouse**. 
 
-    For more information, see [Azure AD and Intune credential requirements](../reports-api-url.md#azure-ad-and-intune-credential-requirements).
+    For more information, see [Azure AD and Intune credential requirements](reports-api-url.md#azure-ad-and-intune-credential-requirements).
 
 ### OData query options <!-- 2077711 -->
 
-You can use <code>$select</code> as an OData query parameter. The current version supports the following OData query parameters: <code>$filter</code>, <code>$orderby</code>, <code>$select</code>, <code>$skip</code>, and <code>$top</code>. For more information, see [OData query options](../reports-api-url.md#odata-query-options).
+You can use <code>$select</code> as an OData query parameter. The current version supports the following OData query parameters: <code>$filter</code>, <code>$orderby</code>, <code>$select</code>, <code>$skip</code>, and <code>$top</code>. For more information, see [OData query options](reports-api-url.md#odata-query-options).
 
 ### New entities in the in Data Warehouse data model <!-- 2077804 -->
 

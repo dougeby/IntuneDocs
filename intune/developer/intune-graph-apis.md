@@ -73,7 +73,7 @@ To register an app to use Microsoft Graph API:
 
 2. From the menu, choose **Azure Active Directory** &gt; **App Registrations**.
 
-    <img src="./media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
+    <img src="../media/azure-ad-app-reg.png" width="157" height="170" alt="The App registrations menu command" />
 
 3. Either choose **New application registration** to create a new application or choose an existing application.  (If you choose an existing application, skip the next step.)
 
@@ -85,7 +85,7 @@ To register an app to use Microsoft Graph API:
 
         These vary according to your requirements. For example, if you're using an Azure AD [Authentication Library](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-libraries) (ADAL), set **Application Type** to `Native` and **Redirect URI** to `urn:ietf:wg:oauth:2.0:oob`.
 
-        <img src="media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
+        <img src="../media/azure-ad-app-new.png" width="209" height="140" alt="New app properties and values" />
 
         To learn more, see [Authentication Scenarios for Azure AD](https://docs.microsoft.com/azure/active-directory/develop/active-directory-authentication-scenarios).
 
@@ -95,15 +95,15 @@ To register an app to use Microsoft Graph API:
 
     2. Choose **Settings** &gt; **API access** &gt; **Required permissions**.
 
-    <img src="media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
+    <img src="../media/azure-ad-req-perm.png" width="483" height="186" alt="The Required permissions setting" />
 
 6. From the **Required Permissions** blade, choose **Add** &gt; **Add API access** &gt; **Select an API**.
 
-    <img src="media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
+    <img src="../media/azure-ad-add-graph.png" width="436" height="140" alt="The Microsoft Graph setting" />
 
 7. From the **Select an API** blade, choose **Microsoft Graph** &gt; **Select**.  The **Enable access** blade opens and lists permission scopes available to your application.
 
-    <img src="media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
+    <img src="../media/azure-ad-perm-scopes.png" width="489" height="248" alt="Intune Graph API permission scopes" />
 
     Choose the roles required for your app by placing a checkmark to the left of the relevant names.  To learn about specific Intune permission scopes, see [Intune permission scopes](#intune-permission-scopes).  To learn about other Graph API permission scopes, see [Microsoft Graph permissions reference](https://developer.microsoft.com/graph/docs/concepts/permissions_reference).
 
@@ -119,7 +119,7 @@ At this point, you may also:
 
     When you run the application for the first time, you're prompted to grant the app permission to perform the selected roles.
 
-    <img src="media/azure-ad-grant-perm.png" width="351" height="162" alt="The Grant permissions button" />
+    <img src="../media/azure-ad-grant-perm.png" width="351" height="162" alt="The Grant permissions button" />
 
 - Make the app available to users outside your tenant.  (This is typically only required for partners supporting multiple tenants/organizations.)  
 
@@ -127,7 +127,7 @@ At this point, you may also:
 
   1. Choose **Manifest** from the application blade, which opens the **Edit Manifest** blade.
 
-     <img src="media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
+     <img src="../media/azure-ad-edit-mft.png" width="295" height="114" alt="The Edit manifest blade" />
 
   2. Change the value of the `availableToOtherTenants` setting to `true`.
 
@@ -343,7 +343,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
 
 2. Enter a name for your project and provide other details as desired.
 
-    <img src="media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
+    <img src="../media/aad-auth-cpp-new-console.png" width="624" height="433" alt="Creating a C# console app project in Visual Studio"  />
 
 3. Use the Solution Explorer to add the Microsoft ADAL NuGet package to the project.
 
@@ -351,7 +351,7 @@ This example shows how to use C# to retrieve a list of devices associated with y
     2. Choose **Manage NuGet Packages…** &gt; **Browse**.
     3. Select `Microsoft.IdentityModel.Clients.ActiveDirectory` and then choose **Install**.
 
-    <img src="media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
+    <img src="../media/aad-auth-cpp-install-package.png" width="624" height="458" alt="Selecting the Azure AD identity model module" />
 
 4. Add the following statements to the top of **Program.cs**:
 
@@ -574,17 +574,17 @@ To invite the user to be a guest of your tenant:
 
 1. Choose **Add a guest user** from the **Quick tasks** panel.
 
-    <img src="media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
+    <img src="../media/azure-ad-add-guest.png" width="448" height="138" alt="Use Quick Tasks to add a guest user" />
 
 2. Enter the client's email address and (optionally) add a personalized message for the invite.
 
-    <img src="media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
+    <img src="../media/azure-ad-guest-invite.png" width="203" height="106" alt="Inviting an external user as a guest" />
 
 3. Choose **Invite**.
 
 This sends an invite to the user.
 
-   <img src="media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
+   <img src="../media/aad-multiple-tenant-invitation.png" width="624" height="523" alt="A sample guest invitation" />
 
    The user needs to choose the **Get Started** link to accept your invitation.
 
