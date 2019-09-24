@@ -4887,7 +4887,7 @@
 			"source_path": "intune/app-protection-enabled-apps-ios.md",
 			"redirect_url": "/intune/end-user-mam-apps-ios",
 			"redirect_document_id": false
-		},		
+		},	
 		{
 			"source_path": "intune-classic/deploy-use/how-your-android-users-get-their-apps.md",
 			"redirect_url": "/intune/end-user-apps-android",

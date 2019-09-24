@@ -77,4 +77,4 @@ Use the information in this article to add a Windows Phone line-of-business (LOB
 
 - Learn more about the ways in which you can monitor the properties and assignment of your app. See [How to monitor app information and assignments](apps-monitor.md).
 
-- Learn more about the context of your app in Intune. See [Overview of device and app lifecycles](introduction-device-app-lifecycles.md).
+- Learn more about the context of your app in Intune. See [Overview of device and app lifecycles](device-lifecycle.md).

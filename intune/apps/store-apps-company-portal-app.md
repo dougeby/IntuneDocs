@@ -52,7 +52,7 @@ To manage devices and install apps, your users can install the Company Portal ap
 5. For **Platform**, select **Windows 10 all devices**, and then select the appropriate **Minimum version**, **Architecture**, and **Download app metadata** values. 
 6. Select **Download** under **Package details** to save the file to your local machine.
 
-    ![Windows 10 devices, where architecture equals X86, is selected](./media/store-apps-company-portal-app/Win10CP-all-devices.png)
+    ![Windows 10 devices, where architecture equals X86, is selected](./media/app-sideload-windows/Win10CP-all-devices.png)
 
 7. Download all the packages under “Required Frameworks” by selecting **Download**.  
 

@@ -40,7 +40,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](.
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+Sign in to the [Intune](https://aka.ms/intuneportal) as a [Global administrator or an Intune Service administrator](../users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create an app protection policy
 
