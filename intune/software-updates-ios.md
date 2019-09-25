@@ -58,9 +58,9 @@ The device checks in with Intune about every 8 hours. If an update is available,
       - **Start time**: Choose the start time of the restricted time frame. For example, enter 5 AM so updates aren't installed starting at 5 AM.
       - **End time**: Choose the end time of the restricted time frame. For example, enter 1 AM so updates can be installed starting at 1 AM.
 
-    - **Delay visibility of software updates to end users with no change to scheduled updates (days)**: 
+    - **Delay visibility of software updates to end users with no change to scheduled updates in the software update policy(days)**: 
 
-      **If you want to delay the visibility of software updates for a specific amount of time on your supervised iOS devices, please configure those settings in [Device Restrictions](device-restrictions-ios.md#general).
+      **If you want to delay the visibility of software updates for a specific amount of time on your supervised iOS devices, please configure those settings in [Device Restrictions](device-restrictions-ios.md#general). Software update policies override any device restrictions. If you have both set, the software update policy will come first every time. 
      
       > [! Important]  
       > A policy that has a *Start time* and *End time* set to 12 AM is evaluated as 0 hours, and not 24 hours. This results in no restriction.  
