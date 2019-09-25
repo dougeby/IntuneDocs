@@ -74,7 +74,7 @@ An example workflow:
 **Intune configurations for ATP**:  
 
 - Configure a service to service connection with Microsoft Defender ATP.  
-- Deploy a device compliance policy with a profile type of **Microsoft Defender ATP (Windows 10 Desktop)** to devices that will have risk assessed by ATP.
+- Deploy a device configuration policy with a profile type of **Microsoft Defender ATP (Windows 10 Desktop)** to devices that will have risk assessed by ATP.
 
   For information about how to set up Intune to work with ATP, see [Enforce compliance for Microsoft Defender ATP with Conditional Access in Intune](advanced-threat-protection.md#enable-microsoft-defender-atp-in-intune).  
 
