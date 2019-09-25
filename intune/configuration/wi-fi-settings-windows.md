@@ -60,12 +60,15 @@ This article describes these settings.
 
 - **Wireless Security Type**: Enter the security protocol used to authenticate devices on your network. Your options are:
   - **Open (no authentication)**: Only use this option if the network is unsecured.
-  - **WPA/WPA2-Personal**: A more secure option, and is commonly used for Wi-Fi connectivity. For more security, you can also enter a pre-shared key password or network key. 
+  - **WPA/WPA2-Personal**: A more secure option, and is commonly used for Wi-Fi connectivity. For more security, you can also enter a pre-shared key password or network key.
 
     - **Pre-shared key** (PSK): Optional. Shown when you choose **WPA/WPA2-Personal** as the security type. When your organization's network is set up or configured, a password or network key is also configured. Enter this password or network key for the PSK value. Enter a string between 8-64 characters. If your password or network key is 64 characters, enter hexadecimal characters.
-    
-      > [!NOTE]
-      > When you save the Wi-Fi profile, the PSK value you entered isn't shown for security reasons. The pre-shared key watermark still shows **Not configured** even though the PSK is saved in the profile. To change the PSK, enter a new key, and save the profile. If you save a PSK, edit the policy, and leave the PSK blank, then the existing PSK is still used.
+
+    > [!NOTE]
+    > When you save the Wi-Fi profile, the PSK value you entered isn't shown for security reasons. The pre-shared key watermark still shows **Not configured** even though the PSK is saved in the profile. To change the PSK, enter a new key, and save the profile. If you save a PSK, edit the policy, and leave the PSK blank, then the existing PSK is still used.
+
+    > [!IMPORTANT]
+    > The PSK is the same for all devices you target the profile to. If the key is compromised, it can be used by any device to connect to the Wi-Fi network. Keep your PSKs secure to avoid unauthorized access.
 
 - **Company Proxy settings**: Choose to use the proxy settings within your organization. Your options:
   - **None**: No proxy settings are configured.
