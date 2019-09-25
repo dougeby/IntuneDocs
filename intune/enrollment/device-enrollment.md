@@ -116,7 +116,7 @@ For direct enrollment, the admin must enroll each device manually by creating an
 
 To learn more about iOS enrollment, see:
 
-- [Decide how to enroll iOS devices](ios-enrolled-choose-ios.md)
+- [Decide how to enroll iOS devices](ios-enroll.md)
 - [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-enroll-ios.md)
 
 ## Mobile device cleanup after MDM certificate expiration

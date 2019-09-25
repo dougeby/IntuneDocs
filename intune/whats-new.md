@@ -308,6 +308,7 @@ The Microsoft Intune app for Android now supports the display of custom push not
 ### Device configuration
 
 #### New features for Android Enterprise dedicated devices in multi-app mode <!-- 3755304 3041943 3041946   -->
+
 In Intune, you can control features and settings in a kiosk-style experience on your Android Enterprise dedicated devices (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner only, Device restrictions** for profile type).
 
 In this update, the following features are being added:
@@ -319,7 +320,8 @@ In this update, the following features are being added:
 
 To see the current settings, go to [Android Enterprise device settings to allow or restrict features using Intune](configuration/device-restrictions-android-for-work.md#dedicated-device-settings).
 
-Applies to:  
+Applies to:
+
 - Android Enterprise dedicated devices
 
 #### New app and configuration profiles for Android Enterprise fully managed devices <!-- 3574215 3574238 3574235 3574232   -->
@@ -330,7 +332,7 @@ Using profiles, you can configure settings that apply VPN, email, and Wi-Fi sett
 - Use device configuration profiles to deploy [VPN](configuration/vpn-settings-android-enterprise.md) and [Wi-Fi](configuration/wi-fi-settings-android-enterprise.md) settings.
 
 > [!IMPORTANT]
-> With this feature, users authenticate with their username and password for VPN, Wi-Fi, and e-mail profiles. Currently, certificate-based authentication isn't available. 
+> With this feature, users authenticate with their username and password for VPN, Wi-Fi, and e-mail profiles. Currently, certificate-based authentication isn't available.
 
 Applies to:  
 - Android Enterprise device owner (fully managed)
@@ -1220,7 +1222,7 @@ We've expanded the support in Intune for configuring delivery optimization. You 
 Some IT admins are faced with a BYOD landscape where end users may end up rooting or jailbreaking their mobile phone. This behavior, while sometimes not ill-intentioned, results in a bypass of many Intune policies that are set in order to protect the organization's data on end-user devices. Thus, Intune provides root and jailbreak detection for both enrolled and unenrolled devices. With this release, Intune will now leverage Google Play Protect APIs to add to our existing root detection checks for unenrolled devices. While Google does not share the entirety of the root detection checks that occur, we expect these APIs to detect users who have rooted their devices for any reason from device customization to being able to get newer OS updates on older devices. These users can then be blocked from accessing corporate data, or their corporate accounts can be wiped from their policy enabled apps. For additional value, the IT admin will now have several reporting updates within the Intune App Protection blade - the "Flagged Users" report will show which users are detected via Google Play Protect's SafetyNet API scan, the "Potentially Harmful Apps" report will show which apps are detected via Google's Verify Apps API scanning. This feature is available on Android.
 
 #### Win32 app information available in Troubleshooting blade <!-- 2617342   -->
-You can now collect failure log files for a Win32 app installation from the Intune app **Troubleshooting** blade. For more information about app installation troubleshooting, see [Troubleshoot app installation issues](apps/troubleshoot-app-install.md) and [Troubleshoot Win32 app issues](apps/app-management.md#troubleshoot-win32-app-issues).
+You can now collect failure log files for a Win32 app installation from the Intune app **Troubleshooting** blade. For more information about app installation troubleshooting, see [Troubleshoot app installation issues](./apps/troubleshoot-app-install.md) and [Troubleshoot Win32 app issues](apps/app-management.md#win32-app-installation-troubleshooting).
 
 #### App status details for iOS apps <!-- 3761235   -->
 There are new app installation error messages related to the following:

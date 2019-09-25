@@ -39,7 +39,7 @@ One of the actions you can take when devices don't meet compliance is to send em
 If you don’t have an Intune subscription, [sign up for a free trial account](../free-trial-sign-up.md).
 
 ## Prerequisites
-- When using device compliance policies to block devices from corporate resources, AAD Conditional Access must be set up. If you have completed the [Create a device compliance policy](quickstart-set-password-length-android.md) quickstart, you are using Azure Active Directory. For more information about AAD, see [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [common ways to use Conditional Access with Intune](protect/conditional-access-intune-common-ways-use.md).
+- When using device compliance policies to block devices from corporate resources, AAD Conditional Access must be set up. If you have completed the [Create a device compliance policy](quickstart-set-password-length-android.md) quickstart, you are using Azure Active Directory. For more information about AAD, see [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [common ways to use Conditional Access with Intune](../protect/conditional-access-intune-common-ways-use.md).
 
 ## Sign in to Intune
 
@@ -86,7 +86,7 @@ The following steps will create a compliance policy for Windows 10 devices.
 5. Set **Require a password to unlock mobile devices** to **Require**. This setting specifies whether to require users to enter a password before access is granted to information on their mobile devices. 
 6. Set **Minimum password length** to **6**. This setting specifies the minimum number of digits or characters in the password.
 
-    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification-02.png" width="600">
+    <img alt="System Security settings for a new compliance policy" src="./media/quickstart-send-notification/quickstart-send-notification-01.png" width="600">
 
 7. Select **OK** > **OK** > **Create** to create your compliance policy.
 8. Select **Properties** > **Action for noncompliance** > **Add**.
