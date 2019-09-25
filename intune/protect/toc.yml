@@ -44,6 +44,8 @@
       href: privacy-data-view-correct.md
     - name: Audit, export, delete
       href: privacy-data-audit-export-delete.md
+    - name: Windows Information Protection
+      href: windows-information-protection-configure.md
 - name: How-to guides
   items:
   - name: Set rules on devices to allow access to resources
@@ -200,16 +202,8 @@
       href: software-updates-ios.md 
   - name: Troubleshoot
     items:
-    - name: Help users troubleshoot problems
-      href: help-desk-operators.md  
-    - name: Audit logs for Intune activities
-      href: monitor-audit-logs.md
-    - name: Review logs with Azure Monitor
-      href: review-logs-using-azure-monitor.md
-
     - name: Troubleshoot policies and profiles
-      href: troubleshoot-policies-in-microsoft-intune.md        
-
+      href: troubleshoot-policies-in-microsoft-intune.md
     - name: Troubleshoot Conditional Access
       href: troubleshoot-conditional-access.md
     - name: Troubleshoot certificate connector

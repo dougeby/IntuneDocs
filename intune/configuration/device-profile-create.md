@@ -86,7 +86,7 @@ This article:
        - [VPN](vpn-settings-configure.md)
        - [Wi-Fi](wi-fi-settings-configure.md)
        - [Windows Defender ATP](../protect/advanced-threat-protection.md)
-       - [Windows Information Protection](../apps/windows-information-protection-configure.md)
+       - [Windows Information Protection](../protect/windows-information-protection-configure.md)
 
      For example, if you select **iOS/iPadOS** for the platform, your profile type options look similar to the following profile:
 
