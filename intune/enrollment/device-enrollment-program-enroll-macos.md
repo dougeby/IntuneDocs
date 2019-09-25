@@ -47,10 +47,11 @@ Neither DEP enrollment or Apple School Manager work with the [device enrollment 
 5. [Distribute devices to users](#end-user-experience-with-managed-devices)
 -->
 ## Prerequisites
+
 - Devices purchased in [Apple School Manager](https://school.apple.com/) or [Apple's Device Enrollment Program](http://deploy.apple.com)
-- A list of serial numbers or a purchase order number. 
+- A list of serial numbers or a purchase order number.
 - [MDM Authority](../mdm-authority-set.md)
-- [Apple MDM Push certificate](enrollment/apple-mdm-push-certificate-get.md)
+- [Apple MDM Push certificate](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## Get an Apple DEP token
 
@@ -61,7 +62,7 @@ You use the Apple portal to create a token. You also use the Apple portal to ass
 > [!NOTE]
 > If you delete the token from the Intune classic portal before migrating to Azure, Intune might restore a deleted Apple token. You can delete the token again from the Azure portal.
 
-### Step 1. Download the Intune public key certificate required to create the token.
+### Step 1. Download the Intune public key certificate required to create the token
 
 1. In the [Intune in the Azure portal](https://aka.ms/intuneportal), choose **Device enrollment** > **Apple enrollment** > **Enrollment Program Tokens** > **Add**.
 
@@ -73,8 +74,7 @@ You use the Apple portal to create a token. You also use the Apple portal to ass
 
 3. Choose **Download your public key** to download and save the encryption key (.pem) file locally. The .pem file is used to request a trust-relationship certificate from the Apple portal.
 
-
-### Step 2. Use your key to download a token from Apple.
+### Step 2. Use your key to download a token from Apple
 
 1. Choose **Create a token for Apple's Device Enrollment Program** or **Create a token via Apple School Manager** to open the appropriate Apple portal, and sign in with your company Apple ID. You can use this Apple ID to renew your token.
 2. For DEP, in the Apple portal, choose **Get Started** for **Device Enrollment Program** > **Manage Servers** > **Add MDM Server**.
@@ -99,7 +99,7 @@ In Intune in the Azure portal, provide the Apple ID for future reference.
 
 ![Screenshot of specifying the Apple ID used to create the enrollment program token and browsing to the enrollment program token.](./media/device-enrollment-program-enroll-macos/image03.png)
 
-### Step 4. Upload your token.
+### Step 4. Upload your token
 In the **Apple token** box, browse to the certificate (.pem) file, choose **Open**, and then choose **Create**. With the push certificate, Intune can enroll and manage macOS devices by pushing policy to enrolled devices. Intune automatically synchronizes with Apple to see your enrollment program account.
 
 ## Create an Apple enrollment profile
@@ -125,7 +125,7 @@ Now that you've installed your token, you can create an enrollment profile for d
 6. Choose **Device Management Settings** and Choose whether or not you want locked enrollment for devices using this profile. **Locked enrollment** disables macOS settings that allow the management profile to be removed from the **System Preferences** menu or through the **Terminal**. After device enrollment, you cannot change this setting without wiping the device.
 
     ![Device Management Settings screenshot.](./media/device-enrollment-program-enroll-macos/devicemanagementsettingsblade-macos.png)
- 
+
 7. Choose **OK**.
 
 8. Choose **Setup Assistant Settings** to configure the following profile settings:
@@ -139,7 +139,6 @@ Now that you've installed your token, you can create an enrollment profile for d
     You can choose to show or hide a variety of Setup Assistant screens on the device when the user sets it up.
     - If you choose **Hide**, the screen won't be displayed during setup. After setting up the device, the user can still go in to the **Settings** menu to set up the feature.
     - If you choose **Show**, the screen will be displayed during setup. The user can sometimes skip the screen without taking action. But they can then later go into the device's **Settings** menu to set up the feature. 
-
 
     | Setup Assistant screen settings | If you choose **Show**, during setup the device will... |
     |------------------------------------------|------------------------------------------|
@@ -161,13 +160,13 @@ Now that you've installed your token, you can create an enrollment profile for d
     | <strong>Registration</strong>| Require the user to register the device. |
     | <strong>Privacy</strong>| Display the Privacy screen to the user. |
     | <strong>Screen Time</strong>| Display the Screen Time screen to the user. |
-   
 
-10. Choose **OK**.
+9. Choose **OK**.
 
-11. To save the profile, choose **Create**.
+10. To save the profile, choose **Create**.
 
 ## Sync managed devices
+
 Now that Intune has permission to manage your devices, you can synchronize Intune with Apple to see your managed devices in Intune in the Azure portal.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list > **Devices** > **Sync**.
@@ -175,10 +174,10 @@ Now that Intune has permission to manage your devices, you can synchronize Intun
 
    To comply with Apple’s terms for acceptable enrollment program traffic, Intune imposes the following restrictions:
    - A full sync can run no more than once every seven days. During a full sync, Intune fetches the complete updated list of serial numbers assigned to the Apple MDM server connected to Intune. After an Enrollment Program device is deleted from Intune portal without being unassigned from the Apple MDM server in the DEP portal, it won't be re-imported to Intune until the full sync is run.   
-   - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.   
-
+   - A sync is run automatically every 24 hours. You can also sync by clicking the **Sync** button (no more than once every 15 minutes). All sync requests are given 15 minutes to finish. The **Sync** button is disabled until a sync is completed. This sync will refresh existing device status and import new devices assigned to the Apple MDM server.
 
 ## Assign an enrollment profile to devices
+
 You must assign an enrollment program profile to devices before they can enroll.
 
 1. In Intune in the Azure portal, choose **Device enrollment** > **Apple Enrollment** > **Enrollment program tokens** > choose a token in the list.
@@ -193,9 +192,11 @@ You can pick a default macOS and iOS profile to be applied to all devices enroll
 2. Choose **Set Default Profile**, choose a profile in the drop-down list, and then choose **Save**. This profile will be applied to all devices that enroll with the token.
 
 ## Distribute devices
+
 You have enabled management and syncing between Apple and Intune, and assigned a profile to let your devices enroll. You can now distribute devices to users. Devices with user affinity require each user be assigned an Intune license. Devices without user affinity require a device license. An activated device cannot apply an enrollment profile until the device is wiped.
 
-## Renew a DEP token  
+## Renew a DEP token
+
 1. Go to deploy.apple.com.  
 2. Under **Manage Servers**, choose your MDM server associated with the token file that you want to renew.
 3. Choose **Generate New Token**.
@@ -209,8 +210,8 @@ You have enabled management and syncing between Apple and Intune, and assigned a
 6. Choose **Renew token** and enter the Apple ID used to create the original token.  
     ![Screenshot of generate new token.](./media/device-enrollment-program-enroll-macos/renewtoken.png)
 
-8. Upload the newly downloaded token.  
-9. Choose **Renew token**. You'll see the confirmation that the token was renewed.   
+7. Upload the newly downloaded token.  
+8. Choose **Renew token**. You'll see the confirmation that the token was renewed.
     ![Screenshot of confirmation.](./media/device-enrollment-program-enroll-macos/confirmation.png)
 
 ## Next steps

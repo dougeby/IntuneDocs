@@ -31,12 +31,14 @@ ms.collection: M365-identity-device-management
 This article helps Intune administrators understand and troubleshoot problems when enrolling iOS devices in Intune.
 
 ## Prerequisites
+
 Before you start troubleshooting, it’s important to collect some basic information. This information can help you better understand the problem and reduce the time to find a resolution.
 
 Collect the following information about the problem:
+
 - What is the exact error message?
 - Where do you see the error message?
-- When did the problem start? Has enrollment ever worked? 
+- When did the problem start? Has enrollment ever worked?
 - What platform (Android, iOS, Windows) has the problem?
 - How many users are affected? Are all users affected or just some?
 - How many devices are affected? Are all devices affected or just some?
@@ -50,6 +52,7 @@ Collect the following information about the problem:
 **Cause:** There's an unspecified problem with iOS on the device.
 
 #### Resolution
+
 1. To prevent data loss in the following steps (restoring iOS deletes all data on the device), make sure to back up your data.
 2. Put the device in recovery mode and then restore it. Make sure that you set it up as a new device. For more information about how to restore iOS devices, see [https://support.apple.com/HT201263](https://support.apple.com/HT201263).
 3. Re-enroll the device.
@@ -72,8 +75,8 @@ Collect the following information about the problem:
 
 #### Resolution
 
-- If the MDM push certificate isn't configured, follow the steps in [Get an Apple MDM push certificate](enrollment/apple-mdm-push-certificate-get.md#steps-to-get-your-certificate).
-- If the MDM push certificate is invalid, follow the steps in [Renew Apple MDM push certificate](enrollment/apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
+- If the MDM push certificate isn't configured, follow the steps in [Get an Apple MDM push certificate](apple-mdm-push-certificate-get.md#steps-to-get-your-certificate).
+- If the MDM push certificate is invalid, follow the steps in [Renew Apple MDM push certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
 
 ### Company Portal Temporarily Unavailable. The Company Portal app encountered a problem. If the problem persists, contact your system administrator.
 
@@ -151,7 +154,7 @@ Renew the APNs certificate, and then re-enroll the device.
 > [!IMPORTANT]
 > Make sure that you renew the APNs certificate. Don't replace the APNs certificate. If you replace the certificate, you have to re-enroll all iOS devices in Intune. 
 
-- To renew the APNs certificate in Intune standalone, see [Renew Apple MDM push certificate](enrollment/apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
+- To renew the APNs certificate in Intune standalone, see [Renew Apple MDM push certificate](apple-mdm-push-certificate-get.md#renew-apple-mdm-push-certificate).
 - To renew the APNs certificate in Intune hybrid with Configuration Manager, see [Set up iOS hybrid device management with System Center Configuration Manager and Microsoft Intune](https://docs.microsoft.com/sccm/mdm/deploy-use/enroll-hybrid-ios-mac).
 - To renew the APNs certificate in Office 365, see [Create an APNs Certificate for iOS devices](https://support.office.com/article/Create-an-APNs-Certificate-for-iOS-devices-522b43f4-a2ff-46f6-962a-dd4f47e546a7).
 

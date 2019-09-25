@@ -33,7 +33,7 @@ If you don’t have an Intune subscription, [sign up for a free trial account](.
 ## Prerequisites
 - Devices purchased in [Apple Business Manager](https://business.apple.com) or [Apple's Device Enrollment Program](http://deploy.apple.com)
 - Set the [mobile device management authority](../mdm-authority-set.md)
-- Get an [Apple MDM Push certificate](enrollment/apple-mdm-push-certificate-get.md)
+- Get an [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
 ## Get an Apple Device Enrollment token
 Before enrolling iOS devices with Apple's corporate enrollment features, you need an Apple Device Enrollment token (.pem) file. This token lets Intune sync information about Apple devices that your corporation owns. It also permits Intune to upload enrollment profiles to Apple and to assign devices to those profiles.

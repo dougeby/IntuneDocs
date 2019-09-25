@@ -55,7 +55,6 @@ By default, devices for all platforms are allowed to enroll in Intune. However, 
 |**[DEM](#device-enrollment-manager)**| No |No |No  | [More information](device-enrollment-manager-enroll.md)|
 |**[DEP](#apple-device-enrollment-program)**| Yes | Optional | Optional|[More information](device-enrollment-program-enroll-macos.md)|
 
-
 ## Windows enrollment methods
 
 | **Method** | **Reset Required** | **User Affinity** | **Locked** | **Details**|
@@ -117,7 +116,7 @@ For direct enrollment, the admin must enroll each device manually by creating an
 
 To learn more about iOS enrollment, see:
 
-- [Decide how to enroll iOS devices](ios-enrollod-choose-ios.md)
+- [Decide how to enroll iOS devices](ios-enrolled-choose-ios.md)
 - [Enroll iOS devices with Configurator and direct enrollment](apple-configurator-enroll-ios.md)
 
 ## Mobile device cleanup after MDM certificate expiration

@@ -409,14 +409,15 @@ After you've wiped the blocked devices, you can tell the users to restart the en
 **Error message 2:** *We’re having trouble getting your device managed. This problem could be caused if you're using a virtual machine, have a restricted serial number, or if this device is already assigned to someone else. Learn how to resolve these problems or contact your company support.*
 
 **Issue:** This message could be a result of any of the following reasons:  
-* A macOS virtual machine (VM) isn't configured correctly  
-* You've enabled device restrictions that require the device to be corporate-owned or have a registered device serial number in Intune  
-* The device has already been enrolled and is still assigned to someone else in Intune  
+- A macOS virtual machine (VM) isn't configured correctly  
+- You've enabled device restrictions that require the device to be corporate-owned or have a registered device serial number in Intune  
+- The device has already been enrolled and is still assigned to someone else in Intune  
 
 **Resolution:** First, check with your user to determine which of the issues affects their device. Then complete the most relevant of the following solutions:
-* If the user is enrolling a VM for testing, make sure it's been fully configured so that Intune can recognize its serial number and hardware model. Learn more about how to [set up VMs](../macos-enroll.md#enroll-virtual-macos-machines-for-testing) in Intune.  
-* If your organization turned on enrollment restrictions that block personal macOS devices, you must manually [add the personal device's serial number](corporate-identifiers-add.md#manually-enter-corporate-identifiers) to Intune.  
-* If the device is still assigned to another user in Intune, its former owner did not use the Company Portal app to remove or reset it. To clean up the stale device record from Intune:  
+
+- If the user is enrolling a VM for testing, make sure it's been fully configured so that Intune can recognize its serial number and hardware model. Learn more about how to [set up VMs](macos-enroll.md#enroll-virtual-macos-machines-for-testing) in Intune.
+- If your organization turned on enrollment restrictions that block personal macOS devices, you must manually [add the personal device's serial number](corporate-identifiers-add.md#manually-enter-corporate-identifiers) to Intune.  
+- If the device is still assigned to another user in Intune, its former owner did not use the Company Portal app to remove or reset it. To clean up the stale device record from Intune:  
 
     1. Go to [Intune in the Azure portal](https://portal.manage.microsoft.com) and sign in with your administrative credentials.
     2. Go to Intune > **Devices** > **All devices**.  
@@ -424,11 +425,14 @@ After you've wiped the blocked devices, you can tell the users to restart the en
     4. Select the device > **Delete**. Delete all other entries associated with the device.  
 
 ## Issues when using System Center Configuration Manager with Intune
+
 ### Mobile devices disappear
+
 **Issue:** After successfully enrolling a mobile device to Configuration Manager, it disappears from the mobile device collection. However, the device still has the Management Profile and is listed in CSS Gateway.
 
 **Resolution:** This issue may occur because:
-- You have a custom process removing non-domain-joined devices, or 
+
+- You have a custom process removing non-domain-joined devices, or
 - the user has retired the device from the subscription.
 To validate and check which process or user account removed the device from the Configuration Manager console, perform the following steps.
 
@@ -447,6 +451,7 @@ To validate and check which process or user account removed the device from the 
 5. Check that Configuration Manager doesn't have a scheduled task, script, or other process, which could be automatically purging non-domain, mobile, or related devices.
 
 ### Other iOS enrollment errors
+
 A list of iOS enrollment errors is provided in our documentation, in [Troubleshooting iOS device enrollment problems in Microsoft Intune](https://support.microsoft.com/help/4039809/troubleshooting-ios-device-enrollment-in-intune).
 
 ## PC Issues
@@ -455,12 +460,12 @@ A list of iOS enrollment errors is provided in our documentation, in [Troublesho
 |---|---|---|
 |**IT admin needs to assign license for access**<br>Your IT admin hasn't given you access to use this app. Get help from your IT admin or try again later.|The device can't be enrolled because the user's account doesn't have the necessary license.|Before users can enroll their devices, they must have been assigned the necessary license. This message means that they have the wrong license type for the mobile device management authority. For example, they'll see this error if both of the following are true: <ol><li>Intune has been set as the mobile device management authority</li><li>They're using a System Center 2012 R2 Configuration Manager license.</li></ol>See information about [how to assign Intune licenses to your user accounts](../licenses-assign.md).|
 
-
-
 ### The machine is already enrolled - Error hr 0x8007064c
+
 **Issue:** Enrollment fails with the error **The machine is already enrolled**. The enrollment log shows error **hr 0x8007064c**.
 
 This failure may occur because the computer:
+
 - was previously enrolled, or
 - has the cloned image of a computer that was already enrolled.
 The account certificate of the previous account is still present on the computer.
@@ -502,8 +507,6 @@ The account certificate of the previous account is still present on the computer
 |0xAB2|The Windows Installer couldn't access VBScript run time for a custom action.|This error is caused by a custom action that is based on Dynamic-Link Libraries (DLLs). When troubleshooting the DLL, you might have to use the tools that are described in [Microsoft Support KB198038: Useful Tools for Package and Deployment Issues](https://support.microsoft.com/kb/198038).|
 |0x80cf0440|The connection to the service endpoint terminated.|Trial or paid account is suspended. Create a new trial or paid account and re-enroll.|
 
-
-
-
 ## Next steps
+
 If this troubleshooting information didn't help you, contact Microsoft Support as described in [How to get support for Microsoft Intune](../get-support.md).

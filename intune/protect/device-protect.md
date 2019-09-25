@@ -34,6 +34,7 @@ Microsoft Intune helps you protect the devices you manage and the data stored on
 
 ## Device configuration
 Intune [configuration policies](../configuration/device-profiles.md) help you protect and configure devices by controlling a multitude of settings and features. For example:
+
 - You can restrict use of hardware features on the device such as the camera, or Bluetooth.
 - You can configure compliant and noncompliant apps. You'll get an alert if a noncompliant app is installed (and some platforms can actually block the install).
 
@@ -63,10 +64,8 @@ For more information, see [Protect apps and data with Microsoft Intune](../apps/
 Intune lets you integrate with [Windows Hello for Business](windows-hello.md) which is an alternative sign-in method for Windows 10 and later that uses Active Directory, or an Azure Active Directory account to replace a password, smart card, or virtual smart card.
 
 ## Bypass Activation Lock on iOS devices
-Activation Lock is a feature that help protect users' devices. The feature requires users to enter their Apple ID and password before anyone can erase or reactivate the device. However, this feature can lead to problems, for example if the user leaves the company without removing the lock. [iOS Activation Lock bypass]( device-activation-lock-bypass.md) can help by removing the lock from supervised iOS devices allowing you to reallocate, or erase them.
+Activation Lock is a feature that help protect users' devices. The feature requires users to enter their Apple ID and password before anyone can erase or reactivate the device. However, this feature can lead to problems, for example if the user leaves the company without removing the lock. [iOS Activation Lock bypass](../remote-actions/device-activation-lock-bypass.md) can help by removing the lock from supervised iOS devices allowing you to reallocate, or erase them.
 
 ## Next steps
 
 Learn about [mobile threat defense](mobile-threat-defense.md)
-
-

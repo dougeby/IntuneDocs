@@ -87,4 +87,4 @@ Once you have created S/MIME signing and encryption certificate profiles, you ca
 - [Use SCEP for certificates](certificates-scep-configure.md)
 - [Use PKCS certificates](certficates-pfx-configure.md)
 - [Use a partner CA](certificate-authority-add-scep-overview.md)
-- [Issue PKCS certificates from a Symantec PKI manager web service](certificates-symantec-configure.md)
+- [Issue PKCS certificates from a Symantec PKI manager web service](certificates-digicert-configure.md)

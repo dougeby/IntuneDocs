@@ -50,7 +50,7 @@ Device-based Conditional Access policies for Exchange online and other Office 36
 
 - Learn more about [Require managed devices with Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/require-managed-devices).
 
-- Learn more about [Intune device compliance](device-compliance.md).
+- Learn more about [Intune device compliance](device-compliance-get-started.md).
 
 - Learn more about [Supported browsers with Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/conditional-access/technical-reference#supported-browsers).
 
