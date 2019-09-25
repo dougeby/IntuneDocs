@@ -48,7 +48,7 @@ This guide breaks down the migration into two phases, both of which include task
 
   - [Configure device and app management policies](migration-guide-configure-policies.md)
 
-  - [Configure app protection policies](migration-guide-app-protection-policies.md)
+  - [Configure app protection policies](apps/app-protection-policies.md)
 
   - [Special migration considerations](migration-guide-considerations.md)
 

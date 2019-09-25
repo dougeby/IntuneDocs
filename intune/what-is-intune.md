@@ -89,10 +89,10 @@ When you use Intune with the other services in EMS, you can provide your organiz
 
 * [Single sign-on](https://docs.microsoft.com/azure/active-directory/active-directory-appssoaccess-whatis)  
 * [Multi-factor authentication](https://docs.microsoft.com/azure/active-directory/authentication/multi-factor-authentication)
-* [App Conditional Access - allow access if the mobile app contains corporate data](app-based-conditional-access-intune.md)
-* [Isolating corporate data from personal data inside the same app](app-protection-policy.md)
-* [App protection policy (PIN, encryption, save-as, clipboard, etc.)](app-protection-policies.md)
-* [Corporate data wipe from a mobile app](apps-selective-wipe.md)
+* [App Conditional Access - allow access if the mobile app contains corporate data](protect/app-based-conditional-access-intune.md)
+* [Isolating corporate data from personal data inside the same app](apps/app-protection-policy.md)
+* [App protection policy (PIN, encryption, save-as, clipboard, etc.)](apps/app-protection-policies.md)
+* [Corporate data wipe from a mobile app](apps/apps-selective-wipe.md)
 * [Rights management support](https://docs.microsoft.com/information-protection/understand-explore/what-is-azure-rms)
 
 ![Image that shows the levels of app management data security](./media/managing-mobile-apps.png)

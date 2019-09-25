@@ -63,13 +63,13 @@ Learn what’s new each week in Microsoft Intune. You can also find [important n
 ### App management 
 
 #### Managed Google Play private LOB apps <!-- 1464182  -->
-Intune now allows IT admins to publish private Android LOB apps to Managed Google Play via an iframe embedded in the Intune console.  Previously, IT admins needed to publish LOB apps directly to Google's Play publishing console, which required several steps and was time consuming. This new feature allows for easy publishing of LOB apps with a minimal set of steps, without needing to leave the Intune console.  Admins will no longer need to manually register as a developer with Google, and will no longer need to pay the Google $25 registration fee.  Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
+Intune now allows IT admins to publish private Android LOB apps to Managed Google Play via an iframe embedded in the Intune console.  Previously, IT admins needed to publish LOB apps directly to Google's Play publishing console, which required several steps and was time consuming. This new feature allows for easy publishing of LOB apps with a minimal set of steps, without needing to leave the Intune console.  Admins will no longer need to manually register as a developer with Google, and will no longer need to pay the Google $25 registration fee.  Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps/apps-add-android-for-work.md).
 
 #### Company Portal experience <!-- 1473353, 3598357 -->
 The Company Portal is being updated. You will be able to use multiple filters on the Apps page within the Company Portal. The Device Details page is also being updated with an improved user experience. We are in the process of rolling out these updates to all customers and expect to be completed by the end of next week.
 
 #### macOS support for web apps <!-- 3174427 -->
-Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md) and [Add web apps to Microsoft Intune](web-app.md).
+Web apps, which allow you to add a shortcut to a URL on the web, can be installed to the Dock using the macOS Company Portal. End users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps/apps-add.md) and [Add web apps to Microsoft Intune](apps/web-app.md).
 
 #### macOS support for VPP apps <!-- 3173501  -->
 macOS apps, purchased using Apple Business Manager, are displayed in the console when Apple VPP tokens are synced in Intune. You can assign, revoke and reassign device and user-based licenses for groups using the Intune console. Microsoft Intune helps you manage VPP apps purchased for use at your company by:
@@ -77,13 +77,13 @@ macOS apps, purchased using Apple Business Manager, are displayed in the console
 - Tracking how many of the licenses you have used.
 - Helping you prevent installation of more copies of the app than you own.
 
-For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
+For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](apps/vpp-apps.md).
 
 #### Managed Google Play iframe support <!-- 2871756  -->
-Intune now provides support for adding and managing web links directly in the  Intune console via the Managed Google Play iframe.  This lets IT admins submit a URL and icon graphic, and then deploy those links to devices just like regular Android apps. Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
+Intune now provides support for adding and managing web links directly in the  Intune console via the Managed Google Play iframe.  This lets IT admins submit a URL and icon graphic, and then deploy those links to devices just like regular Android apps. Any of the Android Enterprise management scenarios that use Managed Google Play can take advantage of this feature (work profile, dedicated, fully managed, and non-enrolled devices). From Intune, select **Client apps** > **Apps** > **Add**. Then, select **Managed Google Play** from the **App type** list. For more information about Managed Google Play apps, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps/apps-add-android-for-work.md).
 
 #### Silently install Android LOB apps on Zebra devices <!-- 4252734  -->
-When installing Android line-of-business (LOB) apps on [Zebra devices](android-zebra-mx-overview.md), rather than being prompted to both download and install the LOB app, you will be able to install the app silently. In Intune, select **Client apps** > **Apps** > **Add**. In the **Add app** pane, select **Line-of-business app**. For more information, see [Add an Android line-of-business app to Microsoft Intune](lob-apps-android.md).
+When installing Android line-of-business (LOB) apps on [Zebra devices](configuration/android-zebra-mx-overview.md), rather than being prompted to both download and install the LOB app, you will be able to install the app silently. In Intune, select **Client apps** > **Apps** > **Add**. In the **Add app** pane, select **Line-of-business app**. For more information, see [Add an Android line-of-business app to Microsoft Intune](apps/lob-apps-android.md).
 
 Currently, after the LOB app is downloaded, a **download success** notification will appear on the user's device. The notification can only be dismissed by tapping **Clear All** in the notification shade. This notification issue will be fixed in an upcoming release, and the installation will be completely silent with no visual indicators.
 
@@ -101,7 +101,7 @@ In this update, you can create VPN profiles for the iOS native VPN client using 
 
 These VPN profiles configure the native VPN client, so no VPN client apps are installed or pushed to managed devices. This feature requires devices be enrolled in Intune (MDM enrollment).
 
-To see the current VPN settings you can configure, go to [Configure VPN settings on iOS devices](vpn-settings-ios.md).
+To see the current VPN settings you can configure, go to [Configure VPN settings on iOS devices](configuration/vpn-settings-ios.md).
 
 Applies to:
 - iOS
@@ -134,7 +134,7 @@ In this update, there are new settings you can control:
 - **Voice control**: Enables Voice Control on the device while in kiosk mode.
 - **Modification of voice control**: Allow users to change the Voice Control setting on the device while in kiosk mode.
 
-To see the current settings, go to [iOS Kiosk settings](device-restrictions-ios.md#kiosk).
+To see the current settings, go to [iOS Kiosk settings](configuration/device-restrictions-ios.md#kiosk).
 
 Applies to:
 - iOS 13.0 and later
@@ -144,7 +144,7 @@ In this update, there are some new single sign-on settings for iOS and macOS dev
 
 Use these settings to configure a single sign-on experience, especially for apps and websites that use Kerberos authentication. You can choose between a generic credential single sign-on app extension, and Apple's built-in Kerberos extension.
 
-To see the current device features you can configure, go to [iOS device features](ios-device-features-settings.md) and [macOS device features](macos-device-features-settings.md).
+To see the current device features you can configure, go to [iOS device features](configuration/ios-device-features-settings.md) and [macOS device features](configuration/macos-device-features-settings.md).
 
 Applies to:
 - iOS 13.0 and newer
@@ -153,7 +153,7 @@ Applies to:
 #### Associate domains to apps on macOS 10.15+ devices <!-- 4898079   -->
 On macOS devices, you can configure different features, and push these features to your devices using a policy (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device features** for profile type). In this update, you can associate domains to your apps. This feature helps share credentials with websites related to your app, and can be used with Apple’s single sign-on extension, universal links, and password autofill. 
 
-To see the current features you can configure, go to [macOS device feature settings in Intune](macos-device-features-settings.md).
+To see the current features you can configure, go to [macOS device feature settings in Intune](configuration/macos-device-features-settings.md).
 
 Applies to:
 - macOS 10.15 and newer
@@ -165,7 +165,7 @@ You can enter the iTunes App store URL, such as `https://itunes.apple.com/us/app
 - `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`
 - `https://apps.apple.com/us/app/work-folders/id950878067?mt=8`
 
-For more information on these settings, see [Show or hide apps](device-restrictions-ios.md#show-or-hide-apps).
+For more information on these settings, see [Show or hide apps](configuration/device-restrictions-ios.md#show-or-hide-apps).
 
 Applies to:
 - iOS
@@ -175,18 +175,18 @@ On Windows 10 devices, you can create a compliance policy that requires specific
 - The **Password type** values are clearer, and updated to match the [DeviceLock/AlphanumericDevicePasswordRequired CSP](https://docs.microsoft.com/windows/client-management/mdm/policy-csp-devicelock#devicelock-alphanumericdevicepasswordrequired).
 - The **Password expiration (days)** setting is updated to allow values from 1-730 days. 
 
-For more information on Windows 10 compliance settings, see [Windows 10 and later settings to mark devices as compliant or not compliant](compliance-policy-create-windows.md). 
+For more information on Windows 10 compliance settings, see [Windows 10 and later settings to mark devices as compliant or not compliant](protect/compliance-policy-create-windows.md). 
 
 Applies to:
 - Windows 10 and later
 
  #### Updated UI for configuring Microsoft Exchange on-premises access    <!-- 4092920 -->  
-We've updated the console where you [configure access Microsoft Exchange on-premises access](conditional-access-exchange-create.md). All of the configurations for Exchange on-premises access are now available on the same pane of the console where you *Enable Exchange on-premises access control*.  
+We've updated the console where you [configure access Microsoft Exchange on-premises access](protect/conditional-access-exchange-create.md). All of the configurations for Exchange on-premises access are now available on the same pane of the console where you *Enable Exchange on-premises access control*.  
 
 #### Allow or restrict adding app widgets to the home screen on Android Enterprise work profile devices <!-- 1109650  --> 
 On Android Enterprise devices, you can configure features in the work profile (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Work profile only > Device restrictions** for profile type). In this update, you can allow users to add widgets exposed by work profile apps to the device home screen.
 
-To see the settings you can configure, go to [Android Enterprise device settings to allow or restrict features using Intune](device-restrictions-android-for-work.md).
+To see the settings you can configure, go to [Android Enterprise device settings to allow or restrict features using Intune](configuration/device-restrictions-android-for-work.md).
 
 Applies to:
 - Android Enterprise work profile
@@ -217,7 +217,7 @@ We've added the following support for Android Fully Managed devices:
     - link SCEP certificates to DO Email profiles for authentication (via AppConfig)
 - System apps are supported on Android Enterprise devices. In Intune, add an Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information, see [Add Android Enterprise system apps to Microsoft Intune](apps-ae-system.md). <!-- 4062195 -->
 - In **Device compliance** > **Android Enterprise** > **Device Owner**, you can create a compliance policy that sets the Google SafetyNet attestation level.   <!-- 4631425 -->
-- On Android Enterprise fully managed devices, the mobile threat defense providers is supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](compliance-policy-create-android-for-work.md#device-owner) lists the current settings.
+- On Android Enterprise fully managed devices, the mobile threat defense providers is supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](protect/compliance-policy-create-android-for-work.md#device-owner) lists the current settings.
 - On Android Enterprise fully managed devices, the Microsoft Launcher app can now be configured via app protection policies to allow a standardized end-user experience on the fully managed device. The Microsoft Launcher app can be used to personalize your Android device. Using the app along with a Microsoft account or work/school account, you can access your calendar, documents, and recent activities in your personalized feed. You can also open photos, docs and web pages on your Windows PC, to be productive across your devices. <!-- 5334044 -->
 
 With this update we are happy to announce that Intune  support for Android Enterprise Fully Managed is now generally available. 
@@ -226,7 +226,7 @@ Applies to:
 - Android Enterprise fully managed devices
 
 #### Send custom notifications to a single device  <!-- 4928910 -->
-You can now select a single device, and then use a remote device action to [send a custom notification to only that device](custom-notifications.md#send-a-custom-notification-to-a-single-device).
+You can now select a single device, and then use a remote device action to [send a custom notification to only that device](remote-actions/custom-notifications.md#send-a-custom-notification-to-a-single-device).
 
 #### Wipe and Passcode Reset actions aren't available for iOS devices that are enrolled by using User Enrollment <!-- 4950491 -->
 User Enrollment is a new type of Apple device enrollment. When you enroll devices using User Enrollment, the Wipe and Passcode Reset remote actions won't be available for such devices.
@@ -239,17 +239,17 @@ For more information see the [Microsoft Intune Support for iOS 13 and iPadOS blo
 ### Device security
 
 #### BitLocker support for client-driven recovery password rotation   <!--  3444125 -->
-Use Intune Endpoint Protection settings to configure [Client-driven recovery password rotation](endpoint-protection-windows-10.md#windows-encryption) for BitLocker on devices that run Windows version 1909 or later.
+Use Intune Endpoint Protection settings to configure [Client-driven recovery password rotation](protect/endpoint-protection-windows-10.md#windows-encryption) for BitLocker on devices that run Windows version 1909 or later.
 
 This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting refreshes the specific recovery password that was used, and other unused passwords on the volume remain unchanged. For more information see the BitLocker CSP documentation for [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp#configurerecoverypasswordrotation).
 
 #### Tamper Protection for Windows Defender Antivirus  <!-- 4705448        -->
-Use Intune to manage *Tamper Protection* for Windows Defender Antivirus. You’ll find the [setting for Tamper Protection](endpoint-protection-windows-10.md#windows-defender-security-center) in the Microsoft Defender Security Center group when you use device configuration profiles for Windows 10 endpoint protection. You can set Tamper Protection to *Enabled* to turn on Temper Protection restrictions, set *Disabled* to turn them off, or set*Not configured* to leave a devices current configuration in place.  
+Use Intune to manage *Tamper Protection* for Windows Defender Antivirus. You’ll find the [setting for Tamper Protection](protect/endpoint-protection-windows-10.md#windows-defender-security-center) in the Microsoft Defender Security Center group when you use device configuration profiles for Windows 10 endpoint protection. You can set Tamper Protection to *Enabled* to turn on Temper Protection restrictions, set *Disabled* to turn them off, or set*Not configured* to leave a devices current configuration in place.  
 
 For more information about Tamper Protection, see [Prevent security settings changes with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) in the Windows documentation. 
 
 #### Advanced settings for Windows Defender Firewall are now generally available <!--  5317392       -->  
-The [Windows Defender custom firewall rules for endpoint protection](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices), which you configure as part of a device configuration profile, are out of public preview and are generally available (GA).  You can use these rules to specify inbound and outbound behavior to applications, network addresses, and ports. These rules were released in July as a public preview. 
+The [Windows Defender custom firewall rules for endpoint protection](protect/endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices), which you configure as part of a device configuration profile, are out of public preview and are generally available (GA).  You can use these rules to specify inbound and outbound behavior to applications, network addresses, and ports. These rules were released in July as a public preview. 
 
 <!-- vvvvvvvvvvvvvvvvvvvvvv -->
 ### Role-based access control
@@ -266,10 +266,10 @@ The Microsoft Intune app for Android has been updated with the following improve
 - Updated and improved the layout to include bottom navigation for the most important actions.
 - Added an additional page that shows the user's profile.
 - Added the display of actionable notifications in the app for the user, such as the need to update their device settings.
-- Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
+- Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](remote-actions/custom-notifications.md).
 
 #### For iOS devices, customize the enrollment process privacy screen of the Company Portal <!-- 4394993 -->
-Using Markdown, you can customize the Company Portal's privacy screen that end users see during iOS enrollment. Specifically, you'll be able to customize the list of things that your organization can't see or do on the device. For more information, see [How to configure the Intune Company Portal app](company-portal-app.md#privacy-statement-customization).
+Using Markdown, you can customize the Company Portal's privacy screen that end users see during iOS enrollment. Specifically, you'll be able to customize the list of things that your organization can't see or do on the device. For more information, see [How to configure the Intune Company Portal app](apps/company-portal-app.md#privacy-statement-customization).
 
 
 ## Week of September 2, 2019
@@ -286,7 +286,7 @@ The user interface for the Tenant Status dashboard has been updated to align wit
 
 On Windows 10 and newer devices, you can create administrative templates to configure group policy settings in Intune. In this update, you can configure settings that apply to Microsoft Edge version 77 and newer.
 
-To learn more about administrative templates, see [Use Windows 10 templates to configure group policy settings in Intune](administrative-templates-windows.md).
+To learn more about administrative templates, see [Use Windows 10 templates to configure group policy settings in Intune](configuration/administrative-templates-windows.md).
 
 Applies to:
 
@@ -303,11 +303,12 @@ Admins can manage whether an app is removed or retained on a device when the dev
 You can categorize Microsoft Store for Business apps. To do so, choose **Intune** > **Client apps** > **Apps** > Select a Microsoft Store for Business app > **App Information** > **Category**. On the drop-down menu, assign a category.
 
 #### Customized notifications for Microsoft Intune app users <!-- 4843354  -->
-The Microsoft Intune app for Android now supports the display of custom push notifications, aligning it with the support recently added in the Company Portal apps for iOS and Android. For more information, see [Send custom notifications in Intune](custom-notifications.md).
+The Microsoft Intune app for Android now supports the display of custom push notifications, aligning it with the support recently added in the Company Portal apps for iOS and Android. For more information, see [Send custom notifications in Intune](remote-actions/custom-notifications.md).
 
 ### Device configuration
 
 #### New features for Android Enterprise dedicated devices in multi-app mode <!-- 3755304 3041943 3041946   -->
+
 In Intune, you can control features and settings in a kiosk-style experience on your Android Enterprise dedicated devices (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Owner only, Device restrictions** for profile type).
 
 In this update, the following features are being added:
@@ -317,20 +318,21 @@ In this update, the following features are being added:
 - **Dedicated devices** > **Multi-app**: **Media volume control** allows users to control the device's media volume using a slider. 
 - **Dedicated devices** > **Multi-app**:  **Enable a screensaver**, upload a custom image, and control when the screensaver is shown.
 
-To see the current settings, go to [Android Enterprise device settings to allow or restrict features using Intune](device-restrictions-android-for-work.md#dedicated-device-settings).
+To see the current settings, go to [Android Enterprise device settings to allow or restrict features using Intune](configuration/device-restrictions-android-for-work.md#dedicated-device-settings).
 
-Applies to:  
+Applies to:
+
 - Android Enterprise dedicated devices
 
 #### New app and configuration profiles for Android Enterprise fully managed devices <!-- 3574215 3574238 3574235 3574232   -->
 Using profiles, you can configure settings that apply VPN, email, and Wi-Fi settings to your Android Enterprise device owner (fully managed) devices. In this update, you can:
 
-- Use [app configuration policies](app-configuration-policies-use-android.md) to deploy Outlook, Gmail, and Nine Work email settings.
-- Use device configuration profiles to deploy [trusted root certificate settings](certificates-configure.md).
-- Use device configuration profiles to deploy [VPN](vpn-settings-android-enterprise.md) and [Wi-Fi](wi-fi-settings-android-enterprise.md) settings.
+- Use [app configuration policies](apps/app-configuration-policies-use-android.md) to deploy Outlook, Gmail, and Nine Work email settings.
+- Use device configuration profiles to deploy [trusted root certificate settings](protect/certificates-configure.md).
+- Use device configuration profiles to deploy [VPN](configuration/vpn-settings-android-enterprise.md) and [Wi-Fi](configuration/wi-fi-settings-android-enterprise.md) settings.
 
 > [!IMPORTANT]
-> With this feature, users authenticate with their username and password for VPN, Wi-Fi, and e-mail profiles. Currently, certificate-based authentication isn't available. 
+> With this feature, users authenticate with their username and password for VPN, Wi-Fi, and e-mail profiles. Currently, certificate-based authentication isn't available.
 
 Applies to:  
 - Android Enterprise device owner (fully managed)
@@ -340,20 +342,20 @@ You can enable and configure features on macOS devices (**Device configuration**
 
 In this update, there's a new Login Items setting to control which apps, files, documents, and folders open when a user signs in to the enrolled device. 
 
-To see the current settings, go to [macOS device feature settings in Intune](macos-device-features-settings.md).
+To see the current settings, go to [macOS device feature settings in Intune](configuration/macos-device-features-settings.md).
 
 Applies to:  
 - macOS
 
 #### Deadlines replace Engaged restart settings for Windows Update rings   <!-- 4464404        -->
-To align with recent [Windows servicing changes](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing), Intune's Windows 10 Update rings now [support settings for deadlines](windows-update-settings.md). *Deadlines* determine when a device installs feature and security updates.  On devices that run Windows 10 1903 or later, *deadlines* supersede configurations for *engaged restart*.  In the future, *deadlines* will supersede *engaged restart* on earlier versions of Windows 10 as well.  
+To align with recent [Windows servicing changes](https://docs.microsoft.com/windows/whats-new/whats-new-windows-10-version-1903#servicing), Intune's Windows 10 Update rings now [support settings for deadlines](protect/windows-update-settings.md). *Deadlines* determine when a device installs feature and security updates.  On devices that run Windows 10 1903 or later, *deadlines* supersede configurations for *engaged restart*.  In the future, *deadlines* will supersede *engaged restart* on earlier versions of Windows 10 as well.  
 
 When you don’t’ configure *deadlines*, devices continue to use their *engaged restart* settings, however [Intune will deprecate support for engaged restart settings](whats-new.md#plan-for-change-new-windows-updates-settings-in-intune-) in a future update.  
 
 Plan to use *deadlines* for all your Windows 10 devices. After settings for *deadlines* are in place, you can change your Intune configurations for *engaged restart* to be Not configured. When set to Not configured, Intune stops managing those settings on devices but doesn’t remove the last configurations for the setting from the device. Therefore, the last configurations that were set for *engaged restart* remain active and in use on devices until those settings are modified by a method other than Intune. Later, when the devices version of Windows changes or when Intune support for *deadlines* expands to the devices Windows version, the device will begin to use the new settings, which are already in place.
 
 #### Support for multiple Microsoft Intune Certificate Connectors   <!--   4704642      -->
-Intune now supports install and use of multiple [Microsoft Intune Certificate Connectors for PKCS operations](certficates-pfx-configure.md). This change supports load balancing and high availability of the connector. Each connector instance can process certificate requests from Intune.  If one connector is unavailable, other connectors continue to process requests. 
+Intune now supports install and use of multiple [Microsoft Intune Certificate Connectors for PKCS operations](protect/certficates-pfx-configure.md). This change supports load balancing and high availability of the connector. Each connector instance can process certificate requests from Intune.  If one connector is unavailable, other connectors continue to process requests. 
 
 To use multiple connectors, you don’t need to upgrade to the latest version of the connector software.  
 
@@ -362,7 +364,7 @@ You can create profiles to restrict settings on devices running iOS and macOS (*
 
 - On **macOS** > **Device restrictions** > **Cloud and storage**, use the new **Handoff** setting to block users from starting work on one macOS device, and continue working on another macOS or iOS device.
 
-  To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
+  To see the current settings, go to [macOS device settings to allow or restrict features using Intune](configuration/device-restrictions-macos.md).
 
 - On **iOS** > **Device restrictions**, there are a few changes:
 
@@ -372,7 +374,7 @@ You can create profiles to restrict settings on devices running iOS and macOS (*
   - **Keyboard and Dictionary** > **QuickPath (supervised only)**: New setting that blocks the QuickPath feature.
   - **Cloud and storage**: **Activity continuation** is renamed to **Handoff**.
 
-  To see the current settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md).
+  To see the current settings, go to [iOS device settings to allow or restrict features using Intune](configuration/device-restrictions-ios.md).
 
 Applies to:  
 - macOS 10.15 and newer
@@ -398,20 +400,20 @@ These settings include:
   - Block iCloud Document sync
   - Block iCloud Keychain sync
 
-To see the current settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md).
+To see the current settings, go to [iOS device settings to allow or restrict features using Intune](configuration/device-restrictions-ios.md).
 
 Applies to:  
 - iOS 13.0 and newer
 
 #### Improved device status for macOS FileVault encryption  <!-- 4944983         -->
-We've updated several of the [device status messages](encryption-monitor.md#device-encryption-status) for FileVault encryption on macOS devices.
+We've updated several of the [device status messages](protect/encryption-monitor.md#device-encryption-status) for FileVault encryption on macOS devices.
 
 #### Some Windows Defender Antivirus scan settings in the reporting show a Failed status <!-- 5119229 -->
 In Intune, you can create policies to use Windows Defender Antivirus to scan your Windows 10 devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type > **Windows Defender Antivirus**). The **Time to perform a daily quick scan** and **Type of system scan to perform** reporting shows a failed status, when it’s actually a success status. 
 
 In this update, this behavior is fixed. So, the **Time to perform a daily quick scan** and **Type of system scan to perform** settings shows a success status when the scans complete successfully, and show a failed status when the settings fail to apply. 
 
-For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](device-restrictions-windows-10.md#microsoft-defender-antivirus). 
+For more information on the Windows Defender Antivirus settings, see [Windows 10 (and newer) device settings to allow or restrict features using Intune](configuration/device-restrictions-windows-10.md#microsoft-defender-antivirus). 
 
 ### Device enrollment
 
@@ -419,7 +421,7 @@ For more information on the Windows Defender Antivirus settings, see [Windows 10
 A new built-in default scope tag is now available. All un-tagged Intune objects that support scope tags are automatically assigned to the default scope tag. The **Default** scope tag is added to all existing role assignments to maintain parity with the admin experience today. If you don't want an admin to see Intune objects with the default scope tag, remove the default scope tag from the role assignment. This feature is similar to the security scopes feature in System Center Configuration Manager. For more information, see [Use RBAC and scope tags to for distributed IT](scope-tags.md).
 
 #### Android enrollment device administrator support <!-- 4869749   -->
-The Android device administrator enrollment option has been added to the Android enrollment page (**Intune** > **Device enrollment** > **Android enrollment**). Android device administrator will still be enabled by default for all tenants.  For more information, see [Android device administrator enrollment](android-enroll-device-administrator.md).
+The Android device administrator enrollment option has been added to the Android enrollment page (**Intune** > **Device enrollment** > **Android enrollment**). Android device administrator will still be enabled by default for all tenants.  For more information, see [Android device administrator enrollment](enrollment/android-enroll-device-administrator.md).
 
 #### Skip more screens in Setup Assistant <!--4877451  -->
 You can set Device Enrollment Program profiles to skip the following Setup Assistant screens:
@@ -432,10 +434,10 @@ You can set Device Enrollment Program profiles to skip the following Setup Assis
     - Screen Time
     - Touch ID Setup
 
-For more information about Setup Assistant customization, see [Create an Apple enrollment profile for iOS ](device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) and [Create an Apple enrollment profile for macOS ](device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
+For more information about Setup Assistant customization, see [Create an Apple enrollment profile for iOS ](enrollment/device-enrollment-program-enroll-ios.md#create-an-apple-enrollment-profile) and [Create an Apple enrollment profile for macOS ](enrollment/device-enrollment-program-enroll-macos.md#create-an-apple-enrollment-profile).
 
 #### Add a user column to the Autopilot device CSV upload process <!-- 3823054 -->
-You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment-autopilot.md).
+You can now add a user column to the CSV upload for Autopilot devices. This lets you bulk assign users at the time you import the CSV. For more information, see [Enroll Windows devices in Intune by using the Windows Autopilot](enrollment/enrollment-autopilot.md).
 
 
 ### Device management
@@ -444,7 +446,7 @@ You can now add a user column to the CSV upload for Autopilot devices. This lets
 You can set the automatic device clean-up time limit as short as 30 days (instead of previous limit of 90 days) after the last sign-in. To do so, go to **Intune** > **Devices** > **Setup** > **Device Clean Up Rules**.
 
 #### Build number included on Android device Hardware page <!-- 4461910   -->
-A new entry on the Hardware page for each Android device includes the device's operating system build number. For more information, see [View device details in Intune](device-inventory.md).
+A new entry on the Hardware page for each Android device includes the device's operating system build number. For more information, see [View device details in Intune](remote-actions/device-inventory.md).
 
 
 <!-- ########################## -->
@@ -455,7 +457,7 @@ A new entry on the Hardware page for each Android device includes the device's o
 
 In Intune, you can create device configuration profiles, and apply settings to Android Enterprise devices using OEMConfig (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **OEMConfig** for profile type).
 
-In this update, Zebra Technologies is a supported original equipment manufacturer (OEM) for OEMConfig. For more information on OEMConfig, see [Use and manage Android Enterprise devices with OEMConfig](android-oem-configuration-overview.md).
+In this update, Zebra Technologies is a supported original equipment manufacturer (OEM) for OEMConfig. For more information on OEMConfig, see [Use and manage Android Enterprise devices with OEMConfig](configuration/android-oem-configuration-overview.md).
 
 Applies to:  
 - Android enterprise
@@ -467,7 +469,7 @@ Applies to:
 ### App management
 
 #### Customized notifications for users and groups    <!-- 16766574          -->
-Send custom push notifications from the Company Portal application to users on iOS and Android devices that you manage with Intune. These mobile push notifications are highly customizable with free text and can be used for any purpose. You can target them to different user groups in your organization. For more information, see [custom notifications](custom-notifications.md).
+Send custom push notifications from the Company Portal application to users on iOS and Android devices that you manage with Intune. These mobile push notifications are highly customizable with free text and can be used for any purpose. You can target them to different user groups in your organization. For more information, see [custom notifications](remote-actions/custom-notifications.md).
 
 #### Google's Device Policy Controller app <!-- 3041950  -->
 The Managed Home Screen app now provides access to Google's Android Device Policy app. The Managed Home Screen app is a custom launcher used for devices enrolled in Intune as Android Enterprise (AE) dedicated devices using multi-app kiosk mode. You can access the Android Device Policy app, or guide users to the Android Device Policy app, for support and debug purposes. This launching capability is available at the time the device enrolls and locks into Managed Home Screen. No additional installations are needed to use this functionality.
@@ -481,14 +483,14 @@ You can now configure both general app and data protection configuration setting
 
 You create Windows 10 device configuration profiles (**Device configuration** > **Profiles** > **Create profile** > **Windows 10** for platform > **Applicability rules**). In this update, you can create an **applicability rule** so the profile only applies to a specific edition or specific version. For example, you create a profile that enables some BitLocker settings. Once you add the profile, use an applicability rule so the profile only applies to devices running Windows 10 Enterprise.
 
-To add an applicability rule, see [Applicability rules](device-profile-create.md#applicability-rules).
+To add an applicability rule, see [Applicability rules](configuration/device-profile-create.md#applicability-rules).
 
 Applies to: Windows 10 and later
 
 #### Use tokens to add device-specific information in custom profiles for iOS and macOS devices <!-- 3330008  -->
 You can use custom profiles on iOS and macOS devices to configure settings and features not built in to Intune (**Device configuration** > **Profiles** > **Create profile** > **iOS** or **macOS** for platform > **Custom** for profile type). In this update, you can add tokens to your `.mobileconfig` files to add device-specific information. For example, you can add `Serial Number: {{serialnumber}}` to your configuration file to show the serial number of the device.
 
-To create a custom profile, see [iOS custom settings](custom-settings-ios.md) or [macOS custom settings](custom-settings-macos.md).
+To create a custom profile, see [iOS custom settings](configuration/custom-settings-ios.md) or [macOS custom settings](configuration/custom-settings-macos.md).
 
 Applies to:
 - iOS
@@ -499,12 +501,12 @@ In Intune, you can create a device configuration profile that uses an OEMConfig 
 
 This update includes a Configuration Designer with an improved user experience that shows details embedded in the app, including titles, descriptions, and more. The JSON editor is still available, and shows any changes you make in the Configuration Designer.
 
-To see the current settings, go to [Use and manage Android Enterprise devices with OEMConfig](android-oem-configuration-overview.md).
+To see the current settings, go to [Use and manage Android Enterprise devices with OEMConfig](configuration/android-oem-configuration-overview.md).
 
 Applies to: Android Enterprise
 
 #### Updated UI for configuring Windows Hello  <!-- 4089576            -->
-We've updated the console where you [configure Intune to use Windows Hello for Business](windows-hello.md). All of the configuration settings are now available on the same pane of the console where you enable support for Windows Hello. 
+We've updated the console where you [configure Intune to use Windows Hello for Business](protect/windows-hello.md). All of the configuration settings are now available on the same pane of the console where you enable support for Windows Hello. 
 
 
 #### Intune PowerShell SDK <!-- 4924113 --> 
@@ -521,15 +523,15 @@ For more information, see [PowerShell SDK for Microsoft Intune Graph API](https:
 ### Device enrollment
 
 #### Updates for Enrollment Restrictions  <!-- 2871968 -->
-Enrollment Restrictions for new tenants have been updated so that Android Enterprise work profiles are allowed by default. Existing tenants will experience no change. To use Android Enterprise work profiles, you still need to [connect your Intune account to your Managed Google Play account](connect-intune-android-enterprise.md).
+Enrollment Restrictions for new tenants have been updated so that Android Enterprise work profiles are allowed by default. Existing tenants will experience no change. To use Android Enterprise work profiles, you still need to [connect your Intune account to your Managed Google Play account](enrollment/connect-intune-android-enterprise.md).
 
 #### UI updates for Apple enrollment and enrollment restrictions <!--4089575, 4089579  -->
 Both of the following processes use a wizard-style user interface:
-- Apple device enrollment. For more information, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](device-enrollment-program-enroll-ios.md).
-- Enrollment restriction creation. For more information, see [Set enrollment restrictions](enrollment-restrictions-set.md).
+- Apple device enrollment. For more information, see [Automatically enroll iOS devices with Apple's Device Enrollment Program](enrollment/device-enrollment-program-enroll-ios.md).
+- Enrollment restriction creation. For more information, see [Set enrollment restrictions](enrollment/enrollment-restrictions-set.md).
 
 #### Handling pre-configuration of corporate device identifiers for Android Q devices <!-- 4711509  idmiss -->
-In Android Q (v10), Google will remove the ability for MDM agents on legacy-managed (device administrator) Android devices to collect device identifier information.  Intune has a feature that enables IT admins to [pre-configure a list of device serial numbers or IMEIs](corporate-identifiers-add.md#identify-corporate-owned-devices-with-imei-or-serial-number) in order to automatically tag these devices as corporate-owned. This feature won't work for Android Q devices that are device admin-managed.  Regardless of whether the serial number or IMEI for the device is uploaded, it will always be considered to be personal during Intune enrollment.  You can manually switch ownership to corporate after enrollment.  This affects new enrollments only, and existing enrolled devices are not affected.  Android devices managed with work profiles are not affected by this change and will continue working as they do today.  Additionally, Android Q devices enrolled as device administrator will no longer be able to report serial number or IMEI in the Intune console as device properties.
+In Android Q (v10), Google will remove the ability for MDM agents on legacy-managed (device administrator) Android devices to collect device identifier information.  Intune has a feature that enables IT admins to [pre-configure a list of device serial numbers or IMEIs](enrollment/corporate-identifiers-add.md#identify-corporate-owned-devices-with-imei-or-serial-number) in order to automatically tag these devices as corporate-owned. This feature won't work for Android Q devices that are device admin-managed.  Regardless of whether the serial number or IMEI for the device is uploaded, it will always be considered to be personal during Intune enrollment.  You can manually switch ownership to corporate after enrollment.  This affects new enrollments only, and existing enrolled devices are not affected.  Android devices managed with work profiles are not affected by this change and will continue working as they do today.  Additionally, Android Q devices enrolled as device administrator will no longer be able to report serial number or IMEI in the Intune console as device properties.
 
 #### Icons have changed for Android Enterprise enrollments (work profile, dedicated devices, and fully managed devices) <!-- 4977730 -->
 The icons for Android Enterprise enrollment profiles have changed. To see the new icons, go to **Intune** > **Enrollment** > **Android enrollment** > look under **Enrollment profiles**.
@@ -541,16 +543,16 @@ The default value for diagnostic data collection has changed for devices running
 ### Device management
 
 #### Improve device location<!-- 3855417  -->
-You can zoom in to the exact coordinates of a device using the **Locate device** action. For more information about locating lost iOS devices, see [Find lost iOS devices](device-locate.md).
+You can zoom in to the exact coordinates of a device using the **Locate device** action. For more information about locating lost iOS devices, see [Find lost iOS devices](remote-actions/device-locate.md).
 
 
 ### Device security
 
 #### Advanced settings for Windows Defender Firewall  (public preview)  <!--  1311949     -->  
-Use Intune to manage [custom firewall rules as part of a device configuration profile](endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) for endpoint protection on Windows 10. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
+Use Intune to manage [custom firewall rules as part of a device configuration profile](protect/endpoint-protection-configure.md#add-custom-firewall-rules-for-windows-10-devices) for endpoint protection on Windows 10. Rules can specify inbound and outbound behavior to applications, network addresses, and ports. 
 
 #### Updated UI for managing security baselines   <!-- 4091125     -->
-We've updated the [create and edit experience](security-baselines.md#create-the-profile) in the Intune console for our security baselines. Changes include:
+We've updated the [create and edit experience](protect/security-baselines.md#create-the-profile) in the Intune console for our security baselines. Changes include:
 
 A simpler wizard-style format that's been condensed to a single blade. within one blade. This new design does away with blade sprawl that requires IT Pros to drill down into several separate panes.  
 You can now create Assignments as part of the create and edit experience, instead of having to return later to assign baselines. 
@@ -565,10 +567,10 @@ We've added a summarization of settings you can view prior to creating a new bas
 ### App management
 
 #### Managed Home Screen and Managed Settings icons <!-- 4918107 -->
-The Managed Home Screen app icon and the **Managed Settings** icon have been updated. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information about the Managed Home Screen app, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
+The Managed Home Screen app icon and the **Managed Settings** icon have been updated. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information about the Managed Home Screen app, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](apps/app-configuration-managed-home-screen-app.md).
 
 #### Android Device Policy on Android Enterprise dedicated devices <!-- 4918136 -->
-You can access the Android Device Policy application from the Managed Home Screen app's debug screen. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](app-configuration-managed-home-screen-app.md).
+You can access the Android Device Policy application from the Managed Home Screen app's debug screen. The Managed Home Screen app is only used by devices enrolled in Intune as Android Enterprise (AE) dedicated devices and running in multi-app kiosk mode. For more information, see [Configure the Microsoft Managed Home Screen app for Android Enterprise](apps/app-configuration-managed-home-screen-app.md).
 
 #### iOS Company Portal updates <!-- 3902931 -->
 Your company name on iOS app management prompts will replace the current "i.manage.microsoft.com" text. For instance, users will see their company name instead of "i.manage.microsoft.com" when users attempt to install an iOS app from the Company Portal or when users allow management of the app. This will be rolled out to all customers over the next few days.
@@ -576,11 +578,11 @@ Your company name on iOS app management prompts will replace the current "i.mana
 ### Device configuration
 
 #### Manage FileVault for macOS   <!--  3858502 + 4557986 + 1210104  -->
-You can use Intune to [manage FileVault key encryption for macOS devices](encrypt-devices.md). To encrypt devices, you use an endpoint protection device configuration profile.
+You can use Intune to [manage FileVault key encryption for macOS devices](protect/encrypt-devices.md). To encrypt devices, you use an endpoint protection device configuration profile.
 
 Our support for FileVault includes encrypting unencrypted devices, escrow of a devices personal recovery key, automatic or manual rotation of personal encryption keys, and key retrieval for your corporate devices. End users can also use the Company Portal website to get the personal recovery key for their encrypted devices. 
 
-We've also expanded the encryption report to include [information about FileVault](encryption-monitor.md) along-side information for BitLocker, so you can view all your device encryption details in one place. 
+We've also expanded the encryption report to include [information about FileVault](protect/encryption-monitor.md) along-side information for BitLocker, so you can view all your device encryption details in one place. 
 
 ### Device enrollment
 
@@ -595,7 +597,7 @@ You can create Administrative templates in Intune that mimic on-premises group p
 
 This update includes more Office, Windows, and OneDrive settings you can add to your templates. With these new settings, you can now configure over 2500 settings that are 100% cloud-based.
 
-To learn more about this feature, see [Use Windows 10 templates to configure group policy settings in Intune](administrative-templates-windows.md).
+To learn more about this feature, see [Use Windows 10 templates to configure group policy settings in Intune](configuration/administrative-templates-windows.md).
 
 Applies to: Windows 10 and later
 
@@ -606,14 +608,14 @@ Applies to: Windows 10 and later
 #### AAD and APP on Android Enterprise devices <!-- 3574267 -->
 When onboarding fully managed Android Enterprise devices, users will now register with Azure Active Directory (AAD) during the initial setup of their new or factory reset device. Previously for a fully managed device, after setup was complete, the user had to manually launch the Microsoft Intune app to start AAD registration. Now when the user lands on the device home page after initial setup, the device is both enrolled and registered.
 
-In addition to the AAD updates, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps-add-android-for-work.md).
+In addition to the AAD updates, Intune app protection policies (APP) are now supported on fully managed Android Enterprise devices. This functionality will become available as we roll it out. For more information, see [Add Managed Google Play apps to Android Enterprise devices with Intune](apps/apps-add-android-for-work.md).
 
 ## Week of June 24, 2019 
 
 ### App management
 
 #### Configure which browser is allowed to link to organization data <!-- 3145939 -->
-Intune App Protection Policies (APP) on Android and iOS devices now allow you to transfer Org web links to a specific browser beyond the Intune Managed Browser or Microsoft Edge.  For more about APP, see [What are app protection policies?](app-protection-policy.md).
+Intune App Protection Policies (APP) on Android and iOS devices now allow you to transfer Org web links to a specific browser beyond the Intune Managed Browser or Microsoft Edge.  For more about APP, see [What are app protection policies?](apps/app-protection-policy.md).
 
 #### All apps page identifies online/offline Microsoft Store for Business apps<!--4089647 -->
 The **All apps** page now includes labeling to identify Microsoft Store for Business (MSFB) apps as online or offline apps. Each MSFB app now includes a suffix for **Online** or **Offline**. The app details page also includes **License Type** and **Supports device context installation** (offline licensed  apps only) information.
@@ -632,14 +634,14 @@ The Company Portal app for Windows now lists all managed apps (both required and
 #### Configure settings for kernel extensions on macOS devices <!-- 2043024 -->
 On macOS devices, you can create a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > choose **macOS** for platform). This update includes a new group of settings that let you configure and use kernel extensions on your devices. You can add specific extensions, or allow all extensions from a specific partner or developer.
 
-To learn more about this feature, see [kernel extensions overview](kernel-extensions-overview-macos.md) and [kernel extension settings](kernel-extensions-settings-macos.md).
+To learn more about this feature, see [kernel extensions overview](configuration/kernel-extensions-overview-macos.md) and [kernel extension settings](configuration/kernel-extensions-settings-macos.md).
 
 Applies to: macOS 10.13.2 and later
 
 #### Apps from the store only setting for Windows 10 devices includes more configuration options <!-- 2697002 -->
 When you create a device restrictions profile for Windows devices, you can use the **Apps from the store only** setting so users only install apps from the Windows App Store (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Device restrictions** for profile type). In this update, this setting is expanded to support more options. 
 
-To see the new setting, go to [Windows 10 (and newer) device settings to allow or restrict features](device-restrictions-windows-10.md#app-store).
+To see the new setting, go to [Windows 10 (and newer) device settings to allow or restrict features](configuration/device-restrictions-windows-10.md#app-store).
 
 Applies to: Windows 10 and later
 
@@ -649,14 +651,14 @@ In Intune, you can use Zebra mobility extensions (MX) in a device configuration 
 - The same devices group
 - A single device
 
-[Use and manage Zebra devices with Zebra Mobility Extensions in Microsoft Intune](android-zebra-mx-overview.md) shows how to use MX in Intune.
+[Use and manage Zebra devices with Zebra Mobility Extensions in Microsoft Intune](configuration/android-zebra-mx-overview.md) shows how to use MX in Intune.
 
 Applies to: Android
 
 #### Some kiosk settings on iOS devices are set using "Block", replacing "Allow" <!-- 4404075  -->
 When you create a device restrictions profile on iOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Kiosk**), you set the **Auto lock**, **Ringer switch**, **Screen rotation**, **Screen sleep button**, and **Volume buttons**. 
 
-In this update, the values are **Block** (blocks the feature) and **Not configured** (allows the feature). To see the settings, go to [iOS device settings to allow or restrict features](device-restrictions-ios.md#kiosk). 
+In this update, the values are **Block** (blocks the feature) and **Not configured** (allows the feature). To see the settings, go to [iOS device settings to allow or restrict features](configuration/device-restrictions-ios.md#kiosk). 
 
 Applies to: iOS
 
@@ -666,14 +668,14 @@ When you create a device restrictions profile for iOS devices, you can use a fin
 - **Fingerprint unlock** is now **Touch ID and Face ID unlock**.
 - **Fingerprint modification (supervised only)** is now **Touch ID and Face ID modification (supervised only)**.
 
-Face ID is available in iOS 11.0 and later. To see the settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#password).
+Face ID is available in iOS 11.0 and later. To see the settings, go to [iOS device settings to allow or restrict features using Intune](configuration/device-restrictions-ios.md#password).
 
 Applies to: iOS
 
 #### Restricting gaming and app store features on iOS devices is now dependent on ratings region <!-- 4593948 -->
 On iOS devices, you can allow or restrict features related to gaming, the app store, and viewing documents (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**). You can also choose the Ratings region, such as the United States. 
 
-In this update, the **Apps** feature is moved to be a child to **Ratings region**, and is dependent on **Ratings region**. To see the settings, go to [iOS device settings to allow or restrict features using Intune](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+In this update, the **Apps** feature is moved to be a child to **Ratings region**, and is dependent on **Ratings region**. To see the settings, go to [iOS device settings to allow or restrict features using Intune](configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 Applies to: iOS
 
@@ -697,13 +699,13 @@ You can now assign scope tags to a security group and all devices in the securit
 ### Device security
 
 #### Use keyword search with Security Baselines <!--  -->
-When you create or edit [Security Baseline profiles](security-baselines.md#create-the-profile), you can specify keywords in the new *Search* bar to filter the available groups of settings to those that contain your search criteria. 
+When you create or edit [Security Baseline profiles](protect/security-baselines.md#create-the-profile), you can specify keywords in the new *Search* bar to filter the available groups of settings to those that contain your search criteria. 
 
 #### The Security Baselines feature is now generally available  <!-- 3785395 -->
 The **Security Baselines** feature is out of preview and is now generally available (GA).  This means the feature is ready for use in production. However, the individual baseline templates can remain in preview and are evaluated and released to GA on their own schedules.
 
 #### The MDM Security Baseline template is now generally available   <!-- 3794072, 4217151,  3534649 -->
-The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for May 2019**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](security-baseline-settings-windows.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](security-baselines.md#available-security-baselines).  
+The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for May 2019**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](security-baseline-settings-windows.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](protect/security-baselines.md#available-security-baselines).  
 
 In addition to being a new template, the *MDM Security Baseline for May 2019* template includes the two settings that we recently announced in our In Development article:  
 - Above Lock: Voice activate apps from a locked screen  
@@ -715,7 +717,7 @@ The *MDM Security Baseline for May 2019* also includes the addition of several n
 Security baselines for Intune support versioning. With this support, as new versions of each security baseline are released, you can update your existing security baseline profiles to use the newer baseline version without having to recreate and deploy a new baseline from scratch. Additionally, in the Intune console you can view information about each baseline like the number of individual profiles you have that use the baseline, how many of the different baseline versions your profiles use, and when the latest release of a specific security baseline was.  For more information, see **Security Baselines**.
 
 #### The Use security keys for sign-in setting has moved  <!-- 4501151 -->
-The device configuration setting for identity protection named **Use security keys for sign-in** is no longer found as a sub-setting of *Configure Windows Hello for Business*. It's now a top-level setting that is always available, even when you don't enable use of Windows Hello for Business. For more information, see [Identity protection](identity-protection-windows-settings.md).
+The device configuration setting for identity protection named **Use security keys for sign-in** is no longer found as a sub-setting of *Configure Windows Hello for Business*. It's now a top-level setting that is always available, even when you don't enable use of Windows Hello for Business. For more information, see [Identity protection](protect/identity-protection-windows-settings.md).
 
 ### Role-based access control
 
@@ -763,7 +765,7 @@ Intune now provides additional reporting information about potentially harmful a
 ### App management
 
 #### Windows Company Portal app <!-- 3316993 -->
-The Windows Company Portal app will now have a new page labeled **Devices**. The **Devices** page will show end users all of their enrolled devices. Users will see this change in the Company Portal when they use version 10.3.4291.0 and later. For information about the configuring the Company Portal, see [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
+The Windows Company Portal app will now have a new page labeled **Devices**. The **Devices** page will show end users all of their enrolled devices. Users will see this change in the Company Portal when they use version 10.3.4291.0 and later. For information about the configuring the Company Portal, see [How to configure the Microsoft Intune Company Portal app](apps/company-portal-app.md).
 
 ### Device enrollment
 
@@ -795,7 +797,7 @@ To install the Company Portal on already-enrolled DEP devices, you will need to 
 You can now configure where your end users can get an updated version of a line-of-business (LOB) app. End users will see this feature in the **min app version** conditional launch dialog, which will prompt end users to update to a minimum version of the LOB app. You must provide these update details as part of your LOB app protection policy (APP). This feature is available on iOS and Android. On iOS, this feature requires the app to be integrated (or wrapped using the wrapping tool) with the Intune SDK for iOS v. 10.0.7 or above. On Android, this feature would require the latest Company Portal. To configure how an end user updates a LOB app, the app needs a managed app configuration policy sent to it with the key, `com.microsoft.intune.myappstore`. The value sent will define which store the end user will download the app from. If the app is deployed via the Company Portal, the value must be `CompanyPortal`. For any other store, you must enter a complete URL.
 
 #### Intune management extension PowerShell scripts  <!-- 3734186  -->
-You can configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](intune-management-extension.md) and [Win32 app management](apps-win32-app-management.md).
+You can configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](./apps/intune-management-extension.md) and [Win32 app management](./apps/app-management.md).
 
 #### Android Enterprise app management <!-- 4459905 -->
 To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following apps:
@@ -807,20 +809,20 @@ To make it easier for IT admins to configure and use Android Enterprise manageme
 
 Previously, IT admins would need to manually find and approve these apps in the [Managed Google Play store](https://play.google.com/store/apps) as part of setup. This change removes those previously manual steps to make it easier and faster for customers to use Android Enterprise management.
 
-Admins will see these four apps automatically added to their Intune apps list at the time that they first connect their Intune tenant to managed Google Play. For more information, see [Connect your Intune account to your Managed Google Play account](connect-intune-android-enterprise.md). For tenants that have already connected their tenant or who already use Android Enterprise, there is nothing admins need to do. Those four apps will automatically show up within 7 days of the completion of the May 2019 service rollout.
+Admins will see these four apps automatically added to their Intune apps list at the time that they first connect their Intune tenant to managed Google Play. For more information, see [Connect your Intune account to your Managed Google Play account](enrollment/connect-intune-android-enterprise.md). For tenants that have already connected their tenant or who already use Android Enterprise, there is nothing admins need to do. Those four apps will automatically show up within 7 days of the completion of the May 2019 service rollout.
 
 ### Device configuration
 
 #### Updated PFX Certificate Connector for Microsoft Intune  <!-- 1533038 -->
-We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that addresses an issue where existing PFX certificates continue to be reprocessed, which causes the connector to stop processing new requests.
+We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](protect/certficates-pfx-configure.md#whats-new-for-connectors) that addresses an issue where existing PFX certificates continue to be reprocessed, which causes the connector to stop processing new requests.
 
 #### Intune security tasks for Defender ATP (In public preview)     <!-- 3208597 -->
-In public preview, you can use Intune to manage [security tasks for Microsoft Defender Advanced Threat Protection (ATP)](atp-manage-vulnerabilities.md). This integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
+In public preview, you can use Intune to manage [security tasks for Microsoft Defender Advanced Threat Protection (ATP)](protect/atp-manage-vulnerabilities.md). This integration with ATP and adds a risk-based approach to discover, prioritize, and remediate endpoint vulnerabilities and misconfigurations, while reducing the time between discovery to mitigation.
 
 #### Check for a TPM chipset in a Windows 10 device compliance policy <!-- 3617671   idstaged-->
 Many Windows 10 and later devices have Trusted Platform Module (TPM) chipsets. This update includes a new compliance setting that checks the TPM chip version on the device. 
 
-[Windows 10 and later compliance policy settings](compliance-policy-create-windows.md#device-security) describes this setting.
+[Windows 10 and later compliance policy settings](protect/compliance-policy-create-windows.md#device-security) describes this setting.
 
 Applies to: Windows 10 and later
 
@@ -830,35 +832,35 @@ You create a device restrictions profile on iOS device (**Device configuration**
 - **Built-in Apps**: Server-side logging for Siri commands
 - **Wireless**: User modification of Personal Hotspot (supervised only)
 
-To see these settings, go to [built-in app settings for iOS](device-restrictions-ios.md#built-in-apps) and [wireless settings for iOS](device-restrictions-ios.md#wireless).
+To see these settings, go to [built-in app settings for iOS](configuration/device-restrictions-ios.md#built-in-apps) and [wireless settings for iOS](configuration/device-restrictions-ios.md#wireless).
 
 Applies to: iOS 12.2 and newer
 
 #### New classroom app device restriction settings for macOS devices <!-- 4097905   --> 
 You can create device configuration profiles for macOS devices (**Device configuration** > **Profiles** > **Create profile** > **macOS** for platform > **Device restrictions** for profile type). This update includes new classroom app settings, the option to block screenshots, and the option to disable the iCloud Photo Library.
 
-To see the current settings, go to [macOS device settings to allow or restrict features using Intune](device-restrictions-macos.md).
+To see the current settings, go to [macOS device settings to allow or restrict features using Intune](configuration/device-restrictions-macos.md).
 
 Applies to: macOS
 
 #### The iOS Password to access app store setting is renamed<!-- 4557891  -->
 The **Password to access app store** setting is renamed to **Require iTunes Store password for all purchases** (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App store, Doc viewing, and Gaming**).
 
-To see the available settings, go to [App Store, Doc Viewing, Gaming iOS settings](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+To see the available settings, go to [App Store, Doc Viewing, Gaming iOS settings](configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 Applies to: iOS
 
 #### Microsoft Defender Advanced Threat Protection  baseline  (Preview)  <!--  3754134 -->
-We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](security-baseline-settings-defender-atp.md) settings. This baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](advanced-threat-protection.md#prerequisites).
+We've added a security baseline Preview for [Microsoft Defender Advanced Threat Protection](protect/security-baseline-settings-defender-atp.md) settings. This baseline is available when your environment meets the prerequisites for using [Microsoft Defender Advanced Threat Protection](protect/advanced-threat-protection.md#prerequisites).
 
 ### Device enrollment
 
 #### Windows Enrollment Status Page (ESP) is now generally available <!-- 3605348 -->
-The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
+The Enrollment Status Page is now out of preview. For more information, see [Set up an enrollment status page](enrollment/windows-enrollment-status.md).
 
 
 #### Intune user interface update - Autopilot enrollment profile creation  <!-- 4593669 -->
-The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information, see [Create an Autopilot enrollment profile](enrollment-autopilot.md#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
+The user interface for creating an Autopilot enrollment profile has been updated to align with Azure user interface styles. For more information, see [Create an Autopilot enrollment profile](enrollment/enrollment-autopilot.md#create-an-autopilot-deployment-profile). Moving forward, additional Intune scenarios will be updated to this new UI style.
 
 #### Enable Autopilot Reset for all Windows devices <!-- 4225665 -->
 Autopilot Reset now works for all Windows devices, even those not configured to use the Enrollment Status Page. If an enrollment status page wasn't configured for the device during initial device enrollment, the device will go straight to the desktop after sign-in. It might take up to eight hours to sync and appear compliant in Intune. For more information, see [Reset devices with remote Windows Autopilot Reset](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-autopilot-reset-remote).
@@ -870,7 +872,7 @@ You won't need to include spaces in IMEI numbers when you search **All devices**
 If a device is deleted from Apple's Device Enrollment Program or Apple Business Manager portals, the device will automatically be deleted from Intune during the next sync.
 
 ### The Enrollment Status Page now tracks Win32 apps <!-- 2714451 -->
-This only applies to devices running Windows 10 version 1903 and above. For more information, see [Set up an enrollment status page](windows-enrollment-status.md).
+This only applies to devices running Windows 10 version 1903 and above. For more information, see [Set up an enrollment status page](enrollment/windows-enrollment-status.md).
 
 ### Device management
 
@@ -881,7 +883,7 @@ You can now reset and wipe up to 100 devices in bulk using the Graph API.
 ### Monitor and troubleshoot
 
 #### The Encryption report is out of Public Preview   <!-- 4587546      -->
-The [report for BitLocker and device encryption](encryption-monitor.md) is now generally available, and no longer part of the public preview. 
+The [report for BitLocker and device encryption](protect/encryption-monitor.md) is now generally available, and no longer part of the public preview. 
 
 <!-- ########################## -->
 
@@ -900,12 +902,12 @@ F5 released an update to BIG-IP 13 that allows NAC functionality for F5 Access o
 - Integrate BIG-IP with Intune for NAC. Steps in [Overview: Configuring APM for device posture checks with endpoint management systems](https://techdocs.f5.com/kb/en-us/products/big-ip_apm/manuals/product/apm-client-configuration-7-1-6/6.html).
 - Check the **Enable Network Access Control (NAC)** setting in the VPN profile in Intune.
 
-To see the available setting, go to [Configure VPN settings on iOS devices](vpn-settings-ios.md).
+To see the available setting, go to [Configure VPN settings on iOS devices](configuration/vpn-settings-ios.md).
 
 Applies to: iOS
 
 #### Updated PFX Certificate Connector for Microsoft Intune <!-- doc-vso 1521237  -->  
-We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors) that drops the polling interval from 5 minutes to 30 seconds.
+We’ve released an update for the [PFX Certificate Connector for Microsoft Intune](protect/certficates-pfx-configure.md#whats-new-for-connectors) that drops the polling interval from 5 minutes to 30 seconds.
 
 ## Week of April 22, 2019
 
@@ -932,19 +934,19 @@ In the following example, you see the breakdown for GDPR controls. Microsoft cov
 ### App management
 
 #### OpenSSL encryption for Android app protection policies <!-- 3747362 -->
-Intune app protection policies (APP) on Android devices now uses an OpenSSL encryption library that is FIPS 140-2 compliant. For more information, see the [encryption](app-protection-policy-settings-android.md#encryption) section of [Android app protection policy settings in Microsoft Intune](app-protection-policy-settings-android.md).
+Intune app protection policies (APP) on Android devices now uses an OpenSSL encryption library that is FIPS 140-2 compliant. For more information, see the [encryption](apps/app-protection-policy-settings-android.md#encryption) section of [Android app protection policy settings in Microsoft Intune](apps/app-protection-policy-settings-android.md).
 
 #### Enable Win32 app dependencies <!-- 2617348  -->
-As the admin, you can require that other apps are installed as dependencies before installing your Win32 app. Specifically, the device must install the dependent app(s) before it installs the Win32 app. In Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. Select **Windows app (Win32)** as the **App type**. After you have added the app, you can select **Dependencies** to add the dependent apps that must be installed before the Win32 app can be installed. For more information, see [Intune Standalone - Win32 app management](apps-win32-app-management.md). 
+As the admin, you can require that other apps are installed as dependencies before installing your Win32 app. Specifically, the device must install the dependent app(s) before it installs the Win32 app. In Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. Select **Windows app (Win32)** as the **App type**. After you have added the app, you can select **Dependencies** to add the dependent apps that must be installed before the Win32 app can be installed. For more information, see [Intune Standalone - Win32 app management](./apps/app-management.md). 
 
 #### App version installation information for Microsoft Store for Business apps <!-- 3537391   -->
 App installation reports include app version information for Microsoft Store for Business apps. In Intune, select **Client apps** > **Apps**. Select a **Microsoft Store for Business app** and then select **Device install status** under the **Monitor** section.
 
 #### Additions to Win32 apps requirement rules <!-- 3676883   -->
-You can create requirement rules based on PowerShell scripts, registry values, and file system information. In Intune, select **Client apps** > **Apps** > **Add**. Then select **Windows app (Win32)** as the **App type** in the **Add app** blade.  Select **Requirements** > **Add** to configure additional requirement rules. Then, select either **File type**, **Registry**, or **Script** as the **Requirement type**. For more information, see [Win32 app management](apps-win32-app-management.md).
+You can create requirement rules based on PowerShell scripts, registry values, and file system information. In Intune, select **Client apps** > **Apps** > **Add**. Then select **Windows app (Win32)** as the **App type** in the **Add app** blade.  Select **Requirements** > **Add** to configure additional requirement rules. Then, select either **File type**, **Registry**, or **Script** as the **Requirement type**. For more information, see [Win32 app management](./apps/app-management.md).
 
 #### Configure your Win32 apps to be installed on Intune enrolled Azure AD joined devices <!-- 3695227  -->
-You can assign your Win32 apps to be installed on Intune enrolled Azure AD joined devices. For more information about Win32 apps in Intune, see [Win32 app management](apps-win32-app-management.md).
+You can assign your Win32 apps to be installed on Intune enrolled Azure AD joined devices. For more information about Win32 apps in Intune, see [Win32 app management](./apps/app-management.md).
 
 #### Device overview shows Primary User <!--3794259  -->
 The Device overview page will show the Primary User, also called the User Device Affinity User (UDA). To see the Primary User for a device, choose **Intune** > **Devices** > **All devices** > choose a device. The Primary User will appear near the top of the **Overview** page.
@@ -960,12 +962,12 @@ The Intune app protection policy (APP) support for the **Third Party Keyboards**
 #### Set login settings and control restart options on macOS devices <!-- 1210083  -->
 On macOS devices, you can create a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > choose **macOS** for platform > **Device features** for profile type). This update includes new login window settings, such as showing a custom banner, choose how users sign in, show or hide the power settings, and more.
 
-To see these settings, go to [macOS device feature settings](macos-device-features-settings.md).
+To see these settings, go to [macOS device feature settings](configuration/macos-device-features-settings.md).
 
 #### Configure WiFi on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!--3041940  -->
 You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can enable users to configure and connect to WiFi networks (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **WiFi configuration**). 
 
-To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
+To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](configuration/device-restrictions-android-for-work.md).
 
 Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 
@@ -973,7 +975,7 @@ Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 #### Configure Bluetooth and pairing on Android Enterprise, Device Owner dedicated devices running in multi-app kiosk mode <!-- 3041941  -->
 You can enable settings on Android Enterprise, Device Owner when running as a dedicated device in multi-app kiosk mode. In this update, you can allow end users to enable Bluetooth, and pair devices over Bluetooth (**Intune** > **Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device owner only, Device restrictions** for profile type > **Dedicated devices** > **Kiosk mode**: **Multi-app** > **Bluetooth configuration**). 
 
-To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
+To see all the settings you can configure, go to [Android Enterprise device settings to allow or restrict features](configuration/device-restrictions-android-for-work.md).
 
 Applies to: Android Enterprise dedicated devices running in multi-app kiosk mode
 
@@ -982,19 +984,19 @@ In this update, Intune supports configuring Android Enterprise devices with OEMC
 
 Support for OEMs is currently on a per-OEM basis. If an OEMConfig app you want isn't available in the list of OEMConfig apps, contact `IntuneOEMConfig@microsoft.com`.
 
-To learn more about this feature, go to [Use and manage Android Enterprise devices with OEMConfig in Microsoft Intune](android-oem-configuration-overview.md).
+To learn more about this feature, go to [Use and manage Android Enterprise devices with OEMConfig in Microsoft Intune](configuration/android-oem-configuration-overview.md).
 
 Applies to: Android enterprise
 
 #### Windows Update notifications  <!-- 3316758, 3316782  -->
 We've added two *User experience settings* to the Windows Update ring configurations that you can manage from within the Intune console. You can now:
-- Block or allow users to [scan for Windows updates](windows-update-settings.md).
-- Manage the [Windows Update notification level](windows-update-settings.md) that users see.
+- Block or allow users to [scan for Windows updates](protect/windows-update-settings.md).
+- Manage the [Windows Update notification level](protect/windows-update-settings.md) that users see.
 
 #### New device restriction settings for Android Enterprise, Device Owner <!-- 3574254  -->
 On Android Enterprise devices, you can create a device restriction profile to allow or restrict features, set password rules, and more (**Device configuration** > **Profiles** > **Create profile** > choose **Android Enterprise** for platform > **Device owner only > Device restrictions** for profile type). 
 
-This update includes new password settings, allows full access to apps in Google Play Store for fully managed devices, and more. To see the current list of settings, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md). 
+This update includes new password settings, allows full access to apps in Google Play Store for fully managed devices, and more. To see the current list of settings, go to [Android Enterprise device settings to allow or restrict features](configuration/device-restrictions-android-for-work.md). 
 
 Applies to: Android Enterprise fully managed devices
 
@@ -1005,18 +1007,18 @@ This feature is delayed and is planned to be released later.
 #### Updated UI changes for Microsoft Edge Browser on Windows 10 and later devices <!-- 3775833   -->
 When you create a device configuration profile, you can allow or restrict Microsoft Edge features on Windows 10 and later devices (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform,  > **Device restrictions** for profile type > **Microsoft Edge Browser**). In this update, the Microsoft Edge settings are more descriptive, and easier to understand. 
 
-To see these features, go to [Microsoft Edge Browser device restriction settings](device-restrictions-windows-10.md#microsoft-edge-browser).
+To see these features, go to [Microsoft Edge Browser device restriction settings](configuration/device-restrictions-windows-10.md#microsoft-edge-browser).
 
 Applies to: Windows 10 and later
 
 #### Expanded support for Android Enterprise fully managed devices  (Preview)  <!--   3903241, 3903244, 3903246   -->
 Still in a public preview, we've expanded our support of Android Enterprise fully managed devices ([first announced in January of 2019](whats-new.md#week-of-january-14-2019) to include the following: 
 
-- On fully managed and dedicated devices, you can create [compliance policies](compliance-policy-create-android-for-work.md) to include password rules and operating system requirements (**Device compliance** > **Policies** > **Create policy** > **Android Enterprise** for platform > **Device owner** for profile type). 
+- On fully managed and dedicated devices, you can create [compliance policies](protect/compliance-policy-create-android-for-work.md) to include password rules and operating system requirements (**Device compliance** > **Policies** > **Create policy** > **Android Enterprise** for platform > **Device owner** for profile type). 
 
   On dedicated devices, the device may show as **Not compliant**. Conditional Access isn't available on dedicated devices. Be sure to complete any tasks or actions to get dedicated devices compliant with your assigned policies.
 
-- [Conditional Access](conditional-access.md) - Conditional Access policies that apply to Android also apply to Android Enterprise fully managed devices. Users can now register their fully managed device in Azure Active Directory using the **Microsoft Intune app**. Then, see and resolve any compliance issues to access organizational resources.
+- [Conditional Access](protect/conditional-access.md) - Conditional Access policies that apply to Android also apply to Android Enterprise fully managed devices. Users can now register their fully managed device in Azure Active Directory using the **Microsoft Intune app**. Then, see and resolve any compliance issues to access organizational resources.
 
 - New end-user app (Microsoft Intune app) - There is a new end-user app for Android fully managed devices called **Microsoft Intune**. This new app is light-weight and modern, and provides similar functionally as the Company Portal app, but for fully managed devices. For more information, see [Microsoft Intune app on Google Play](https://play.google.com/store/apps/details?id=com.microsoft.intune).
 
@@ -1033,7 +1035,7 @@ When you create a macOS enrollment profile, you can configure it to skip any of 
 - Display Tone
 - iCloudStorage
 If you create a new profile or edit a profile, the selected skip screens need to sync with the Apple MDM server.  Users can issue a manual sync of the devices so that there is no delay in picking up the profile changes.
-For more information, see [Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager](device-enrollment-program-enroll-macos.md).
+For more information, see [Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager](enrollment/device-enrollment-program-enroll-macos.md).
 
 #### Bulk device naming when enrolling corporate iOS devices<!--3566569  -->
 When using one of Apple's corporate enrollment methods (DEP/ABM/ASM), you can set a device name format to automatically name incoming iOS devices. You can specify a format that includes the device type and serial number in your template. To do so, choose **Intune** > **Device enrollment** > **Apple enrollment** > **Enrollment program tokens** > **Select a token** >**Create profile** > **Device naming format**. You can edit existing profiles, but only newly synced devices will have the name applied.
@@ -1050,10 +1052,10 @@ This feature has been delayed and is planned for a future release.
 ### Monitor and troubleshoot
 
 #### Intune Data Warehouse V1.0 changes reflecting back to beta <!-- 4403765 -->
-When V1.0 was first introduced in 1808, it differed in some significant ways from the beta API. In 1903 those changes will be reflected back into the beta API version. If you have important reports that use the beta API version, we strongly recommend switching those reports to V1.0 to avoid breaking changes. For more information, see [Change log for the Intune Data Warehouse API](reports-changelog.md#1903-part-2).
+When V1.0 was first introduced in 1808, it differed in some significant ways from the beta API. In 1903 those changes will be reflected back into the beta API version. If you have important reports that use the beta API version, we strongly recommend switching those reports to V1.0 to avoid breaking changes. For more information, see [Change log for the Intune Data Warehouse API](developer/reports-changelog.md#1903-part-2).
 
 #### Monitor Security Baseline status (public preview) <!-- 3082047 --> 
-We've added a [per-category view](security-baselines-monitor.md#per-category-view) to the monitoring of security baselines. (Security baselines remain in preview). The per-category view displays each category from the baseline along with the percentage of devices that fall into each status group for that category. You can now see how many devices don't match the individual categories, are misconfigured, or are not applicable.
+We've added a [per-category view](protect/security-baselines-monitor.md#per-category-view) to the monitoring of security baselines. (Security baselines remain in preview). The per-category view displays each category from the baseline along with the percentage of devices that fall into each status group for that category. You can now see how many devices don't match the individual categories, are misconfigured, or are not applicable.
 
 ### Role-based access control
 
@@ -1071,7 +1073,7 @@ You can now add scope tags to Apple VPP tokens. Only users assigned with the sam
 ### Device configuration
 
 #### Updated certificate connectors  <!-- ICM 113304612 -->
-We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector for Microsoft Intune](certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
+We’ve released updates for both the [Intune Certificate Connector and the PFX Certificate Connector for Microsoft Intune](protect/certficates-pfx-configure.md#whats-new-for-connectors). The new releases fix several known issues.  
 
 ### App management
 
@@ -1092,29 +1094,29 @@ For updated enrollment steps and screens, see [Enroll iOS device in Intune](http
 ### Monitor and troubleshoot
 
 ### Support for the Power BI Compliance app from the Data Warehouse blade in Microsoft Intune <!-- 4260871 -->
-Previously, the **Download Power BI file** link in the **Intune Data Warehouse** blade downloaded an Intune Data Warehouse report (.pbix file). This report has been replaced with the Power BI Compliance app. The Power BI Compliance app will not require special loading or setup. It will open directly in the Power BI online portal and display data specifically for your Intune tenant based on your credentials. In Intune, select the **Set up Intune Data Warehouse** link on the right side of the Intune blade. Then, click **Get Power BI App**. For more information, see [Connect to the Data Warehouse with Power BI](reports-proc-get-a-link-powerbi.md).
+Previously, the **Download Power BI file** link in the **Intune Data Warehouse** blade downloaded an Intune Data Warehouse report (.pbix file). This report has been replaced with the Power BI Compliance app. The Power BI Compliance app will not require special loading or setup. It will open directly in the Power BI online portal and display data specifically for your Intune tenant based on your credentials. In Intune, select the **Set up Intune Data Warehouse** link on the right side of the Intune blade. Then, click **Get Power BI App**. For more information, see [Connect to the Data Warehouse with Power BI](developer/reports-proc-get-a-link-powerbi.md).
 
 ## Week of March 18, 2019
 
 ### App management
 
 #### Deploy Microsoft Visio and Microsoft Project <!-- 3725386  -->
-You can now deploy Microsoft Visio Pro for Office 365 and Microsoft Project Online Desktop Client as independent apps to Windows 10 devices using Microsoft Intune, if you own licenses for these apps. From Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. On the **Add app** blade, select **Windows 10** as the **App type**. Then, select **Configure App Suite** to select apps to install. For more information about Office 365 apps for Windows 10 devices, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
+You can now deploy Microsoft Visio Pro for Office 365 and Microsoft Project Online Desktop Client as independent apps to Windows 10 devices using Microsoft Intune, if you own licenses for these apps. From Intune, select **Client apps** > **Apps** > **Add** to display the **Add app** blade. On the **Add app** blade, select **Windows 10** as the **App type**. Then, select **Configure App Suite** to select apps to install. For more information about Office 365 apps for Windows 10 devices, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps/apps-add-office365.md).
 
 #### Microsoft Visio Pro for Office 365 product name change <!-- 3593653  -->
-**Microsoft Visio Pro for Office 365** will now be known as **Microsoft Visio Online Plan 2**.  For more information about Microsoft Visio, see [Visio Online Plan 2](https://products.office.com/visio/visio-online-plan-2). For more information about Office 365 apps for Windows 10 devices, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md).
+**Microsoft Visio Pro for Office 365** will now be known as **Microsoft Visio Online Plan 2**.  For more information about Microsoft Visio, see [Visio Online Plan 2](https://products.office.com/visio/visio-online-plan-2). For more information about Office 365 apps for Windows 10 devices, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps/apps-add-office365.md).
 
 #### Intune app protection policy (APP) character limit setting <!-- 3291302  -->
-Intune admins can specify an exception to the Intune APP  **Restrict cut, copy, and paste with other apps** policy setting.  As the admin, you can specify the number of characters that may be cut or copied from a managed app. This setting will allow sharing of the specified number of characters to any app, regardless of the "Restrict cut, copy, and paste with other apps" setting. Note that the Intune Company Portal app version for Android requires version 5.0.4364.0 or later. For more information, see [iOS data protection](app-protection-policy-settings-ios.md#data-protection), [Android data protection](app-protection-policy-settings-android.md#data-protection), and [Review client app protection logs](app-protection-policy-settings-log.md#app-protection-policy-settings).
+Intune admins can specify an exception to the Intune APP  **Restrict cut, copy, and paste with other apps** policy setting.  As the admin, you can specify the number of characters that may be cut or copied from a managed app. This setting will allow sharing of the specified number of characters to any app, regardless of the "Restrict cut, copy, and paste with other apps" setting. Note that the Intune Company Portal app version for Android requires version 5.0.4364.0 or later. For more information, see [iOS data protection](apps/app-protection-policy-settings-ios.md#data-protection), [Android data protection](apps/app-protection-policy-settings-android.md#data-protection), and [Review client app protection logs](apps/app-protection-policy-settings-log.md#app-protection-policy-settings).
 
 #### Office Deployment Tool (ODT) XML for Office ProPlus deployment <!-- 3192477   -->
-You will be able to provide Office Deployment Tool (ODT) XML when creating an instance of Office Pro Plus in the Intune admin console. This will allow greater customizability if the existing Intune UI options do not meet your needs. For more information, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps-add-office365.md) and [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
+You will be able to provide Office Deployment Tool (ODT) XML when creating an instance of Office Pro Plus in the Intune admin console. This will allow greater customizability if the existing Intune UI options do not meet your needs. For more information, see [Assign Office 365 apps to Windows 10 devices with Microsoft Intune](apps/apps-add-office365.md) and [Configuration options for the Office Deployment Tool](https://docs.microsoft.com/DeployOffice/configuration-options-for-the-office-2016-deployment-tool).
 
 #### App icons will now be displayed with an automatically generated background <!-- 1429026  -->
 In the Windows Company Portal app, app icons will now be displayed with an automatically generated background based on the dominant color of the icon (if it can be detected). When applicable, this background will replace the gray border that was previously visible on app tiles. Users will see this change in versions of Company Portal later than 10.3.3451.0.
 
 #### Install available apps using the Company Portal app after Windows bulk enrollment <!-- 2751523   -->
-Windows devices that enrolled into Intune using [Windows bulk enrollment](windows-bulk-enroll.md) (provisioning packages) will be able to use the Company Portal app to install available apps. For more information about the Company Portal app, see [Manually add the Windows 10 Company Portal](store-apps-company-portal-app.md) and [How to configure the Microsoft Intune Company Portal app](company-portal-app.md).
+Windows devices that enrolled into Intune using [Windows bulk enrollment](enrollment/windows-bulk-enroll.md) (provisioning packages) will be able to use the Company Portal app to install available apps. For more information about the Company Portal app, see [Manually add the Windows 10 Company Portal](apps/store-apps-company-portal-app.md) and [How to configure the Microsoft Intune Company Portal app](apps/company-portal-app.md).
 
 #### The Microsoft Teams app can be selected as part of the Office app suite <!-- 3828932  -->
 The Microsoft Teams app can be included or excluded as part of the Office Pro Plus app suite installation. This feature works for Office Pro Plus build number 16.0.11328.20116+. The user must sign out and then sign in to the device for the installation to complete. In Intune, select **Client apps** > **Apps** > **Add**. Select one of the **Office 365 Suite** app types and then select **Configure  App Suite**.
@@ -1125,7 +1127,7 @@ The Microsoft Teams app can be included or excluded as part of the Office Pro Pl
 
 On Windows 10 and later devices, you can run a device in kiosk mode, and run many apps. In this update, there's an **AutoLaunch** setting (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **Kiosk** for profile type > **Multi-app kiosk**). Use this setting to automatically start an app when the user signs in to the device.
 
-To see a list and description of all the kiosk settings, see [Windows 10 and later device settings to run as a kiosk in Intune](kiosk-settings-windows.md).
+To see a list and description of all the kiosk settings, see [Windows 10 and later device settings to run as a kiosk in Intune](configuration/kiosk-settings-windows.md).
 
 Applies to: Windows 10 and later
 
@@ -1142,20 +1144,20 @@ To learn more about routing logs to Azure Monitor, see [send log data to storage
 #### Create and use mobility extensions on Android Zebra devices in Intune <!-- 3305880   -->
 In this update, Intune supports configuring Android Zebra devices. Specifically, you can create a device configuration profile, and apply settings to Android Zebra devices using Mobility Extensions (MX) profiles generated by StageNow (**Device configuration** > **Profiles** > **Create profile** > **Android** for platform > **MX profile (Zebra only)** for profile type).
 
-For more information on this feature, see [Use and manage Zebra devices with mobility extensions in Intune](android-zebra-mx-overview.md).
+For more information on this feature, see [Use and manage Zebra devices with mobility extensions in Intune](configuration/android-zebra-mx-overview.md).
 
 Applies to: Android
 
 ### Device management
 
 #### Encryption report for Windows 10 Devices (in public preview)<!-- 2351538 -->  
-Use the new [Encryption report (Preview)](encryption-monitor.md) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
+Use the new [Encryption report (Preview)](protect/encryption-monitor.md) to view details about the encryption status of your Windows 10 devices. Available details include a devices TPM version, encryption readiness and status, error reporting, and more.  
 
 #### Access BitLocker recovery keys from the Intune portal (in public preview) <!-- 2351547   -->  
-You can now use Intune to [view details](encryption-monitor.md) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
+You can now use Intune to [view details](protect/encryption-monitor.md) about BitLocker Key ID and BitLocker recovery keys, from Azure Active Directory.
 
 #### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
-Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end-user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
+Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to end-user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](apps/app-configuration-managed-browser.md#microsoft-edge-support).
 
 #### Exchange Online/Intune Connector deprecate support for EAS only devices <!--3105122  -->
 The Intune console no longer supports viewing and managing EAS-only devices connected to Exchange Online with the Intune Connector. Instead, you have the following options:
@@ -1196,7 +1198,7 @@ You can add a scope tag to an iOS app provisioning profile so that only people w
 You can add a scope tag to an app configuration policy so that only people with roles also assigned that scope tag have access to the app configuration policy. The app configuration policy can only be targeted to or associated with apps assigned the same scope tag. For more information, see [Use RBAC and scope tags](scope-tags.md).
 
 ### Microsoft Edge support for Intune scenarios on iOS and Android devices <!-- 3411007 -->
-Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to the end-user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](app-configuration-managed-browser.md#microsoft-edge-support).
+Microsoft Edge will support all of the same management scenarios as the Intune Managed Browser with the addition of improvements to the end-user experience. Microsoft Edge enterprise features that are enabled by Intune policies include dual-Identity, app protection policy integration, Azure application proxy integration, and managed favorites and home page shortcuts. For more information, see [Microsoft Edge support](apps/app-configuration-managed-browser.md#microsoft-edge-support).
 
 ## Week of February 25, 2019
 
@@ -1209,7 +1211,7 @@ The Intune PowerShell module, which provides support for the Intune API through 
 - [Scenario examples using this module](https://github.com/Microsoft/Intune-PowerShell-SDK/blob/master/Samples/README.md)
 
 #### Improved support for delivery optimization  <!--3183757  -->
-We've expanded the support in Intune for configuring delivery optimization. You can now configure an expanded list of [Delivery Optimization settings](delivery-optimization-settings.md) and target it to your devices right from Intune console.
+We've expanded the support in Intune for configuring delivery optimization. You can now configure an expanded list of [Delivery Optimization settings](configuration/delivery-optimization-settings.md) and target it to your devices right from Intune console.
 
 
 ## Week of February 18, 2019
@@ -1220,7 +1222,7 @@ We've expanded the support in Intune for configuring delivery optimization. You 
 Some IT admins are faced with a BYOD landscape where end users may end up rooting or jailbreaking their mobile phone. This behavior, while sometimes not ill-intentioned, results in a bypass of many Intune policies that are set in order to protect the organization's data on end-user devices. Thus, Intune provides root and jailbreak detection for both enrolled and unenrolled devices. With this release, Intune will now leverage Google Play Protect APIs to add to our existing root detection checks for unenrolled devices. While Google does not share the entirety of the root detection checks that occur, we expect these APIs to detect users who have rooted their devices for any reason from device customization to being able to get newer OS updates on older devices. These users can then be blocked from accessing corporate data, or their corporate accounts can be wiped from their policy enabled apps. For additional value, the IT admin will now have several reporting updates within the Intune App Protection blade - the "Flagged Users" report will show which users are detected via Google Play Protect's SafetyNet API scan, the "Potentially Harmful Apps" report will show which apps are detected via Google's Verify Apps API scanning. This feature is available on Android.
 
 #### Win32 app information available in Troubleshooting blade <!-- 2617342   -->
-You can now collect failure log files for a Win32 app installation from the Intune app **Troubleshooting** blade. For more information about app installation troubleshooting, see [Troubleshoot app installation issues](troubleshoot-app-install.md) and [Troubleshoot Win32 app issues](apps-win32-app-management.md#troubleshoot-win32-app-issues).
+You can now collect failure log files for a Win32 app installation from the Intune app **Troubleshooting** blade. For more information about app installation troubleshooting, see [Troubleshoot app installation issues](./apps/troubleshoot-app-install.md) and [Troubleshoot Win32 app issues](./apps/troubleshoot-app-install.md#win32-app-installation-troubleshooting).
 
 #### App status details for iOS apps <!-- 3761235   -->
 There are new app installation error messages related to the following:
@@ -1237,7 +1239,7 @@ In Intune, select **Client apps** > **Apps** > "App name" > **Device install sta
 A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](whats-new-app-ui.md). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
-Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](reports-changelog.md#power-bi-compliance-app).
+Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](developer/reports-changelog.md#power-bi-compliance-app).
 
 
 ### Device configuration
@@ -1245,7 +1247,7 @@ Access your Intune Data Warehouse in Power BI Online using the [Intune Complianc
 #### PowerShell scripts can run in a 64-bit host on 64-bit devices <!-- 1862675   -->
 When you add a PowerShell script to a device configuration profile, the script always executes in 32-bit, even on 64-bit operating systems. With this update, an administrator can run the script in a 64-bit PowerShell host on 64-bit devices (**Device configuration** > **PowerShell scripts** > **Add** > **Configure** > **Run script in 64 bit PowerShell Host**).
 
-For more details on using PowerShell, see [PowerShell scripts in Intune](intune-management-extension.md).
+For more details on using PowerShell, see [PowerShell scripts in Intune](apps/intune-management-extension.md).
 
 Applies to:
 Windows 10 and later
@@ -1259,15 +1261,15 @@ Applies to:
 macOS
 
 #### Assign SCEP certificates to a userless macOS device    <!-- 2340521    -->
-You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using device attributes to macOS devices, including devices without user affinity, and associate the certificate profile with Wi-Fi or VPN profiles. This expands the support we already have to [assign SCEP certificates to devices with and without user affinity](certificates-profile-scep.md) that run Windows, iOS, and Android.  This update adds the option to select a Certificate type of *Device* when you configure a SCEP certificate profile for the macOS.
+You can assign Simple Certificate Enrollment Protocol (SCEP) certificates using device attributes to macOS devices, including devices without user affinity, and associate the certificate profile with Wi-Fi or VPN profiles. This expands the support we already have to [assign SCEP certificates to devices with and without user affinity](protect/certificates-profile-scep.md) that run Windows, iOS, and Android.  This update adds the option to select a Certificate type of *Device* when you configure a SCEP certificate profile for the macOS.
 
 Applies to: 
 - macOS
 
 #### Intune Conditional Access UI update   <!-- 2432313   -->
 We've made improvements to the UI for Conditional Access in the Intune console. These include:
-- Replaced the Intune *Conditional Access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [Conditional Access](conditional-access.md) (which remains an Azure AD technology), from within the Intune console. 
-- We've renamed the *On-premises access* blade to *Exchange access*, and relocated the *Exchange service connector* setup to this renamed blade.  This change consolidates where you [configure and monitor details related to Exchange online and on-premises](exchange-connector-install.md).  
+- Replaced the Intune *Conditional Access* blade with the blade from Azure Active Directory. This ensures you'll have access to the full range of settings and configurations for [Conditional Access](protect/conditional-access.md) (which remains an Azure AD technology), from within the Intune console. 
+- We've renamed the *On-premises access* blade to *Exchange access*, and relocated the *Exchange service connector* setup to this renamed blade.  This change consolidates where you [configure and monitor details related to Exchange online and on-premises](protect/exchange-connector-install.md).  
 
 #### Kiosk Browser and Microsoft Edge Browser apps can run on Windows 10 devices in kiosk mode <!-- 2935135   -->
 You can use Windows 10 devices in kiosk mode to run one app, or many apps. This update includes several changes to using browser apps in kiosk mode, including:
@@ -1284,9 +1286,9 @@ You can use Windows 10 devices in kiosk mode to run one app, or many apps. This 
 
 For a list of these settings, see:
 
-- [Windows 10 and later device settings to run as a kiosk](kiosk-settings-windows.md)
-- [Microsoft Edge Browser device restrictions](device-restrictions-windows-10.md#microsoft-edge-browser)
-- [Favorites and search device restrictions](device-restrictions-windows-10.md##favorites-and-search)
+- [Windows 10 and later device settings to run as a kiosk](configuration/kiosk-settings-windows.md)
+- [Microsoft Edge Browser device restrictions](configuration/device-restrictions-windows-10.md#microsoft-edge-browser)
+- [Favorites and search device restrictions](configuration/device-restrictions-windows-10.md##favorites-and-search)
 
 Applies to:
 Windows 10 and later
@@ -1296,8 +1298,8 @@ You can restrict some settings and features on devices running iOS and macOS (**
 
 To see the features and settings you can restrict, see:
 
-- [iOS device restriction settings](device-restrictions-ios.md)
-- [macOS device restriction settings](device-restrictions-macos.md)
+- [iOS device restriction settings](configuration/device-restrictions-ios.md)
+- [macOS device restriction settings](configuration/device-restrictions-macos.md)
 
 Applies to:
 
@@ -1307,7 +1309,7 @@ Applies to:
 #### "Kiosk" devices are now called "Dedicated devices" on Android Enterprise devices <!-- 3598402   -->
 To align with Android terminology, **kiosk** is changed to **dedicated devices** for Android enterprise devices (**Device configuration** > **Profiles** > **Create profile** > **Android enterprise for platform > **Device Owner Only** > **Device Restrictions** > **Dedicated devices**).
 
-To see the available settings, go to [Device settings to allow or restrict features](device-restrictions-android-for-work.md#dedicated-device-settings).
+To see the available settings, go to [Device settings to allow or restrict features](configuration/device-restrictions-android-for-work.md#dedicated-device-settings).
 
 Applies to:  
 Android Enterprise
@@ -1315,13 +1317,13 @@ Android Enterprise
 #### Safari and Delaying user software update visibility iOS settings are moving in the Intune UI <!-- 3640850, 3803313   -->
 For iOS devices, you can set Safari settings and configure Software Updates. In this update, these settings are moving to different parts of the Intune UI:
 
-- The Safari settings moved from **Safari** (**Device configuration** > **Profiles** > **New profile** > **iOS** for platform > **Device restrictions** for profile type) to **[Built-in Apps](device-restrictions-ios.md#built-in-apps)**.
-- The **Delaying user software update visibility for supervised iOS devices** setting (**Software updates** > **Update policies for iOS**) is moving to **Device restrictions** > **[General](device-restrictions-ios.md#general)**.  For details on the impact to existing policies, see [iOS software updates](software-updates-ios.md#configure-the-policy). 
+- The Safari settings moved from **Safari** (**Device configuration** > **Profiles** > **New profile** > **iOS** for platform > **Device restrictions** for profile type) to **[Built-in Apps](configuration/device-restrictions-ios.md#built-in-apps)**.
+- The **Delaying user software update visibility for supervised iOS devices** setting (**Software updates** > **Update policies for iOS**) is moving to **Device restrictions** > **[General](configuration/device-restrictions-ios.md#general)**.  For details on the impact to existing policies, see [iOS software updates](protect/software-updates-ios.md#configure-the-policy). 
 
 For a list of the settings, see:
 
-- [iOS device restrictions](device-restrictions-ios.md) 
-- [iOS software updates](software-updates-ios.md)
+- [iOS device restrictions](configuration/device-restrictions-ios.md) 
+- [iOS software updates](protect/software-updates-ios.md)
 
 This feature applies to: 
 
@@ -1335,7 +1337,7 @@ The behavior is the same. Specifically:
 - iOS 11.4.1 and earlier: **Block** prevents end users from setting their own restrictions in the device settings. 
 - iOS 12.0 and later: **Block** prevents end users from setting their own **Screen Time** in the device settings, including content & privacy restrictions. Devices upgraded to iOS 12.0 won't see the restrictions tab in the device settings anymore. These settings are in **Screen Time**. 
 
-For a list of the settings, see [iOS device restrictions](device-restrictions-ios.md#general).
+For a list of the settings, see [iOS device restrictions](configuration/device-restrictions-ios.md#general).
 
 Applies to: 
 - iOS
@@ -1379,7 +1381,7 @@ We’ve changed the labels for settings and buttons for Intune app protection to
 - Controls are changed from **yes** / **no** controls to primarily **block** / **allow** and **disable** / **enable** controls. The labels are also updated.  
 - Settings are reformatted, so the setting and its label are side-by-side in the control, to provide better navigation.   
 
-The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](app-protection-policy-settings-ios.md) and [Android settings](app-protection-policy-settings-android.md).
+The default settings and number of settings remain the same, but this change allows the user to understand, navigate, and utilize the settings more easily to apply selected app protection policies. For information, see [iOS settings](apps/app-protection-policy-settings-ios.md) and [Android settings](apps/app-protection-policy-settings-android.md).
 
 ### Additional settings for Outlook <!-- 3301182  -->
 You can now configure the following additional settings for Outlook for iOS and Android using Intune:
@@ -1394,9 +1396,9 @@ You can now configure the following additional settings for Outlook for iOS and 
 - Block external images
 
 > [!NOTE]
-> If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](app-protection-policy-settings-android.md#access-requirements).
+> If you are using Intune App Protection policies to manage access for corporate identities, you should consider not enabling **require biometrics**. For more information, see **Require corporate credentials for access** for [iOS Access Settings](apps/app-protection-policy-settings-ios.md#access-requirements) and [Android Access Settings](apps/app-protection-policy-settings-android.md#access-requirements).
 
-For more information, see [Microsoft Outlook configuration settings](app-configuration-policies-outlook.md).
+For more information, see [Microsoft Outlook configuration settings](apps/app-configuration-policies-outlook.md).
 
 #### Delete Android Enterprise apps <!-- 1352553 -->
 You can delete managed Google Play apps from Microsoft Intune. To delete a managed Google Play app, open Microsoft Intune in the Azure portal and select **Client apps** > **Apps**. From the app list, select the ellipses (...) to the right of the managed Google Play app, then select **Delete** from the displayed list. When you delete a managed Google Play app from the app list, the managed Google Play app is automatically unapproved.
@@ -1405,7 +1407,7 @@ You can delete managed Google Play apps from Microsoft Intune. To delete a manag
 The **managed Google Play** app type will allow you to specifically add [managed Google Play apps](https://play.google.com/work/search?q=microsoft&c=apps) to Intune. As the Intune admin, you can now browse, search, approve, sync and assign approved managed Google Play apps within Intune.  You no longer need to browse to the managed Google Play console separately, and you no longer have to reauthenticate.  In Intune, select **Client apps** > **Apps** > **Add**. In the **App type** list, select **Managed Google Play** as the app type.
 
 ### Default Android PIN keyboard <!-- 3802457 -->
-For end users who have set an Intune App Protection Policy (APP) PIN on their Android devices with PIN type of 'Numeric', they will now see the default Android keyboard instead of the fixed Android keyboard UI that was previously designed. This change was made to be consistent when using default keyboards on both Android and iOS, for both PIN types of 'Numeric' and/or 'Passcode'. For more information about end user Access settings on Android, such as APP PIN, see [Android access requirements](app-protection-policy-settings-android.md#access-requirements).
+For end users who have set an Intune App Protection Policy (APP) PIN on their Android devices with PIN type of 'Numeric', they will now see the default Android keyboard instead of the fixed Android keyboard UI that was previously designed. This change was made to be consistent when using default keyboards on both Android and iOS, for both PIN types of 'Numeric' and/or 'Passcode'. For more information about end user Access settings on Android, such as APP PIN, see [Android access requirements](apps/app-protection-policy-settings-android.md#access-requirements).
 
 ### Device configuration
 
@@ -1416,7 +1418,7 @@ In Intune, we aim to accomplish this goal by publishing a set of Microsoft recom
 
 This feature is in public preview so any profiles created now will not move over to Security Baselines templates that are generally available (GA). You shouldn’t plan to use these preview templates in your production environment.
 
-To learn more about security baselines, see [Create a Windows 10 security baseline in Intune](security-baselines-monitor.md).
+To learn more about security baselines, see [Create a Windows 10 security baseline in Intune](protect/security-baselines-monitor.md).
 
 This feature applies to:
 Windows 10 and later
@@ -1426,14 +1428,14 @@ When you enable BitLocker settings on Windows 10 devices (**Device configuration
 
 This update includes a new BitLocker setting to allow standard users (non-administrators) to enable encryption. 
 
-To see the settings, go to [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+To see the settings, go to [Endpoint protection settings for Windows 10](protect/endpoint-protection-windows-10.md#windows-encryption).
 
 #### Check for Configuration Manager compliance <!-- 2192052  eepublished  -->
 This update includes a new System Center Configuration Manager compliance setting (**Device compliance** > **Policies** > **Create policy** > **Windows 10 and later** > **Configuration Manager Compliance**). Configuration Manager sends signals to Intune compliance. Using this setting, you can require all Configuration Manager signals to return "compliant".
 
 For example, you require all software updates to be installed on devices. In Configuration Manager, this requirement has the “Installed” state. If any programs on the device are in unknown state, then the device is non-compliant in Intune.
 
-[Configuration Manager Compliance](compliance-policy-create-windows.md#configuration-manager-compliance) describes this setting.
+[Configuration Manager Compliance](protect/compliance-policy-create-windows.md#configuration-manager-compliance) describes this setting.
 
 Applies to: 
 Windows 10 and later
@@ -1441,17 +1443,17 @@ Windows 10 and later
 #### Customize wallpaper on supervised iOS devices using a device configuration profile <!-- 2809324   -->
 When you create a device configuration profile for iOS devices, you can customize some features (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device features** for profile type). This update includes new **Wallpaper** settings that allow an Administrator to use a .png, .jpg, or .jpeg image on the home screen or lock screen. These wallpaper settings apply only to supervised devices. 
 
-For a list of these settings, see [iOS device feature settings](ios-device-features-settings.md).
+For a list of these settings, see [iOS device feature settings](configuration/ios-device-features-settings.md).
 
 #### Windows 10 kiosk is generally available <!-- 3594661  -->
-In this update, the Kiosk feature on Windows 10 and later devices is generally available (GA). To see all the settings you can add and configure, see [Kiosk settings for Windows 10 (and later)](kiosk-settings.md).
+In this update, the Kiosk feature on Windows 10 and later devices is generally available (GA). To see all the settings you can add and configure, see [Kiosk settings for Windows 10 (and later)](configuration/kiosk-settings.md).
 
 #### Contact Sharing via Bluetooth is removed in Device Restrictions > Device Owner for Android Enterprise <!-- 3598396   -->
 When you create a device restrictions profile for Android Enterprise devices, there is a **Contact Sharing via Bluetooth** setting. In this update, the **Contact Sharing via Bluetooth** setting is removed (**Device configuration** > **Profiles** > **Create profile** > **Android Enterprise** for platform > **Device Restrictions > Device owner** for profile type > **General**). 
 
 The **Contact Sharing via Bluetooth** setting isn't supported for Android Enterprise Device Owner management. So when this setting is removed, it won't impact any devices or tenants, even if this setting is enabled and configured in your environment.
 
-To see the current list of settings, go to [Android Enterprise device settings to allow or restrict features](device-restrictions-android-for-work.md).
+To see the current list of settings, go to [Android Enterprise device settings to allow or restrict features](configuration/device-restrictions-android-for-work.md).
 
 Applies to: Android Enterprise Device Owner
 
@@ -1481,7 +1483,7 @@ For Android devices in a non-enrolled App Protection Policy Without Enrollment (
 ## Week of January 14, 2019
 
 ### Preview of support for Android corporate-owned, fully managed devices <!-- 1574342  -->
-Intune now supports fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. For more information, see [Set up Intune enrollment of Android fully managed devices](android-fully-managed-enroll.md) and [Enroll your dedicated devices or fully managed devices](android-dedicated-devices-fully-managed-enroll.md).  Please note that this feature is in preview. Some Intune capabilities, such as certificates, compliance, and Conditional Access, are not currently available with Android fully managed user devices.
+Intune now supports fully managed Android devices, a corporate-owned "device owner" scenario where devices are tightly managed by IT and are affiliated with individual users. This allows admins to manage the entire device, enforce an extended range of policy controls unavailable to work profiles, and restricts users to installing apps from managed Google Play only. For more information, see [Set up Intune enrollment of Android fully managed devices](enrollment/android-fully-managed-enroll.md) and [Enroll your dedicated devices or fully managed devices](enrollment/android-dedicated-devices-fully-managed-enroll.md).  Please note that this feature is in preview. Some Intune capabilities, such as certificates, compliance, and Conditional Access, are not currently available with Android fully managed user devices.
 
 <!-- ########################## -->
 ## Week of January 7, 2019
@@ -1489,7 +1491,7 @@ Intune now supports fully managed Android devices, a corporate-owned "device own
 ### App management
 
 #### Intune app PIN <!-- 2298397 -->
-As the IT admin, you can now configure the number of days an end user can wait until their Intune app PIN must be changed. The new setting is *PIN reset after number of days* and is available in the Azure portal by selecting **Intune** > **Client apps** > **App protection policies** > **Create Policy** > **Settings** > **Access requirements**. Available for [iOS](app-protection-policy-settings-ios.md) and [Android](app-protection-policy-settings-android.md) devices, this feature supports a positive integer value.
+As the IT admin, you can now configure the number of days an end user can wait until their Intune app PIN must be changed. The new setting is *PIN reset after number of days* and is available in the Azure portal by selecting **Intune** > **Client apps** > **App protection policies** > **Create Policy** > **Settings** > **Access requirements**. Available for [iOS](apps/app-protection-policy-settings-ios.md) and [Android](apps/app-protection-policy-settings-android.md) devices, this feature supports a positive integer value.
 
 
 #### Intune device reporting fields <!-- 2748738 -->
@@ -1507,7 +1509,7 @@ Administrative templates in Intune (**Device configuration** > **Administrative 
 - Administrative templates are moving from **Device configuration** > **Administrative templates** to **Device configuration** > **Profiles** > **Create profile** > in **Platform**, choose **Windows 10 and later** > in **Profile type**, choose **Administrative templates**.
 - Reporting is enabled
 
-To read more about this feature, go to [Windows 10 templates to configure group policy settings](administrative-templates-windows.md).
+To read more about this feature, go to [Windows 10 templates to configure group policy settings](configuration/administrative-templates-windows.md).
 
 Applies to: Windows 10 and later
 
@@ -1518,48 +1520,48 @@ This update includes S/MIME email encryption using a new imported certificate pr
 - The private certificates can be delivered across multiple platforms. But, not all email apps support S/MIME.
 - On other platforms, you may need to manually configure the mail app to enable S/MIME.  
 - Email apps that support S/MIME encryption may handle retrieving certificates for S/MIME email encryption in a way that an MDM cannot support, such as reading from their publisher's certificate store.
-For more information on this feature, see [S/MIME overview to sign and encrypt email](certificates-s-mime-encryption-sign.md).
+For more information on this feature, see [S/MIME overview to sign and encrypt email](protect/certificates-s-mime-encryption-sign.md).
 Supported on: Windows, Windows Phone 10, macOS, iOS, Android
 
 #### New options to automatically connect and persist rules when using DNS settings on Windows 10 and later devices <!-- 1333665, 2999078 -->
 On Windows 10 and later devices, you can create a VPN configuration profile that includes a list of DNS servers to resolve domains, such as contoso.com. This update includes new settings for name resolution (**Device configuration** > **Profiles** > **Create profile** > Choose **Windows 10 and later** for platform > Choose **VPN** for profile type > **DNS settings** >**Add**): 
 - **Automatically connect**: When **Enabled**, the device automatically connects to the VPN when a device contacts a domain you enter, such as contoso.com.
 - **Persistent**: By default, all Name Resolution Policy table (NRPT) rules are active as long as the device is connected using this VPN profile. When this setting is **Enabled** on an NRPT rule, the rule remains active on the device, even when the VPN disconnects. The rule stays until the VPN profile is removed or until the rule is manually removed, which can be done using PowerShell.
-[Windows 10 VPN settings](vpn-settings-windows-10.md) describes the settings. 
+[Windows 10 VPN settings](configuration/vpn-settings-windows-10.md) describes the settings. 
 
 #### Use trusted network detection for VPN profiles on Windows 10 devices <!-- 1500165 -->
 When using trusted network detection, you can prevent VPN profiles from automatically creating a VPN connection when the user is already on a trusted network. With this update, you can add DNS suffixes to enable trusted network detection on devices running Windows 10 and later (**Device configuration** > **Profiles** > **Create profile** > **Windows 10 and later** for platform > **VPN** for profile type).
-[Windows 10 VPN settings](vpn-settings-windows-10.md) lists the current VPN settings.
+[Windows 10 VPN settings](configuration/vpn-settings-windows-10.md) lists the current VPN settings.
 
 #### Manage Windows Holographic for Business devices used by multiple users <!-- 1907917, 1063203 -->
 Currently, you can configure shared PC settings on Windows 10 and Windows Holographic for Business devices using a custom OMA-URI setting. With this update, a new profile is added to configure shared device settings (**Device configuration** > **Profiles** > **Create Profile** > **Windows 10 and later** > **Shared multi-user device**).
-To learn more about this feature, go to [Intune settings to manage shared devices](shared-user-device-settings.md).
+To learn more about this feature, go to [Intune settings to manage shared devices](configuration/shared-user-device-settings.md).
 Applies to: Windows 10 and later, Windows Holographic for Business
 
 #### New Windows 10 Update settings <!--2626030  2512994  -->
-For your [Windows 10 Update Rings](windows-update-for-business-configure.md), you can configure:
+For your [Windows 10 Update Rings](protect/windows-update-for-business-configure.md), you can configure:
 - **Automatic update behavior** - Use a new option, *Reset to default* to restore the original auto update settings on a Windows 10 machine on machines running the *October 2018 Update*
 - **Block user from pausing Windows updates** - Configure a new Software updates setting that lets you block or allow your users to pause update installation from the *Settings* of their machines. 
 
 #### iOS email profiles can use S/MIME signing and encryption <!-- 2662949 -->
 You can create an email profile that includes different settings. This update includes S/MIME settings that can be used for signing and encrypting email communications on iOS devices (**Device configuration** > **Profiles** > **Create profile** > Choose **iOS** for platform > **Email** for profile type).
-[iOS email configuration settings](email-settings-ios.md) lists the settings.
+[iOS email configuration settings](configuration/email-settings-ios.md) lists the settings.
 
 #### Some BitLocker settings support Windows 10 Pro edition<!-- 2727036 -->
 You can create a configuration profile that sets endpoint protection settings on Windows 10 devices, including BitLocker. This update adds support for Windows 10 Professional edition for some BitLocker settings. 
-To see these protection settings, go to [Endpoint protection settings for Windows 10](endpoint-protection-windows-10.md#windows-encryption).
+To see these protection settings, go to [Endpoint protection settings for Windows 10](protect/endpoint-protection-windows-10.md#windows-encryption).
 
 #### Shared device configuration is renamed to Lock Screen Message for iOS devices in the Azure portal<!-- 2809362 -->
 When you create a configuration profile for iOS devices, you can add **Shared Device Configuration** settings to show specific text on the lock screen. This update includes the following changes: 
 - The **Shared Device Configuration** settings in the Azure portal are renamed to "Lock Screen Message (supervised only)" (**Device configuration** > **Profiles** > **Create profile** > Choose **iOS** for platform > Choose **Device features** for profile type > **Lock Screen Message**).
-- When adding lock screen messages, you can insert a serial number, a device name, or another device-specific value as a variable in **Asset tag information** and **Lock screen footnote**. For example, you can enter `Device name: {{devicename}}` or `Serial number is {{serialnumber}}` using curly brackets. [iOS tokens](app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) lists the available tokens that can be used.
+- When adding lock screen messages, you can insert a serial number, a device name, or another device-specific value as a variable in **Asset tag information** and **Lock screen footnote**. For example, you can enter `Device name: {{devicename}}` or `Serial number is {{serialnumber}}` using curly brackets. [iOS tokens](apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) lists the available tokens that can be used.
 [Settings to display messages on the lock screen](shared-device-settings-ios.md) lists the settings.
 
 #### New App Store, Doc Viewing, Gaming device restriction settings added to iOS devices <!-- 2827760-->
 In **Device Configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**, the following settings are added: 
 Allow managed apps to write contacts to unmanaged contacts accounts 
 Allow unmanaged apps to read from managed contacts accounts 
-To see these settings, go to [iOS device restrictions](device-restrictions-ios.md#app-store-doc-viewing-gaming).
+To see these settings, go to [iOS device restrictions](configuration/device-restrictions-ios.md#app-store-doc-viewing-gaming).
 
 #### New notification, hints, and keyguard settings to Android Enterprise device owner devices <!-- 3201839 3201843 -->
 This update includes several new features on Android Enterprise devices when running as device owner. To use these features, go to **Device Configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Android Enterprise** > In **Profile type**, choose **Device owner only** > **Device Restrictions**.
@@ -1571,16 +1573,16 @@ New features include:
 - Disable advanced keyguard settings, such as the camera, notifications, fingerprint unlock, and more.
 
 
-To see the settings, go to [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
+To see the settings, go to [Android Enterprise device restriction settings](configuration/device-restrictions-android-for-work.md).
 
 #### Android enterprise device owner devices can use Always On VPN connections <!-- 3202194 -->
 In this update, you can use Always-on VPN connections on Android enterprise device owner devices. Always-on VPN connections stay connected, or immediately reconnect when the user unlocks their device, when the device restarts, or when the wireless network changes. You can also put the connection in "lockdown" mode, which blocks all network traffic until the VPN connection is active.
 You can enable Always-on VPN in **Device configuration** > **Profiles** > **Create profile** > **Android enterprise** for platform > **Device restrictions** for Device Owner Only > **Connectivity** settings. 
-To see the settings, go to [Android Enterprise device restriction settings](device-restrictions-android-for-work.md).
+To see the settings, go to [Android Enterprise device restriction settings](configuration/device-restrictions-android-for-work.md).
 
 #### New setting to end processes in Task manager on Windows 10 devices <!-- 3285177 --> 
 This update includes a new setting to end processes using Task Manager on Windows 10 devices. Using a device configuration profile (**Device configuration** > **Profiles** > **Create profile** > In **Platform**, choose **Windows 10** > In **Profile type**, choose **Device restrictions** > **General** settings), you choose to allow or prevent this setting.
-To see these settings, go to [Windows 10 device restriction settings](device-restrictions-windows-10.md).
+To see these settings, go to [Windows 10 device restriction settings](configuration/device-restrictions-windows-10.md).
 Applies to: Windows 10 and later
 
 

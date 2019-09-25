@@ -72,19 +72,19 @@ macOS apps you have purchased using Apple Business Manager will be displayed in 
 - Reporting license information from the app store.
 - Tracking how many of the licenses you have used.
 - Helping you to not install more copies of the app than you own.
-For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](vpp-apps.md).
+For more information about Intune and VPP, see [Manage volume-purchased apps and books with Microsoft Intune](apps/vpp-apps.md).
 
 ### macOS support for web apps <!-- 3174427  -->
-You'll be able to install Web apps, which allow you to add a shortcut to a URL on the web, to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps-add.md).
+You'll be able to install Web apps, which allow you to add a shortcut to a URL on the web, to the Dock using the macOS Company Portal. End-users can access the **Install** action from the app details page for a web app in the macOS Company Portal. For more information about the **Web link** app type, see [Add apps to Microsoft Intune](apps/apps-add.md).
 
 #### Assign Microsoft Edge beta for macOS <!-- 4678761  -->
-You'll be able to add and assign the latest version of Microsoft Edge beta to Intune for macOS devices. From Intune, select **Client apps** > **Apps** > **Add app** > **Microsoft Edge - macOS**. Then, assign Microsoft Edge beta to the intended groups. Microsoft AutoUpdate (MAU) keeps Microsoft Edge up-to-date. For more information about Microsoft Edge, see [Manage web access by using Microsoft Edge with Microsoft Intune](manage-microsoft-edge.md).
+You'll be able to add and assign the latest version of Microsoft Edge beta to Intune for macOS devices. From Intune, select **Client apps** > **Apps** > **Add app** > **Microsoft Edge - macOS**. Then, assign Microsoft Edge beta to the intended groups. Microsoft AutoUpdate (MAU) keeps Microsoft Edge up-to-date. For more information about Microsoft Edge, see [Manage web access by using Microsoft Edge with Microsoft Intune](apps/manage-microsoft-edge.md).
 
 ### Configure app notification content for organization accounts <!-- 2576686 -->
-Intune app protection policies (APP) on Android and iOS devices will allow you to control app notification content for Org accounts. This feature will require support from applications and may not be available for all APP enabled applications. For more about APP, see [What are app protection policies?](app-protection-policy.md).
+Intune app protection policies (APP) on Android and iOS devices will allow you to control app notification content for Org accounts. This feature will require support from applications and may not be available for all APP enabled applications. For more about APP, see [What are app protection policies?](apps/app-protection-policy.md).
 
 ### Available Google Play app reporting for Android work profiles <!-- 3041956  -->
-For available app installs on Android work profile devices, you can view app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](android-enterprise-overview.md) and [Managed Google Play app type](apps-add-android-for-work.md#managed-google-play-app-types).
+For available app installs on Android work profile devices, you can view app installation status and the installed version of managed Google Play apps. For more information, see [How to monitor app protection policies](apps/app-protection-policies-monitor.md), [Manage Android work profile devices with Intune](enrollment/android-enterprise-overview.md) and [Managed Google Play app type](apps/apps-add-android-for-work.md#managed-google-play-app-types).
 
 <!-- ***********************************************-->
 <!--## Device configuration-->

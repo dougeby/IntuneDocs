@@ -282,7 +282,7 @@ The following is an example JSON script with all the available configuration key
 
 ## Next steps
 
-- For more information about Android Enterprise fully managed devices, see [Set up Intune enrollment of Android Enterprise fully manage devices](android-fully-managed-enroll.md).
+- For more information about Android Enterprise fully managed devices, see [Set up Intune enrollment of Android Enterprise fully manage devices](enrollment/android-fully-managed-enroll.md).
 
 
 

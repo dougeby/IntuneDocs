@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [both-portals](./includes/note-for-both-portals.md)]
 
-Microsoft Intune helps you enable your workforce with mobile devices while protecting your corporate data. To test out the Intune deployment in your organization, you can try a [free trial](app-sdk.md).
+Microsoft Intune helps you enable your workforce with mobile devices while protecting your corporate data. To test out the Intune deployment in your organization, you can try a [free trial](developer/app-sdk.md).
 
 As you implement Microsoft Intune, it's important that employees understand the need for device management and enterprise mobility. Without an explanation from you, some users might feel that you're infringing on their privacy. User concern for privacy increases when you deploy Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
 

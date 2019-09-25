@@ -69,4 +69,4 @@ In this quickstart, you used Intune to create a group based on an existing user.
 To follow this series of Intune quickstarts, continue to the next quickstart.
 
 > [!div class="nextstepaction"]
-> [Quickstart: Set up automatic enrollment for Windows 10 devices](quickstart-setup-auto-enrollment.md)
+> [Quickstart: Set up automatic enrollment for Windows 10 devices](enrollment/quickstart-setup-auto-enrollment.md)

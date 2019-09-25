@@ -125,4 +125,4 @@ The MDM authority can't be changed back to Unknown. The MDM authority is used by
 
 ## Next steps
 
-With the MDM authority set, you can start [enrolling devices](device-enrollment.md).
+With the MDM authority set, you can start [enrolling devices](enrollment/device-enrollment.md).

@@ -57,11 +57,11 @@ By configuring device groups ahead of device enrollment, you can use device cate
 
 ### Task 2: Use resource access profiles (Wi-Fi, VPN, and email certificates)
 
-Resource access profiles supply certificates and access configurations to enrolled devices. If you are using certificate-based authentication, [configure certificates](certificates-configure.md).
+Resource access profiles supply certificates and access configurations to enrolled devices. If you are using certificate-based authentication, [configure certificates](protect/certificates-configure.md).
 
 ### Task 3: Create and deploy device configuration profiles
 
-You need to create a device configuration profile to enforce device-level settings, for example: disable camera, app-store, configure single-app mode, home screen, and so on. Learn about [device profiles](device-profiles.md).
+You need to create a device configuration profile to enforce device-level settings, for example: disable camera, app-store, configure single-app mode, home screen, and so on. Learn about [device profiles](configuration/device-profiles.md).
 
 #### Directly import iOS configuration profiles (optional)
 
@@ -69,7 +69,7 @@ You need to create a device configuration profile to enforce device-level settin
 
 - **iOS Mobile Application Configuration policies:** If your existing MDM solution uses iOS Mobile Application Configuration policies, Intune can directly import them as long as they meet the XML format specified by Apple for property lists.
 
-- Learn how to add a custom policy for [iOS](custom-settings-ios.md).
+- Learn how to add a custom policy for [iOS](configuration/custom-settings-ios.md).
 
 ### Task 4: Create and deploy device compliance policies (optional)
 
@@ -85,20 +85,20 @@ See additional resources for device compliance settings:
 
 - Learn about [device compliance policies](device-compliance.md).
 
-- Learn [how to create a device compliance policy](device-compliance-get-started.md).
+- Learn [how to create a device compliance policy](protect/device-compliance-get-started.md).
 
 ### Task 5: Publish and deploy apps
 
 When using Intune MDM, you can supply apps by either requiring their automatic installation, or making them available in the Company Portal.
 
-- [How to add apps](apps-add.md).
+- [How to add apps](apps/apps-add.md).
 
-- [How to deploy apps](apps-deploy.md).
+- [How to deploy apps](apps/apps-deploy.md).
 
 ### Task 6: Enable device enrollment
 
-Device enrollment is necessary to manage the device. Learn [how to get ready to enroll corporate-owned and user personal's devices](device-enrollment.md).
+Device enrollment is necessary to manage the device. Learn [how to get ready to enroll corporate-owned and user personal's devices](enrollment/device-enrollment.md).
 
 ## Next steps
 
-[Configure app protection policies (optional)](migration-guide-app-protection-policies.md).
+[Configure app protection policies (optional)](apps/app-protection-policies.md).
