@@ -150,5 +150,5 @@ Follow these steps to generate the App protection report:
 
 ## See also
 - [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)
-- [What to expect when your Android app is managed by app protection policies](end-user-mam-apps-android.md)
-- [What to expect when your iOS app is managed by app protection policies](end-user-mam-apps-ios.md)
+- [What to expect when your Android app is managed by app protection policies](../end-user-mam-apps-android.md)
+- [What to expect when your iOS app is managed by app protection policies](../end-user-mam-apps-ios.md)
