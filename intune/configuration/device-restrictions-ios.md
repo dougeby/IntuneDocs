@@ -104,7 +104,7 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - iOS 11.3 and newer
 
-- **Allow Classroom to lock to an app and lock the device without prompting**: **Enable** allows teacher to lock apps or lock the device using the Classroom app without prompting the student. Locking apps means the device can only access teacher specified apps. **Not configured** (default) prevents teachers from locking apps or devices using the Classroom app without prompting the student. 
+- **Allow Classroom to lock to an app and lock the device without prompting**: **Enable** allows teacher to lock apps or lock the device using the Classroom app without prompting the student. Locking apps means the device can only access teacher specified apps. **Not configured** (default) prevents teachers from locking apps or devices using the Classroom app without prompting the student.
 
   This feature applies to:  
   - iOS 11.0 and newer

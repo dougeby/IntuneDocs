@@ -79,7 +79,7 @@ Select **OK** > **Create** to save your changes. The profile is created and is s
 
 ## Enterprise profile
 
-- **Wi-Fi type**: Choose **Enterprise**. 
+- **Wi-Fi type**: Choose **Enterprise**.
 
 - **Wi-Fi name (SSID)**: Short for service set identifier. This value is the real name of the wireless network that devices connect to. However, users only see the **Connection name** you configure when they choose the connection.
 
