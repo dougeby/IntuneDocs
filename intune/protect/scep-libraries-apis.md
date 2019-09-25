@@ -27,7 +27,7 @@ ms.collection: M365-identity-device-management
 
 # Use APIs to add third-party CAs for SCEP to Intune
 
-In Microsoft Intune, you can add third-party certificate authorities (CA), and have these CAs issue and validate certificates using the Simple Certificate Enrollment Protocol (SCEP). [Add third-party certification authority](protect/certificate-authority-add-scep-overview.md) provides an overview of this feature, and describes the Administrator tasks in Intune.
+In Microsoft Intune, you can add third-party certificate authorities (CA), and have these CAs issue and validate certificates using the Simple Certificate Enrollment Protocol (SCEP). [Add third-party certification authority](certificate-authority-add-scep-overview.md) provides an overview of this feature, and describes the Administrator tasks in Intune.
 
 There are also some developer tasks that use an open-source library that Microsoft published in GitHub.com. The library includes an API that:
 
@@ -38,7 +38,7 @@ Using this API, your third-party SCEP server integrates with the Intune SCEP man
 
 ## SCEP management solution
 
-![How third party certification authority SCEP integrates with Microsoft Intune](./media/scep-certificate-vendor-integration.png)
+![How third party certification authority SCEP integrates with Microsoft Intune](./media/scep-libraries-apis/scep-certificate-vendor-integration.png)
 
 Using Intune, administrators create SCEP profiles, and then assign these profiles to MDM devices. The SCEP profiles include parameters, such as:
 
@@ -306,4 +306,4 @@ Validating and testing that your solution is properly integrated with Intune is 
 - [Add 3rd party CA overview](certificate-authority-add-scep-overview.md)
 - [Setup Intune](../setup-steps.md)
 - [Device enrollment](../enrollment/device-enrollment.md)
-- [Configure SCEP certificate profiles](../protect/certificates-profile-scep.md) (the Microsoft NDES Server\Connector setup isn't used for this scenario)
+- [Configure SCEP certificate profiles](certificates-profile-scep.md) (the Microsoft NDES Server\Connector setup isn't used for this scenario)
