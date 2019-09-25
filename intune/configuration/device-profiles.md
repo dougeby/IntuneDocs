@@ -254,7 +254,7 @@ This feature supports:
 
 ## Windows Information Protection profile
 
-[Windows Information Protection](../apps/windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. Using Windows Information Protection doesn't require changes to your environment or other apps.
+[Windows Information Protection](../protect/windows-information-protection-configure.md) helps protect against data leakage without interfering with the employee experience. It also helps protect enterprise apps and data against accidental data leaks on enterprise-owned devices and personal devices that employees use at work. Using Windows Information Protection doesn't require changes to your environment or other apps.
 
 This feature supports:
 
