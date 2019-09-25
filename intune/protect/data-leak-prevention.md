@@ -65,8 +65,8 @@ For Windows 10 devices:
 
 As appropriate, share the following links to provide additional information:
 
-* [What to expect when your iOS app is managed by app protection policies](../apps/app-protection-enabled-apps-ios.md)
-* [What to expect when your Android app is managed by app protection policies](../apps/app-protection-enabled-apps-android.md)
+* [What to expect when your iOS app is managed by app protection policies](../apps/end-user-mam-apps-ios.md)
+* [What to expect when your Android app is managed by app protection policies](../apps/end-user-mam-apps-android.md)
 
 ## Next steps
 
