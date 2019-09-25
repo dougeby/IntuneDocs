@@ -78,29 +78,25 @@
 
 - name: Reference
   items:
-  - name: Settings lists
+  - name: Configuration profile settings
     items:
     - name: Android
-      items:
-      - name: Configuration profile settings
+      items: 
+      - name: Device restrictions
+        href: device-restrictions-android.md
+      - name: Email
+        href: email-settings-android.md
+      - name: VPN
+        href: vpn-settings-android.md
+      - name: Wi-Fi
+        href: wi-fi-settings-android.md
+      - name: Custom
+        href: custom-settings-android.md
         items:
-        - name: Device restrictions
-          href: device-restrictions-android.md
-        - name: Email
-          href: email-settings-android.md
-        - name: VPN
-          href: vpn-settings-android.md
-        - name: Wi-Fi
-          href: wi-fi-settings-android.md
-        - name: Custom
-          href: custom-settings-android.md
-          items:
-          - name: Allow/block apps for Samsung Knox Standard
-            href: samsung-knox-apps-allow-block.md
+        - name: Allow/block apps for Samsung Knox Standard
+          href: samsung-knox-apps-allow-block.md
     - name: Android Enterprise
       items:
-      - name: Configuration profile settings
-        items:
         - name: Device restrictions
           href: device-restrictions-android-for-work.md
         - name: Email
@@ -113,8 +109,6 @@
           href: custom-settings-android-for-work.md
     - name: iOS
       items:
-      - name: Configuration profile settings
-        items:
         - name: Device features
           href: ios-device-features-settings.md
         - name: Device restrictions
@@ -131,8 +125,6 @@
           href: bundle-ids-built-in-ios-apps.md
     - name: macOS
       items:
-      - name: Configuration profile settings
-        items:
         - name: Device features
           href: macos-device-features-settings.md
         - name: Device restrictions
@@ -147,8 +139,6 @@
           href: custom-settings-macos.md
     - name: Windows 10 and later
       items:
-      - name: Configuration profile settings
-        items:
         - name: Delivery optimization
           href: delivery-optimization-settings.md
         - name: Device restrictions
@@ -173,8 +163,6 @@
           href: custom-settings-windows-10.md
     - name: Windows Holographic for Business
       items:
-      - name: Configuration profile settings
-        items:
         - name: Device restrictions
           href: device-restrictions-windows-holographic.md
         - name: Shared multi-user device
@@ -187,8 +175,6 @@
           href: custom-settings-windows-holographic.md
     - name: Windows 8.1
       items:
-      - name: Configuration profile settings
-        items:
         - name: Device restrictions
           href: device-restrictions-windows-8-1.md
         - name: VPN
@@ -197,8 +183,6 @@
           href: wi-fi-settings-import-windows-8-1.md
     - name: Windows Phone 8.1
       items:
-      - name: Configuration profile settings
-        items:
         - name: Device restrictions
           href: device-restrictions-windows-phone-8-1.md
         - name: Email
