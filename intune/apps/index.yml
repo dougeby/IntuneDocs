@@ -112,10 +112,6 @@ landingContent:
   # Card (optional)
   - title: Troubleshoot apps
     linkLists:
-    - linkListType: overview
-      links:
-      - text: App protection policies overview
-        url: app-protection-policy.md
     - linkListType: how-to-guide
       links:
       - text: Troubleshoot app installation problems

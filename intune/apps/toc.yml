@@ -169,7 +169,7 @@
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
-        href: help-desk-operators.md
+        href: ../help-desk-operators.md
       - name: Troubleshoot app installation problems
         href: troubleshoot-app-install.md         
       - name: Troubleshoot mobile application management
