@@ -48,7 +48,7 @@ landingContent:
       - text: Configure device restriction settings
         url: device-restrictions-configure.md
       - text: Delivery optimization settings
-        url: deliver-optimization-windows.md
+        url: delivery-optimization-windows.md
       - text: Add email settings to devices
         url: email-settings-configure.md
       - text: Settings to run as a dedicated kiosk
@@ -82,7 +82,7 @@ landingContent:
       - text: Add iOS device feature settings
         url: device-features-configure.md
       - text: Configure device restriction settings
-        url: device-restriction-configure.md
+        url: device-restrictions-configure.md
       - text: Add email settings to devices
         url: email-settings-configure.md
       - text: Create VPN profiles to connect to VPN servers
@@ -100,7 +100,7 @@ landingContent:
       - text: Add iOS device feature settings
         url: device-features-configure.md
       - text: Configure device restriction settings
-        url: device-restriction-configure.md
+        url: device-restrictions-configure.md
       - text: Create VPN profiles to connect to VPN servers
         url: vpn-settings-configure.md
       - text: Add and use Wi-Fi settings on your devices
@@ -114,7 +114,7 @@ landingContent:
     - linkListType: how-to-guide  
       links: 
       - text: Configure device restriction settings
-        url: device-restriction-configure.md
+        url: device-restrictions-configure.md
       - text: Add email settings to devices
         url: email-settings-configure.md
       - text: Create VPN profiles to connect to VPN servers
@@ -137,7 +137,7 @@ landingContent:
     - linkListType: how-to-guide  
       links: 
       - text: Configure device restriction settings
-        url: device-restriction-configure.md
+        url: device-restrictions-configure.md
       - text: Add email settings to devices
         url: email-settings-configure.md
       - text: Create VPN profiles to connect to VPN servers

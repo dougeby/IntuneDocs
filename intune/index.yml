@@ -64,6 +64,9 @@ conceptualContent:
         - url: device-enrollment.md
           itemType: concept
           text: Device enrollment overview
+        - url: device-management-capabilities.md
+          itemType: concept  
+          text: Enrolled device management capabilities
         - url: windows-enroll.md
           itemType: how-to-guide
           text: Set up enrollment for Windows
@@ -81,8 +84,6 @@ conceptualContent:
         - url: device-management.md
           itemType: concept
           text: Device management overview
-        - url: device-management-capabilities.md
-          itemType: concept
           text: Device management capabilities
         - url: custom-notifications.md
           itemType: how-to-guide

@@ -25,92 +25,92 @@ landingContent:
       - linkListType: overview
         links:
           - text: What is device enrollment?
-            url: ../device-enrollment.md
-          - text: Device management capabilities
-            url: ../device-management-capabilities.md
+            url: device-enrollment.md
+          - text: Enrolled device management capabilities
+            url: device-management-capabilities.md
           - text: Enrollment options
-            url: ../enrollment-options.md  
+            url: enrollment-options.md  
   # Card
   - title: Windows enrollment
     linkLists:
       - linkListType: overview
         links:
           - text: About Windows enrollment
-            url: ../windows-enrollment-methods.md
+            url: windows-enrollment-methods.md
           - text: Enrollment method capabilities
-            url: ../enrollment-method-capab.md
+            url: enrollment-method-capab.md
       - linkListType: quickstart
         links:
           - text: Set up automatic enrollment for Windows 10 devices 
-            url: ../quickstart-setup-auto-enrollment.md
+            url: quickstart-setup-auto-enrollment.md
           - text: Enroll your Windows 10 device
-            url: ../quickstart-enroll-windows-device.md
+            url: quickstart-enroll-windows-device.md
       - linkListType: tutorial
         links:
           - text: Use Autopilot to enroll Windows devices
-            url: ../tutorial-use-autopilot-enroll-devices.md                 
+            url: tutorial-use-autopilot-enroll-devices.md                 
       - linkListType: how-to-guide
         links:
           - text: Set up Windows enrollment
-            url: ../windows-enroll.md
+            url: windows-enroll.md
           - text: Set up bulk enrollment for Windows devices
-            url: ../windows-bulk-enroll.md
+            url: windows-bulk-enroll.md
   # Card
   - title: Android enrollment 
     linkLists:
       - linkListType: overview
         links:
           - text: About Android enrollment
-            url: ../android-enroll.md
+            url: android-enroll.md
       - linkListType: how-to-guide
         links:
           - text: Connect your Intune account to your managed Google Play account
-            url: ../connect-intune-android-enterprise.md
+            url: connect-intune-android-enterprise.md
           - text: Set up enrollment of Android Enterprise work profile devices
-            url: ../android-work-profile-enroll.md
+            url: android-work-profile-enroll.md
           - text: Set up enrollment of Android Enterprise work profile devices
-            url: ../android-work-profile-enroll.md
+            url: android-work-profile-enroll.md
           - text: Set up enrollment of Android Enterprise dedicated devices
-            url: ../android-kiosk-enroll.md
+            url: android-kiosk-enroll.md
           - text: Set up Intune enrollment of Android Enterprise fully managed devices (preview)
-            url: ../android-fully-managed-enroll.md
+            url: android-fully-managed-enroll.md
   # Card
   - title: iOS enrollment 
     linkLists:
       - linkListType: overview
         links:
           - text: About iOS enrollment
-            url: ../ios-enroll.md
+            url: ios-enroll.md
       - linkListType: tutorial
         links:
           - text: Use Apple's Corporate Device Enrollment features to enroll iOS devices
-            url: ../tutorial-use-device-enrollment-program-enroll-ios.md         
+            url: tutorial-use-device-enrollment-program-enroll-ios.md         
       - linkListType: how-to-guide
         links:
           - text: Set up iOS enrollment
-            url: ../ios-enroll.md
+            url: ios-enroll.md
           - text: Automatically enroll iOS devices with Apple's Device Enrollment Program
-            url: ../device-enrollment-program-enroll-ios.md
+            url: device-enrollment-program-enroll-ios.md
           - text: Set up iOS device enrollment with Apple School Manager
-            url: ../apple-school-manager-set-up-ios.md
+            url: apple-school-manager-set-up-ios.md
           - text: Set up iOS device enrollment with Apple Configurator
-            url: ../apple-configurator-enroll-ios.md
+            url: apple-configurator-enroll-ios.md
   - title: macOS enrollment 
     linkLists:
       - linkListType: overview
         links:
           - text: About macOS enrollment
-            url: ../macos-enroll.md
+            url: macos-enroll.md
       - linkListType: tutorial
         links:
           - text: Use Apple's Corporate Device Enrollment features to enroll iOS devices
-            url: ../tutorial-use-device-enrollment-program-enroll-ios.md         
+            url: tutorial-use-device-enrollment-program-enroll-ios.md         
       - linkListType: how-to-guide
         links:
           - text: Set up macOS enrollment
-            url: ../macos-enroll.md
+            url: macos-enroll.md
           - text: Automatically enroll macOS devices with the Device Enrollment Program or Apple School Manager
-            url: ../device-enrollment-program-enroll-macos.md
+            url: device-enrollment-program-enroll-macos.md
           - text: Set up iOS device enrollment with Apple Configurator
-            url: ../apple-configurator-enroll-ios.md
+            url: apple-configurator-enroll-ios.md
             
