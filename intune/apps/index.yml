@@ -78,7 +78,7 @@ landingContent:
       links:
       - text: Selectively wipe apps
         url: apps-selective-wipe.md
-      - text: 
+      - text: iOS managed devices
         url: app-configuration-policies-use-ios.md
       - text: Managed Android Enterprise devices
         url: app-configuration-policies-use-android.md
@@ -108,4 +108,3 @@ landingContent:
         url: windows-information-protection-policy-create.md
       - text: Manage data transfer between iOS apps
         url: data-transfer-between-apps-manage-ios.md
-        
