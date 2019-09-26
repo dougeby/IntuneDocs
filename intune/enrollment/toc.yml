@@ -3,7 +3,7 @@
 - name: Overview
   expanded: true
   items:
-  - name: What is device enrollment?
+  - name: Device enrollment overview
     href: device-enrollment.md
     displayName: COD; BYOD; DEM; DEP; USB-SA; USB-Direct; co-management; GPO
   - name: Enrolled device management capabilities

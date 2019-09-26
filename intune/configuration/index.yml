@@ -128,7 +128,6 @@ landingContent:
       - text: Manage Android Enterprise devices with OEMConfig
         url: android-oem-configuration-overview.md
 
-  
   # Card (optional)
   - title: Settings for Android Enterprise
     linkLists:
@@ -149,18 +148,18 @@ landingContent:
     - linkListType: reference
       links:
       - text: Android
-        url: ../device-restrictions-android.md
+        url: device-restrictions-android.md
       - text: Android Enterprise
-        url: ../device-restrictions-android-for-work.md
+        url: device-restrictions-android-for-work.md
       - text: iOS
-        url: ../ios-device-features-settings.md
+        url: ios-device-features-settings.md
       - text: macOS
-        url: ../macos-device-features-settings.md
+        url: macos-device-features-settings.md
       - text: Windows 10 and later
-        url: ../delivery-optimization-settings.md
+        url: delivery-optimization-settings.md
       - text: Windows Holographic for Business
-        url: ../device-restrictions-windows-holographic.md                      
+        url: device-restrictions-windows-holographic.md                      
       - text: Windows 8.1
-        url: ../device-restrictions-windows-8-1.md
+        url: device-restrictions-windows-8-1.md
       - text: Windows Phone 8.1
-        url: ../device-restrictions-windows-phone-8-1.md
+        url: device-restrictions-windows-phone-8-1.md
