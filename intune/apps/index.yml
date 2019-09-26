@@ -1,7 +1,7 @@
 ### YamlMime:Landing
 
 title: Manage apps
-summary: Microsoft Intune includes settings and features you can enable or disable on different devices within your organization. These settings and features are added to "configuration profiles" and then you can use Intune to apply or "assign" the profile to the devices.
+summary: Microsoft Intune allows you to manage the client apps that your organization uses. You can configure, add, assign, protect, monitor, update, and retire apps across a variety of platforms and users.
 metadata:
   title: Manage apps
   description: Manage apps and protect them
@@ -108,3 +108,19 @@ landingContent:
         url: windows-information-protection-policy-create.md
       - text: Manage data transfer between iOS apps
         url: data-transfer-between-apps-manage-ios.md
+
+  # Card (optional)
+  - title: Troubleshoot apps
+    linkLists:
+    - linkListType: overview
+      links:
+      - text: App protection policies overview
+        url: app-protection-policy.md
+    - linkListType: how-to-guide
+      links:
+      - text: Troubleshoot app installation problems
+        url: troubleshoot-app-install.md
+      - text: Troubleshoot mobile application management
+        url: troubleshoot-mam.md
+      - text: Review app protection logs
+        url: app-protection-policy-settings-log.md

@@ -217,8 +217,6 @@
       href: troubleshoot-certificate-connector-events.md
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
-    - name: Troubleshoot software updates
-      href: troubleshoot-exchange-connector.md
 - name: Reference
   items:
   - name: API to add third-party certificate authority
