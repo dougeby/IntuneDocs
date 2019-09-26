@@ -55,4 +55,4 @@ Check the [Intune on-premises Exchange connector setup](exchange-connector-insta
 - To get detailed information about a device's access state, use `Get-CASMailbox <upn> | fl`
 
 ## Next steps
-If this information doesn't help you, you can also [get support for Microsoft Intune](../get-support.md).
+If this information doesn't help you, you can also [get support for Microsoft Intune](../fundamentals/get-support.md).

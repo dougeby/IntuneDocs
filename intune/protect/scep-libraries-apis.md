@@ -287,7 +287,7 @@ Throws:
 
 Validating and testing that your solution is properly integrated with Intune is a must. The following lists an overview of the steps:
 
-1. Set up an [Intune trial account](../account-sign-up.md).
+1. Set up an [Intune trial account](../fundamentals/account-sign-up.md).
 2. Onboard the [SCEP Server in the Azure portal](#onboard-scep-server-in-azure) (in this article).
 3. [Configure the SCEP Server](certificates-scep-configure.md) with the IDs and key created when onboarding your SCEP server.
 4. [Enroll devices](../enrollment/device-enrollment.md) to test the scenarios in the [scenario testing matrix](https://github.com/Microsoft/Intune-Resource-Access/blob/develop/src/CsrValidation/doc/TestMatrix.csv).
@@ -304,6 +304,6 @@ Validating and testing that your solution is properly integrated with Intune is 
 ## See also
 
 - [Add 3rd party CA overview](certificate-authority-add-scep-overview.md)
-- [Setup Intune](../setup-steps.md)
+- [Setup Intune](../fundamentals/setup-steps.md)
 - [Device enrollment](../enrollment/device-enrollment.md)
 - [Configure SCEP certificate profiles](certificates-profile-scep.md) (the Microsoft NDES Server\Connector setup isn't used for this scenario)

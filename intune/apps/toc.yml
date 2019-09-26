@@ -34,7 +34,7 @@
     - name: Add apps 
       items:
       - name: Add apps overview
-        href: add-apps.md
+        href: apps-add.md
       - name: Intune protected apps
         href: apps-supported-intune-apps.md      
       - name: Store apps
@@ -75,7 +75,9 @@
         - name: Sideload Windows LOB apps
           href: app-sideload-windows.md          
         - name: macOS LOB apps
-          href: lob-apps-macos.md          
+          href: lob-apps-macos.md     
+      - name: Android Enterprise system apps
+        href: apps-ae-system.md         
       - name: Win32 app management
         href: apps-win32-app-management.md
       - name: PowerShell scripts
@@ -125,9 +127,11 @@
       - name: Configure the Company Portal
         href: company-portal-app.md
       - name: Configure the Managed Browser
-        href: app-configuration-managed-browser.md
+        href: app-configuration-managed-browser.md  
       - name: Configure Microsoft Edge
-        href: manage-microsoft-edge.md        
+        href: manage-microsoft-edge.md     
+      - name: Configure Microsoft Launcher
+        href: configure-microsoft-launcher.md     
       - name: Configure Outlook
         href: app-configuration-policies-outlook.md
     - name: Protect apps

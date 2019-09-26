@@ -40,7 +40,7 @@ There are four types of Autopilot deployment:
 
 
 ## Prerequisites
-- [Intune subscription](../licenses.md)
+- [Intune subscription](../fundamentals/licenses.md)
 - [Windows automatic enrollment enabled](windows-enroll.md#enable-windows-10-automatic-enrollment)
 - [Azure Active Directory Premium subscription](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) <!--&#40;[trial subscription](http://go.microsoft.com/fwlink/?LinkID=816845)&#41;-->
 
@@ -120,7 +120,7 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
     - **Language (Region)**\*: Choose the language to use for the device. This option is only available if you chose **Self-deploying** for **Deployment mode**.
     - **Automatically configure keyboard**\*: If a **Language (Region)** is selected, choose **Yes** to skip the keyboard selection page. This option is only available if you chose **Self-deploying** for **Deployment mode**.
 8. Select **Next**.
-9. On the **Scope tags** page, optionally add the scope tags you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](../scope-tags.md).
+9. On the **Scope tags** page, optionally add the scope tags you want to apply to this profile. For more information about scope tags, see [Use role-based access control and scope tags for distributed IT](../fundamentals/scope-tags.md).
 10. Select **Next**.
 11. On the **Assignments** page, choose **Selected groups** for **Assign to**.
 

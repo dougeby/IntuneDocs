@@ -77,7 +77,7 @@ To use PKCS certificates with Intune, you'll need the following infrastructure:
   - Install the PFX Certificate Connector for Microsoft Intune on your server.  
   - To automatically receive important updates, ensure firewalls are open that allow the connector to contact **autoupdate.msappproxy.net** on port **443**.   
 
-  For more information about network endpoints that Intune and the connector must be able to access, see [Network endpoints for Microsoft Intune](../intune-endpoints.md).
+  For more information about network endpoints that Intune and the connector must be able to access, see [Network endpoints for Microsoft Intune](../fundamentals/intune-endpoints.md).
 
 - **Windows Server**:  
   You use a Windows Server to host:

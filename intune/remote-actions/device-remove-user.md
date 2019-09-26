@@ -33,7 +33,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-The **Remove user** action deletes a user that you select from the local cache on a shared iPad device. The iPad device must be set up to manage the iOS Classroom app by using an [iOS education profile](../education-settings-configure-ios.md). 
+The **Remove user** action deletes a user that you select from the local cache on a shared iPad device. The iPad device must be set up to manage the iOS Classroom app by using an [iOS education profile](../fundamentals/education-settings-configure-ios.md). 
 
 ## Supported platforms
 

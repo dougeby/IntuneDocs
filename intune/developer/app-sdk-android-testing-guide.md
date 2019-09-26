@@ -34,10 +34,10 @@ The Microsoft Intune App SDK for Android testing guide is designed to help you t
 ## Prerequisite test accounts
 New accounts can be created with and without pre-generated data. To create a new account:
 1. Navigate to the [Microsoft Demos](https://demos.microsoft.com/environments/create/tenant) site. 
-2. [Set up Intune](../setup-steps.md) to enable mobile device management (MDM).
-3. [Create users](../users-add.md).
-4. [Create groups](../groups-add.md).
-5. [Assign licenses](../licenses-assign.md) as appropriate for your testing.
+2. [Set up Intune](../fundamentals/setup-steps.md) to enable mobile device management (MDM).
+3. [Create users](../fundamentals/users-add.md).
+4. [Create groups](../fundamentals/groups-add.md).
+5. [Assign licenses](../fundamentals/licenses-assign.md) as appropriate for your testing.
 
 
 ## Azure portal policy configuration

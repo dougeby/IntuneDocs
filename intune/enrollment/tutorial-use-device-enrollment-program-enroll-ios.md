@@ -28,11 +28,11 @@ In this tutorial, you'll learn how to:
 > * Create an Enrollment profile
 > * Assign the Enrollment profile to devices
 
-If you don’t have an Intune subscription, [sign up for a free trial account](../free-trial-sign-up.md).
+If you don’t have an Intune subscription, [sign up for a free trial account](../fundamentals/free-trial-sign-up.md).
 
 ## Prerequisites
 - Devices purchased in [Apple Business Manager](https://business.apple.com) or [Apple's Device Enrollment Program](http://deploy.apple.com)
-- Set the [mobile device management authority](../mdm-authority-set.md)
+- Set the [mobile device management authority](../fundamentals/mdm-authority-set.md)
 - Get an [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
 ## Get an Apple Device Enrollment token

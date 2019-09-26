@@ -59,7 +59,7 @@ Support for unsupervised DEP devices was deprecated in iOS 11. In iOS 11 and lat
 -->
 ## Prerequisites
 - Devices purchased in [Apple's Device Enrollment Program](http://deploy.apple.com)
-- [Mobile Device Management (MDM) Authority](../mdm-authority-set.md)
+- [Mobile Device Management (MDM) Authority](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push certificate](apple-mdm-push-certificate-get.md)
 
 ## Get an Apple DEP token
@@ -115,7 +115,7 @@ In Intune in the Azure portal, provide the Apple ID for future reference.
 ### Step 4. Upload your token and choose scope tags.
 
 1. In the **Apple token** box, browse to the certificate (.pem) file, choose **Open**.
-2. If you want to apply [scope tags](../scope-tags.md) to this DEP token, choose **Scope (tags)**, and select the scope tags that you want. Scope tags applied to a token will be inherited by profiles and devices added to this token.
+2. If you want to apply [scope tags](../fundamentals/scope-tags.md) to this DEP token, choose **Scope (tags)**, and select the scope tags that you want. Scope tags applied to a token will be inherited by profiles and devices added to this token.
 3. Choose **Create**.
 
 With the push certificate, Intune can enroll and manage iOS devices by pushing policy to enrolled mobile devices. Intune automatically synchronizes with Apple to see your enrollment program account.

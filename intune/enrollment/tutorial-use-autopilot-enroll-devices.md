@@ -41,7 +41,7 @@ In this tutorial, you'll learn how to:
 > * Assign the Autopilot deployment profile to the device group
 > * Distribute Windows devices to users
 
-If you don’t have an Intune subscription, [sign up for a free trial account](../free-trial-sign-up.md).
+If you don’t have an Intune subscription, [sign up for a free trial account](../fundamentals/free-trial-sign-up.md).
 
 For an overview of Autopilot benefits, scenarios, and prerequisites, see [Overview of Windows Autopilot](https://docs.microsoft.com/windows/deployment/windows-autopilot/windows-10-autopilot).
 

@@ -97,4 +97,4 @@ Because one of your compliance policies requires a passcode.
 
 ## Next steps
 
-Get [support help from Microsoft](../get-support.md), or use the [community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
+Get [support help from Microsoft](../fundamentals/get-support.md), or use the [community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

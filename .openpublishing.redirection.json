@@ -6874,6 +6874,481 @@
             "source_path": "intune/zimperium-mtd-connector-integration.md",
             "redirect_url": "/intune/protect/zimperium-mtd-connector-integration",
             "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/account-sign-up.md",
+            "redirect_url": "/azure/intune/fundamentals/account-sign-up",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/add-apps-for-windows-pcs-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/add-apps-for-windows-pcs-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/assign-role.md",
+            "redirect_url": "/azure/intune/fundamentals/assign-role",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/byod-technology-decisions.md",
+            "redirect_url": "/azure/intune/fundamentals/byod-technology-decisions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/common-scenarios.md",
+            "redirect_url": "/azure/intune/fundamentals/common-scenarios",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client.md",
+            "redirect_url": "/azure/intune/fundamentals/common-windows-pc-management-tasks-with-the-microsoft-intune-computer-client",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/create-custom-role.md",
+            "redirect_url": "/azure/intune/fundamentals/create-custom-role",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/custom-domain-name-configure.md",
+            "redirect_url": "/azure/intune/fundamentals/custom-domain-name-configure",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/device-lifecycle.md",
+            "redirect_url": "/azure/intune/fundamentals/device-lifecycle",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/education-settings-configure-ios-shared.md",
+            "redirect_url": "/azure/intune/fundamentals/education-settings-configure-ios-shared",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/education-settings-configure-ios.md",
+            "redirect_url": "/azure/intune/fundamentals/education-settings-configure-ios",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/end-user-apps-android.md",
+            "redirect_url": "/azure/intune/fundamentals/end-user-apps-android",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/end-user-apps-ios.md",
+            "redirect_url": "/azure/intune/fundamentals/end-user-apps-ios",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/end-user-apps-windows.md",
+            "redirect_url": "/azure/intune/fundamentals/end-user-apps-windows",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/end-user-company-portal-messages.md",
+            "redirect_url": "/azure/intune/fundamentals/end-user-company-portal-messages",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/end-user-educate.md",
+            "redirect_url": "/azure/intune/fundamentals/end-user-educate",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/end-user-mam-apps-android.md",
+            "redirect_url": "/azure/intune/fundamentals/end-user-mam-apps-android",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/end-user-mam-apps-ios.md",
+            "redirect_url": "/azure/intune/fundamentals/end-user-mam-apps-ios",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/free-trial-sign-up.md",
+            "redirect_url": "/azure/intune/fundamentals/free-trial-sign-up",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/get-started-evaluation.md",
+            "redirect_url": "/azure/intune/fundamentals/get-started-evaluation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/get-support.md",
+            "redirect_url": "/azure/intune/fundamentals/get-support",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/groups-add.md",
+            "redirect_url": "/azure/intune/fundamentals/groups-add",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/groups-get-started.md",
+            "redirect_url": "/azure/intune/fundamentals/groups-get-started",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/help-desk-operators.md",
+            "redirect_url": "/azure/intune/fundamentals/help-desk-operators",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/help-protect-windows-pcs-using-windows-firewall-policies-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/help-secure-windows-pcs-with-endpoint-protection-for-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/high-level-architecture.md",
+            "redirect_url": "/azure/intune/fundamentals/high-level-architecture",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/in-development.md",
+            "redirect_url": "/azure/intune/fundamentals/in-development",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/install-the-windows-pc-client-with-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/install-the-windows-pc-client-with-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/introduction-intune-education.md",
+            "redirect_url": "/azure/intune/fundamentals/introduction-intune-education",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/intune-endpoints.md",
+            "redirect_url": "/azure/intune/fundamentals/intune-endpoints",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/intune-legacy-pc-client.md",
+            "redirect_url": "/azure/intune/fundamentals/intune-legacy-pc-client",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/intune-us-government-endpoints.md",
+            "redirect_url": "/azure/intune/fundamentals/intune-us-government-endpoints",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/keep-windows-pcs-up-to-date-with-software-updates-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/licenses-assign.md",
+            "redirect_url": "/azure/intune/fundamentals/licenses-assign",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/licenses.md",
+            "redirect_url": "/azure/intune/fundamentals/licenses",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/manage-license-agreements-for-windows-pc-software-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/manage-license-agreements-for-windows-pc-software-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/manage-os-versions.md",
+            "redirect_url": "/azure/intune/fundamentals/manage-os-versions",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/manage-user-device-linking-for-windows-pcs-with-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/manage-user-device-linking-for-windows-pcs-with-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/manage-windows-pcs-with-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/manage-windows-pcs-with-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/mdm-authority-set.md",
+            "redirect_url": "/azure/intune/fundamentals/mdm-authority-set",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/microsoft-intune-service-description.md",
+            "redirect_url": "/azure/intune/fundamentals/microsoft-intune-service-description",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-app-protection-policies.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-app-protection-policies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-campaign.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-campaign",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-communication-plan.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-communication-plan",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-configure-policies.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-configure-policies",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-considerations.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-considerations",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-cycle.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-cycle",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-drive-adoption.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-drive-adoption",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-prepare.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-prepare",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide-setup.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide-setup",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/migration-guide.md",
+            "redirect_url": "/azure/intune/fundamentals/migration-guide",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/monitor-audit-logs.md",
+            "redirect_url": "/azure/intune/fundamentals/monitor-audit-logs",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/network-bandwidth-use.md",
+            "redirect_url": "/azure/intune/fundamentals/network-bandwidth-use",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/pc-management-comparison.md",
+            "redirect_url": "/azure/intune/fundamentals/pc-management-comparison",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-communication-plan.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-communication-plan",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-onboarding.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-onboarding",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-deployment-goals.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-deployment-goals",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-design.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-design",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-requirements.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-requirements",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-resources.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-resources",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-rollout-plan.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-rollout-plan",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-scenarios.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-scenarios",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-support-plan.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-support-plan",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide-test-validation.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide-test-validation",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/planning-guide.md",
+            "redirect_url": "/azure/intune/fundamentals/planning-guide",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/policies-to-protect-windows-pcs-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/policies-to-protect-windows-pcs-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/quickstart-create-custom-role.md",
+            "redirect_url": "/azure/intune/fundamentals/quickstart-create-custom-role",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/quickstart-create-group.md",
+            "redirect_url": "/azure/intune/fundamentals/quickstart-create-group",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/quickstart-create-user.md",
+            "redirect_url": "/azure/intune/fundamentals/quickstart-create-user",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/request-and-provide-remote-assistance-for-windows-pcs-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/resolve-gpo-and-microsoft-intune-policy-conflicts.md",
+            "redirect_url": "/azure/intune/fundamentals/resolve-gpo-and-microsoft-intune-policy-conflicts",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/retire-a-windows-pc-with-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/retire-a-windows-pc-with-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/review-logs-using-azure-monitor.md",
+            "redirect_url": "/azure/intune/fundamentals/review-logs-using-azure-monitor",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/role-based-access-control.md",
+            "redirect_url": "/azure/intune/fundamentals/role-based-access-control",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/scope-tags.md",
+            "redirect_url": "/azure/intune/fundamentals/scope-tags",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/setup-steps.md",
+            "redirect_url": "/azure/intune/fundamentals/setup-steps",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/supported-devices-browsers.md",
+            "redirect_url": "/azure/intune/fundamentals/supported-devices-browsers",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/tenant-status.md",
+            "redirect_url": "/azure/intune/fundamentals/tenant-status",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/troubleshoot-company-resource-access-problems.md",
+            "redirect_url": "/azure/intune/fundamentals/troubleshoot-company-resource-access-problems",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/troubleshoot-endpoint-protection-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/troubleshoot-endpoint-protection-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/troubleshoot-software-updates-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/troubleshoot-software-updates-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/tutorial-walkthrough-intune-portal.md",
+            "redirect_url": "/azure/intune/fundamentals/tutorial-walkthrough-intune-portal",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/ui-changes.md",
+            "redirect_url": "/azure/intune/fundamentals/ui-changes",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/use-docs.md",
+            "redirect_url": "/azure/intune/fundamentals/use-docs",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/use-policies-to-simplify-windows-pc-management.md",
+            "redirect_url": "/azure/intune/fundamentals/use-policies-to-simplify-windows-pc-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/users-add.md",
+            "redirect_url": "/azure/intune/fundamentals/users-add",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/view-hardware-and-software-inventory-for-windows-pcs-in-microsoft-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/what-is-device-management.md",
+            "redirect_url": "/azure/intune/fundamentals/what-is-device-management",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/what-is-intune.md",
+            "redirect_url": "/azure/intune/fundamentals/what-is-intune",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/whats-new-app-ui.md",
+            "redirect_url": "/azure/intune/fundamentals/whats-new-app-ui",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/whats-new-archive-classic.md",
+            "redirect_url": "/azure/intune/fundamentals/whats-new-archive-classic",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/whats-new-archive.md",
+            "redirect_url": "/azure/intune/fundamentals/whats-new-archive",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/whats-new.md",
+            "redirect_url": "/azure/intune/fundamentals/whats-new",
+            "redirect_document_id": true
+        },
+        {
+            "source_path": "intune/windows-holographic-for-business.md",
+            "redirect_url": "/azure/intune/fundamentals/windows-holographic-for-business",
+            "redirect_document_id": true
         }
     ]
 }

@@ -104,7 +104,7 @@ When working with the csv file with the activation codes, be sure you or your mo
 
 ## Step 2: Create an Azure AD device group
 
-Create a Device group that includes the eSIM capable devices. [Add groups](../groups-add.md) lists the steps.
+Create a Device group that includes the eSIM capable devices. [Add groups](../fundamentals/groups-add.md) lists the steps.
 
 > [!NOTE]
 > - Only devices are targeted, users aren't targeted.

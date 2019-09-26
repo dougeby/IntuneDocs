@@ -52,5 +52,5 @@ When user registration fails due to network connectivity issues an accelerated r
 
 ## Next steps
 
-[Assign licenses to users so they can enroll devices in Intune](../licenses-assign.md)
+[Assign licenses to users so they can enroll devices in Intune](../fundamentals/licenses-assign.md)
 

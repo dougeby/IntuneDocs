@@ -50,7 +50,7 @@ Neither DEP enrollment or Apple School Manager work with the [device enrollment 
 
 - Devices purchased in [Apple School Manager](https://school.apple.com/) or [Apple's Device Enrollment Program](http://deploy.apple.com)
 - A list of serial numbers or a purchase order number.
-- [MDM Authority](../mdm-authority-set.md)
+- [MDM Authority](../fundamentals/mdm-authority-set.md)
 - [Apple MDM Push certificate](../enrollment/apple-mdm-push-certificate-get.md)
 
 ## Get an Apple DEP token

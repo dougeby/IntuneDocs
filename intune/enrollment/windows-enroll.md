@@ -32,7 +32,7 @@ ms.collection: M365-identity-device-management
 
 [!INCLUDE [azure_portal](../includes/azure_portal.md)]
 
-This article helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](../setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
+This article helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](../fundamentals/setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
 As an Intune admin, you can simplify enrollment in the following ways:
 - [Enable automatic enrollment](#enable-windows-10-automatic-enrollment) (Azure AD Premium required)
@@ -53,7 +53,7 @@ Organizations that can use automatic enrollment can also configure [bulk enroll 
 
 ## Device enrollment prerequisites
 
-Before an administrator can enroll devices to Intune for management, licenses should have already been assigned to the administrator's account. [Read about assigning licenses for device enrollment](../licenses-assign.md)
+Before an administrator can enroll devices to Intune for management, licenses should have already been assigned to the administrator's account. [Read about assigning licenses for device enrollment](../fundamentals/licenses-assign.md)
 
 ## Multi-user support
 
@@ -117,8 +117,8 @@ For end-user enrollment instructions, see [Enroll your Windows device in Intune]
 >[!IMPORTANT]
 > If you do not have Auto-MDM enrollment enabled, but you have Windows 10 devices that have been joined to Azure AD, two records will be visible in the Intune console after enrollment. You can stop this by making sure that users with Azure AD joined devices go to **Accounts** > **Access work or school** and **Connect** using the same account. 
 
-For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](../end-user-educate.md).
+For more information about end-user tasks, see [Resources about the end-user experience with Microsoft Intune](../fundamentals/end-user-educate.md).
 
 ## Next steps
 
-- [Considerations when managing Windows devices using Intune on Azure](../intune-legacy-pc-client.md).
+- [Considerations when managing Windows devices using Intune on Azure](../fundamentals/intune-legacy-pc-client.md).

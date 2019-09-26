@@ -174,4 +174,4 @@ To learn more about the version and SKU requirements for the different settings,
 
 ## Next steps
 
-Need extra help? See [How to get support for Microsoft Intune](../get-support.md).
+Need extra help? See [How to get support for Microsoft Intune](../fundamentals/get-support.md).

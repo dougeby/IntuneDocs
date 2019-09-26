@@ -77,4 +77,4 @@ The following table lists the name and an explanation of the settings recorded i
 ## Next steps
 
 - To learn more about app protection policies, see [What are app protection policies?](app-protection-policy.md)
-- Intune offers a number of tools to help you troubleshoot issues in your environment. For more information, see [Use the troubleshooting portal to help users](../help-desk-operators.md).
+- Intune offers a number of tools to help you troubleshoot issues in your environment. For more information, see [Use the troubleshooting portal to help users](../fundamentals/help-desk-operators.md).

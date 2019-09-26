@@ -22,7 +22,7 @@ ms.collection: M365-identity-device-management
 
 # Intune Standalone - Win32 app management
 
-[Intune standalone](../mdm-authority-set.md) now allows greater Win32 app management capabilities. While it is possible for cloud connected customers to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This topic provides an overview of the Intune Win32 app management feature and troubleshooting information.
+[Intune standalone](../fundamentals/mdm-authority-set.md) now allows greater Win32 app management capabilities. While it is possible for cloud connected customers to use Configuration Manager for Win32 app management, Intune-only customers will have greater management capabilities for their Win32 line-of-business (LOB) apps. This topic provides an overview of the Intune Win32 app management feature and troubleshooting information.
 
 > [!NOTE]
 > This app management capability supports both 32-bit and 64-bit operating system architecture for Windows applications.

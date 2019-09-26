@@ -34,7 +34,7 @@ Review some common email profile issues, and how to troubleshoot and resolve the
 ## What you need to know
 
 - Email profiles are deployed for the user who enrolled the device. To configure the email profile, Intune uses the Azure Active Directory (AD) properties in the email profile of the user during enrollment. [Add email settings to devices](email-settings-configure.md) may be a good resource.
-- After migrating from Configuration Manager hybrid to Intune standalone, the email profile from Configuration Manager hybrid stays on the device for 7 days. This is expected behavior. If you need the email profile removed sooner, contact [Intune support](../get-support.md).
+- After migrating from Configuration Manager hybrid to Intune standalone, the email profile from Configuration Manager hybrid stays on the device for 7 days. This is expected behavior. If you need the email profile removed sooner, contact [Intune support](../fundamentals/get-support.md).
 - For Android Enterprise, deploy Gmail or Nine for Work using the managed Google Play Store. [Add Managed Google Play apps](../apps/apps-add-android-for-work.md) lists the steps.
 - Microsoft Outlook for iOS and Android doesn't support email profiles. Instead, deploy an app configuration policy. For more information, see [Outlook Configuration setting](../apps/app-configuration-policies-outlook.md).
 - Email profiles targeted to device groups (not user groups) may not be delivered to the device. When the device has a primary user, then device targeting should work. If the email profile includes user certificates, be sure to target user groups.
@@ -83,4 +83,4 @@ Users who have email accounts automatically configured can't send pictures or im
 
 ## Next steps
 
-Get [support help from Microsoft](../get-support.md), or use the [community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
+Get [support help from Microsoft](../fundamentals/get-support.md), or use the [community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).

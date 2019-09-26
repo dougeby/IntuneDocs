@@ -99,7 +99,7 @@ Common tasks when you work with security baselines include:
 
 
 ### Prerequisites
-- To manage baselines in Intune, your account must have the [Policy and Profile Manager](../role-based-access-control.md#built-in-roles) built-in role.
+- To manage baselines in Intune, your account must have the [Policy and Profile Manager](../fundamentals/role-based-access-control.md#built-in-roles) built-in role.
 
 - Use of some baselines might require you to have an active subscription to additional services, like Microsoft Defender ATP.  
 

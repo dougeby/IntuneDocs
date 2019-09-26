@@ -34,7 +34,7 @@ Microsoft Intune includes some built-in troubleshooting features. Use these feat
 This article lists some common troubleshooting techniques, and describes some issues you may experience.
 
 ## Check tenant status
-Check the [Tenant Status](../tenant-status.md) and confirm the subscription is Active. You can also view details for active incidents and advisories that may impact your policy or profile deployment.
+Check the [Tenant Status](../fundamentals/tenant-status.md) and confirm the subscription is Active. You can also view details for active incidents and advisories that may impact your policy or profile deployment.
 
 ## Use built-in troubleshooting
 
@@ -49,8 +49,8 @@ Check the [Tenant Status](../tenant-status.md) and confirm the subscription is A
 
     **Helpful links**:
 
-    - [Assign licenses so users can enroll devices](../licenses-assign.md)
-    - [Add users to Intune](../users-add.md)
+    - [Assign licenses so users can enroll devices](../fundamentals/licenses-assign.md)
+    - [Add users to Intune](../fundamentals/users-add.md)
 
 4. Under **Devices**, find the device having an issue. Review the different columns:
 
@@ -95,7 +95,7 @@ Check the [Tenant Status](../tenant-status.md) and confirm the subscription is A
         - **Not Applicable**: This policy isn't supported on this platform. For example, iOS policies don't work on Android. Samsung KNOX policies don't work on Windows devices.
         - **Conflict**: There's an existing setting on the device that Intune can't override. Or, you deployed two policies with the same setting using different values.
         - **Pending**: The device hasn't checked into Intune to get the policy. Or, the device received the policy but hasn't reported the status to Intune.
-        - **Errors**: Look up errors and possible resolutions at [Troubleshoot company resource access problems](../troubleshoot-company-resource-access-problems.md).
+        - **Errors**: Look up errors and possible resolutions at [Troubleshoot company resource access problems](../fundamentals/troubleshoot-company-resource-access-problems.md).
 
         **Helpful links**: 
 
@@ -181,4 +181,4 @@ To resolve this issue, set the local system time as close as possible to Interne
 
 [Common issues and resolutions with email profiles](../configuration/troubleshoot-email-profiles-in-microsoft-intune.md)
 
-Get [support help from Microsoft](../get-support.md), or use the [community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
+Get [support help from Microsoft](../fundamentals/get-support.md), or use the [community forums](https://social.technet.microsoft.com/Forums/en-US/home?category=microsoftintune).
