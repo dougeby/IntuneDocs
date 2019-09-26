@@ -143,7 +143,7 @@ These settings are added to a device configuration profile in Intune, and then a
 ### Settings apply to: Device enrollment, Automated device enrollment (supervised)
 
 > [!IMPORTANT]
-> If you configure any password setting, then the **Simple passwords** settings is automatically set to **Block**, and a 6 digit PIN is enforced.
+> On user-enrolled devices, if you configure any password setting, then the **Simple passwords** settings is automatically set to **Block**, and a 6 digit PIN is enforced.
 >
 > For example, you configure the **Password expiration** setting, and push this policy to user-enrolled devices. On the devices, the following happens:
 >
