@@ -1,8 +1,15 @@
-name: Intune
-tocHref: /intune/
-topicHref: /intune/index
-items:
-- name: Apps
-  tocHref: /intune/
-  topicHref: /intune/apps/index
-  
+- name: Docs
+  tocHref: /
+  topicHref: /
+  items:
+  - name: Enterprise Mobility + Security
+    tocHref: /
+    topicHref: /enterprise-mobility-security
+    items:
+    - name: Configuration Manager
+      tocHref: /sccm/
+      topicHref: /sccm/
+      items:
+      - name: Apps
+        tocHref: /intune/
+        topicHref: /intune/apps/help-desk-operators
