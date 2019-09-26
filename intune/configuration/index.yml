@@ -119,15 +119,13 @@ landingContent:
         url: email-settings-configure.md
       - text: Create VPN profiles to connect to VPN servers
         url: vpn-settings-configure.md
-      - text: Create per-app VPN profiles for Android devices
-        url: android-pulse-secure-per-app-vpn.md
       - text: Add and use Wi-Fi settings on your devices
         url: wi-fi-settings-configure.md  
       - text: Create a WiFi profile with a pre-shared key
         url: wi-fi-profile-shared-key.md  
-      - text: Use and manage Zebra devices with Zebra Mobility Extensions
+      - text: Manage Zebra devices with Zebra Mobility Extensions
         url: android-zebra-mx-overview.md  
-      - text: Use and manage Android Enterprise devices with OEMConfig
+      - text: Manage Android Enterprise devices with OEMConfig
         url: android-oem-configuration-overview.md
 
   
