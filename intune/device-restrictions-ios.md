@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/24/2019
+ms.date: 09/26/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -133,36 +133,44 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ## Password
 
+> [!NOTE]
+> In a future release, these password settings in the Intune UI are being updated to match the enrollment type.
+
 ### Settings apply to: All enrollment types
 
 - **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows users to access the device without entering a password.
   - **Simple passwords**: Choose **Block** to require more complex passwords. **Not configured** allows simple passwords, such as `0000` and `1234`.
-  - **Required password type**: Choose the type of password your organization require. Your options:
+  - **Minimum password length**: Enter the minimum length a user must enter, between 4 and 14 characters. On user enrolled devices, enter a length between 4 and 6 characters.
+  
+  > [!NOTE]
+  > For devices that are user enrolled, users can set a PIN greater than 6 digits. But, no more than 6 digits are enforced on the device. For example, an administrator sets the minimum length to `8`. On user-enrolled devices, users are only required to set a 6 digit PIN. Intune doesn't force a PIN greater than 6 digits on user-enrolled devices.
+
+### Settings apply to: Device enrollment, Automated device enrollment (supervised)
+
+> [!NOTE]
+> If you configure any password setting that doesn't apply to user enrollment, then the **Simple passwords** settings is automatically set to **Block**. 
+>
+> For example, you configure the **Password expiration** setting, and push this policy to user-enrolled devices. On the devices, the **Password expiration** setting is ignored, and simple passwords, such as `1111` or `1234`, aren't allowed.
+
+- **Required password type**: Choose the type of password your organization require. Your options:
     - **Device default**
     - **Numeric**
     - **Alphanumeric**
-  - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
-  - **Minimum password length**: Enter the minimum length a user must enter, between 4 and 14 characters. On user enrolled devices, enter a length between 4 and 6 characters.
+- **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
+- **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 4-11).
   
-    > [!NOTE]
-    > For devices that are user enrolled:
-    >  - If an existing PIN is greater than 6 characters, then only the first 6 characters are used. For example, if your PIN is `12345678`, then the PIN is shortened to `123456`.
-    >  - If users enter a new PIN greater than 6 characters, then only the first 6 characters are used. For example, if you enter `12345678` as the PIN, then the PIN is shortened to `123456`.
-
-  - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 4-11).
+  iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.
   
-    iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.
-  
-  - **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
-  - **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. When set to **immediately**, the screen locks based on the device's minimum time. On iPhone, it's 30 seconds. On iPad, it's two minutes.
-  - **Password expiration (days)**: Enter the number of days before the device password must be changed.
-  - **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
-  - **Touch ID and Face ID unlock**: Choose **Block** to prevent using a fingerprint or face to unlock the device. **Not configured** allows the user to unlock the device using these methods.
+- **Maximum minutes after screen lock before password is required**<sup>1</sup>: Enter how long the device stays idle before the user must reenter their password. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. Supported on iOS 8.0 and newer devices.
+- **Maximum minutes of inactivity until screen locks**<sup>1</sup>: Enter the maximum number of minutes of inactivity allowed on the device until the screen locks. If the time you enter is longer than what's currently set on the device, then the device ignores the time you enter. When set to **immediately**, the screen locks based on the device's minimum time. On iPhone, it's 30 seconds. On iPad, it's two minutes.
+- **Password expiration (days)**: Enter the number of days before the device password must be changed.
+- **Prevent reuse of previous passwords**: Enter the number of new passwords that must be used until an old one can be reused.
+- **Touch ID and Face ID unlock**: Choose **Block** to prevent using a fingerprint or face to unlock the device. **Not configured** allows the user to unlock the device using these methods.
 
-    Blocking this setting also prevents using FaceID authentication to unlock the device.
+  Blocking this setting also prevents using FaceID authentication to unlock the device.
 
-    Face ID applies to:  
-    - iOS 11.0 and newer
+  Face ID applies to:  
+  - iOS 11.0 and newer
 
 ### Settings apply to: Automated device enrollment (supervised)
 
