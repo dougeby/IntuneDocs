@@ -142,10 +142,14 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ### Settings apply to: Device enrollment, Automated device enrollment (supervised)
 
-> [!NOTE]
-> If you configure any password setting that doesn't apply to user enrollment, then the **Simple passwords** settings is automatically set to **Block**. 
+> [!IMPORTANT]
+> If you configure any password setting, then the **Simple passwords** settings is automatically set to **Block**, and a 6 digit PIN is enforced.
 >
-> For example, you configure the **Password expiration** setting, and push this policy to user-enrolled devices. On the devices, the **Password expiration** setting is ignored, and simple passwords, such as `1111` or `1234`, aren't allowed.
+> For example, you configure the **Password expiration** setting, and push this policy to user-enrolled devices. On the devices, the following happens:
+>
+>  - The **Password expiration** setting is ignored.
+>  - Simple passwords, such as `1111` or `1234`, aren't allowed.
+>  - A 6 digit pin is enforced. 
 
 - **Simple passwords**: Choose **Block** to require more complex passwords. **Not configured** allows simple passwords, such as `0000` and `1234`.
 
