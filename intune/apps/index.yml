@@ -22,19 +22,18 @@ landingContent:
   # Card (optional)
   - title: Get started with apps
     linkLists:
-      - linkListType: overview
-        links:
-          - text: App management overview
-            url: app-management.md  
-      - linkListType: quickstart
-        links:
-          - text: Add and assign an app
-            url: quickstart-add-assign-app.md 
-
-      - linkListType: concept
-        links:
-          - text: App lifecycle
-            url: app-lifecycle.md
+    - linkListType: overview
+      links:
+      - text: App management overview
+        url: app-management.md  
+    - linkListType: quickstart
+      links:
+      - text: Add and assign an app
+        url: quickstart-add-assign-app.md 
+    - linkListType: concept
+      links:
+      - text: App lifecycle
+        url: app-lifecycle.md
 
   # Card (optional)
   - title: Add apps
