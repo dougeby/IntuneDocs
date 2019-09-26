@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 09/24/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -104,7 +104,7 @@ These settings are added to a device configuration profile in Intune, and then a
   This feature applies to:  
   - iOS 11.3 and newer
 
-- **Allow Classroom to lock to an app and lock the device without prompting**: **Enable** allows teacher to lock apps or lock the device using the Classroom app without prompting the student. Locking apps means the device can only access teacher specified apps. **Not configured** (default) prevents teachers from locking apps or devices using the Classroom app without prompting the student. 
+- **Allow Classroom to lock to an app and lock the device without prompting**: **Enable** allows teacher to lock apps or lock the device using the Classroom app without prompting the student. Locking apps means the device can only access teacher specified apps. **Not configured** (default) prevents teachers from locking apps or devices using the Classroom app without prompting the student.
 
   This feature applies to:  
   - iOS 11.0 and newer
@@ -142,7 +142,13 @@ These settings are added to a device configuration profile in Intune, and then a
     - **Numeric**
     - **Alphanumeric**
   - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
-  - **Minimum password length**: Enter the minimum length a user must enter (between 4 and 14 characters).
+  - **Minimum password length**: Enter the minimum length a user must enter, between 4 and 14 characters. On user enrolled devices, enter a length between 4 and 6 characters.
+
+    > [!NOTE]
+    > For devices that are user enrolled:
+    > - If an existing PIN is greater than 6 characters, then only the first 6 characters are used. For example, if your PIN is `12345678`, then the PIN is shortened to `123456`.
+    > - If users enter a new PIN greater than 6 characters, then only the first 6 characters are used. For example, if you enter `12345678` as the PIN, then the PIN is shortened to `123456`.
+
   - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 4-11).
   
     iOS has built-in security that can impact this setting. For example, iOS may delay triggering the policy depending on the number of sign in failures. It may also consider repeatedly entering the same passcode as one attempt. Apple's [iOS security guide](https://www.apple.com/business/site/docs/iOS_Security_Guide.pdf) (opens Apple's web site) is a good resource, and provides more specific details on passcodes.

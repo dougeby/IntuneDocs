@@ -43,7 +43,7 @@ Users gain access to the company portal, which enables them to install apps, enr
 |Capability|Details|More information|
 |--------------|-----------|--------------------|
 |Configuration policies<br><br>Custom policies| Lets you manage many settings and features on mobile devices in your organization. For example, you can  require a password, limit the number of failed attempts, limit the amount of time before the screen locks, set password expiration, and prevent previously used passwords. You can also control the use of hardware and software features such as the device camera or the web browser.<br><br>Use custom policies when configuration policies do not contain the settings that you require. For iOS devices, you can import settings that you exported from the Apple Configurator tool. For other devices, you can use Open Mobile Alliance Uniform Resource Identifier (OMA-URI) settings to configure settings and features on the device.|[Manage settings and features on your devices with Microsoft Intune policies](../protect/device-compliance-get-started.md)|
-|Remote Wipe, Remote Lock, and Passcode Reset|Erases sensitive data when a device is lost or stolen. For example, you can remotely lock the device, restore it to factory settings, or wipe only corporate data.<br><br>You can reset passcodes if users lose access to their device, lock missing or stolen devices, or even wipe data off of missing or stolen devices.|Help protect your devices with [remote lock](device-remote-lock.md) and [passcode reset](device-passcode-reset.md)|
+|Remote Wipe, Remote Lock, and Passcode Reset|Erases sensitive data when a device is lost or stolen. For example, you can remotely lock the device, restore it to factory settings, or wipe only corporate data.<br><br>You can reset passcodes if users lose access to their device, lock missing or stolen devices, or even wipe data off of missing or stolen devices.|Help protect your devices with [remote lock](../remote-actions/device-remote-lock.md) and [passcode reset](../remote-actions/device-passcode-reset.md)|
 |Kiosk mode|Lets you lock down certain features of mobile devices such as screen captures and power switches. Also lets you restrict devices to run a single app that you specify. |[iOS configuration policy settings in Microsoft Intune](../configuration/device-restrictions-ios.md)|
 
 ## App management
@@ -71,4 +71,4 @@ Users gain access to the company portal, which enables them to install apps, enr
 
 ## Next steps
 
-[See a list of devices that you can manage](device-management.md).
+[See a list of devices that you can manage](../remote-actions/device-management.md).

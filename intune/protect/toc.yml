@@ -170,23 +170,28 @@
     - name: Identity protection
       href: identity-protection-configure.md  
   - name: Certificates
-    href: certificates-configure.md
-    items:
-    - name: SCEP infrastructure
-      href: certificates-scep-configure.md
-      displayName: ksp        
-    - name: SCEP certificate profiles
-      href: certificates-profile-scep.md
+    items: 
+    - name: Use certificates for authentication
+      href: certificates-configure.md
+    - name: SCEP  
+      items:
+      - name: SCEP infrastructure
+        href: certificates-scep-configure.md
+        displayName: ksp        
+      - name: SCEP certificate profiles
+        href: certificates-profile-scep.md
+      - name: Use third-party certificate authority with SCEP
+        href: certificate-authority-add-scep-overview.md        
     - name: PKCS
-      href: certficates-pfx-configure.md
-      displayName: ksp
-    - name: Imported PKCS
-      href: certificates-imported-pfx-configure.md
-    - name: Use S/MIME to encrypt email
-      href: certificates-s-mime-encryption-sign.md
-    - name: Use third-party certificate authority with SCEP
-      href: certificate-authority-add-scep-overview.md
-      displayName: csr
+      items:
+      - name: PKCS
+        href: certficates-pfx-configure.md
+        displayName: ksp
+      - name: Imported PKCS
+        href: certificates-imported-pfx-configure.md
+      - name: Use S/MIME to encrypt email
+        href: certificates-s-mime-encryption-sign.md
+        displayName: csr
     - name: Use DigiCert PKI
       href: certificates-digicert-configure.md
       displayName: ca; pkcs; pki; ra; registration authority
@@ -194,10 +199,12 @@
       href: remove-certificates.md                           
   - name: Software updates
     items:
-    - name: Windows Update for Business settings
-      href: windows-update-for-business-configure.md    
-    - name: Windows Update compliance reports
-      href: windows-update-compliance-reports.md         
+    - name: Windows updates
+      items:
+      - name: Windows Update for Business settings
+        href: windows-update-for-business-configure.md    
+      - name: Windows Update compliance reports
+        href: windows-update-compliance-reports.md         
     - name: iOS update policies
       href: software-updates-ios.md 
   - name: Troubleshoot
