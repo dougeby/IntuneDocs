@@ -135,19 +135,18 @@ These settings are added to a device configuration profile in Intune, and then a
 
 ### Settings apply to: All enrollment types
 
-- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows users to access the device without entering a password.
-  - **Simple passwords**: Choose **Block** to require more complex passwords. **Not configured** allows simple passwords, such as `0000` and `1234`.
+- **Password**: **Require** the end user to enter a password to access the device. **Not configured** (default) allows users to access the device without entering a password. This setting applies to all enrollment types, including user enrollment. 
+  - **Simple passwords**: Choose **Block** to require more complex passwords. **Not configured** allows simple passwords, such as `0000` and `1234`. This setting applies to all enrollment types, including user enrollment. 
   - **Required password type**: Choose the type of password your organization require. Your options:
     - **Device default**
     - **Numeric**
     - **Alphanumeric**
   - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
-  - **Minimum password length**: Enter the minimum length a user must enter, between 4 and 14 characters. On user enrolled devices, enter a length between 4 and 6 characters.
+  - **Minimum password length**: Enter the minimum length a user must enter, between 4 and 14 characters. On user enrolled devices, enter a length between 4 and 6 characters. This setting applies to all enrollment types, including user enrollment. 
   
     > [!NOTE]
     > For devices that are user enrolled:
-    >  - If an existing PIN is greater than 6 characters, then only the first 6 characters are used. For example, if your PIN is `12345678`, then the PIN is shortened to `123456`.
-    >  - If users enter a new PIN greater than 6 characters, then only the first 6 characters are used. For example, if you enter `12345678` as the PIN, then the PIN is shortened to `123456`.
+    >  - A maximum of 6 digits will be enforced. The user can set the pin to greater than 6 digits on their own, but no more than a 6 digit pin will be enforced on the device. 
 
   - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 4-11).
   
