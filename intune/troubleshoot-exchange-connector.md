@@ -75,10 +75,10 @@ Review the [on-premises Exchange connector requirements](exchange-connector-inst
 ## Next steps
 The following articles can help resolve common problems and specific errors:
 
-- [Resolve common problems for the Intune Exchange Connector](troubleshoot-exchange-connector-common-problems.md)
-- [Resolve common Errors for the Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md)
+- [Resolve common problems for the Intune Exchange Connector](troubleshoot-exchange-connector-common-problems.md).
+- [Resolve common Errors for the Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md).
 
 Seek assistance from support or the Intune community:
 
-- See [Get Support](get-suupport.md) to use the Intune Console to help troubleshoot the issue, or to open a support case with Microsoft. 
+- See [Get Support](get-support.md) to use the Intune Console to help troubleshoot the issue, or to open a support case with Microsoft. 
 - Post your issue in the [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).  

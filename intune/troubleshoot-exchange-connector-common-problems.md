@@ -33,7 +33,7 @@ Before proceeding, review Troubleshoot the Intune on-premises Exchange connector
 
 ## Exchange ActiveSync device not discovered from Exchange
 
-[Monitor the Exchange connector activity](exchange-connector-install#on-premises-exchange-connector-high-availability-support) to see if the Exchange connector is syncing with the Exchange server. If a full sync or quick sync has completed successfully since the device joined, you can check for other possible issues, listed below. If no sync has taken place, collect the sync logs and attach them to a support request.  
+[Monitor the Exchange connector activity](exchange-connector-install.md#on-premises-intune-exchange-connector-high-availability-support) to see if the Exchange connector is syncing with the Exchange server. If a full sync or quick sync has completed successfully since the device joined, you can check for other possible issues, listed below. If no sync has taken place, collect the sync logs and attach them to a support request.  
 
 - Make sure users have an Intune license, otherwise the Exchange connector won’t discover their devices.  
 
@@ -101,8 +101,8 @@ If Autodiscover fails, try the following steps:
 ## Next steps  
 
 The following article can help resolve specific errors:
-- [Resolve common Errors for the Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md)
+- [Resolve common Errors for the Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md).
 
 Seek assistance from support or the Intune community.
-- See [Get Support](get-suupport.md) to use the Intune Console to help troubleshoot the issue, or to open a support case with Microsoft. 
+- See [Get Support](get-support.md) to use the Intune Console to help troubleshoot the issue, or to open a support case with Microsoft. 
 - Post your issue in the [Microsoft Intune forums](https://social.technet.microsoft.com/Forums/en-US/home?forum=microsoftintuneprod).  
