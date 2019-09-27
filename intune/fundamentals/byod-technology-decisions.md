@@ -54,7 +54,7 @@ MAM without MDM is very popular for organizations that support BYOD. You can dri
 
 ![Image comparing device and app management on mobile devices](./media/byod-technology-decisions/byod-app-device-mgmt.png)
 
-Learn more about [device management and app management lifecycles](introduction-device-app-lifecycles.md).
+Learn more about [device management and app management lifecycles](device-lifecycle.md).
 
 ## MDM vs MAM capability comparison
 As already mentioned, Conditional Access can drive a user to enroll their device or use a managed app like Outlook Mobile. Many other conditions can be applied in either case, including:

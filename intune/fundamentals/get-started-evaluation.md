@@ -79,10 +79,10 @@ Intune is the component of Enterprise Mobility + Security (EMS) that manages mob
 
 ## Next steps
 
-[Get started with using Azure](get-started-azure.md) - Understand the anatomy of the Azure portal and how to make changes to the page you see.
+[Get started with using Azure](tutorial-walkthrough-intune-portal.md) - Understand the anatomy of the Azure portal and how to make changes to the page you see.
 
 ## Learn more
 
-* [What is Intune?](introduction-intune.md)
-* [What is the Azure portal?](what-is-intune.md)
-* [Device and app lifecycles](introduction-device-app-lifecycles.md)
+- [What is Intune?](what-is-intune.md)
+- [What is the Azure portal?](what-is-intune.md)
+- [Device and app lifecycles](device-lifecycle.md)

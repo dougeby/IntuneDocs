@@ -28,16 +28,16 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 
-# Quickstart: Try Microsoft Intune for free 
+# Quickstart: Try Microsoft Intune for free
 
 Microsoft Intune helps you protect your workforce's corporate data by managing devices and apps. In this quickstart, you will create a free subscription to try Intune in a test environment.
 
-Intune provides mobile device management (MDM) and mobile app management (MAM) from a secure cloud-based service that is administered using the Microsoft Azure portal. Using Intune, you ensure your workforce's corporate resources (data, devices, and apps) are correctly configured, accessed, and updated, meeting your company's compliance policies and requirements. 
+Intune provides mobile device management (MDM) and mobile app management (MAM) from a secure cloud-based service that is administered using the Microsoft Azure portal. Using Intune, you ensure your workforce's corporate resources (data, devices, and apps) are correctly configured, accessed, and updated, meeting your company's compliance policies and requirements.
 
 ## Prerequisites
 Before setting up Microsoft Intune, review the following requirements:
 
-- [Supported operating systems and browsers](supported-devices-browsers.md) 
+- [Supported operating systems and browsers](supported-devices-browsers.md)
 - [Network configuration requirements and bandwidth](network-bandwidth-use.md)
 
 ## Sign up for a Microsoft Intune free trial
@@ -125,7 +125,7 @@ As mentioned above, if your organization has its own custom domain that you want
 ## Admin experiences
 
 There are two portals that you might use:
-- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) is where you can explore the [capabilities of Intune](fundamentals/what-is-intune.md). Normally, you’ll do your work in the Intune dashboard.
+- The Intune dashboard in Azure ([portal.azure.com](https://portal.azure.com)) is where you can explore the [capabilities of Intune](what-is-intune.md). Normally, you’ll do your work in the Intune dashboard.
 - The Microsoft 365 admin center ([admin.microsoft.com](https://admin.microsoft.com)) is where you can add and manage users, if you are not using Azure Active Directory for this. You can also manage other aspects of your account, including billing and support.
 
 ## Next steps
