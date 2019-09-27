@@ -33,7 +33,7 @@ This article provides answers to some frequently asked questions on Intune mobil
 ## MAM Basics
 
 **What is MAM?**<br></br>
-[Intune mobile application management](/intune/app-lifecycle) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
+[Intune mobile application management](app-lifecycle) refers to the suite of Intune management features that lets you publish, push, configure, secure, monitor, and update mobile apps for your users.
 
 **What are the benefits of MAM app protection?**<br></br>
 MAM protects an organization's data within an application. With MAM without enrollment (MAM-WE), a work or school-related app that contains sensitive data can be managed on almost any device, including personal devices in bring-your-own-device (BYOD) scenarios. Many productivity apps, such as the Microsoft Office apps, can be managed by Intune MAM. See the official list of [Intune-managed apps](https://www.microsoft.com/cloud-platform/microsoft-intune-apps) available for public use.
@@ -42,7 +42,7 @@ MAM protects an organization's data within an application. With MAM without enro
 Intune MAM supports two configurations:
 - **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Azure portal at https://portal.azure.com.
 
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at https://portal.azure.com. Also, apps can be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers or not enrolled with an MDM at all.
+- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at [https://portal.azure.com](https://portal.azure.com). Also, apps can be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers or not enrolled with an MDM at all.
 
 
 ## App protection policies
@@ -67,9 +67,9 @@ Any app that has been integrated with the [Intune App SDK](../developer/app-sdk.
 
 **What are the baseline requirements to use app protection policies on an Intune-managed app?**
 
-- The end user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](../fundamentals/users-add) to learn how to create Intune users in Azure Active Directory.
+- The end user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](../fundamentals/users-add.md) to learn how to create Intune users in Azure Active Directory.
 
-- The end user must have a license for Microsoft Intune assigned to their Azure Active Directory account. See [Manage Intune licenses](../fundamentals\licenses-assign) to learn how to assign Intune licenses to end users.
+- The end user must have a license for Microsoft Intune assigned to their Azure Active Directory account. See [Manage Intune licenses](../fundamentals\licenses-assign.md) to learn how to assign Intune licenses to end users.
 
 - The end user must belong to a security group that is targeted by an app protection policy. The same app protection policy must target the specific app being used. App protection policies can be created and deployed in the Intune console in the [Azure portal](https://portal.azure.com). Security groups can currently be created in the [Microsoft 365 admin center](https://admin.microsoft.com).
 
@@ -155,7 +155,7 @@ IT administrators can deploy an app protection policy that requires app data to 
 - **What gets encrypted?**<br></br> Only data marked as "corporate" is encrypted according to the IT administrator's app protection policy. Data is considered "corporate" when it originates from a business location. For the Office apps, Intune considers the following as business locations: email (Exchange) or cloud storage (OneDrive app with a OneDrive for Business account). For line-of-business apps managed by the Intune App Wrapping Tool, all app data is considered "corporate."
 
 **How does Intune remotely wipe data?**<br></br>
-Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using wipe or retire](../remote-actions/devices-wipe.md). For more information about selective wipe using MAM, see [the Retire action](../remote-actions/devices-wipe.md#retire) and [How to wipe only corporate data from apps](../remote-actions/apps-selective-wipe.md).
+Intune can wipe app data in three different ways: full device wipe, selective wipe for MDM, and MAM selective wipe. For more information about remote wipe for MDM, see [Remove devices by using wipe or retire](../remote-actions/devices-wipe.md). For more information about selective wipe using MAM, see [the Retire action](../remote-actions/devices-wipe.md#retire) and [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
 - **What is wipe?**<br></br> [Wipe](../remote-actions/devices-wipe.md) removes all user data and settings from **the device** by restoring the device to its factory default settings. The device is removed from Intune.
   >[!NOTE]
@@ -163,7 +163,7 @@ Intune can wipe app data in three different ways: full device wipe, selective wi
 
 - **What is selective wipe for MDM?**<br></br> See [Remove devices - retire](../remote-actions/devices-wipe.md#retire) to read about removing company data.
 
-- **What is selective wipe for MAM?**<br></br> Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [How to wipe only corporate data from apps](../remote-actions/apps-selective-wipe.md).
+- **What is selective wipe for MAM?**<br></br> Selective wipe for MAM simply removes company app data from an app. The request is initiated using the Intune Azure portal. To learn how to initiate a wipe request, see [How to wipe only corporate data from apps](apps-selective-wipe.md).
 
 - **How quickly does selective wipe for MAM happen?**<br></br> If the user is using the app when selective wipe is initiated, the Intune App SDK checks every 30 minutes for a selective wipe request from the Intune MAM service. It also checks for selective wipe when the user launches the app for the first time and signs in with their work or school account.
 

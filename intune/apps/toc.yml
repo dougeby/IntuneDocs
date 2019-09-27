@@ -183,7 +183,7 @@
 - name: Reference
   items:
     - name: Protect apps with Intune App SDK
-      href: app-sdk.md
+      href: ../developer/app-sdk.md
       items:
       - name: Get started with Intune App SDK
         href: ../developer/app-sdk-get-started.md

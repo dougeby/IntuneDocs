@@ -2405,7 +2405,7 @@ You can now control which websites users of iOS devices can visit using one of t
 
 - Allow only specified websites to be accessed by the Safari browser. Bookmarks are created in Safari for each site you specify.
 
-For more information, see [Web content filter settings for iOS devices](../configuration/ios-device-features-settings#web-content-filter.md).
+For more information, see [Web content filter settings for iOS devices](../configuration/ios-device-features-settings.md#web-content-filter).
 
 #### Preconfigure device permissions for Android for Work apps <!-- 621614 -->
 For apps deployed to Android for Work device work profiles, you can now configure the permissions state for individual apps.  By default, Android apps that require device permissions such as access to location or the device camera will prompt users to accept or deny permissions.  For example, if an app uses the device's microphone, then the end user is prompted to grant the app permission to use the microphone. This feature allows you to define permissions on behalf of the end user.  You can configure permissions to a) automatically deny without notifying the user, b) automatically approve without notifying the user, or c) prompt the user to accept or deny. For more information, see [Android for Work device restriction settings in Microsoft Intune](../configuration/device-restrictions-android-for-work.md).
@@ -2466,16 +2466,16 @@ You can now assign line of business (LOB) apps for [iOS](../apps/lob-apps-ios.md
 
 
 ### New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
-- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](../configuration/ios-device-features-settings#home-screen-layout.md). This policy changes the layout of the Home screen, but does not deploy any apps.
+- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](../configuration/ios-device-features-settings.md#home-screen-layout). This policy changes the layout of the Home screen, but does not deploy any apps.
 
-- **Connections to AirPrint devices** - Controls which [AirPrint devices](../configuration/ios-device-features-settings#airprint.md) (network printers) that end users of iOS device can connect to.
+- **Connections to AirPrint devices** - Controls which [AirPrint devices](../configuration/ios-device-features-settings.md#airprint) (network printers) that end users of iOS device can connect to.
 
 - **Connections to AirPlay devices** - Controls which [AirPlay devices](../configuration/ios-device-features-settings.md) (like Apple TV) that end users of iOS device can connect to.
 
 - **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](../remote-actions/device-lost-mode.md)
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
-In an Intune device restriction profile, you can now configure the following [notification settings](../configuration/ios-device-features-settings#app-notifications.md) for iOS devices:
+In an Intune device restriction profile, you can now configure the following [notification settings](../configuration/ios-device-features-settings.md#app-notifications) for iOS devices:
 
 - Fully turn on or off notification for a specified app.
 - Turn on or off, the notification in the notification center for a specified app.
