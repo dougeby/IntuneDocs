@@ -1,10 +1,10 @@
 ### YamlMime:Landing
 
 title: Microsoft Intune fundamentals
-summary: Microsoft Intune is a cloud-based service that helps enable your workforce to be productive while keeping your corporate data protected. Learn about the Intune fundamentals that includes planning, migration, and set up.
+summary: Microsoft Intune is a cloud-based service that helps enable your workforce to be productive while keeping your corporate data protected. Learn about planning, migration, and set up fundamentals for Intune.
 metadata:
   title: Intune fundamentals
-  description: Learn about the Intune fundamentals that includes planning, migration, and set up.
+  description: Learn about planning, migration, and set up fundamentals for Intune.
 
   services: service
   ms.service: microsoft-intune
