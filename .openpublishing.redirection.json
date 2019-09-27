@@ -1623,7 +1623,7 @@
         {
             "source_path": "intune/configure-devices/airplay-settings-for-ios-devices.md",
             "redirect_url": "/intune/configuration/ios-device-features-settings",
-            "redirect_document_id": true
+            "redirect_document_id": false
         },
         {
             "source_path": "intune/configure-devices/app-notification-settings-for-ios.md",
