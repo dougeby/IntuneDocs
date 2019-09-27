@@ -28,6 +28,7 @@ ms.custom: intune-azure
 ms.collection: M365-identity-device-management
 ---
 # UI updates for Intune end-user apps
+
 Learn about the most recent updates to the Microsoft Intune apps. We regularly add to and improve the Intune Company Portal app and website. If you're an Intune administrator or support person, this article provides the information you need to:
 
 * Alert students and employees to app and enrollment changes.
@@ -48,10 +49,10 @@ The Microsoft Intune app for Android has been updated with the following improve
 - Added the display of custom push notifications, aligning the app with the support recently added in the Company Portal app for iOS and Android. For more information, see [Send custom notifications in Intune](../remote-actions/custom-notifications.md).
 
     User profile example:<br>
-    <img src="./media/intune-app-android-device-profile.png" alt="Screenshot of Microsoft Intune app for Android - User Profile" width="300">   
+    <img src="./media/whats-new-app-ui/intune-app-android-device-profile.png" alt="Screenshot of Microsoft Intune app for Android - User Profile" width="300">   
 
     Notifications and bottom navigation example:<br>
-    <img src="./media/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notification" width="300">   
+    <img src="./media/whats-new-app-ui/intune-app-android-device-notify.png" alt="Screenshot of Microsoft Intune app for Android - Notification" width="300">   
 
 
 ## Week of June 24, 2019  

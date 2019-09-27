@@ -83,9 +83,7 @@ Device compliance policies evaluate security-oriented settings, and provide repo
 
 See additional resources for device compliance settings:
 
-- Learn about [device compliance policies](device-compliance.md).
-
-- Learn [how to create a device compliance policy](../protect/device-compliance-get-started.md).
+- Learn about [device compliance policies](../protect/device-compliance-get-started.md).
 
 ### Task 5: Publish and deploy apps
 

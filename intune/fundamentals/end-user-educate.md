@@ -30,36 +30,35 @@ ms.collection: M365-identity-device-management
 
 # How to educate your end users about Microsoft Intune
 
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
-
-Microsoft Intune helps you enable your workforce with mobile devices while protecting your corporate data. To test out the Intune deployment in your organization, you can try a [free trial](../developer/app-sdk.md).
+Microsoft Intune helps you enable your workforce with mobile devices while protecting your corporate data. To test out the Intune deployment in your organization, you can try a [free trial](free-trial-sign-up.md).
 
 As you implement Microsoft Intune, it's important that employees understand the need for device management and enterprise mobility. Without an explanation from you, some users might feel that you're infringing on their privacy. User concern for privacy increases when you deploy Intune as a [BYOD solution](/enterprise-mobility-security/solutions/byod-design-considerations-guide).
 
 > [!Important]
 > Understanding and proactively addressing user concerns about why your company needs to manage devices is critical to a successful rollout.
 
-Successful adoption isn't just about distributing new, functional technology throughout your workforce. It's also about getting users to understand and embrace the new technology. That's why it's important for users to understand and embrace the data security that Intune provides. 
+Successful adoption isn't just about distributing new, functional technology throughout your workforce. It's also about getting users to understand and embrace the new technology. That's why it's important for users to understand and embrace the data security that Intune provides.
 
 ## Things to consider about your users
 
 __What level of technology experience do users have?__ Your users' knowledge and experiences with technology may range. These experiences could be positive, such as photographing family vacations; or they could be negative, such as unexpectedly dropping a device in the kitchen sink. Experiences influence how users approach technology for personal and business use.
 
-__What does mobility management mean to users?__ Users may not fully understand the access you have--or don't have--to their devices and information. Users likely have concern about IT and leadership potentially tracking their actions. Less experienced device users may believe all activity on their devices is private. 
+__What does mobility management mean to users?__ Users may not fully understand the access you have--or don't have--to their devices and information. Users likely have concern about IT and leadership potentially tracking their actions. Less experienced device users may believe all activity on their devices is private.
 
 __How could Intune inconvenience users?__  Recognize and be respectful of the time it takes users to install apps, enroll devices, and maintain compliance. The top priority of all Intune deployments is to secure corporate data. However, user attitudes toward device management may be affected negatively if you push policies that, for example:  
-* Require unreasonable passcodes on personal devices
-* Send required app updates in the middle of criticial business calls  
 
-These policies could also negatively affect employee productivity. 
+- Require unreasonable passcodes on personal devices
+- Send required app updates in the middle of critical business calls  
+
+These policies could also negatively affect employee productivity.
 
 ## Things you should do
 
 Read the following list of tips to make your organization's Intune deployment easier for device users.
 
-* __Be resourceful.__ The Intune documentation helps users complete Intune-specific tasks, such as enrolling and troubleshooting devices. Users can click and access some articles directly from the Company Portal. These specific articles help explain the Company Portal app installation, Intune enrollment, general tasks that users can do on their devices, and troubleshooting. A list of this documentation is also found in the article, [Use managed devices to get work done](/intune-user-help/use-managed-devices-to-get-work-done).
+* __Be resourceful.__ The Intune documentation helps users complete Intune-specific tasks, such as enrolling and troubleshooting devices. Users can click and access some articles directly from the Company Portal. These specific articles help explain the Company Portal app installation, Intune enrollment, general tasks that users can do on their devices, and troubleshooting. A list of this documentation is also found in the article, [Use managed devices to get work done](https://docs.microsoft.com/intune-user-help/use-managed-devices-to-get-work-done).
 
-* __Be accessible.__ Tell users where they can seek help for their device problems. When you [customize the Company Portal](company-portal-app.md), be sure to include your IT administrator's contact information.
+* __Be accessible.__ Tell users where they can seek help for their device problems. When you [customize the Company Portal](../apps/company-portal-app.md), be sure to include your IT administrator's contact information.
 
 * __Be personal.__ Provide instructions that are specific to your organization's deployment. This action demonstrates to users that you care about their experience. Use this customizable [Intune Adoption Kit](https://aka.ms/IntuneAdoptionKit) to create your own enrollment instructions for your users.
 
@@ -68,15 +67,15 @@ Read the following list of tips to make your organization's Intune deployment ea
 * __Be aware.__ The Intune user experience impacts your productivity too. Understanding the users experience makes it easier for you to troubleshoot device and user problems. For example, you can learn and understand how your users acquire their apps. Knowing this information ahead of time will make it easier and faster to diagnose and fix problems.
 
 * **Android**
-  * [Using an Android device with Intune](/intune-user-help/using-your-android-device-with-intune)
+  * [Using an Android device with Intune](https://docs.microsoft.com/intune-user-help/using-your-android-device-with-intune)
   * [How your Android users get their apps](end-user-apps-android.md)
 
 * **iOS**
-  * [Using an iOS device with Intune](/intune-user-help/using-your-ios-device-with-intune)
+  * [Using an iOS device with Intune](https://docs.microsoft.com/intune-user-help/using-your-ios-device-with-intune)
   * [How your iOS users get their apps](end-user-apps-ios.md)
 
 * **Windows**
-  * [Using a Windows device with Intune](/intune-user-help/using-your-windows-device-with-intune)
+  * [Using a Windows device with Intune](https://docs.microsoft.com/intune-user-help/using-your-windows-device-with-intune)
   * [How your Windows users get their apps](end-user-apps-windows.md)
 
 * __Be forthcoming.__ Be clear about what you're going to manage on user devices. Tell users what kind of data you're collecting and why you're collecting it. Inform them of how you're planning to use all data. [Microsoft believes that you have a right to as much information as possible about how we handle your customer data in the cloud](https://www.microsoft.com/trustcenter/about/transparency), and believes that this philosophy can greatly increase user satisfaction with Intune.

@@ -146,7 +146,7 @@ The [Intune App SDK](../developer/app-sdk.md) uses some advanced modern authenti
 
 The following list provides the end-user requirements to use app protection policies on an Intune-managed app:
 
-- The end user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](/intune/users-permissions-add) to learn how to create Intune users in Azure Active Directory.
+- The end user must have an Azure Active Directory (AAD) account. See [Add users and give administrative permission to Intune](../fundamentals/users-add) to learn how to create Intune users in Azure Active Directory.
 
 - The end user must have a license for Microsoft Intune assigned to their Azure Active Directory account. See [Manage Intune licenses](/intune/licenses-assign) to learn how to assign Intune licenses to end users.
 

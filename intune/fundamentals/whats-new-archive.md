@@ -51,11 +51,6 @@ To continue receiving updates for the Company Portal and other Office applicatio
 #### Intune requires macOS 10.12 or later <!-- 2827778 -->
 Intune now requires macOS version 10.12 or later. Devices using prior macOS versions can't use the Company Portal to enroll into Intune. To receive support assistance and new features, users must upgrade their device to macOS 10.12 or later and upgrade the Company Portal to the latest version.
 
-
-
-
-
-
 <!-- ########################## -->
 ## November 2018
 
@@ -65,7 +60,7 @@ Intune now requires macOS version 10.12 or later. Devices using prior macOS vers
 You can remove any app on corporate-owned supervised iOS devices. You can remove any app by targeting either user or device groups with an **Uninstall** assignment type. For personal or unsupervised iOS devices, you will continue to be able to remove only apps that were installed using Intune.
 
 #### Downloading Intune Win32 app content <!-- 2617320 -->
-Windows 10 RS3 and above clients will download Intune Win32 app content using a Delivery Optimization component on the Windows 10 client. Delivery optimization provides Peer-to-Peer functionality that it is turned on by default. Currently, delivery optimization can be configured by group policy. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization). 
+Windows 10 RS3 and above clients will download Intune Win32 app content using a Delivery Optimization component on the Windows 10 client. Delivery optimization provides Peer-to-Peer functionality that it is turned on by default. Currently, delivery optimization can be configured by group policy. For more information, see [Delivery Optimization for Windows 10](https://docs.microsoft.com/windows/deployment/update/waas-delivery-optimization).
 
 #### End user device and app content menu <!-- 2771453 -->
 End users can now use context menu on device and apps to trigger common actions like renaming a device or checking compliance.
@@ -395,11 +390,10 @@ For customers who are part of the rollout, this new experience replaces the curr
 
 *This new Help and Support experience is being rolled out to some but not all tenants and is available in the Device Management portal. Participants for this new experience are randomly selected from the available Intune tenants. New tenants will be added as we expand the rollout.*  
 
-For more information, see [Help and Support experience](../get-support.md#help-and-support-experience) in How to get support for Microsoft Intune.  
+For more information, see [Help and Support experience](get-support.md#help-and-support-experience) in How to get support for Microsoft Intune.  
 
 #### PowerShell module for Intune – Preview available <!-- 951068 -->
-A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub]( https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location. 
-
+A new PowerShell module, which provides support for the Intune API through Microsoft Graph, is now available for preview on [GitHub](https://aka.ms/intunepowershell). For details about how to use this module, see the README in that location.
 
 <!-- ########################## -->
 ## September 2018
@@ -453,7 +447,7 @@ When assigning the Office 365 ProPlus apps to Windows 10 devices using Intune, y
 
 #### Support for Register DNS setting for Windows 10 VPN <!-- 2282852 -->
 With this update, you can configure Windows 10 VPN profiles to dynamically register the IP addresses assigned to the VPN interface with the internal DNS, without needing to use custom profiles.
-For information about the current VPN profile settings available, see [Windows 10 VPN settings](../configuration/vpn-settings-windows-10.md). 
+For information about the current VPN profile settings available, see [Windows 10 VPN settings](../configuration/vpn-settings-windows-10.md).
 
 #### The macOS Company Portal installer now includes the version number in the installer file name <!--2652728-->
 
@@ -495,7 +489,7 @@ In **Device compliance** > **Policies** > **Create policy** > **iOS** > **System
 Applies to: iOS
 
 #### Modern VPN support updates for iOS <!-- 2459928, 1819876, and 2650856 -->
-This update adds support the following iOS VPN clients: 
+This update adds support the following iOS VPN clients:
 - F5 Access (version 3.0.1 and higher)
 - Citrix SSO
 - Palo Alto Networks GlobalProtect version 5.0 and higher
@@ -1577,7 +1571,7 @@ You can delete the iOS Volume Purchasing Program (VPP) token using the console. 
 
 The **Users** entity collection contains all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data. You could create a report that would show the duration of the user's historic presence in your data.
 
-In contrast, the new **Current User** entity collection only contains users who have not been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](reports-ref-current-user.md).
+In contrast, the new **Current User** entity collection only contains users who have not been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](../developer/reports-ref-current-user.md).
 
 
 ### Updated Graph APIs <!-- 1736360 -->
@@ -1695,7 +1689,7 @@ You can now trigger a supervised iOS 10.3+ device to restart using a device acti
 
 ### Single Sign-on support for iOS <!-- 1333645 -->  
 
-You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. For details, see [Configure Intune for iOS device single sign-on](sso-ios.md).
+You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. For details, see [Configure Intune for iOS device single sign-on](../configuration/ios-device-features-settings.md#single-sign-on-settings).
 
 ### Add "Find my iPhone" for personal devices <!--1427287-->
 You can now view whether iOS devices have Activation Lock turned on. This feature previously could be found in the Intune in the classic portal.
@@ -1967,7 +1961,7 @@ Risk is assessed based on telemetry collected from devices running Zimperium. Yo
 ### New settings for Windows 10 device restriction profile  <!--- 978575, 1308849, -->  
 We are adding new settings to the Windows 10 device restriction profile in the Windows Defender SmartScreen category.
 
-For details about the Windows 10 device restriction profile, see [Windows 10 and later device restriction settings]( device-restrictions-windows-10.md).
+For details about the Windows 10 device restriction profile, see [Windows 10 and later device restriction settings](../configuration/device-restrictions-windows-10.md).
 
 ### Remote support for Windows and Windows Mobile devices   <!-- 1070473 -->  
 Intune can now use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Windows, and Windows Mobile devices.
@@ -2049,7 +2043,7 @@ In this upcoming release, **App protection policy** option will be added to the 
 
 
 ### Improvements to device setup workflow in Company Portal <!--1490692-->
-We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. You can see these on the [what's new in app UI](../whats-new-app-ui.md#week-of-october-2-2017) page.
+We've improved the device setup workflow in the Company Portal app for Android. The language is more user-friendly and specific to your company, and we've combined screens where possible. You can see these on the [what's new in app UI](whats-new-app-ui.md#week-of-october-2-2017) page.
 
 ### Improved guidance around the request for access to contacts on Android devices <!--1484985-->
 
@@ -2113,7 +2107,7 @@ End users will soon not have to enroll their device to access the Company Portal
 
 ### Easier-to-understand phrasing for the Company Portal app for Android <!---1396349--->  
 
-The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images on our [UI updates for Intune end user apps](../whats-new-app-ui.md#week-of-september-11-2017) page.
+The enrollment process for the Company Portal app for Android has been simplified with new text to make it easier for end users to enroll. If you have custom enrollment documentation, you will want to update it to reflect the new screens. You can find sample images on our [UI updates for Intune end user apps](whats-new-app-ui.md#week-of-september-11-2017) page.
 
 ### Windows 10 Company Portal app added to Windows Information Protection allow policy <!-- 677129 -->
 
@@ -2323,18 +2317,18 @@ For more information about Windows 10 settings, see [Windows 10 and later device
 
 
 ### Company Portal app for Android now has a new end user experience for App Protection Policies <!--1305217-->
-Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management. You can see these changes on the [what's new in app UI](../whats-new-app-ui.md) page.
+Based on customer feedback, we've modified the Company Portal app for Android to show an **Access Company Content** button. The intent is to prevent end users from unnecessarily going through the enrollment process when they only need to access apps that support App Protection Policies, a feature of Intune mobile application management. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
 
 ### New menu action to easily remove Company Portal <!--1164569-->
-Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user. You can see these changes on the [what's new in app UI](../whats-new-app-ui.md) page and in the [Android end user documentation](/intune-user-help/unenroll-your-device-from-intune-android).
+Based on user feedback, the Company Portal app for Android has added a new menu action to initiate the removal of Company Portal from your device. This action removes the device from Intune management so that the app can be removed from the device by the user. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page and in the [Android end user documentation](/intune-user-help/unenroll-your-device-from-intune-android).
 
 ### Improvements to app syncing with Windows 10 Creators Update <!--676505-->
-The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1703). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app. You can see these changes on the [what's new in app UI](../whats-new-app-ui.md) page.
+The Company Portal app for Windows 10 will now automatically initiate a sync for app install requests for devices with Windows 10 Creators Update (version 1703). This will reduce the issue of app installs stalling during the "Pending Sync" state. In addition, users will be able to manually initiate a sync from within the app. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
 
 ### New guided experience for Windows 10 Company Portal <!---1058938--->
 The Company Portal app for Windows 10 will include a guided Intune walkthrough experience for devices that have not been identified or enrolled. The new experience provides step-by-step instructions that guide the user through registering into Azure Active Directory (required for Conditional Access features) and MDM enrollment (required for device management features). The guided experience will be accessible from the Company Portal home page. Users can continue to use the app if they do not complete registration and enrollment, but will experience limited functionality.
 
-This update is only visible on devices running Windows 10 Anniversary Update (build 1607) or higher. You can see these changes on the [what's new in app UI](../whats-new-app-ui.md) page.
+This update is only visible on devices running Windows 10 Anniversary Update (build 1607) or higher. You can see these changes on the [what's new in app UI](whats-new-app-ui.md) page.
 
 
 ### Microsoft Intune and Conditional Access admin consoles are generally available
@@ -2345,10 +2339,10 @@ Intune is now visible without the **preview** label in the Azure portal at porta
 There is no action required for existing customers at this time, unless you have received one of a series of messages in the message center requesting that you take action so that we can migrate your groups. You may have also received a message center notice informing you that migration is taking longer due to bugs on our side. We are diligently continuing work to migrate any impacted customer.
 
 ### Improvements to the app tiles in the Company Portal app for iOS
-We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal. For more information, see [what's new in app UI](../whats-new-app-ui.md).
+We updated the design of the app tiles on the homepage to reflect the branding color you set for the Company Portal. For more information, see [what's new in app UI](whats-new-app-ui.md).
 
 ### Account picker now available for the Company Portal app for iOS
-Users of iOS devices might see our new account picker when they sign into the Company Portal if they use their work or school account to sign into other Microsoft apps. For more information, see [what's new in app UI](../whats-new-app-ui.md).
+Users of iOS devices might see our new account picker when they sign into the Company Portal if they use their work or school account to sign into other Microsoft apps. For more information, see [what's new in app UI](whats-new-app-ui.md).
 
 <!-- ########################## -->
 ## May 2017
@@ -2373,7 +2367,7 @@ Intune now supports use of Apple School Manager (ASM) in place of Apple Device E
 
 #### Provide remote assistance to Android devices using TeamViewer <!-- 675418 -->
 
-Intune can now use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices. For more information, see [Provide remote assistance for Intune managed Android devices](device-profile-android-teamviewer.md).
+Intune can now use the [TeamViewer](https://www.teamviewer.com) software, purchased separately, to enable you to give remote assistance to your users who are running Android devices. For more information, see [Provide remote assistance for Intune managed Android devices](../remote-actions/teamviewer-support.md).
 
 ### App management
 
@@ -2412,7 +2406,7 @@ You can now control which websites users of iOS devices can visit using one of t
 
 - Allow only specified websites to be accessed by the Safari browser. Bookmarks are created in Safari for each site you specify.
 
-For more information, see [Web content filter settings for iOS devices](web-content-filter-settings-ios.md).
+For more information, see [Web content filter settings for iOS devices](../configuration/ios-device-features-settings#web-content-filter-settings.md).
 
 #### Preconfigure device permissions for Android for Work apps <!-- 621614 -->
 For apps deployed to Android for Work device work profiles, you can now configure the permissions state for individual apps.  By default, Android apps that require device permissions such as access to location or the device camera will prompt users to accept or deny permissions.  For example, if an app uses the device's microphone, then the end user is prompted to grant the app permission to use the microphone. This feature allows you to define permissions on behalf of the end user.  You can configure permissions to a) automatically deny without notifying the user, b) automatically approve without notifying the user, or c) prompt the user to accept or deny. For more information, see [Android for Work device restriction settings in Microsoft Intune](../configuration/device-restrictions-android-for-work.md).
@@ -2440,14 +2434,12 @@ When creating a PKCS certificate profile, for **Subject alternative name**, the 
 #### Configure multiple apps that can run when an Android device is in kiosk mode <!-- 662059 -->
 When an Android device is in kiosk mode, you could previously only configure one app that was allowed to run. You can now configure multiple apps using the app ID, store URL, or by selecting an Android app you already manage. For more information, see [Kiosk mode settings](../configuration/device-restrictions-android.md#kiosk).
 
-
-
 <!-- ########################## -->
 ## April 2017
 
 ### Support for managing the Apple Classroom app
 You can now manage the iOS Classroom app on iPad devices. Set up the Classroom app on the teachers iPad with the correct class and student data, then configure student iPads registered to a class, so that you can control them using the app.
-For details, see [Configure iOS education settings](education-settings-configure-ios.md).
+For details, see [Configure iOS education settings](../configuration/education-settings-configure-ios.md).
 
 ### Support for managed configuration options for Android apps <!-- 621621 -->
 Android apps in the Play store that support managed configuration options can now be configured by Intune.  This feature lets IT view the list of configuration values supported by an app, and provides a guided, first-class UI to allow them to configure those values.
@@ -2475,16 +2467,16 @@ You can now assign line of business (LOB) apps for [iOS](../apps/lob-apps-ios.md
 
 
 ### New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
-- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](home-screen-settings-ios.md). This policy changes the layout of the Home screen, but does not deploy any apps.
+- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](../configuration/ios-device-features-settings#home-screen-layout-settings.md). This policy changes the layout of the Home screen, but does not deploy any apps.
 
-- **Connections to AirPrint devices** - Controls which [AirPrint devices](air-print-settings-ios-macos.md) (network printers) that end users of iOS device can connect to.
+- **Connections to AirPrint devices** - Controls which [AirPrint devices](../configuration/ios-device-features-settings#airprint-settings.md) (network printers) that end users of iOS device can connect to.
 
-- **Connections to AirPlay devices** - Controls which [AirPlay devices](airplay-settings-ios.md) (like Apple TV) that end users of iOS device can connect to.
+- **Connections to AirPlay devices** - Controls which [AirPlay devices](../configuration/ios-device-features-settings.md) (like Apple TV) that end users of iOS device can connect to.
 
 - **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](../remote-actions/device-lost-mode.md)
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
-In an Intune device restriction profile, you can now configure the following [notification settings](app-notification-settings-ios.md) for iOS devices:
+In an Intune device restriction profile, you can now configure the following [notification settings](../configuration/ios-device-features-settings#app-notifications-settings.md) for iOS devices:
 
 - Fully turn on or off notification for a specified app.
 - Turn on or off, the notification in the notification center for a specified app.
@@ -2598,8 +2590,8 @@ For Intune accounts created after January 2017, Intune has enabled direct access
 ### Ability to restrict mobile device enrollment <!--747600, 795782-->
 Intune is adding new enrollment restrictions that control which mobile device platforms are allowed to enroll. Intune separates mobile device platforms as iOS, macOS, Android, Windows and Windows Mobile.
 
-* Restricting mobile device enrollment does not restrict PC client enrollment.  
-* For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
+- Restricting mobile device enrollment does not restrict PC client enrollment.  
+- For iOS and Android only, there is one additional option to block the enrollment of personally owned devices.
 
 Intune marks all new devices as personal unless the IT admin takes action to mark them as corporate owned, as explained in [this article](../enrollment/device-enrollment.md).
 

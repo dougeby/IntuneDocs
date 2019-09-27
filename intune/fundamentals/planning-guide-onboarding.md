@@ -73,10 +73,8 @@ This step is optional. You need an Office 365 subscription if you plan to use Ex
 
 You may need to add users or security groups in Active Directory or Azure Active Directory based on your Intune deployment use-case scenarios and requirements. Review your current users and security groups in Active Directory or Azure Active Directory and determine if they fully meet your needs. When adding new users and security groups, we recommend adding them in Active Directory and synchronizing with Azure Active Directory using Azure AD Connect.
 
-
-- Learn more about [how to add users/groups in Intune](users-permissions-add.md).
+- Learn more about [how to add users/groups in Intune](users-add.md).
 <!---why not send them to the AAD connect topic? Question out to Andre: https://docs.microsoft.com/azure/active-directory/connect/active-directory-aadconnect--->
-
 
 
 ### Task 4: Assign Intune and Office 365 user licenses
@@ -95,7 +93,7 @@ Before you can begin to set up, configure, manage and enroll devices using Intun
 
 By default, most device platforms are enabled except for Apple devices (iOS and Mac). Before iOS devices can be enrolled and managed in Intune, the device platform must be enabled. To do so, you need to create an MDM Push certificate, and add it to Intune.
 
-- Learn more about [how to enable Apple devices for enrollment](enrollment/apple-mdm-push-certificate-get.md).
+- Learn more about [how to enable Apple devices for enrollment](../enrollment/apple-mdm-push-certificate-get.md).
 
 ### Task 7: Add and deploy terms and conditions policies
 
@@ -125,7 +123,7 @@ Intune supports the deployment of web, line-of-business, and public Store apps. 
 
 Intune supports compliance policies. Add compliance policies as appropriate and deploy them to targeted groups based on your Intune deployment use cases and requirements.
 
-- Learn more about [compliance policies](device-compliance.md).
+- Learn more about [compliance policies](../protect/device-compliance-get-started.md).
 
 ### Task 12: Enable Conditional Access policies
 

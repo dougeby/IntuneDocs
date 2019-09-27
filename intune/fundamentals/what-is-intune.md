@@ -29,25 +29,24 @@ ms.collection: M365-identity-device-management
 
 # What is Microsoft Intune?
 
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
-
 Microsoft Intune is a cloud-based service in the enterprise mobility management (EMM) space that helps enable your workforce to be productive while keeping your corporate data protected. Similar to other Azure services, Microsoft Intune is available in the Azure portal. With Intune, you can:
-* Manage the mobile devices and PCs your workforce uses to access company data.
-* Manage the mobile apps your workforce uses.
-* Protect your company information by helping to control the way your workforce accesses and shares it.
-* Ensure devices and apps are compliant with company security requirements.
+
+- Manage the mobile devices and PCs your workforce uses to access company data.
+- Manage the mobile apps your workforce uses.
+- Protect your company information by helping to control the way your workforce accesses and shares it.
+- Ensure devices and apps are compliant with company security requirements.
 
 ## Common business problems that Intune helps solve
 
-* [Protect your on-premises email and data so that it can be accessed by mobile devices](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
-* [Protect your Office 365 mail and data so that it can be safely accessed by mobile devices](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
-* [Issue corporate-owned phones to your workforce](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
-* [Offer a bring-your-own-device (BYOD) or personal device program to all employees](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
-* [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
-* [Issue limited-use shared tablets to your task workers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
-
+- [Protect your on-premises email and data so that it can be accessed by mobile devices](common-scenarios.md#protecting-your-on-premises-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
+- [Protect your Office 365 mail and data so that it can be safely accessed by mobile devices](common-scenarios.md#protecting-your-office-365-email-and-data-so-it-can-be-safely-accessed-by-mobile-devices)
+- [Issue corporate-owned phones to your workforce](common-scenarios.md#issue-corporate-owned-phones-to-your-employees)
+- [Offer a bring-your-own-device (BYOD) or personal device program to all employees](common-scenarios.md#offer-a-bring-your-own-device-program-to-all-employees)
+- [Enable your employees to securely access Office 365 from an unmanaged public kiosk](common-scenarios.md#enable-your-employees-to-securely-access-office-365-from-an-unmanaged-public-kiosk)
+- [Issue limited-use shared tablets to your task workers](common-scenarios.md#issue-limited-use-shared-tablets-to-your-employees)
 
 ## How does Intune work?
+
 Intune is the component of Microsoft's Enterprise Mobility + Security (EMS) suite that manages mobile devices and apps. It integrates closely with other EMS components like Azure Active Directory (Azure AD) for identity and access control and Azure Information Protection for data protection. When you use it with Office 365, you can enable your workforce to be productive on all their devices, while keeping your organization's information protected.
 
 ![Image of Intune architecture](./media/what-is-intune/intunearch_sm.png)
@@ -128,7 +127,7 @@ Highlights of the Microsoft Intune experience in the Azure portal include:
 - Azure Active Directory (AD) groups to provide compatibility across all your Azure applications
 - Support for most modern web browsers
 
-For a quick guide to customize your portal experience, see [Getting started with Intune in the Azure portal](get-started-azure.md).
+For a quick guide to customize your portal experience, see [Getting started with Intune in the Azure portal](tutorial-walkthrough-intune-portal.md).
 
 > [!NOTE]
 > If you've used a previous version of Microsoft Intune, you may find the following information helpful:

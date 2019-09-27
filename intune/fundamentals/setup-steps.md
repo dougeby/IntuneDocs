@@ -30,8 +30,6 @@ ms.collection: M365-identity-device-management
 
 # Set up Intune
 
-[!INCLUDE [both-portals](../../intune-classic/includes/note-for-both-portals.md)]
-
 These set-up steps help you enable mobile device management (MDM) by using Intune. Devices must be managed before you can give users access to company resources or manage settings on those devices.
 
 Some steps, such as setting up an Intune subscription and setting the MDM authority, are required for most scenarios. Other steps, such as configuring a custom domain or adding apps, are optional depending upon your company's needs.
@@ -54,6 +52,6 @@ If you're currently using Microsoft System Center Configuration Manager to manag
 |   7   |                                                                        [Add apps](../apps/apps-add.md) - Apps can be assigned to groups and automatically or optionally installed.                                                                         |
 |   8   | [Configure devices](../configuration/device-profiles.md) - Set up profiles that manage device settings. Device profiles can preconfigure settings for email, VPN, Wi-Fi, and device features. They can also restrict devices to help protect both devices and data. |
 |   9   |       [Customize Company Portal](../apps/company-portal-app.md) - Customize the Intune Company Portal that users use to enroll devices and install apps. These settings appear in both the Company Portal app and the Intune Company Portal website.       |
-|  10   |                                [Enable device enrollment](fundamentals/mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices by setting the MDM authority and enabling specific platforms.                                 |
+|  10   |                                [Enable device enrollment](mdm-authority-set.md) - Enable Intune management of iOS, Windows, Android, and Mac devices by setting the MDM authority and enabling specific platforms.                                 |
 |  11   |                                                        [Configure app policies](../apps/app-protection-policy.md) - Supply specific settings based on app protection policies in Microsoft Intune.                                                         |
 

@@ -34,7 +34,7 @@ A key task of any Administrator is to protect and secure an organization's resou
 
 Using a device management provider, organization can make sure that only authorized people and devices get access to proprietary information. Similarly, device users can feel at ease accessing work data from their phone, because they know their device meet their organization's security requirements. As an organization, you might ask - **What should we use to protect our resources?**
 
-The answer is [Microsoft Intune](introduction-intune.md). Intune offers mobile device management (MDM) and mobile application management (MAM). Some key tasks of any MDM or MAM solution are to:
+The answer is [Microsoft Intune](what-is-intune.md). Intune offers mobile device management (MDM) and mobile application management (MAM). Some key tasks of any MDM or MAM solution are to:
 
 - Support a diverse mobile environment and manage iOS, Android, Windows, and macOS devices securely.
 - Make sure devices and apps are compliant with your organization's security requirements.
@@ -101,4 +101,5 @@ On the Device Management admin center, you can:
 - [Troubleshoot](help-desk-operators.md)
 
 ## Next step
+
 When you're ready to get started with an MDM or MAM solution, walk through the different steps to set up Intune, enroll devices, and start creating policies. [Mobile device management for Microsoft 365](https://docs.microsoft.com/microsoft-365/enterprise/mobility-infrastructure) is also a great resource.

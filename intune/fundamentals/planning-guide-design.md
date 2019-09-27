@@ -319,11 +319,9 @@ Wi-Fi profiles are used to automatically connect a mobile device to a wireless n
 
 Below is an example of a design for a Wi-Fi profile:
 
-| **Type** | **Profile name** | **Device platform** | **Use cases** |   
-|:---:|:---:|:---:|:---:|
-| Wi-Fi | Asia Wi-Fi profile | Android | Corporate, BYOD Asia region|                                                           
-| Wi-Fi | North America Wi-Fi profile | Android, iOS, Windows 10 Mobile | Corporate, BYOD North America region |                                                           
-
+| **Type** | **Profile name** | **Device platform** | **Use cases** |
+| Wi-Fi | Asia Wi-Fi profile | Android | Corporate, BYOD Asia region|
+| Wi-Fi | North America Wi-Fi profile | Android, iOS, Windows 10 Mobile | Corporate, BYOD North America region |
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your Wi-Fi profile needs.
 
@@ -333,24 +331,23 @@ VPN profiles let users securely access your network from remote locations. Intun
 
 Below is an example of documenting the design of a VPN profile.
 
-| **Type** | **Profile name** | **Device platform** | **Use cases** |   
+| **Type** | **Profile name** | **Device platform** | **Use cases** |
 |:---:|:---:|:---:|:---:|
-| VPN | VPN Cisco any connect Profile | Android, iOS, Windows 10 Mobile | Corporate, BYOD North America and Germany|                                                           
-| VPN | Pulse Secure | Android | Corporate, BYOD Asia region |                                                           
-
+| VPN | VPN Cisco any connect Profile | Android, iOS, Windows 10 Mobile | Corporate, BYOD North America and Germany|
+| VPN | Pulse Secure | Android | Corporate, BYOD Asia region |
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your VPN profile needs.
+
 #### Email profile
 
 Email profiles allow an email client to be automatically set up with connection information and email configuration. Intune supports email profiles on some devices. Learn more about [email profiles and what platforms are supported](../configuration/email-settings-configure.md).
 
 Below is an example of documenting the design of email profiles:
 
-| **Type** | **Profile name** | **Device platform** | **Use cases** |   
+| **Type** | **Profile name** | **Device platform** | **Use cases** |
 |:---:|:---:|:---:|:---:|
-| Email profile | iOS email profile | iOS | Corporate – Information worker BYOD |                                                           
+| Email profile | iOS email profile | iOS | Corporate – Information worker BYOD |
 | Email profile | Android Knox email profile | Android Knox | BYOD |
-
 
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your email profile needs.
 ### Apps
@@ -393,13 +390,13 @@ App protection policies minimize data loss by defining how the application manag
 You can [download a template of the above table](https://gallery.technet.microsoft.com/Intune-deployment-planning-fae156c2?redir=0) to identify your app protection policy needs.
 #### Compliance policies
 
-Compliance policies determine whether a device conforms to certain requirements. Intune uses compliance policies to determine if a device is considered compliant or noncompliant. The compliance status can then be used to restrict or allow access to company resources. If Conditional Access is required, we recommend that you design a [device compliance policy](device-compliance.md).
+Compliance policies determine whether a device conforms to certain requirements. Intune uses compliance policies to determine if a device is considered compliant or noncompliant. The compliance status can then be used to restrict or allow access to company resources. If Conditional Access is required, we recommend that you design a [device compliance policy](../protect/device-compliance-get-started.md).
 
 Refer to requirements and use cases to determine how many device compliance policies you need and which user groups are the target user groups. Additionally, you need to decide how long a device can be offline without checking in before it’s considered noncompliant.
 
 Below is an example of how to design a compliance policy:
 
-| **Policy name** | **Device platform** | **Settings** | **Target group** |   
+| **Policy name** | **Device platform** | **Settings** | **Target group** |
 |:---:|:---:|:---:|:---:|
 | Compliance policy | iOS, Android - Samsung Knox, non-Knox, Windows 10 mobile | PIN - required, cannot be jail broken | Corporate, BYOD |
 
@@ -415,7 +412,7 @@ For online access, decide what platforms and user groups you'll target by Condit
 
 Here’s an example of how to document Conditional Access policies:
 
-| **Service** | **Platforms for Modern Authentication** | **Basic Authentication** | **Use cases** |   
+| **Service** | **Platforms for Modern Authentication** | **Basic Authentication** | **Use cases** |
 |:---:|:---:|:---:|:---:|
 | Exchange online | iOS, Android | Block noncompliant devices on platforms supported by Intune | Corporate, BYOD |
 | SharePoint online | iOS, Android |  | Corporate, BYOD |

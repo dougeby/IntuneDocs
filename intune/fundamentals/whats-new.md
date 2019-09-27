@@ -215,7 +215,7 @@ We've added the following support for Android Fully Managed devices:
     - link SCEP certificates to DO Wi-Fi profile for authentication
     - link SCEP certificates to DO VPN profiles for authentication
     - link SCEP certificates to DO Email profiles for authentication (via AppConfig)
-- System apps are supported on Android Enterprise devices. In Intune, add an Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information, see [Add Android Enterprise system apps to Microsoft Intune](../apps-ae-system.md). <!-- 4062195 -->
+- System apps are supported on Android Enterprise devices. In Intune, add an Android Enterprise system app by selecting **Client apps** > **Apps** > **Add**. In the **App type** list, select **Android Enterprise system app**. For more information, see [Add Android Enterprise system apps to Microsoft Intune](../apps/apps-ae-system.md). <!-- 4062195 -->
 - In **Device compliance** > **Android Enterprise** > **Device Owner**, you can create a compliance policy that sets the Google SafetyNet attestation level.   <!-- 4631425 -->
 - On Android Enterprise fully managed devices, the mobile threat defense providers is supported. In **Device compliance** > **Android Enterprise** > **Device Owner**, you can choose an acceptable threat level. <!-- 4631440 --> [Android Enterprise settings to mark devices as compliant or not compliant using Intune](../protect/compliance-policy-create-android-for-work.md#device-owner) lists the current settings.
 - On Android Enterprise fully managed devices, the Microsoft Launcher app can now be configured via app protection policies to allow a standardized end-user experience on the fully managed device. The Microsoft Launcher app can be used to personalize your Android device. Using the app along with a Microsoft account or work/school account, you can access your calendar, documents, and recent activities in your personalized feed. You can also open photos, docs and web pages on your Windows PC, to be productive across your devices. <!-- 5334044 -->
@@ -705,7 +705,7 @@ When you create or edit [Security Baseline profiles](../protect/security-baselin
 The **Security Baselines** feature is out of preview and is now generally available (GA).  This means the feature is ready for use in production. However, the individual baseline templates can remain in preview and are evaluated and released to GA on their own schedules.
 
 #### The MDM Security Baseline template is now generally available   <!-- 3794072, 4217151,  3534649 -->
-The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for May 2019**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](security-baseline-settings-windows.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](../protect/security-baselines.md#available-security-baselines).  
+The MDM Security Baseline template has moved out of preview and is now generally available (GA). The GA template is identified as **MDM Security Baseline for May 2019**.  This is a new template and not an upgrade from the preview version.  As a new template, you’ll need to review the [settings it contains](../protect/security-baseline-settings-mdm.md), and then create new profiles to deploy the template to your device. Other security baseline templates can remain in preview. For a list of available baselines, see [Available security baselines](../protect/security-baselines.md#available-security-baselines).  
 
 In addition to being a new template, the *MDM Security Baseline for May 2019* template includes the two settings that we recently announced in our In Development article:  
 - Above Lock: Voice activate apps from a locked screen  
@@ -797,7 +797,7 @@ To install the Company Portal on already-enrolled DEP devices, you will need to 
 You can now configure where your end users can get an updated version of a line-of-business (LOB) app. End users will see this feature in the **min app version** conditional launch dialog, which will prompt end users to update to a minimum version of the LOB app. You must provide these update details as part of your LOB app protection policy (APP). This feature is available on iOS and Android. On iOS, this feature requires the app to be integrated (or wrapped using the wrapping tool) with the Intune SDK for iOS v. 10.0.7 or above. On Android, this feature would require the latest Company Portal. To configure how an end user updates a LOB app, the app needs a managed app configuration policy sent to it with the key, `com.microsoft.intune.myappstore`. The value sent will define which store the end user will download the app from. If the app is deployed via the Company Portal, the value must be `CompanyPortal`. For any other store, you must enter a complete URL.
 
 #### Intune management extension PowerShell scripts  <!-- 3734186  -->
-You can configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](./../../apps/intune-management-extension.md) and [Win32 app management](./../apps/app-management.md).
+You can configure PowerShell scripts to run with the user’s admin privileges on the device. For more information, see [Use PowerShell scripts on Windows 10 devices in Intune](../apps/intune-management-extension.md) and [Win32 app management](../apps/app-management.md).
 
 #### Android Enterprise app management <!-- 4459905 -->
 To make it easier for IT admins to configure and use Android Enterprise management, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four Android Enterprise apps are the following apps:
@@ -1236,7 +1236,7 @@ There are new app installation error messages related to the following:
 In Intune, select **Client apps** > **Apps** > "App name" > **Device install status**. New error messages will be available in the **Status details** column.
 
 #### New App categories screen in the Company Portal app for Windows 10<!-- 3834780  -->
-A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](whats-new-app-ui.md). For more information about apps in the Company Portal, see [Install and share apps on your device](/intune-user-help/install-apps-cpapp-windows).  
+A new screen called **App categories** has been added to improve the app browsing and selection experience in Company Portal for Windows 10. Users will now see their apps sorted under categories such as **Featured**, **Education**, and **Productivity**. This change appears in Company Portal versions 10.3.3451.0 and later. To view the new screen, see [What's new in the app UI](whats-new-app-ui.md). For more information about apps in the Company Portal, see [Install and share apps on your device](https://docs.microsoft.com/intune-user-help/install-apps-cpapp-windows).  
 
 #### Power BI Compliance app <!-- 1455231 doc-work-item -->
 Access your Intune Data Warehouse in Power BI Online using the [Intune Compliance (Data Warehouse)](https://aka.ms/intune/datawarehouseapi/getpowerbiapp) app. With this Power BI app, you can now access and share pre-created reports without any setup and without leaving your web browser. For additional information, see [Change log - Power BI Compliance app](../developer/reports-changelog.md#power-bi-compliance-app).
@@ -1247,7 +1247,7 @@ Access your Intune Data Warehouse in Power BI Online using the [Intune Complianc
 #### PowerShell scripts can run in a 64-bit host on 64-bit devices <!-- 1862675   -->
 When you add a PowerShell script to a device configuration profile, the script always executes in 32-bit, even on 64-bit operating systems. With this update, an administrator can run the script in a 64-bit PowerShell host on 64-bit devices (**Device configuration** > **PowerShell scripts** > **Add** > **Configure** > **Run script in 64 bit PowerShell Host**).
 
-For more details on using PowerShell, see [PowerShell scripts in Intune](../../apps/intune-management-extension.md).
+For more details on using PowerShell, see [PowerShell scripts in Intune](../apps/intune-management-extension.md).
 
 Applies to:
 Windows 10 and later
@@ -1555,7 +1555,7 @@ To see these protection settings, go to [Endpoint protection settings for Window
 When you create a configuration profile for iOS devices, you can add **Shared Device Configuration** settings to show specific text on the lock screen. This update includes the following changes: 
 - The **Shared Device Configuration** settings in the Azure portal are renamed to "Lock Screen Message (supervised only)" (**Device configuration** > **Profiles** > **Create profile** > Choose **iOS** for platform > Choose **Device features** for profile type > **Lock Screen Message**).
 - When adding lock screen messages, you can insert a serial number, a device name, or another device-specific value as a variable in **Asset tag information** and **Lock screen footnote**. For example, you can enter `Device name: {{devicename}}` or `Serial number is {{serialnumber}}` using curly brackets. [iOS tokens](../apps/app-configuration-policies-use-ios.md#tokens-used-in-the-property-list) lists the available tokens that can be used.
-[Settings to display messages on the lock screen](shared-device-settings-ios.md) lists the settings.
+[Settings to display messages on the lock screen](../configuration/ios-device-features-settings.md#lock-screen-message-settings) lists the settings.
 
 #### New App Store, Doc Viewing, Gaming device restriction settings added to iOS devices <!-- 2827760-->
 In **Device Configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **App Store, Doc Viewing, Gaming**, the following settings are added: 
@@ -1585,16 +1585,15 @@ This update includes a new setting to end processes using Task Manager on Window
 To see these settings, go to [Windows 10 device restriction settings](../configuration/device-restrictions-windows-10.md).
 Applies to: Windows 10 and later
 
-
 ### Device enrollment
 
 #### More detailed enrollment restriction failure messaging <!-- 3111564 -->
-More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](../help-desk-operators.md#enrollment-failure-reference).
+More detailed error messages are available when enrollment restrictions are not met. To see these messages, go to **Intune** > **Troubleshoot** > and check the Enrollment Failures table. For more information, see the [enrollment failures list](help-desk-operators.md#enrollment-failure-reference).
 
 ### Monitor and troubleshoot
 
 #### Tenant Status dashboard  <!-- 1124854 -->
-The new [Tenant Status page](../tenant-status.md) provides a single location where you can view status and related details for your tenant.  The dashboard is divided into four areas:
+The new [Tenant Status page](tenant-status.md) provides a single location where you can view status and related details for your tenant.  The dashboard is divided into four areas:
 - **Tenant Details** - Displays information that includes your Tenant name and location, your MDM Authority, the total enrolled devices in your tenant, and your license counts. This section also lists the current service release for your tenant.
 - **Connector Status** - Displays information about available connectors you have configured and can also list those which you have not yet enabled.  
    Based on the current state of each connector,  they are flagged as Healthy, Warning, or Unhealthy. Select a connector to drill through and view details or configure additional information for it.
@@ -1609,7 +1608,7 @@ We are rolling out the new Help and Support experience to all tenants over the n
 The new experience lets you describe your problem in your own words and receive troubleshooting insight and web-based remediation content. These solutions are offered via a rule-based machine learning algorithm, driven by user inquires. 
 In addition to issue-specific guidance, you use the new case creation workflow to open a support case by email or phone. 
 This new experience replaces the previous Help and Support experience of a static set of pre-selected options that are based on the area of the console you are in when you open Help and Support. 
-For more information, see [How to get support for Microsoft Intune](../get-support.md).
+For more information, see [How to get support for Microsoft Intune](get-support.md).
 
 ### Role-based access control
 
