@@ -170,7 +170,7 @@ Example screenshot showing the Tiles view:
 
 Example screenshot showing the Details view:  
 
-![Screenshot of the Intune Company Portal app for Windows showing the installed apps in details view.](./media/whats-new-app-ui/details-installed-view-cpapp-1807.png) 
+![Screenshot of the Intune Company Portal app for Windows showing the installed apps in details view.](./media/whats-new-app-ui/details-installed-view-cpapp-1807.png)
 
 ## Week of April 23, 2018
 ### Updated navigation view in the Company Portal app for Windows 10 <!-- 1195010 -->

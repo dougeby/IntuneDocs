@@ -932,7 +932,7 @@
         },
         {
             "source_path": "intune-azure/configure-devices/airplay-settings-for-ios-devices.md",
-            "redirect_url": "/intune/configure-devices/airplay-settings-for-ios-devices",
+            "redirect_url": "/intune/configuration/ios-device-features-settings",
             "redirect_document_id": false
         },
         {

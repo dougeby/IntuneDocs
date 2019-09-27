@@ -1571,8 +1571,7 @@ You can delete the iOS Volume Purchasing Program (VPP) token using the console. 
 
 The **Users** entity collection contains all the Azure Active Directory (Azure AD) users with assigned licenses in your enterprise. For example, a user may be added to Intune and then removed during the course of the last month. While this user is not present at the time of the report, the user and state are present in the data. You could create a report that would show the duration of the user's historic presence in your data.
 
-In contrast, the new **Current User** entity collection only contains users who have not been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](../developer/reports-ref-current-user.md).
-
+In contrast, the new **Current User** entity collection only contains users who have not been removed. The **Current User** entity collection only contains currently active users. For information about the **current user** entity collection, see [Reference for current user entity](../developer/reports-ref-data-model.md).
 
 ### Updated Graph APIs <!-- 1736360 -->
 
@@ -1689,7 +1688,7 @@ You can now trigger a supervised iOS 10.3+ device to restart using a device acti
 
 ### Single Sign-on support for iOS <!-- 1333645 -->  
 
-You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. For details, see [Configure Intune for iOS device single sign-on](../configuration/ios-device-features-settings.md#single-sign-on-settings).
+You can use Single Sign-on for iOS users. The iOS apps that are coded to look for user credentials in the Single Sign-on payload are functional with this payload configuration update. You can also use UPN and Intune Device ID to configure the Principal Name and Realm. For details, see [Configure Intune for iOS device single sign-on](../configuration/ios-device-features-settings.md#single-sign-on).
 
 ### Add "Find my iPhone" for personal devices <!--1427287-->
 You can now view whether iOS devices have Activation Lock turned on. This feature previously could be found in the Intune in the classic portal.
@@ -2406,7 +2405,7 @@ You can now control which websites users of iOS devices can visit using one of t
 
 - Allow only specified websites to be accessed by the Safari browser. Bookmarks are created in Safari for each site you specify.
 
-For more information, see [Web content filter settings for iOS devices](../configuration/ios-device-features-settings#web-content-filter-settings.md).
+For more information, see [Web content filter settings for iOS devices](../configuration/ios-device-features-settings#web-content-filter.md).
 
 #### Preconfigure device permissions for Android for Work apps <!-- 621614 -->
 For apps deployed to Android for Work device work profiles, you can now configure the permissions state for individual apps.  By default, Android apps that require device permissions such as access to location or the device camera will prompt users to accept or deny permissions.  For example, if an app uses the device's microphone, then the end user is prompted to grant the app permission to use the microphone. This feature allows you to define permissions on behalf of the end user.  You can configure permissions to a) automatically deny without notifying the user, b) automatically approve without notifying the user, or c) prompt the user to accept or deny. For more information, see [Android for Work device restriction settings in Microsoft Intune](../configuration/device-restrictions-android-for-work.md).
@@ -2439,7 +2438,7 @@ When an Android device is in kiosk mode, you could previously only configure one
 
 ### Support for managing the Apple Classroom app
 You can now manage the iOS Classroom app on iPad devices. Set up the Classroom app on the teachers iPad with the correct class and student data, then configure student iPads registered to a class, so that you can control them using the app.
-For details, see [Configure iOS education settings](../configuration/education-settings-configure-ios.md).
+For details, see [Configure iOS education settings](education-settings-configure-ios.md).
 
 ### Support for managed configuration options for Android apps <!-- 621621 -->
 Android apps in the Play store that support managed configuration options can now be configured by Intune.  This feature lets IT view the list of configuration values supported by an app, and provides a guided, first-class UI to allow them to configure those values.
@@ -2467,16 +2466,16 @@ You can now assign line of business (LOB) apps for [iOS](../apps/lob-apps-ios.md
 
 
 ### New device policies for iOS <!-- 723774, 723815, 723826, 723830 -->
-- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](../configuration/ios-device-features-settings#home-screen-layout-settings.md). This policy changes the layout of the Home screen, but does not deploy any apps.
+- **Apps on Home screen** - Controls which apps users see on the [Home screen of their iOS device](../configuration/ios-device-features-settings#home-screen-layout.md). This policy changes the layout of the Home screen, but does not deploy any apps.
 
-- **Connections to AirPrint devices** - Controls which [AirPrint devices](../configuration/ios-device-features-settings#airprint-settings.md) (network printers) that end users of iOS device can connect to.
+- **Connections to AirPrint devices** - Controls which [AirPrint devices](../configuration/ios-device-features-settings#airprint.md) (network printers) that end users of iOS device can connect to.
 
 - **Connections to AirPlay devices** - Controls which [AirPlay devices](../configuration/ios-device-features-settings.md) (like Apple TV) that end users of iOS device can connect to.
 
 - **Custom lock screen message** - Configures a custom message that users will see on the lock screen of their iOS device, that replaces the default lock screen message. For more information, see [Activate lost mode on iOS devices](../remote-actions/device-lost-mode.md)
 
 ### Restrict push notifications for iOS apps <!-- 723767 -->
-In an Intune device restriction profile, you can now configure the following [notification settings](../configuration/ios-device-features-settings#app-notifications-settings.md) for iOS devices:
+In an Intune device restriction profile, you can now configure the following [notification settings](../configuration/ios-device-features-settings#app-notifications.md) for iOS devices:
 
 - Fully turn on or off notification for a specified app.
 - Turn on or off, the notification in the notification center for a specified app.

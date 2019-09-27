@@ -292,7 +292,7 @@ The following articles have been updated:
 
 The following articles are new additions to the docs library:
 
-* [Intune App SDK Cordova Plugin](app-sdk-cordova.md)
+* [Intune App SDK Cordova Plugin](../developer/app-sdk.md)
 * [Intune App SDK Xamarin Component](../developer/app-sdk-xamarin.md)
 
 #### Progress bar when launching the Company Portal on iOS <!--665978-->
@@ -303,7 +303,7 @@ The Company Portal for iOS is introducing a progress bar on the launch screen to
 ### Public preview of Intune in the Azure portal<!--736542-->
 In early calendar year 2017, we will be migrating our full admin experience onto Azure, allowing for powerful and integrated management of core EMS workflows on a modern service platform that’s extensible using Graph APIs. In advance of the general availability of this portal for all Intune tenants, we're excited to announce that we will begin rolling out a preview of this new admin experience later this month to select tenants.
 
-The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, find out more about what we have in store for Microsoft Intune in the Azure portal in our [new documentation](/intune/what-is-intune).
+The admin experience in the Azure portal will use the already announced new grouping and targeting functionality; when your existing tenant is migrated to the new grouping experience you will also be migrated to preview the new admin experience on your tenant. In the meantime, find out more about what we have in store for Microsoft Intune in the Azure portal in our [new documentation](what-is-intune.md).
 
 __Telecom expense management integration in public preview of Azure portal__ <!--747605-->
 We are now beginning to preview integration with third-party telecom expense management (TEM) services within the Azure portal. You can use Intune to enforce limits on domestic and roaming data usage. We are beginning these integrations with [Saaswedo](http://www.saaswedo.com/). To enable this feature in your trial tenant, please [contact Microsoft support](get-support.md).
@@ -333,9 +333,9 @@ We are publishing the Company Portal app for Android for download in China. Du
 * [Wandoujia](https://go.microsoft.com/fwlink/?linkid=836950)
 * [Xiaomi](http://en.miui.com/thread-469541-1-1.html)
 
-The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete. 
+The Company Portal app for Android uses Google Play Services to communicate with the Microsoft Intune service. Since Google Play Services are not yet available in China, performing any of the following tasks can take up to 8 hours to complete.
 
-|Intune Admin Console| Intune Company Portal app for Android |Intune Company Portal Website|   
+|Intune Admin Console| Intune Company Portal app for Android |Intune Company Portal Website|
 |---|---|---|
 |Full wipe| Remove a remote device| Remove device (local and remote)|
 |Selective wipe| Reset device| Reset device|
