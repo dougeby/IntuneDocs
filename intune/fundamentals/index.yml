@@ -44,7 +44,7 @@ landingContent:
         - text: Common ways to use Intune
           url: common-scenarios.md
         - text: Technology decisions for BYOD with EMS
-          url: byod-technology-decisions
+          url: byod-technology-decisions.md
  
   # Card (optional)
   - title: Intune adoption
@@ -52,7 +52,7 @@ landingContent:
     - linkListType: how-to-guide
       links:
       - text: Plan communications
-        url: migration-guide-communications-plan.md
+        url: migration-guide-communication-plan.md
       - text: Planning guide
         url: planning-guide.md
       - text: Migration guide
