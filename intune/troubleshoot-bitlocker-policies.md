@@ -115,7 +115,7 @@ These values are configured by the BitLocker CSP. Verify that the values of the 
 
 ### Check the MDM diagnostics report  
 
-On a device that has enabled BitLocker, you can generate and view an MDM diagnostic report from the targeted device to confirm that BitLocker policy is present. If you can see the policy settings in the report, it's another indication that the policy successfully deployed. The *Microsoft Helps* video at the following link explains how to capture an MDM diagnostic report from a Windows device.
+On a device that has enabled BitLocker, you can generate and view an MDM diagnostic report from the targeted device to confirm that BitLocker policy is present. If you can see the policy settings in the report, it's another indication that the policy successfully deployed. The *Microsoft Helps* video at the following link explains how to capture an MDM diagnostic report from a Windows device. 
 
 > [!VIDEO https://www.youtube.com/embed/WKxlcjV4TNE]
 
