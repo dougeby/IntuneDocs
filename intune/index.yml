@@ -45,6 +45,9 @@ conceptualContent:
         - url: migration-guide-communication-plan.md
           itemType: concept
           text: Communication plan for your users
+      footerLink:
+        text: See more
+        url: ./fundamentals/index.yml          
     - title: Set up Intune
       links:
         - url: setup-steps.md
@@ -59,6 +62,9 @@ conceptualContent:
         - url: licenses.md
           itemType: concept
           text: Intune licensing
+      footerLink:
+        text: See more
+        url: ./fundamentals/index.yml        
     - title: Enroll devices
       links:
         - url: device-enrollment.md
