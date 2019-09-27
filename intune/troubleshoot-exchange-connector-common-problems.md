@@ -39,18 +39,18 @@ Before proceeding, review Troubleshoot the Intune on-premises Exchange connector
 
 - If a user’s primary SMTP address is different from their UPN in Azure Active Directory (Azure AD), the Exchange Connector will not discover any devices for that user. Fix the primary SMTP address to resolve the issue.  
 
-- If you have both Exchange 2010 and Exchange 2013 mailbox servers in your environment, we recommend pointing the Exchange connector to an Exchange 2013 CAS. Otherwise, if the Exchange connector is set up to communicate with an Exchange 2010 CAS, the Exchange connector will not discover any Exchange 2013 users’ devices.  
+- If you have both Exchange 2010 and Exchange 2013 mailbox servers in your environment, we recommend pointing the Exchange connector to an Exchange 2013 Client Access Server (CAS). Otherwise, if the Exchange connector is set up to communicate with an Exchange 2010 CAS, the Exchange connector doesn't discover any Exchange 2013 users’ devices.  
 
 - For Exchange Online Dedicated environments, you must point the Exchange connector to an Exchange 2013 CAS (not an Exchange 2010 CAS) in the dedicated environment during the initial setup, as the connector will only communicate with this CAS when executing PowerShell cmdlets.  
 
 
 ## Problems with the notification email message  
 
-For non-Knox Android devices to be supported for conditional access for on-premises mailboxes, Intune enrollment must start from the “Get Started Now” email message that’s sent by the Intune Exchange Connector. Starting enrollment from the message ensures that the device receives a unique ActiveSyncID across all platforms (Exchange, Azure AD, Intune).  
+To support non-Knox Android devices for conditional access for on-premises mailboxes, Intune enrollment must start from the “Get Started Now” email message that’s sent by the Intune Exchange Connector. Starting enrollment from the message ensures that the device receives a unique ActiveSyncID across all platforms (Exchange, Azure AD, Intune).  
 
 There are several reasons why a user might not receive the notification email message:  
 
-- The notification account is not setup correctly.
+- The notification account isn't set up correctly.
 - Autodiscover fails for the notification account.
 - The EWS request to send the email message fails.
 
@@ -100,7 +100,7 @@ If Autodiscover fails, try the following steps:
 
 ## Next steps  
 
-The following article can help resolve pecific errors:
+The following article can help resolve specific errors:
 - [Resolve common Errors for the Intune Exchange Connector](troubleshoot-exchange-connector-common-errors.md)
 
 Seek assistance from support or the Intune community.
