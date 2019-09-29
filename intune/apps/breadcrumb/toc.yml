@@ -1,10 +1,10 @@
 - name: Docs
   tocHref: /
-  topicHref: /
+  topicHref: /index
   items:
   - name: Enterprise Mobility + Security
     tocHref: /
-    topicHref: /enterprise-mobility-security
+    topicHref: /enterprise-mobility-security/index
     items:
     - name: Intune
       tocHref: /intune/
@@ -17,5 +17,5 @@
         tocHref: /intune/protect
         tocHref: /intune/apps/index
       - name: Apps
-        tocHref: /intune/apps
+        tocHref: /intune/apps/*.*
         tocHref: /intune/apps/index      
