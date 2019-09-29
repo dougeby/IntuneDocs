@@ -31,7 +31,7 @@ landingContent:
         url: whats-new.md
       - text: Features in development
         url: in-development.md
-      - linkListType: tutorials
+    - linkListType: tutorial
       links: 
       - text: Walkthrough Intune in the Azure portal
         url: tutorial-walkthrough-intune-portal.md 
