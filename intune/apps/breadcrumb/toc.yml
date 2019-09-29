@@ -12,7 +12,7 @@
       items:
       - name: Apps
         tocHref: /intune/
-        topicHref: /intune/fundamentals/help-desk-operators
+        topicHref: /intune/fundamentals/help-desk-operators.md
       - name: Apps
         tocHref: /intune/
         tocHref: /intune/protect/tutorial-protect-email-on-unmanaged-devices.md
