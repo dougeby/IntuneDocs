@@ -16,3 +16,7 @@
       - name: Apps
         tocHref: /intune/protect
         tocHref: /intune/apps/index
+      - name: Apps
+        tocHref: /intune/apps
+        tocHref: /intune/apps/index      
+        
