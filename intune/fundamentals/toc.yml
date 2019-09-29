@@ -43,7 +43,7 @@
   - name: Device lifecycle
     href: device-lifecycle.md
   - name: App lifecycle
-    href: app-lifecycle.md
+    href: ../apps/app-lifecycle.md
   - name: Common scenarios
     href: common-scenarios.md
   - name: Technology decisions for BYOD with EMS
