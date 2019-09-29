@@ -122,13 +122,13 @@
       - name: How to get Windows apps
         href: end-user-apps-windows.md
       - name: Data Intune sends to Apple
-        href: data-intune-sends-to-apple.md
+        href: ../protect/data-intune-sends-to-apple.md
       - name: Data Intune sends to Google
-        href: data-intune-sends-to-google.md
+        href: ../protect/data-intune-sends-to-google.md
       - name: Data Apple sends to Intune
-        href: data-apple-sends-to-intune.md
+        href: ../protect/data-apple-sends-to-intune.md
       - name: Data Google sends to Intune
-        href: data-google-sends-to-intune.md      
+        href: ../protect/data-google-sends-to-intune.md      
   - name: Set up Intune
     items:
     - name: Steps to set up Intune
@@ -168,19 +168,19 @@
       - name: Use scope tags
         href: scope-tags.md
   - name: Enroll devices
-    href: ./enrollment/index.yml
+    href: ../enrollment/index.yml
   - name: Remotely manage devices
-    href: ./remote-actions/index.yml  
+    href: ../remote-actions/index.yml  
   - name: Create compliance rules
-    href: ./protect/index.yml  
+    href: ../protect/index.yml  
   - name: Control device features and settings
-    href: ./configuration/index.yml  
+    href: ../configuration/index.yml  
   - name: Protect devices and data
-    href: ./protect/index.yml   
+    href: ../protect/index.yml   
   - name: Manage and protect apps
-    href: ./apps/index.yml  
+    href: ../apps/index.yml  
   - name: Developer guidance
-    href: ./developer/index.yml     
+    href: ../developer/index.yml     
 
   - name: Get help and support
     items:
