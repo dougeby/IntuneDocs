@@ -1,15 +1,21 @@
 - name: Docs
   tocHref: /
-  topicHref: /
+  topicHref: /index
   items:
   - name: Enterprise Mobility + Security
     tocHref: /
-    topicHref: /enterprise-mobility-security
+    topicHref: /enterprise-mobility-security/index
     items:
-    - name: Configuration Manager
-      tocHref: /sccm/
-      topicHref: /sccm/
+    - name: Intune
+      tocHref: /intune/
+      topicHref: /intune/index
       items:
       - name: Apps
-        tocHref: /intune/
-        topicHref: /intune/apps/help-desk-operators
+        tocHref: /intune/fundamentals
+        topicHref: /intune/apps/index
+      - name: Apps
+        tocHref: /intune/protect
+        tocHref: /intune/apps/index
+      - name: Apps
+        tocHref: /intune/apps/*.*
+        tocHref: /intune/apps/index      

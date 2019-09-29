@@ -59,7 +59,7 @@ If the **Evaluate** button is grayed out, make sure the profile is assigned to o
 
 When you create or update a profile, you can also add scope tags and applicability rules to the profile.
 
-**Scope tags** are a great way to assign and filter policies to specific groups, such as Human Resources or All US-NC employees. [Use RBAC and scope tags for distributed IT](../scope-tags.md) has more information.
+**Scope tags** are a great way to assign and filter policies to specific groups, such as Human Resources or All US-NC employees. [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md) has more information.
 
 On Windows 10 devices, you can add **applicability rules** so the profile only applies to a specific OS version or a specific Windows edition. [Applicability rules](device-profile-create.md#applicability-rules) has more information.
 

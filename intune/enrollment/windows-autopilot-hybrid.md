@@ -195,7 +195,7 @@ Autopilot deployment profiles are used to configure the Autopilot devices.
 6. In the **Join to Azure AD as** box, select **Hybrid Azure AD joined**.
 7. Configure the remaining options on the **Out-of-box experience (OOBE)** page as needed.
 8. Select **Next**.
-9. On the **Scope tags** page, select [scope tags](../scope-tags.md) for this this profile.
+9. On the **Scope tags** page, select [scope tags](../fundamentals/scope-tags.md) for this this profile.
 10. Select **Next**.
 11. On the **Assignments** page, select **Select groups to include** > search for and select the device group > **Select**.
 12. Select **Next** > **Create**.

@@ -191,6 +191,6 @@ See [set up enrollment for Windows devices](../enrollment/windows-enroll.md) for
 
 ## Next steps
 
-- [Add actions for noncompliant devices](actions-for-noncompliance.md) and [use scope tags to filter policies](../scope-tags.md).
+- [Add actions for noncompliant devices](actions-for-noncompliance.md) and [use scope tags to filter policies](../fundamentals/scope-tags.md).
 - [Monitor your compliance policies](compliance-policy-monitor.md).
 - See the [compliance policy settings for Windows 8.1](compliance-policy-create-windows-8-1.md) devices.

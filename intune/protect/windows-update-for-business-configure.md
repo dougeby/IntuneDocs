@@ -37,7 +37,7 @@ With Windows 10, new Feature Updates and Quality Updates include the contents of
 
 By using Windows Update for Business, you simplify the update management experience. You don’t need to approve individual updates for groups of devices. You can manage risk in your environments by configuring an update rollout strategy. Intune provides the ability to [configure update settings](../windows-update-settings.md) on devices and gives you the ability to defer update installation. Intune doesn’t store the updates, but only the update policy assignment. Devices access Windows Update directly for the updates. This collection of settings that configures when Windows 10 updates get installed is called a *Windows 10 update ring*.
 
-Windows 10 update rings support [scope tags](../scope-tags.md). You can use scope tags with update rings to help you filter and manage sets of configurations that you use.
+Windows 10 update rings support [scope tags](../fundamentals/scope-tags.md). You can use scope tags with update rings to help you filter and manage sets of configurations that you use.
 
 ## Prerequisites  
 
@@ -52,7 +52,7 @@ The following prerequisites must be met to use Windows updates for Windows 10 de
     Windows Holographic for Business supports a subset of settings for Windows updates, including:
     - **Automatic update behavior**
     - **Microsoft product updates**
-    - **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options. For more information, see [Manage Windows Holographic](../windows-holographic-for-business.md).  
+    - **Servicing channel**: Supports **Semi-annual channel** and **Semi-annual channel (Targeted)** options. For more information, see [Manage Windows Holographic](../fundamentals/windows-holographic-for-business.md).  
 
     > [!NOTE]  
     > **Unsupported versions and editions**:

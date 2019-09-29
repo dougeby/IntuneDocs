@@ -48,7 +48,7 @@ MAM allows you to manage and protects your organization's data within an applica
 
 Intune MAM supports two configurations:
 - **Intune MDM + MAM**: IT administrators can only manage apps using MAM and app protection policies on devices that are enrolled with Intune mobile device management (MDM). To manage apps using MDM + MAM, customers should use the Intune console in the Azure portal at https://portal.azure.com.
-- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at https://portal.azure.com. Also, apps can be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers or not enrolled with an MDM at all. For more information about BYOD and Microsoft's EMS, see [Technology decisions for enabling BYOD with Microsoft Enterprise Mobility + Security (EMS)](../byod-technology-decisions.md).
+- **MAM without device enrollment**: MAM without device enrollment, or MAM-WE, allows IT administrators to manage apps using MAM and app protection policies on devices not enrolled with Intune MDM. This means apps can be managed by Intune on devices enrolled with third-party EMM providers. To manage apps using MAM-WE, customers should use the Intune console in the Azure portal at https://portal.azure.com. Also, apps can be managed by Intune on devices enrolled with third-party Enterprise Mobility Management (EMM) providers or not enrolled with an MDM at all. For more information about BYOD and Microsoft's EMS, see [Technology decisions for enabling BYOD with Microsoft Enterprise Mobility + Security (EMS)](../fundamentals/byod-technology-decisions.md).
 
 ## App management capabilities by platform
 
@@ -134,7 +134,7 @@ For more information about this section, see [Monitor apps](apps-monitor.md).
 
 ### Help and support
 - **Help and support**: Troubleshoot, request support, or view Intune status. For more information, see:
-  - [Troubleshoot problems](../help-desk-operators.md).
+  - [Troubleshoot problems](../fundamentals/help-desk-operators.md).
 
 ## Next steps
 

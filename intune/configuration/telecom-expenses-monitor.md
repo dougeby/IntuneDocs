@@ -138,7 +138,7 @@ These categories are shown to users during enrollment ([enroll Android devices](
 
 #### Add the Datalert app to Intune
 
-The following steps add the Datalert app. As an example, iOS is used. [Add apps](../apps/apps-add.md) and [use scope tags](../scope-tags.md) have more specific information on these steps.
+The following steps add the Datalert app. As an example, iOS is used. [Add apps](../apps/apps-add.md) and [use scope tags](../fundamentals/scope-tags.md) have more specific information on these steps.
 
 1. In **[Intune](https://go.microsoft.com/fwlink/?linkid=2090973)**, select **Client apps** > **Apps** > **Add**.
 

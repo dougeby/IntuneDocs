@@ -98,7 +98,7 @@ This article:
 
 After you add the settings, you can also add a scope tag to the profile. Scope tags assign and filter policies to specific groups, such as HR or All US-NC employees.
 
-For more information about scope tags, and what you can do, see [Use RBAC and scope tags for distributed IT](../scope-tags.md).
+For more information about scope tags, and what you can do, see [Use RBAC and scope tags for distributed IT](../fundamentals/scope-tags.md).
 
 ### Add a scope tag
 

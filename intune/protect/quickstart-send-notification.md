@@ -36,14 +36,14 @@ By default, when Intune detects a device that isn't compliant, Intune immediatel
 
 One of the actions you can take when devices don't meet compliance is to send email to those end users. You can also customize an email notification before sending it to end users. Specifically, you can customize the recipients, subject, and message body, including company logo, and contact information. Intune will also include details about the noncompliant device in the email notification.
 
-If you don’t have an Intune subscription, [sign up for a free trial account](../free-trial-sign-up.md).
+If you don’t have an Intune subscription, [sign up for a free trial account](../fundamentals/free-trial-sign-up.md).
 
 ## Prerequisites
 - When using device compliance policies to block devices from corporate resources, AAD Conditional Access must be set up. If you have completed the [Create a device compliance policy](quickstart-set-password-length-android.md) quickstart, you are using Azure Active Directory. For more information about AAD, see [Conditional Access in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-conditional-access-azure-portal) and [common ways to use Conditional Access with Intune](../protect/conditional-access-intune-common-ways-use.md).
 
 ## Sign in to Intune
 
-Sign in to the [Intune](https://aka.ms/intuneportal) portal as a [Global administrator](../users-add.md#types-of-administrators) or an Intune [Service administrator](../users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
+Sign in to the [Intune](https://aka.ms/intuneportal) portal as a [Global administrator](../fundamentals/users-add.md#types-of-administrators) or an Intune [Service administrator](../fundamentals/users-add.md#types-of-administrators). If you have created an Intune Trial subscription, the account you created the subscription with is the Global administrator.
 
 ## Create a notification message template
 

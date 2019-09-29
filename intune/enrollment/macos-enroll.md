@@ -41,9 +41,9 @@ As an Intune admin, you can set up enrollment for company-owned macOS devices an
 Complete the following prerequisites before setting up macOS device enrollment:
 
 - [Make sure your device is eligible for Apple device enrollment](https://support.apple.com/en-us/HT204142#eligibility).
-- [Configure domains](../custom-domain-name-configure.md)
-- [Set the MDM Authority](../mdm-authority-set.md)
-- [Create groups](../groups-add.md)
+- [Configure domains](../fundamentals/custom-domain-name-configure.md)
+- [Set the MDM Authority](../fundamentals/mdm-authority-set.md)
+- [Create groups](../fundamentals/groups-add.md)
 - [Configure the Company Portal](../apps/company-portal-app.md)
 - Assign user licenses in the [Microsoft 365 admin center](http://go.microsoft.com/fwlink/p/?LinkId=698854)
 - [Get an Apple MDM push certificate](../enrollment/apple-mdm-push-certificate-get.md)
@@ -57,7 +57,7 @@ You can also send them a link to online enrollment steps: [Enroll your macOS dev
 
 For information about other end-user tasks, see these articles:
 
-- [Resources about the end-user experience with Microsoft Intune](../end-user-educate.md)
+- [Resources about the end-user experience with Microsoft Intune](../fundamentals/end-user-educate.md)
 - [Using your macOS device with Intune](/intune-user-help/using-your-macos-device-with-intune)
 
 ## Company-owned macOS devices

@@ -16,7 +16,7 @@
 - name: Tutorials
   items:
   - name: Protect email on unmanaged devices
-    href: tutorial-protect-email-on-unmanaged-devices.md
+    href: ../protect/tutorial-protect-email-on-unmanaged-devices.md?toc=/intune/apps/toc.json&bc=/intune/apps/breadcrumb/toc.json
   - name: Configure Slack to use Intune 
     href: tutorial-configure-slack-enterprise-grid.md
 - name: Concepts
@@ -34,7 +34,7 @@
     - name: Add apps 
       items:
       - name: Add apps overview
-        href: add-apps.md
+        href: apps-add.md
       - name: Intune protected apps
         href: apps-supported-intune-apps.md      
       - name: Store apps
@@ -75,7 +75,9 @@
         - name: Sideload Windows LOB apps
           href: app-sideload-windows.md          
         - name: macOS LOB apps
-          href: lob-apps-macos.md          
+          href: lob-apps-macos.md     
+      - name: Android Enterprise system apps
+        href: apps-ae-system.md         
       - name: Win32 app management
         href: apps-win32-app-management.md
       - name: PowerShell scripts
@@ -125,9 +127,11 @@
       - name: Configure the Company Portal
         href: company-portal-app.md
       - name: Configure the Managed Browser
-        href: app-configuration-managed-browser.md
+        href: app-configuration-managed-browser.md  
       - name: Configure Microsoft Edge
-        href: manage-microsoft-edge.md        
+        href: manage-microsoft-edge.md     
+      - name: Configure Microsoft Launcher
+        href: configure-microsoft-launcher.md     
       - name: Configure Outlook
         href: app-configuration-policies-outlook.md
     - name: Protect apps
@@ -169,7 +173,7 @@
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
-        href: ../help-desk-operators.md
+        href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/breadcrumb/toc.json
       - name: Troubleshoot app installation problems
         href: troubleshoot-app-install.md         
       - name: Troubleshoot mobile application management
@@ -179,23 +183,23 @@
 - name: Reference
   items:
     - name: Protect apps with Intune App SDK
-      href: app-sdk.md
+      href: ../developer/app-sdk.md
       items:
       - name: Get started with Intune App SDK
-        href: app-sdk-get-started.md
+        href: ../developer/app-sdk-get-started.md
       - name: Prepare LOB apps for app protection
-        href: apps-prepare-mobile-application-management.md
+        href: ../developer/apps-prepare-mobile-application-management.md
       - name: App Wrapping Tool for iOS
-        href: app-wrapper-prepare-ios.md
+        href: ../developer/app-wrapper-prepare-ios.md
       - name: Intune App SDK for iOS
-        href: app-sdk-ios.md
+        href: ../developer/app-sdk-ios.md
       - name: App Wrapping Tool for Android
-        href: app-wrapper-prepare-android.md
+        href: ../developer/app-wrapper-prepare-android.md
         displayName: dex
       - name: Intune App SDK for Android
-        href: app-sdk-android.md
+        href: ../developer/app-sdk-android.md
         items:
         - name: Intune App SDK for Android testing guide
-          href: app-sdk-android-testing-guide.md        
+          href: ../developer/app-sdk-android-testing-guide.md        
       - name: Intune App SDK Xamarin Bindings
-        href: app-sdk-xamarin.md
+        href: ../developer/app-sdk-xamarin.md

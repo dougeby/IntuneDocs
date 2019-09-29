@@ -50,7 +50,7 @@ Devices must meet these requirements to be managed as an Android Enterprise dedi
 
 To set up Android Enterprise dedicated device management, follow these steps:
 
-1. To prepare to manage mobile devices, you must [set the mobile device management (MDM) authority to **Microsoft Intune**](../mdm-authority-set.md) for instructions. You set this item only once, when you're first setting up Intune for mobile device management.
+1. To prepare to manage mobile devices, you must [set the mobile device management (MDM) authority to **Microsoft Intune**](../fundamentals/mdm-authority-set.md) for instructions. You set this item only once, when you're first setting up Intune for mobile device management.
 2. [Connect your Intune tenant account to your Managed Google Play account](connect-intune-android-enterprise.md).
 3. [Create an enrollment profile.](#create-an-enrollment-profile)
 4. [Create a device group](#create-a-device-group).

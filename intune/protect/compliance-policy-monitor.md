@@ -157,7 +157,7 @@ When you select a specific setting, you can see the **compliance status**, **use
 > [!NOTE]
 > A policy can be assigned to a device, and a user on that same device. In some scenarios, a device may sync before the user signs in, such as when the device reboots. Compliance may evaluate this user, and show the device as non compliant. This behavior may also show the System Account as a non-compliant user.
 >
-> This is a known issue with multi-user Windows 10 devices. Any changes or updates on this behavior are announced in [in development](../in-development.md) and/or [what's new](../whats-new.md).
+> This is a known issue with multi-user Windows 10 devices. Any changes or updates on this behavior are announced in [in development](../fundamentals/in-development.md) and/or [what's new](../fundamentals/whats-new.md).
 
 ## View status of device policies
 

@@ -30,8 +30,6 @@ ms.collection: M365-identity-device-management
 
 # Add Managed Google Play apps to Android Enterprise devices with Intune
 
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
-
 Managed Google Play is Google's enterprise app store and sole source of applications for Android Enterprise. You can use Intune to orchestrate app deployment through Managed Google Play for any Android Enterprise scenario (including work profile, dedicated, and fully managed enrollments). How you add Managed Google Play apps to Intune differs from how Android apps are added for non-Android Enterprise. Store apps, line-of-business (LOB) apps, and web apps are approved in or added to Managed Google Play, and then synchronized into Intune so that they appear in the Client Apps list. Once they appear in the Client Apps list list, you can manage assignment of any Managed Google Play app as you would any other app.
 
 To make it easier for you to configure and use Android Enterprise management, upon connecting your Intune tenant to Managed Google Play, Intune will automatically add four common Android Enterprise related apps to the Intune admin console. The four apps are the following:
@@ -223,7 +221,7 @@ When necessary, you can delete managed Google Play apps from Microsoft Intune. T
 
 ## Android Enterprise system apps
 
-You can enable an Android Enterprise system app for [Android Enterprise dedicated devices](../enrollment/android-kiosk-enroll.md) or [fully managed devices](../enrollment/android-fully-managed-enroll.md). For more information about adding an Android Enterprise system app, see [Add Android Enterprise system apps to Microsoft Intune](../apps-ae-system.md).
+You can enable an Android Enterprise system app for [Android Enterprise dedicated devices](../enrollment/android-kiosk-enroll.md) or [fully managed devices](../enrollment/android-fully-managed-enroll.md). For more information about adding an Android Enterprise system app, see [Add Android Enterprise system apps to Microsoft Intune](apps-ae-system.md).
 
 ## Next steps
 

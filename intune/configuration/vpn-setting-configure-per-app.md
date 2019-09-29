@@ -63,7 +63,7 @@ To prove its identity, the VPN server presents the certificate that must be acce
 
 ## Create a group for your VPN users
 
-Create or choose an existing group in Azure Active Directory (Azure AD) for the users or devices that use per-app VPN. To create a new group, see [Add groups to organize users and devices](../groups-add.md).
+Create or choose an existing group in Azure Active Directory (Azure AD) for the users or devices that use per-app VPN. To create a new group, see [Add groups to organize users and devices](../fundamentals/groups-add.md).
 
 ## Create a trusted certificate profile
 

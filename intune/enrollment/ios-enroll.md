@@ -40,7 +40,7 @@ As an Intune admin, you can enable enrollment for iOS devices. You can let users
 Before you can enable iOS devices, complete the following steps:
 
 - [Make sure your device is eligible for Apple device enrollment](https://support.apple.com/en-us/HT204142#eligibility).
-- [Set up Intune](../setup-steps.md) - These steps set up your Intune infrastructure. In particular, device enrollment requires that you [set your MDM authority](../mdm-authority-set.md).
+- [Set up Intune](../fundamentals/setup-steps.md) - These steps set up your Intune infrastructure. In particular, device enrollment requires that you [set your MDM authority](../fundamentals/mdm-authority-set.md).
 - [Get an Apple MDM Push certificate](apple-mdm-push-certificate-get.md) - Apple requires a certificate to enable management of iOS and macOS devices.
 
 ## User-owned iOS devices (BYOD)

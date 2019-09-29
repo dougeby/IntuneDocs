@@ -48,7 +48,7 @@ landingContent:
       links: 
       - text: Store apps
         url: store-apps-android.md
-      - text: Line-of-business apps.md
+      - text: Line-of-business apps
         url: lob-apps-android.md
       - text: Win32 app management for Intune standalone
         url: apps-win32-app-management.md

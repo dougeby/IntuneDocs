@@ -125,4 +125,4 @@ The app you have created appears in the apps list where you can assign it to the
 
 - Learn more about the ways in which you can monitor the properties and assignment of your app. For more information, see [How to monitor app information and assignments](apps-monitor.md).
 
-- Learn more about the context of your app in Intune. For more information, see [Overview of device and app lifecycles](../device-lifecycle.md)
+- Learn more about the context of your app in Intune. For more information, see [Overview of device and app lifecycles](../fundamentals/device-lifecycle.md)
