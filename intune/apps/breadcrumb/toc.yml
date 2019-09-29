@@ -8,7 +8,7 @@
     items:
     - name: Intune
       tocHref: /intune/
-      topicHref: /intune/index.yml
+      topicHref: /intune/index
       items:
       - name: Apps
         tocHref: /intune/fundamentals
@@ -19,4 +19,3 @@
       - name: Apps
         tocHref: /intune/apps
         tocHref: /intune/apps/index      
-        
