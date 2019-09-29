@@ -8,18 +8,11 @@
     items:
     - name: Intune
       tocHref: /intune/
-      topicHref: /intune/
+      topicHref: /intune/index.yml
       items:
       - name: Apps
-        tocHref: /intune/
-        topicHref: /intune/fundamentals/help-desk-operators.md
+        tocHref: /intune/fundamentals
+        topicHref: /intune/apps/index
       - name: Apps
-        tocHref: /intune/
-        tocHref: /intune/protect/tutorial-protect-email-on-unmanaged-devices.md
-  - name: Enterprise Mobility + Security
-    tocHref: /
-    topicHref: /enterprise-mobility-security
-    items:
-    - name: Intune
-      tocHref: /intune/
-      topicHref: /intune/index.yml
+        tocHref: /intune/protect
+        tocHref: /intune/apps/index
