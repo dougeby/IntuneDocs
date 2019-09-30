@@ -70,6 +70,9 @@ Applies to:
 
 iOS 13.1 and later
 
+#### Intune support for iPadOS and iOS 13.1 devices <!--5439574-->
+Intune now supports managing both iPadOS and iOS 13.1 devices. For more information see [this blog post](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-1-and-iPadOS/ba-p/873094) and [this blog post](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Support-for-iOS-13-and-iPadOS/ba-p/861998).
+
 <!-- ########################## -->
 
 ## Week of September 16, 2019
