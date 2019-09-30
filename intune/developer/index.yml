@@ -37,9 +37,9 @@ landingContent:
           - text: Intune APP SDK for iOS
             url: app-wrapper-prepare.md
           - text: Prepare iOS apps for app protection policies
-            url: app-wrapper-prepare.md      
+            url: app-wrapper-prepare-ios.md      
           - text: Intune App SDK for Android
-            url: app-wrapper-prepare.md      
+            url: app-wrapper-prepare-android.md      
   # Card (optional)
   - title: Use the Intune Data Warehouse
     linkLists:
@@ -52,7 +52,7 @@ landingContent:
           - text: Intune Data Warehouse API overview
             url: reports-nav-intune-data-warehouse.md
           - text: Intune Data Warehouse data model overview
-            url: reports-nav-intune-data-warehouse     
+            url: reports-ref-data-model.md    
       - linkListType: concept
         links:
           - text: Intune Data Warehouse Collections
