@@ -35,7 +35,7 @@ landingContent:
       - linkListType: how-to-guide
         links:
           - text: Intune APP SDK for iOS
-            url: app-wrapper-prepare.md
+            url: app-sdk-ios.md
           - text: Prepare iOS apps for app protection policies
             url: app-wrapper-prepare-ios.md      
           - text: Intune App SDK for Android
