@@ -44,12 +44,12 @@ Intune provides an aggregated list of detected apps on the Intune enrolled devic
 >
 >For discovered Win32 apps, there currently is no aggregate count. This type of data can only be viewed on a per-device basis.
 
-Intune also provides the list of discovered apps for the individual device in your tenant. 
+Intune also provides the list of discovered apps for the individual device in your tenant.
 
 1. Sign in to [Intune](https://go.microsoft.com/fwlink/?linkid=2090973).
 2. In the Intune pane, select **Devices** > **All Devices**.
 3. Select a device.
-4. To view detected apps for this device, select **Discovered Apps** in the **Monitor** section. 
+4. To view detected apps for this device, select **Discovered Apps** in the **Monitor** section.
 
 ## Details of discovered apps
 
@@ -68,9 +68,10 @@ The following list provides the app platform type, the apps that are monitored f
 | Android Enterprise | Only managed apps | Only apps installed in the Work Profile | Every 7 days from device enrollment |
 
 > [!NOTE]
->Windows 10 Hybrid Azure AD joined devices, as shown in the app management workload in Configuration Manager, do not currently collect app inventory through the Intune Management Extension (IME) as per the above schedule. To mitigate this issue, the app management workload in Configuration Manager should be switched to Intune for the IME to be installed on the device (IME is required for Win32 inventory and PowerShell deployment). Note that any changes or updates on this behavior are announced in [in development](../fundamentals/in-development.md) and/or [what's new](../fundamentals/whats-new.md).
+> Windows 10 Hybrid Azure AD joined devices, as shown in the app management workload in Configuration Manager, do not currently collect app inventory through the Intune Management Extension (IME) as per the above schedule. To mitigate this issue, the app management workload in Configuration Manager should be switched to Intune for the IME to be installed on the device (IME is required for Win32 inventory and PowerShell deployment). Note that any changes or updates on this behavior are announced in [in development](../fundamentals/in-development.md) and/or [what's new](../fundamentals/whats-new.md).
 
 The number of discovered apps may not match the app install status count. Possibilities for inconsistencies include:
+
 - A targeting change of an installed managed app can cause the install count in the status blade to decrement, but remain reported in the detected apps.
 - Targeting multiple instances of the same app in a tenant will result in different counts due to potential overlap of users or devices. Each instance of the app will count overlapping users, but discovered apps will have duplicated counts.
 - Discovered apps and app status are collected at different time intervals, which could cause a discrepancy in the app counts.

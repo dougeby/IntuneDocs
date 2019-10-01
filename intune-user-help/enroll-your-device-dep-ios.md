@@ -35,7 +35,7 @@ Learn how to get your new iOS device managed in Intune.
 
 The iOS devices that are provided to you by work or school are often preconfigured before you receive them. Your organization will send these preconfigured settings to your device after you turn it on and sign in for the first time. After your device completes setup, you'll receive access to your work or school resources.  
 
-To begin setup, power on your device and sign in with your work or school credentials. The rest of this article describes the steps and screens you'll see as you walk through Setup Assistant. 
+To begin setup, power on your device and sign in with your work or school credentials. The rest of this article describes the steps and screens you'll see as you walk through Setup Assistant.
 
 ## What is Apple DEP?
 
@@ -55,7 +55,7 @@ If you're using your own iOS device, rather than an org-provided one, follow the
 4. Once you’ve connected to Wi-Fi, the **Configuration** screen will appear. This will say that **[Your Company] will automatically configure your device.**
 
    **Configuration allows [Your Company] to manage this device over the air. An administrator can help you set up email and network accounts, install and configure apps, and manage settings remotely. An administrator may disable features, install and remove apps, monitor and restrict your Internet traffic and remotely erase this device.**
- 
+
    **Configuration is provided by:
    [Your Company's] iOS Team
    [Address]**

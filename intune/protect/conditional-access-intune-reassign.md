@@ -198,15 +198,9 @@ After you have reassigned your Conditional Access policies in the Azure portal, 
 
 ### To disable the Conditional Access policies
 
-1. Go to the [Intune classic portal](https://manage.microsoft.com), and sign in with your credentials.
+Since MDM has been removed from the Intune Classic Portal, the following link has been provided to view/disable these classic policies:
 
-2. Choose **Policy** from the left menu.
-
-3. Choose **Conditional Access**, and then select the Microsoft cloud service (for example, Exchange Online or SharePoint Online) that you created a Conditional Access policy for.
-
-4. Uncheck the option **Enable Conditional Access policy**, and then click **Save**.
-
-    ![Image of Disable Conditional Access policies in the Intune classic portal](./media/conditional-access-intune-reassign/reassign-ca-18.png)
+[https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies](https://portal.azure.com/?microsoft_aad_iam_classicPolicyDontHide=true#blade/Microsoft_AAD_IAM/ConditionalAccessBlade/ClassicPolicies)
 
 ## See also
 
