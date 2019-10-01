@@ -35,6 +35,7 @@ ms.collection: M365-identity-device-management
 This article helps IT administrators simplify Windows enrollment for their users. Once you've [set up Intune](../fundamentals/setup-steps.md), users enroll Windows devices by [signing in](https://docs.microsoft.com/intune-user-help/enroll-your-device-in-intune-windows) with their work or school account.  
 
 As an Intune admin, you can simplify enrollment in the following ways:
+
 - [Enable automatic enrollment](#enable-windows-10-automatic-enrollment) (Azure AD Premium required)
 - [CNAME registration](#simplify-windows-enrollment-without-azure-ad-premium)
 - [Enable bulk enrollment](../windows-bulk-enroll.md) (Azure AD Premium and Windows Configuration Designer required)
@@ -58,12 +59,13 @@ Before an administrator can enroll devices to Intune for management, licenses sh
 ## Multi-user support
 
 Intune supports multiple users on devices that both:
+
 - run the Windows 10 Creator's update
 - are Azure Active Directory domain-joined.
 
 When standard users sign in with their Azure AD credentials, they receive apps and policies assigned to their user name. Only the device’s [Primary user](../remote-actions/find-primary-user.md) can use the Company Portal for self-service scenarios like installing apps and performing device actions (Remove, Reset). For shared Windows 10 devices that do not have a primary user assigned, the Company Portal can still be used to install Available apps.
 
-[!INCLUDE [AAD-enrollment](../../intune-classic/includes/win10-automatic-enrollment-aad.md)]
+[!INCLUDE [AAD-enrollment](../includes/win10-automatic-enrollment-aad.md)]
 
 ## Simplify Windows enrollment without Azure AD Premium
 To simplify enrollment, create a domain name server (DNS) alias (CNAME record type) that redirects enrollment requests to Intune servers. Otherwise, users trying to connect to Intune must enter the Intune server name during enrollment.

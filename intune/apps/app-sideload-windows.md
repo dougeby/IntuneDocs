@@ -8,7 +8,7 @@ keywords:
 author: erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/25/2019
+ms.date: 09/24/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -33,7 +33,8 @@ ms.collection: M365-identity-device-management
 
 As an Intune administrator, you can deploy line-of-business (LOB) Universal apps to Windows 8.1 Desktop or Windows 10 Desktop & Mobile devices, including the Company Portal app. To deploy .appx apps to Windows 8.1 Desktop or Windows 10 Desktop & Mobile devices you can use code-signing certificate from a public certification authority already trusted by your Windows devices, or you can use your own certificate authority.
 
-Windows 8.1 Desktop requires either an enterprise policy to enable sideloading or the use of Sideloading Keys (automatically enabled for domain-joined devices). For more information, see [Windows 8 sideloading](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
+> [!NOTE]
+ > Windows 8.1 Desktop requires either an enterprise policy to enable sideloading or the use of Sideloading Keys (automatically enabled for domain-joined devices). For more information, see [Windows 8 sideloading](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
 
 In Windows 10, sideloading is different than in earlier versions of Windows:
 
