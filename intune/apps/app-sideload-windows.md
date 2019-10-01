@@ -33,8 +33,10 @@ ms.collection: M365-identity-device-management
 
 As an Intune administrator, you can deploy line-of-business (LOB) Universal apps to Windows 8.1 Desktop or Windows 10 Desktop & Mobile devices, including the Company Portal app. To deploy .appx apps to Windows 8.1 Desktop or Windows 10 Desktop & Mobile devices you can use code-signing certificate from a public certification authority already trusted by your Windows devices, or you can use your own certificate authority.
 
-> [!NOTE]
+ > [!NOTE]
  > Windows 8.1 Desktop requires either an enterprise policy to enable sideloading or the use of Sideloading Keys (automatically enabled for domain-joined devices). For more information, see [Windows 8 sideloading](https://blogs.technet.microsoft.com/scd-odtsp/2012/09/27/windows-8-sideloading-requirements-from-technet/).
+
+## Windows 10 sideloading
 
 In Windows 10, sideloading is different than in earlier versions of Windows:
 
@@ -42,18 +44,17 @@ In Windows 10, sideloading is different than in earlier versions of Windows:
 
 - Symantec Phone certificates and Sideloading License keys are not required. However if an on-premise certificate authority is not available then you may need to obtain a code signing certificate from a public certification authority. For more information, see [Introduction to Code Signing](https://docs.microsoft.com/windows/desktop/SecCrypto/cryptography-tools#introduction-to-code-signing).
 
+### Code sign your app
 
-## Code sign your app
+The first step is to code sign your appx package. For details, see [Sign app package using SignTool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool).
 
-First step is to code sign your appx package, See [sign app package using signtool](https://docs.microsoft.com/windows/uwp/packaging/sign-app-package-using-signtool)
+### Upload your app
 
-## Upload your app
-
-Next, you would upload the signed appx file as described at [upload LOB Windows app](lob-apps-windows.md)
+Next, you must upload the signed appx file. For details, see [Add a Windows line-of-business app to Microsoft Intune](lob-apps-windows.md).
 
 If you deploy the app as required to users or devices then you do not need the Inutne Company Portal app. However if you deploy the app as available to users, then they can either use the Company Portal app from the Public Microsoft Store, use the Company Portal app from the Private Microsoft Store for Business, or you will need to sign and manually deploy the Intune Company Portal app.
 
-## Upload the code-signing certificate
+### Upload the code-signing certificate
 
 If your Windows 10 device does not already trust the certificate authority, then after you have signed your appx package and uploaded it to the Intune service, you need to upload the code signing certificate to the Intune portal:
 1. Click Client Apps
@@ -67,7 +68,7 @@ Intune only deploys the latest .cer file that was uploaded. If you have multiple
 
 ## How to renew the Symantec enterprise code-signing certificate
 
-The certificate used to deploy Windows Phone 8.1 mobile apps was discontinued on February 28 2019 and is no longer available for renewal from Symantec. If you are deploying to WIndows 10 mobile then you can continue to use Symantec Desktop Enterprise code-signing certificates by following the Windows 10 instructions.
+The certificate used to deploy Windows Phone 8.1 mobile apps was discontinued on February 28 2019 and is no longer available for renewal from Symantec. If you are deploying to WIndows 10 mobile then you can continue to use Symantec Desktop Enterprise code-signing certificates by following the [Windows 10 sideloading](app-sideload-windows.md#windows-10-sideloading) instructions.
 
 ## How to install the updated certificate for line-of-business (LOB) apps
 

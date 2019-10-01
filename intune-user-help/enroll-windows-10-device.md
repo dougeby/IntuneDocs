@@ -48,7 +48,7 @@ These steps describe how to enroll a device that runs on Windows 10, version 160
 
     ![Select Access work school account](./media/w10-enroll-rs1-connect-to-work-or-school.png)  
 
-4. Enter your work or school email address, and then select **Next**.  
+4. To get to your organization's Intune sign-in page, enter your work or school email address. Then select **Next**.  
 
 
    ![Enter your work or school-account](./media/w10-enroll-rs1-set-up-work-or-school-account.png)  

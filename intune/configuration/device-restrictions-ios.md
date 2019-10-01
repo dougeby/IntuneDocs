@@ -147,9 +147,9 @@ These settings are added to a device configuration profile in Intune, and then a
 >
 > For example, you configure the **Password expiration** setting, and push this policy to user-enrolled devices. On the devices, the following happens:
 >
->  - The **Password expiration** setting is ignored.
->  - Simple passwords, such as `1111` or `1234`, aren't allowed.
->  - A 6 digit pin is enforced. 
+> - The **Password expiration** setting is ignored.
+> - Simple passwords, such as `1111` or `1234`, aren't allowed.
+> - A 6 digit pin is enforced.
 
 - **Simple passwords**: Choose **Block** to require more complex passwords. **Not configured** allows simple passwords, such as `0000` and `1234`.
 
@@ -160,9 +160,9 @@ These settings are added to a device configuration profile in Intune, and then a
 - **Number of non-alphanumeric characters in password**: Enter the number of symbol characters, such as `#` or `@`, that must be included in the password.
 
 - **Minimum password length**: Enter the minimum length a user must enter, between 4 and 14 characters. On user enrolled devices, enter a length between 4 and 6 characters.
-
-    > [!NOTE]
-    > For devices that are user enrolled, users can set a PIN greater than 6 digits. But, no more than 6 digits are enforced on the device. For example, an administrator sets the minimum length to `8`. On user-enrolled devices, users are only required to set a 6 digit PIN. Intune doesn't force a PIN greater than 6 digits on user-enrolled devices.
+  
+  > [!NOTE]
+  > For devices that are user enrolled, users can set a PIN greater than 6 digits. But, no more than 6 digits are enforced on the device. For example, an administrator sets the minimum length to `8`. On user-enrolled devices, users are only required to set a 6 digit PIN. Intune doesn't force a PIN greater than 6 digits on user-enrolled devices.
 
 - **Number of sign-in failures before wiping device**: Enter the number of failed sign-ins to allow before the device is wiped (between 4-11).
   
