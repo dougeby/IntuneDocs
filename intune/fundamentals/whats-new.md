@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
 
 # What's new in Microsoft Intune
 
-Learn what’s new each week in Microsoft Intune. You can also find [important notices](#notices), [past releases](whats-new-archive.md), and information about [how Intune service updates are released](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728). 
+Learn what’s new each week in Microsoft Intune. You can also find [important notices](#notices), [past releases](whats-new-archive.md), and information about [how Intune service updates are released](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728).
 
 > [!Note]
 > Each [monthly update](https://techcommunity.microsoft.com/t5/Intune-Customer-Success/Microsoft-Intune-Service-Updates/ba-p/358728) may take up to three days to rollout and will be in the following order:
@@ -265,11 +265,7 @@ Use Intune Endpoint Protection settings to configure [Client-driven recovery pas
 This setting initiates a client-driven recovery password refresh after an OS drive recovery (either by using bootmgr or WinRE) and recovery password unlock on a Fixed data drive. This setting refreshes the specific recovery password that was used, and other unused passwords on the volume remain unchanged. For more information see the BitLocker CSP documentation for [ConfigureRecoveryPasswordRotation](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp).
 
 #### Tamper Protection for Windows Defender Antivirus  <!-- 4705448        -->
-<<<<<<< HEAD:intune/fundamentals/whats-new.md
 Use Intune to manage *Tamper Protection* for Windows Defender Antivirus. You’ll find the [setting for Tamper Protection](../protect/endpoint-protection-windows-10.md#windows-defender-security-center) in the Microsoft Defender Security Center group when you use device configuration profiles for Windows 10 endpoint protection. You can set Tamper Protection to *Enabled* to turn on Temper Protection restrictions, set *Disabled* to turn them off, or set*Not configured* to leave a devices current configuration in place.  
-=======
-Use Intune to manage *Tamper Protection* for Windows Defender Antivirus. You’ll find the [setting for Tamper Protection](endpoint-protection-windows-10.md#windows-defender-security-center) in the Microsoft Defender Security Center group when you use device configuration profiles for Windows 10 endpoint protection. You can set Tamper Protection to *Enabled* to turn on Tamper Protection restrictions, set *Disabled* to turn them off, or set*Not configured* to leave a devices current configuration in place.  
->>>>>>> bae14840e619114dff660455bbf3ce9115a02105:intune/whats-new.md
 
 For more information about Tamper Protection, see [Prevent security settings changes with tamper protection](https://docs.microsoft.com/windows/security/threat-protection/windows-defender-antivirus/prevent-changes-to-security-settings-with-tamper-protection) in the Windows documentation. 
 
