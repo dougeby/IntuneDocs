@@ -58,24 +58,28 @@ To remove all data that the Company Portal app for Android stores on your device
 - Clear app data by tapping **Applications** > **[*name of app*]** > **Clear data**.
 - Delete the following folder: \storage\internal storage\Android\data\com.microsoft.windowsintune.companyportal.
 
-## Uninstall the Company Portal app  
+## Uninstall the Company Portal app
+
 Company Portal is a device management app. It can't be uninstalled until you unenroll your device from its management. After that's complete, tap and hold the Company Portal app icon until you see **Uninstall**. Tap **Uninstall** to remove the app from your device.  
 
 Alternatively, tap **Settings** > **Apps** > **Company Portal** > **Uninstall**.  
 
-### Remove the Company Portal app as a device administrator  
+### Remove the Company Portal app as a device administrator
+
 As a last resort, you can uninstall the app from your device as a device administrator.  
 
-If you have a company-owned device, your organization might require that Company Portal be on your device at all times. If you uninstall it, you might lose access to protected company resources such as email, apps, Wi-Fi, or VPN, until the app is reinstalled. For more information about installing, updating, or removing required apps, see [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps-add#apps-that-are-added-automatically-by-intune).  
+If you have a company-owned device, your organization might require that Company Portal be on your device at all times. If you uninstall it, you might lose access to protected company resources such as email, apps, Wi-Fi, or VPN, until the app is reinstalled. For more information about installing, updating, or removing required apps, see [Add apps to Microsoft Intune](https://docs.microsoft.com/intune/apps/apps-add.md#apps-that-are-added-automatically-by-intune).
 
 Here's how to disable Company Portal as a device administrator. The actual names of each setting might vary on your Android device.  
 
 **Option 1**:  
+
 1. Select **Settings** > **Security** > **Additional Security Settings** > **Device Administrators**.  
 2. Clear the **Company Portal** selection.  
 
-**Option 2**:  
-1. Select **Settings** > **Lock screen and security** > **Other security settings** > **Device admin apps**.  
-2. Clear the **Company Portal** selection.    
+**Option 2**:
+
+1. Select **Settings** > **Lock screen and security** > **Other security settings** > **Device admin apps**.
+2. Clear the **Company Portal** selection.
 
 Still need help? Contact your company support. For contact information, check the [Company Portal website](https://go.microsoft.com/fwlink/?linkid=2010980).

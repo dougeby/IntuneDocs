@@ -13,7 +13,7 @@ These notices provide important information that can help you prepare for future
 
 
 ### Decreasing support for Android device administrator 
-Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise]( https://docs.microsoft.com/intune/connect-intune-android-enterprise) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
+Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
 
 #### How does this affect me?
 Because of these changes by Google, Intune users will be impacted in the following ways: 
@@ -61,43 +61,12 @@ You do not need to take any action but can consider updating your IT pro guidanc
 #### Additional information 
 https://aka.ms/intune_fullscreen
 
-### Plan for Change: Intune moving to support iOS 11 and higher in September <!-- 4665342-->
-In September, we expect iOS 13 to be released by Apple. Intune enrollment, the Company Portal, and the Managed Browser will move to support iOS 11 and higher shortly after the iOS 13 release.
-
-#### How does this affect me?
-Provided that O365 mobile apps are supported on iOS 11.0 and higher, this may not affect you; you’ve likely already upgraded your OS or devices. However, if you have any of the devices listed below, or decide to enroll any of the devices listed below, know that the devices below do not support an OS greater than iOS 10. These devices will need to be upgraded to a device that supports iOS 11 or higher:
-
-- iPhone 5
-- iPhone 5c
-- iPad (4th Generation)
-
-Starting in July, MDM enrolled devices with iOS 10 and the Company Portal will receive a prompt to upgrade their OS or device. If you use Application Protection Policies (APP), you can also set the “Require minimum iOS operating system (Warning only)” access setting.
-
-#### What do I need to do to prepare for this change?
-Check your Intune reporting to see what devices or users may be affected. Go to **Devices** > **All devices** and filter by OS. You can add in additional columns to help identify who in your organization has devices running iOS 10. Request that your end users upgrade their devices to a supported OS version before September.
-
-### Plan for Change: Support for version 8.1.1 and higher of Intune App SDK for iOS <!-- 3586942-->
-Starting in September 2019, Intune will move to support iOS apps with Intune App SDK 8.1.1 and higher. Apps built with SDK versions less than 8.1.1 will no longer be supported. This change will go into effect with Apple’s release of iOS 13, which is expected to come around September and also been announced in MC181399.
-
-#### How does this affect me?
-With Intune App SDK or App Wrapping integration, you can protect corporate data from unapproved applications and users via data encryption. The Intune App SDK for iOS will use 256-bit encryption keys by default when encryption is enabled by Intune App Protection Policies (APP). After this change, any iOS apps on SDK versions prior to 8.1.1, which use 128-bit encryption keys, will no longer be able to share data with applications integrated with SDK 8.1.1 or using the 256-bit keys. All iOS apps will need to have an SDK version 8.1.1 or higher to allow protected data sharing.
-
-#### What can I do to prepare for this change?
-Check your Microsoft, third-party, and line-of-business (LOB) apps. Make sure all that all your applications protected with Intune APP are using SDK version 8.1.1 or later.
-
-- For LOB apps: You may need to republish your apps integrated with SDK version 8.1.1 or later. We recommend the latest SDK version. For information on how to prepare your LOB apps for App protection policies, see [Prepare line-of-business apps for app protection policies](../apps-prepare-mobile-application-management.md).
-- For Microsoft/Third Party apps: Ensure that you are deploying the latest version of these apps to your users.
-
-You should also update your documentation or developer guidance if applicable to include this change in support for the SDK.
-
-#### Additional information
-https://docs.microsoft.com/intune/apps-prepare-mobile-application-management
-
 ### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
-Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings”, which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 
+Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings”, which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October.
 
 #### How does this affect me?
-If you manage Windows 10 devices in your environment: 
+If you manage Windows 10 devices in your environment:
+
 - With the August Intune update or 1908, you will see new deadline settings in the console in addition to the old engaged restart settings.
 - When both these old and new settings are configured, the deadline settings values will override the engaged restart setting values.
 - Deadline settings will replace the “Allow user to restart (engaged restart) option in the console in the 1910 update.
@@ -105,7 +74,7 @@ If you manage Windows 10 devices in your environment:
 #### What can I do to prepare for this change?
 Start using the deadline settings in 1908 by configuring them with your desired values. Once you have that in place, you can set the engaged restart setting to “Not configured” to prepare for these settings being removed from the console in October.
 
-Update your documentation and any automation scripts if needed. 
+Update your documentation and any automation scripts if needed.
 
 We’ll keep you updated and post a reminder to the Message center before we remove the engaged restart settings.
 
@@ -113,12 +82,13 @@ We’ll keep you updated and post a reminder to the Message center before we rem
 Intune will be moving to support Android 5.x (Lollipop) and higher in October. Update any wrapped apps with the latest Intune App SDK and update your devices.
 
 #### How does this affect me?
-If you’re not using or plan to use either the SDK or APP for Android, this change won’t affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don’t update, apps will not receive updates, and the quality of their experience will diminish over time. 
+If you’re not using or plan to use either the SDK or APP for Android, this change won’t affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don’t update, apps will not receive updates, and the quality of their experience will diminish over time.
 
 Below find a list of common devices enrolled in Intune that run Android version 4.x. If you have one of these devices,  take the appropriate steps to make sure that this device will support Android version 5.0 or higher or that it will be replaced with a device that supports Android version 5.0 or higher. This list is not exhaustive of all devices that may need to be evaluated:
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -127,3 +97,19 @@ Below find a list of common devices enrolled in Intune that run Android version 
 
 #### What do I need to do to prepare for this change?
 Wrap your apps with the latest Intune App SDK. You may also set the “Require minimum OS  version (Warning only)” conditional launch setting to notify end-users on personal devices to upgrade.
+
+### Intune plan for change: nearing end of support for Windows 7 <!-- 3042987 -->
+As we messaged in MC148476 posted last September 2018, and again in MC176794 back in March 2019, Windows 7 reaches end of extended support on January 14, 2020. At that time, Intune will retire support for devices running Windows 7, so we can focus our investment on supporting newer technologies and providing great new end user experiences. After that date, technical assistance and automatic updates that help protect your Windows 7 PC will no longer be available through Intune. Microsoft strongly recommends that you move to Windows 10 before January 2020, to avoid a scenario where you need service or support that is no longer available. Read more about the Windows support lifecycle [here](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
+
+#### How does this affect me?
+You are receiving this message because you are currently managing Windows 7 PC's using the legacy Intune PC software agent. With less than a year remaining before the end of Windows 7 extended support, we strongly encourage your organization to begin upgrading to Windows 10 as soon as possible. 
+PC management capabilities are built directly into the Windows 10 operating system, and you no longer need to install a client agent such as the Intune Software Client for Windows 7. Starting with Windows 8.1, Microsoft uses the Mobile Device Management (MDM) architecture to provision, configure, update, and manage Windows PCs. Once you have set up Intune, you can simplify Windows enrollment by [enrolling Windows 10 PCs into Intune](..\windows-enroll.md) through the MDM channel. We recommend that you use this “agentless” MDM management solution to manage your Windows 10 PC’s.
+
+#### What do I need to do to prepare for this change?
+We encourage your organization to immediately consider this action plan:
+
+- Plan and upgrade the Windows 7 fleet to Windows 10 before January 14, 2020.
+- Explore [Windows 10 deployment support](https://docs.microsoft.com/windows/deployment/) to learn more on how to upgrade your existing fleet of Windows 7 PC's to Windows 10.
+- Review the [Desktop App Assure](https://www.microsoft.com/fasttrack/microsoft-365/desktop-app-assure?rtc=1) offer through Fast Track who will assist with Microsoft’s application compatibility promise.
+- Transition existing legacy Intune Software Client managed devices to the Microsoft recommended solution to manage Windows 10 using MDM management. Enroll all new Windows 10 PC's using MDM management for Intune in the Azure portal.
+- See the [blog posted here](https://aka.ms/Windows7_Intune) for more information.
