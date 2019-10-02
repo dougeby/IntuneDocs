@@ -219,6 +219,8 @@
       href: troubleshoot-exchange-connector.md
     - name: Troubleshoot BitLocker policies
       href: troubleshoot-bitlocker-policies.md
+    - name: Troubleshoot Jamf Pro integration
+      href: troubleshoot-jamf.md
 - name: Reference
   items:
   - name: API to add third-party certificate authority

@@ -41,8 +41,7 @@ BitLocker drive encryption is a service offered by Microsoft Windows operating s
 
 With Microsoft Intune, you have the following methods to manage BitLocker on Windows 10 devices:
 
-- **Device Configuration policies** - Certain built-in policy options are available in the Intune admin console at **Device Configuration** > **Endpoint Protection** > **Windows Encryption Policy**. You can find all the available switches and features here: [Windows Encryption
-](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
+- **Device Configuration policies** - Certain built-in policy options are available in the Intune admin console at **Device Configuration** > **Endpoint Protection** > **Windows Encryption Policy**. You can find all the available switches and features here: [Windows Encryption](https://docs.microsoft.com/intune/endpoint-protection-windows-10#windows-encryption).
 
 - **Security baselines** - [Security baselines](security-baselines.md) are known groups of settings and default values that are recommended by the relevant security team to help secure Windows devices. Different baseline sources, like the *MDM Security Baseline* or *Microsoft Defender ATP Baseline* can manage the same settings as well different settings than each other. They can also manage the same settings you manage with device configuration policies. 
 

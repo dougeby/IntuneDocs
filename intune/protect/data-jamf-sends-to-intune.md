@@ -36,6 +36,9 @@ When you use [Jamf Pro](https://www.jamf.com) to manage your end-users Macs
 with Intune, Jamf Pro captures inventory information about managed macOS devices. 
 
 ## Data  
+For the list of data that Jamf Pro shares with Intune, see [Appendix: Inventory Information Shared with Microsoft Intune](https://docs.jamf.com/technical-papers/jamf-pro/microsoft-intune/10.9.0/Appendix__Inventory_Information_Shared_with_Microsoft_Intune.html) in the Jamf Pro technical documentation. 
+
+<!--  
 Jamf Pro reports the following information to Intune:  
 
 * Device Azure AD ID
@@ -78,8 +81,11 @@ Jamf Pro reports the following information to Intune:
 * Total RAM
 * UDID
 * User Email
+--> 
 
+<!-- 
 You can remove a Jamf-managed device from the Intune console by selecting **Delete** in the **All devices** view. Bulk device deletion can be enabled by selecting multiple devices and clicking **Delete**.
+-->
 
 ## Next steps
 Get information on how to [remove a Jamf-managed device in the Jamf Pro docs](https://www.jamf.com/jamf-nation/articles/80/unmanaging-computers-while-preserving-their-inventory-information). You can also file a support ticket with [Jamf support](https://www.jamf.com/support/) for additional help. 
