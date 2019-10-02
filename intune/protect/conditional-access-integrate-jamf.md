@@ -60,7 +60,7 @@ To allow APNS to function correctly on the network, you must also enable outgoin
 - ports 2195 and 2196 from Jamf Pro servers.  
 
 For more information about these ports, see the following articles:  
-- [Intune network configuration requirements and bandwidth](network-bandwidth-use.md) on docs.microsoft.com.
+- [Intune network configuration requirements and bandwidth](../fundamentals/network-bandwidth-use.md).
 - [Network Ports Used by Jamf Pro](https://www.jamf.com/jamf-nation/articles/34/network-ports-used-by-jamf-pro) on jamf.com.
 - [TCP and UDP ports used by Apple software products](https://support.apple.com/HT202944) on support.apple.com
 
