@@ -974,7 +974,7 @@ only resources which cannot be CA-protected, you may skip these steps.
 2. [Register your application with Azure Active Directory] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    The redirect URI can be found in the ADAL integration guidelines above.
 3. Set the manifest meta-data parameters per [Common ADAL configurations](#common-adal-configurations), item 2, above.
-4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/en-us/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
+4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
     - That sign-in to your app prompts for installation and enrollment of the Intune Company Portal
     - That after enrollment, sign-in to your app completes successfully.
 5. Once your app has shipped Intune APP SDK integration, contact msintuneappsdk@microsoft.com to be added to the list of approved apps for [app-based Conditional Access](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use#app-based-conditional-access)
@@ -2201,7 +2201,7 @@ The Intune SDK maintains the contract provided by the Android API, though failur
 The Intune App SDK for Android does not control data collection from your app. The Company Portal application logs system-generated data by default. This data is sent to Microsoft Intune. As per Microsoft Policy, we do not collect any personal data.
 
 > [!NOTE]
-> If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/en-us/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
+> If end users choose not to send this data, they must turn off telemetry under Settings on the Company Portal app. To learn more, see [Turn off Microsoft usage data collection](https://docs.microsoft.com/intune-user-help/turn-off-microsoft-usage-data-collection-android). 
 
 ## Recommended Android best practices
 
@@ -2212,4 +2212,4 @@ The Intune App SDK for Android does not control data collection from your app. T
 * Remove all unnecessary and unused libraries (for example, android.support.v4)
 
 ## Testing
-See the [Testing Guide](app-sdk-android-testing-guide.md#test)
+See the [Testing Guide](app-sdk-android-testing-guide.md).
