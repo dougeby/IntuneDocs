@@ -70,7 +70,7 @@ Review the [on-premises Exchange connector requirements](exchange-connector-inst
 - **Account permissions**: In the Microsoft Intune Exchange Connector dialog box, make sure you've specified a user account that has the appropriate permissions to execute the [required Windows PowerShell Exchange cmdlets](exchange-connector-install.md#exchange-cmdlet-requirements).
 - **Notification email messages**: Enable notifications and specify a notification account.
 - **Client Access Server synchronization**: When configuring the Exchange Connector, specify a CAS that has the lowest network latency possible to the server hosting the Exchange connector. Communication latency between the CAS and the Exchange connector can delay device discovery, particularly when using Exchange Online Dedicated.
-- **Synchronization schedule**: A user with a newly enrolled device could be delayed in getting access until the Exchange connector synchronizes with the Exchange CAS. A full sync takes place once a day, and a delta (quick) sync occurs several times a day.  You can [manually force a quick sync or full sync](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) to minimize delays.
+- **Synchronization schedule**: A user with a newly enrolled device could be delayed in getting access until the Exchange connector synchronizes with the Exchange CAS. A full sync takes place once a day, and a delta (quick) sync occurs several times a day. You can [manually force a quick sync or full sync](exchange-connector-install.md#manually-force-a-quick-sync-or-full-sync) to minimize delays.
 
 ## Next steps
 The following articles can help resolve common problems and specific errors:
