@@ -13,7 +13,7 @@ These notices provide important information that can help you prepare for future
 
 
 ### Decreasing support for Android device administrator 
-Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise](../connect-intune-android-enterprise.md) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
+Android device administrator (sometimes referred to “legacy” Android management and released with Android 2.2) is a way to manage Android devices. However, improved management functionality is now available with [Android Enterprise](../enrollment/connect-intune-android-enterprise.md) (released with Android 5.0). In an effort to move to modern, richer, and more secure device management, Google is decreasing device administrator support in new Android releases.
 
 #### How does this affect me?
 Because of these changes by Google, Intune users will be impacted in the following ways: 
@@ -62,10 +62,11 @@ You do not need to take any action but can consider updating your IT pro guidanc
 https://aka.ms/intune_fullscreen
 
 ### Plan for change: New Windows updates settings in Intune <!-- 4464404 -->
-Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings”, which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October. 
+Starting with the August release to the Intune service or 1908, we’re adding in new “Deadline settings”, which you can configure instead of the “Allow user to restart (engaged restart)” settings. We plan to disable the engaged restart settings in the UI in 1909 or the September update and then completely remove them from the console towards the end of October.
 
 #### How does this affect me?
-If you manage Windows 10 devices in your environment: 
+If you manage Windows 10 devices in your environment:
+
 - With the August Intune update or 1908, you will see new deadline settings in the console in addition to the old engaged restart settings.
 - When both these old and new settings are configured, the deadline settings values will override the engaged restart setting values.
 - Deadline settings will replace the “Allow user to restart (engaged restart) option in the console in the 1910 update.
@@ -73,7 +74,7 @@ If you manage Windows 10 devices in your environment:
 #### What can I do to prepare for this change?
 Start using the deadline settings in 1908 by configuring them with your desired values. Once you have that in place, you can set the engaged restart setting to “Not configured” to prepare for these settings being removed from the console in October.
 
-Update your documentation and any automation scripts if needed. 
+Update your documentation and any automation scripts if needed.
 
 We’ll keep you updated and post a reminder to the Message center before we remove the engaged restart settings.
 
@@ -81,12 +82,13 @@ We’ll keep you updated and post a reminder to the Message center before we rem
 Intune will be moving to support Android 5.x (Lollipop) and higher in October. Update any wrapped apps with the latest Intune App SDK and update your devices.
 
 #### How does this affect me?
-If you’re not using or plan to use either the SDK or APP for Android, this change won’t affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don’t update, apps will not receive updates, and the quality of their experience will diminish over time. 
+If you’re not using or plan to use either the SDK or APP for Android, this change won’t affect you. If you are using the Intune App SDK, be sure to update to the latest version and also update your devices to Android 5.x and higher. If you don’t update, apps will not receive updates, and the quality of their experience will diminish over time.
 
 Below find a list of common devices enrolled in Intune that run Android version 4.x. If you have one of these devices,  take the appropriate steps to make sure that this device will support Android version 5.0 or higher or that it will be replaced with a device that supports Android version 5.0 or higher. This list is not exhaustive of all devices that may need to be evaluated:
+
 - Samsung SM-T561  
-- Samsung SM-T365 
-- Samsung GT-I9195 
+- Samsung SM-T365
+- Samsung GT-I9195
 - Samsung SM-G800F
 - Samsung SM-G357FZ
 - Motorola XT1080
@@ -95,7 +97,6 @@ Below find a list of common devices enrolled in Intune that run Android version 
 
 #### What do I need to do to prepare for this change?
 Wrap your apps with the latest Intune App SDK. You may also set the “Require minimum OS  version (Warning only)” conditional launch setting to notify end-users on personal devices to upgrade.
-
 
 ### Intune plan for change: nearing end of support for Windows 7 <!-- 3042987 -->
 As we messaged in MC148476 posted last September 2018, and again in MC176794 back in March 2019, Windows 7 reaches end of extended support on January 14, 2020. At that time, Intune will retire support for devices running Windows 7, so we can focus our investment on supporting newer technologies and providing great new end user experiences. After that date, technical assistance and automatic updates that help protect your Windows 7 PC will no longer be available through Intune. Microsoft strongly recommends that you move to Windows 10 before January 2020, to avoid a scenario where you need service or support that is no longer available. Read more about the Windows support lifecycle [here](https://support.microsoft.com/help/13853/windows-lifecycle-fact-sheet).
