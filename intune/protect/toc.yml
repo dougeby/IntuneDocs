@@ -222,7 +222,7 @@
       - name: Common problems 
         href: troubleshoot-exchange-connector-common-problems.md
       - name: Common errors   
-        href: troubleshoot-exchange-connector-common-errors.md      
+        href: troubleshoot-exchange-connector-common-errors.md
     - name: Troubleshoot Jamf Pro integration
       href: troubleshoot-jamf.md
 - name: Reference
