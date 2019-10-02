@@ -216,7 +216,17 @@
     - name: Troubleshoot certificate connector
       href: troubleshoot-certificate-connector-events.md
     - name: Troubleshoot Exchange connectors
-      href: troubleshoot-exchange-connector.md
+      items:
+      - name: Troubleshoot Exchange connectors
+        href: troubleshoot-exchange-connector.md
+      - name: Common problems 
+        href: troubleshoot-exchange-connector-common-problems.md
+      - name: Common errors   
+        href: troubleshoot-exchange-connector-common-errors.md
+    - name: Troubleshoot BitLocker policies
+      href: troubleshoot-bitlocker-policies.md
+    - name: Troubleshoot Jamf Pro integration
+      href: troubleshoot-jamf.md
 - name: Reference
   items:
   - name: API to add third-party certificate authority

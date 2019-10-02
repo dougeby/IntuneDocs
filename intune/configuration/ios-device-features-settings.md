@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -280,7 +280,7 @@ This feature applies to:
 
 ### Settings apply to: All enrollment types
 
-- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
+- **SSO app extension type**: Choose the type of credential SSO app extension. When you save the SSO app extension profile, you can't change the SSO app extension type. Your options:
 
   - **Not configured**: App extensions aren't used. To disable an app extension, you can switch the SSO app extension type from **Kerberos** or **Credential** to **Not configured**.
   - **Credential**: Use a generic, customizable credential app extension to perform SSO. Be sure you know the extension ID for your organization’s SSO app extension.
