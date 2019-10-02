@@ -25,7 +25,7 @@
 - Windows 10 IoT Mobile Enterprise
 - Windows Holographic for Business
 
-  For more information about managing devices running Windows Holographic for Business, see [Window Holographic for Business support](../windows-holographic-for-business.md).
+  For more information about managing devices running Windows Holographic for Business, see [Window Holographic for Business support](../fundamentals/windows-holographic-for-business.md).
 
 - Windows 10 Teams (Surface Hub)
 
