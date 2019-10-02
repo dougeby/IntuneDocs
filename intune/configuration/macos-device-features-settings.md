@@ -7,7 +7,7 @@ keywords:
 author: MandiOhlinger
 ms.author: mandia
 manager: dougeby
-ms.date: 09/16/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -132,7 +132,7 @@ This feature applies to:
 
 ### Settings apply to: All enrollment types 
 
-- **SSO app extension type**: Choose the type of credential SSO app extension. Your options:
+- **SSO app extension type**: Choose the type of credential SSO app extension. When you save the SSO app extension profile, you can't change the SSO app extension type. Your options:
 
   - **Not configured**: App extensions aren't used. To disable an SSO app extension, switch the SSO app extension type from **Kerberos** or **Credential** to **Not configured**.
   - **Credential**: Use a generic, customizable credential app extension to use SSO. Be sure you know the extension ID and team ID for your organization’s SSO app extension.  
@@ -211,6 +211,8 @@ This feature applies to:
   `osascript -e 'id of app "ExampleApp"'`
 
 - **Domain**: Enter the website domain to associate with an app. The domain includes a service type and fully qualified hostname, such as `webcredentials:www.contoso.com`.
+
+  You can match all subdomains of an associated domain by entering `*.` (an asterisk wildcard and a period) before the beginning of the domain. The period is required. Exact domains have a higher priority than wildcard domains. So, patterns from parent domains are matched *if* a match isn't found at the fully qualified subdomain.
 
   The service type can be:
 
