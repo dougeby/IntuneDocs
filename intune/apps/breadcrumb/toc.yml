@@ -1,14 +1,21 @@
-- name: Enterprise Mobility + Security
+- name: Docs
   tocHref: /
-  topicHref: /enterprise-mobility-security/index
+  topicHref: /index
   items:
-  - name: Intune
-    tocHref: /intune/
-    topicHref: /intune/index
+  - name: Enterprise Mobility + Security
+    tocHref: /
+    topicHref: /enterprise-mobility-security/index
     items:
-    - name: Apps
-      tocHref: /intune/fundamentals
-      topicHref: /intune/apps/index
-    - name: Apps
-      tocHref: /intune/protect
-      tocHref: /intune/apps/index
+    - name: Intune
+      tocHref: /intune/
+      topicHref: /intune/index
+      items:
+      - name: Apps
+        tocHref: /intune/fundamentals
+        topicHref: /intune/apps/index
+      - name: Apps
+        tocHref: /intune/protect
+        tocHref: /intune/apps/index
+      - name: Apps
+        tocHref: /intune/apps/*.*
+        tocHref: /intune/apps/index      
