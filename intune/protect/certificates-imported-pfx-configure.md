@@ -5,7 +5,8 @@ keywords:
 author: ralms
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/30/2019
+ms.date: 10/02
+/2019
 ms.topic: article
 ms.prod:
 ms.service: microsoft-intune
