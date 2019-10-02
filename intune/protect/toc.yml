@@ -217,6 +217,8 @@
       href: troubleshoot-certificate-connector-events.md
     - name: Troubleshoot Exchange connectors
       href: troubleshoot-exchange-connector.md
+    - name: Troubleshoot Jamf Pro integration
+      href: troubleshoot-jamf.md
 - name: Reference
   items:
   - name: API to add third-party certificate authority
