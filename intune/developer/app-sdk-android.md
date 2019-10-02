@@ -971,7 +971,7 @@ only resources which cannot be CA-protected, you may skip these steps.
 
 1. Follow [ADAL integration guidelines](https://github.com/AzureAD/azure-activedirectory-library-for-android#how-to-use-this-library). 
    See especially Step 11 for Broker usage.
-2. [Register your application with Azure Active Directory] (https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
+2. [Register your application with Azure Active Directory](https://docs.microsoft.com/azure/active-directory/active-directory-app-registration). 
    The redirect URI can be found in the ADAL integration guidelines above.
 3. Set the manifest meta-data parameters per [Common ADAL configurations](#common-adal-configurations), item 2, above.
 4. Test that everything is configured properly by enabling [device-based CA](https://docs.microsoft.com/intune/conditional-access-intune-common-ways-use) from the [Azure portal](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExchangeConnectorMenu/aad/connectorType/2) and confirming
@@ -1401,13 +1401,11 @@ A BackupAgent allows you to be much more explicit about what data is backed up. 
 
 The Data Backup guide specifies a general algorithm for restoring your application’s data and provides a code sample in the [Extending BackupAgent](https://developer.android.com/guide/topics/data/keyvaluebackup.html#BackupAgent) section. In order to have a successful multi-identity restore, you must follow the general structure provided in this code sample with special attention to the following:
 
-1. You must utilize a `while(data.readNextHeader())`* loop to go through the backup entities.
+1. You must utilize a `while(data.readNextHeader())` loop to go through the backup entities. In the previous code, `data` is the local variable name for the **MAMBackupDataInput** that is passed to your app upon restore.
 
-2. You must call `data.skipEntityData()`* if `data.getKey()`* does not match the key you wrote in `onBackup`. Without performing this step, your restores may not succeed.
+2. You must call `data.skipEntityData()` if `data.getKey()` does not match the key you wrote in `onBackup`. Without performing this step, your restores may not succeed. In the previous code, `data` is the local variable name for the **MAMBackupDataInput** that is passed to your app upon restore.
 
-3. Avoid returning while consuming backup entities in the `while(data.readNextHeader())`* construct, as the entities we automatically write will be lost.
-
-* Where `data` is the local variable name for the **MAMBackupDataInput** that is passed to your app upon restore.
+3. Avoid returning while consuming backup entities in the `while(data.readNextHeader())` construct, as the entities we automatically write will be lost. In the previous code, `data` is the local variable name for the **MAMBackupDataInput** that is passed to your app upon restore.
 
 ## Multi-Identity (optional)
 
@@ -1523,7 +1521,7 @@ All the methods used to set the identity report back result values via `MAMIdent
 |--            |--        |
 | `SUCCEEDED`    | The identity change was successful. |
 | `NOT_ALLOWED`  | The identity change is not allowed. This occurs if an attempt is made to set the UI (`Context`) identity when a different identity is set on the current thread. |
-| `CANCELLED`    | The user cancelled the identity change, generally by pressing the back button on a PIN or authentication prompt. |
+| `CANCELLED`    | The user canceled the identity change, generally by pressing the back button on a PIN or authentication prompt. |
 | `FAILED`       | The identity change failed for an unspecified reason.|
 
 The app should ensure that an identity switch is successful before
