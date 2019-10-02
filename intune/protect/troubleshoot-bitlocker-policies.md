@@ -149,7 +149,7 @@ You can reference the [BitLocker CSP documentation](https://docs.microsoft.com/w
 You should now have a good idea how to confirm that the BitLocker policy successfully deployed by Intune, which hands-off the configuration of BitLocker to the BitLocker CSP in WIndows.  
 
 **Policy fails to reach the device** - When your Intune policy isn't present in any capacity:  
-- **Is the device properly enrolled into Microsoft Intune?** If not, you'll need to address that before troubleshooting anything specific to the policy. Help with troubleshooting Windows enrollment issues can be found [here](troubleshoot-windows-enrollment-errors.md).  
+- **Is the device properly enrolled into Microsoft Intune?** If not, you'll need to address that before troubleshooting anything specific to the policy. Help with troubleshooting Windows enrollment issues can be found [here](../enrollment/troubleshoot-windows-enrollment-errors.md).  
 - **Is there an active network connection on the device?** If the device is in airplane mode or turned off, or if the user has the device in a location with no service, the policy won't be delivered or apply until network connectivity is restored.  
 - **Did the BitLocker policy deploy to the correct user or device group?** Check that the correct user or device is a member of the groups you target.  
 
