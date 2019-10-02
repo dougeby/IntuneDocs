@@ -46,7 +46,7 @@ With Microsoft Intune, you have the following methods to manage BitLocker on Win
 
 - **Security baselines** - [Security baselines](security-baselines.md) are known groups of settings and default values that are recommended by the relevant security team to help secure Windows devices. Different baseline sources, like the *MDM Security Baseline* or *Microsoft Defender ATP Baseline* can manage the same settings as well different settings than each other. They can also manage the same settings you manage with device configuration policies. 
 
-In addition to Intune, it's posible that BitLocker settings are managed by other means like Group Policy, or manually set by a device user.
+In addition to Intune, it's possible that BitLocker settings are managed by other means like Group Policy, or manually set by a device user.
 
 No matter how settings are applied to a device, BitLocker policies make use of the [BitLocker CSP](https://docs.microsoft.com/windows/client-management/mdm/bitlocker-csp) to configure encryption on the device. The BitLocker CSP is built into Windows and when Intune deploys a BitLocker policy to an assigned device, it's the BitLocker CSP on the device that writes the appropriate values to the Windows registry so that settings from the policy can take effect.
 
@@ -59,7 +59,7 @@ Now that you have a general understanding of what these policies do and how they
 
 ## Verify the source of BitLocker settings
 
-When you investigate a BitLocker issue on a Windows 10 device, it's important to first determine whether the issue is Intune-related or Windows-related. After the likley source of failure is known, you can then focus your troubleshooting efforts in the right place, and if necessary get support from the correct team.  
+When you investigate a BitLocker issue on a Windows 10 device, it's important to first determine whether the issue is Intune-related or Windows-related. After the likely source of failure is known, you can then focus your troubleshooting efforts in the right place, and if necessary get support from the correct team.  
 
 As a first step, determine whether the Intune policy successfully deployed to the target device. In the following example, you have a device configuration policy that deploys the Windows Encryption (BitLocker) settings, as shown: 
 
