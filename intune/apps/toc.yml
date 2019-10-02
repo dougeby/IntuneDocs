@@ -173,7 +173,7 @@
     - name: Troubleshoot
       items:
       - name: Help users troubleshoot problems
-        href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/breadcrumb/toc.json
+        href: ../fundamentals/help-desk-operators.md?toc=/intune/apps/toc.json&bc=/apps/breadcrumb/toc.json
       - name: Troubleshoot app installation problems
         href: troubleshoot-app-install.md         
       - name: Troubleshoot mobile application management
