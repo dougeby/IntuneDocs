@@ -217,7 +217,7 @@
       href: troubleshoot-certificate-connector-events.md
     - name: Troubleshoot Exchange connectors
       items:
-      - name: Troubleshoot  
+      - name: Troubleshoot Exchange connectors
         href: troubleshoot-exchange-connector.md
       - name: Common problems 
         href: troubleshoot-exchange-connector-common-problems.md
