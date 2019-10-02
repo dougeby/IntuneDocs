@@ -3,7 +3,7 @@
 
 title: How to monitor app protection policies 
 titleSuffix: Microsoft Intune
-description: This topic describes how to monitor the compliance status of mobile app management policies in Intune.
+description: This topic describes how to monitor app protection policies in Intune.
 keywords:
 author: Erikre
 ms.author: erikre
@@ -20,7 +20,7 @@ ms.assetid: 9b0afb7d-cd4e-4fc6-83e2-3fc0da461d02
 #ROBOTS:
 #audience:
 #ms.devlang:
-ms.reviewer: joglocke
+ms.reviewer: aanavath
 ms.suite: ems
 search.appverid: MET150
 #ms.tgt_pltfrm:
@@ -29,11 +29,11 @@ ms.collection: M365-identity-device-management
 ---
 
 # How to monitor app protection policies
-[!INCLUDE [azure_portal](../includes/azure_portal.md)]
+[!INCLUDE [azure_portal](./includes/azure_portal.md)]
 
 You can monitor the compliance status of the mobile app management (MAM) policies that you've applied to users from the Intune app protection pane in the [Azure portal](https://portal.azure.com). Additionally, you can find information about the users affected by MAM policies, MAM policy compliance status, and any issues that your users might be experiencing.
 
-There are three different places to monitor the compliance status of MAM policies:
+There are three different places to monitor app protection policies:
 - Summary view
 - Detailed view
 - Reporting view
@@ -49,7 +49,7 @@ The retention period for app protection data is 90 days. Any app instances that 
 3. On the **Intune** pane, choose **Client apps**.
 4. In the **Client apps** workload, choose **App protection status** from the **Monitor** section, to see the summary view:
 
-![Summary tile on the Intune mobile application management pane](./media/app-protection-policies-monitor/app-protection-user-status-summary.png)
+![Summary tile on the Intune mobile application management pane](./media/app-protection-user-status-summary.png)
 
 - **Assigned users**: The total number of assigned users in your company who are using an app that is associated with a policy in a work context and are protected and licensed, as well as the assigned users that are unprotected and unlicensed.
 - **Flagged users**: The number of users who are experiencing issues. Jailbroken (iOS) and rooted (Android) devices are reported under **Flagged users**. Users with devices that are flagged by the Google SafetyNet device attestation check (if turned on by the IT admin) are reported here. 
@@ -76,22 +76,35 @@ You can search for a single user and check the compliance status for that user. 
 - **Status**:
   - **Checked in**: The policy was deployed to the user, and the app was used in the work context at least once.
   - **Not checked in**: The policy was deployed to the user, but the app has not been used in the work context since then.
-- **Last Sync**: When the device was last synced.
+- **Last Sync**: When the app was last synced with Intune. 
 
 >[!NOTE]
-> If the users you searched for do not have the MAM policy deployed to them, you see a message informing you that the user is not targeted by any MAM policies.
+> The column 'Last Sync' represents the same value in both the in-console User status report and the App Protection Policy [exportable .csv report](https://docs.microsoft.com/en-us/intune/app-protection-policies-monitor#export-app-protection-activities-to-csv). The difference is a small delay in synchronisation between the value in the 2 reports. 
+
+> The time referenced in 'Last Sync' is when Intune last saw the "app instance". An app instance is a unique combination of app + user + device. When an end user launches an app, it may or may not talk to the Intune App Protection service at that launch time, depending on when it last checked in. This documentation helps clarify [the retry interval times for App Protection Policy check-in](https://docs.microsoft.com/en-us/intune/app-protection-policy-delivery). So if an end user hasn't used that particular app in the last check-in interval (which is usually 30 minutes for active usage) and they launch the app, then:
+
+> - The App Protection Policy exportable .csv report will have the newest time within 1 minute (usual; minimum) to 30 minutes (the maximum SLA actually provided by SQL aggregation used by Intune Reporting).
+> - The User status report will have the newest time instantly.
+
+> For example, consider a targeted, and licensed end user that launches a protected app at 12:00 PM:
+> - If this is a sign in for the first time, that means the end user was logged out before (not active use), which would mean they didn't have an app instance registration with Intune. Once they sign in, they'll get a new app instance registration and be checked-in immediately pending no connectivity issues; with the same time delays listed above for future check-ins. Thus, the Last Sync time would report as 12:00 PM in the User status report, and 12:01 PM (or 12:30 PM worst case) App Protection Policy report. 
+> - If they were just launching the app, the 'Last Sync' time reported will depend on when they last checked in.
+
 
 To see the reporting for a user, follow these steps:
 
 1. To select a user, choose the **User status** summary tile.
 
-    ![Screenshot of the Summary tile of Intune mobile application management](./media/app-protection-policies-monitor/MAM-reporting-6.png)
+    ![Screenshot of the Summary tile of Intune mobile application management](./media/MAM-reporting-6.png)
 
 2. On the **App reporting** pane that opens, choose **Select user** to search for an Azure Active Directory user.
 
-    ![Screenshot of the Select user option on the App reporting pane](./media/app-protection-policies-monitor/MAM-reporting-2.png)
+    ![Screenshot of the Select user option on the App reporting pane](./media/MAM-reporting-2.png)
 
 3. Select the user from the list. You can see the details of the compliance status for that user.
+
+>[!NOTE]
+> If the users you searched for do not have the MAM policy deployed to them, you see a message informing you that the user is not targeted by any MAM policies.
 
 ### Flagged users
 The detailed view shows the error message, the app that was accessed when the error happened, the device OS platform affected, and a time stamp. Users with devices that are flagged by the 'SafetyNet device attestation' conditional launch check are reported here with the reason as reported by Google.
@@ -120,7 +133,7 @@ The **Reports** blade provides several reports based on user and app, including 
     - These apps are either being used by a user or an app that is not currently targeted by a MAM policy.
     - All apps are checked in, but aren't getting any MAM policies.
 
-    ![Screenshot of a user's App reporting blade with details for 3 apps](./media/app-protection-policies-monitor/MAM-reporting-4.png)
+    ![Screenshot of a user's App reporting blade with details for 3 apps](./media/MAM-reporting-4.png)
 
 - **User configuration report**: Based on a selected user, this report provides details about any app configurations the user has received.
 - **App configuration report**: Base on the selected platform and app, this report provides details about which users have received configurations for the selected app.
@@ -142,13 +155,13 @@ Follow these steps to generate the App protection report:
 
 1. On the Intune mobile application management pane, choose **App protection report**.
 
-    ![Screenshot of the App protection download link](./media/app-protection-policies-monitor/app-protection-report-csv-2.png)
+    ![Screenshot of the App protection download link](./media/app-protection-report-csv-2.png)
 
 2. Choose **Yes** to save your report, then choose **Save As** and select the folder you want to save the report in.
 
-    ![Screenshot of the Save report confirmation box](./media/app-protection-policies-monitor/app-protection-report-csv-1.png)
+    ![Screenshot of the Save report confirmation box](./media/app-protection-report-csv-1.png)
 
 ## See also
 - [Manage data transfer between iOS apps](data-transfer-between-apps-manage-ios.md)
-- [What to expect when your Android app is managed by app protection policies](../fundamentals/end-user-mam-apps-android.md)
-- [What to expect when your iOS app is managed by app protection policies](../fundamentals/end-user-mam-apps-ios.md)
+- [What to expect when your Android app is managed by app protection policies](app-protection-enabled-apps-android.md)
+- [What to expect when your iOS app is managed by app protection policies](app-protection-enabled-apps-ios.md)
