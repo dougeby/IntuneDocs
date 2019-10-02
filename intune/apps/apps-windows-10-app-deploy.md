@@ -8,7 +8,7 @@ keywords:
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/29/2019
+ms.date: 10/02/2019
 ms.topic: conceptual
 ms.service: microsoft-intune
 ms.localizationpriority: high
@@ -40,6 +40,8 @@ Line-of-business (LOB) apps and Microsoft Store for Business apps are the app ty
 > - For Windows 10 1709, [June 21, 2018—KB4284822 (OS Build 16299.522)](https://support.microsoft.com/help/4284822).
 >
 > Only Windows 10 1803 and above support installing apps when there is no primary user associated.
+>
+> LOB app deployment is not supported on devices running Windows 10 Home editions.
 
 ## Windows 10 Line-of-business apps
 
