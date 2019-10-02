@@ -7,7 +7,7 @@ keywords:
 author: brenduns
 ms.author: brenduns
 manager: dougeby
-ms.date: 09/19/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -111,13 +111,13 @@ For more information about Apple FileVault settings, see [FDEFileVault](https://
     **Default**: Not configured  
 
   - **Number of times allowed to bypass**  
-  Set the number of times a user can ignore prompts to enable FileVault before FileVault is required for the user to sign in.  
+  Set the number of times a user can ignore prompts to enable FileVault before FileVault is required for the user to sign in. 
 
     - **Not configured** - Encryption on the device is required before the next sign-in is allowed.  
     - **1** to **10** - Allow a user to ignore the prompt from 1 to 10 times before requiring encryption on the device.  
     - **No limit, always prompt** - The user is prompted to enable FileVault but encryption is never required.  
  
-    **Default**: Not configured  
+    **Default**: *Varies* - When the setting *Disable prompt at sign out* is set to **Not configured**, this setting defaults to **Not configured**. When *Disable prompt at sign out* is set to **Disable**, this setting defaults to **1** and a value of **Not configured** isn't an option.
 
 For more information about FileVault with Intune, see [FileVault recovery keys](encryption-monitor.md#filevault-recovery-keys).
 
