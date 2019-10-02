@@ -7,7 +7,7 @@ keywords: SDK
 author: Erikre
 ms.author: erikre
 manager: dougeby
-ms.date: 07/09/2019
+ms.date: 10/02/2019
 ms.topic: reference
 ms.service: microsoft-intune
 ms.localizationpriority: medium
@@ -45,9 +45,6 @@ New accounts can be created with and without pre-generated data. To create a new
 
 > [!NOTE]
 > If your app is not listed in the Azure portal, you can target it with a policy by selecting the **more apps** option and providing the package name in the text box.
-
-> [!IMPORTANT]
-> For an app configuration policy to apply, the enrolling user must be targeted by an [Intune app protection policy](../apps/app-protection-policy.md).
 
 ## Test Cases
 
