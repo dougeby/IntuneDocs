@@ -29,7 +29,7 @@ ms.collection: M365-identity-device-management
  
 This article can help the Intune administrator resolve common problems with the operation of the Intune Exchange connector.  
 
-Before you start troubleshooting, review Troubleshoot the Intune on-premises Exchange connector for basic information about the connector. Also review common issues for the connector configuration. 
+Before you start troubleshooting, review [Troubleshoot the Intune on-premises Exchange connector](troubleshoot-echange-connector.md) for basic information about the connector. Also review common issues for the connector configuration. 
 
 ## An Exchange ActiveSync device isn't discovered from Exchange
 
