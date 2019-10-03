@@ -175,9 +175,9 @@ By default, discovery of additional CASs is enabled. If you need to turn off fai
  
 ## Performance-tune the Exchange connector (optional)
 
-When Exchange ActiveSync supports 5,000 or more devices, you can configure an optional setting to improve the performance of the connector. You improve performance by enabling Exchange to use multiple instances of a PowerShell command runspace. 
+When Exchange ActiveSync supports 5,000 or more devices, you can configure an optional setting to improve the performance of the connector. You improve performance by enabling Exchange to use multiple instances of a PowerShell command run space. 
 
-Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. An Exchange account has a limited number of runspaces, and the connector will use most of them. 
+Before you make this change, ensure the account you use to run the Exchange connector isn't used for other Exchange management purposes. An Exchange account has a limited number of run spaces, and the connector will use most of them. 
 
 Performance tuning isn't suitable for connectors that run on older or slower hardware.  
 
