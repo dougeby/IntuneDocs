@@ -64,7 +64,9 @@ The following table lists the requirements for the computer on which you install
 | Additional software         | The computer that hosts the connector must have a full installation of Microsoft .NET Framework 4.5 and Windows PowerShell 2.0. |
 | Network               | The computer on which you install the connector must be in a domain that has a trust relationship with the domain that hosts your Exchange server.<br /><br />Configure the computer to allow it to access the Intune service through firewalls and proxy servers over ports 80 and 443. Intune uses these domains: <br> - manage.microsoft.com <br> - \*manage.microsoft.com<br> - \*.manage.microsoft.com <br><br> The Intune Exchange connector communicates with the following services: <br> - Intune service: HTTPS port 443 <br> - Exchange Client Access server (CAS): WinRM service port 443<br> - Exchange Autodiscover 443<br> - Exchange Web Services (EWS) 443  |
 
-You also need to create an Active Directory user account for the Intune Exchange connector. The account must have permission to run the following Windows PowerShell Exchange cmdlets:  
+### Exchange cmdlet requirements
+
+Create an Active Directory user account for the Intune Exchange connector. The account must have permission to run the following Windows PowerShell Exchange cmdlets:  
 
 - `Get-ActiveSyncOrganizationSettings`, `Set-ActiveSyncOrganizationSettings`
 - `Get-CasMailbox`, `Set-CasMailbox`
@@ -90,7 +92,7 @@ You also need to create an Active Directory user account for the Intune Exchange
 4. On the **Add Connector** page, select **Download the on-premises connector**. The Intune Exchange connector is in a compressed (.zip) folder that can be opened or saved. In the **File Download** dialog box, choose **Save** to store the compressed folder in a secure location.
 
 
-## Install and configure the Exchange connector
+## Install and configure the Intune Exchange connector
 
 Follow these steps to install the Intune Exchange connector. If you have multiple Exchange organizations, repeat the steps for each Exchange connector you want to set up.
 
@@ -214,7 +216,7 @@ You can also check the time and date of the last successful synchronization atte
 
 Beginning with the Intune 1710 release, you can use the [System Center Operations Manager management pack for Exchange connector and Intune](https://www.microsoft.com/download/details.aspx?id=55990&751be11f-ede8-5a0c-058c-2ee190a24fa6=True&e6b34bbe-475b-1abd-2c51-b5034bcdd6d2=True&fa43d42b-25b5-4a42-fe9b-1634f450f5ee=True). The management pack offers different ways to monitor the Exchange connector when you need to troubleshoot issues.
 
-## Manually force a quick or full sync
+## Manually force a quick sync or full sync
 
 An Intune Exchange connector automatically synchronizes EAS and Intune device records regularly. If the compliance status of a device changes, the automatic sync process regularly updates records so that device access can be blocked or allowed.
 
