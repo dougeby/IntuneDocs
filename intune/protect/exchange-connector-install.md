@@ -48,7 +48,7 @@ Follow these general steps to set up a connection that enables Intune to communi
 3. Validate the Exchange connection.
 4. Repeat these steps for each additional Exchange organization you want to connect to Intune.
 
-## Exchange connector requirements
+## Intune Exchange connector requirements
 
 To connect to Exchange, you need an account that has an Intune license that the connector can use. You specify the account when you install the connector.  
 
@@ -160,7 +160,7 @@ To install connectors to connect to multiple Exchange organizations, download th
 
 Each Exchange organization that connects to Intune supports high availability, monitoring, and manual sync. The following sections describe these features.
 
-## Support high availability for an on-premises Exchange connector  
+## On-premises Intune Exchange connector high availability support  
 
 For the on-premises connector, high availability means that if the Exchange CAS that the connector uses becomes unavailable, the connector can switch to a different CAS for that Exchange organization. The Exchange connector itself doesn't support high availability. If the connector fails, there's no automatic failover. You must [install a new connector](#reinstall-the-intune-exchange-connector) to replace the failed connector. 
 
@@ -188,15 +188,15 @@ To improve the Exchange connector performance:
    \<EnableParallelCommandSupport>true\</EnableParallelCommandSupport>
 4. Save the file, and then restart the Microsoft Intune Exchange connector service.
 
-## Reinstall an Exchange connector
+## Reinstall the Intune Exchange connector
 
 You might need to reinstall an Intune Exchange connector. Because only a single connector can connect to each Exchange organization, if you install a second connector for the organization, the new connector you install replaces the original connector.
 
-1. To install the new connector, follow the steps in the [Install and configure the Exchange connector](#install-and-configure-the-exchange-connector) section. 
+1. To install the new connector, follow the steps in the [Install and configure the Exchange connector](#install-and-configure-the-intune-exchange-connector) section. 
 2. When prompted, select **Replace** to install the new connector.  
    ![Configuration warning to replace a connector](./media/exchange-connector-install/prompt-to-replace.png)
 
-3. Continue the steps from the [Install and configure the Exchange connector](#install-and-configure-the-exchange-connector) section, and sign in to Intune again.
+3. Continue the steps from the [Install and configure the Intune Exchange connector](#install-and-configure-the-intune-exchange-connector) section, and sign in to Intune again.
 4. In the final window, select **Close** to finish the installation.  
    ![Finish setup](./media/exchange-connector-install/successful-reinstall.png)
  
