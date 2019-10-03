@@ -178,7 +178,7 @@ To see the current features you can configure, go to [macOS device feature setti
 Applies to:
 - macOS 10.15 and newer
 
-#### Use "itunes" and "apps" in the iTunes App store URL when showing or hiding apps on iOS supervised devices <!-- 4928474   --> 
+#### Use "iTunes" and "apps" in the iTunes App store URL when showing or hiding apps on iOS supervised devices <!-- 4928474   --> 
 In Intune, you can create policies to show or hide apps on your supervised iOS devices (**Device configuration** > **Profiles** > **Create profile** > **iOS** for platform > **Device restrictions** for profile type > **Show or hide apps**). 
 
 You can enter the iTunes App store URL, such as `https://itunes.apple.com/us/app/work-folders/id950878067?mt=8`. In this update, both `apps` and `itunes` can be used in the URL, such as:
